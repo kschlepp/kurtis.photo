@@ -43,6 +43,7 @@ export async function POST(request: Request) {
   }
 
   const shippingAmount = largestShippingClass === "tube" ? 1500 : 700;
+  form.set("shipping_options[0][shipping_rate_data][type]", "fixed_amount");
   form.set("shipping_options[0][shipping_rate_data][display_name]", largestShippingClass === "tube" ? "Tube shipping" : "Flat print shipping");
   form.set("shipping_options[0][shipping_rate_data][fixed_amount][amount]", String(shippingAmount));
   form.set("shipping_options[0][shipping_rate_data][fixed_amount][currency]", "usd");
