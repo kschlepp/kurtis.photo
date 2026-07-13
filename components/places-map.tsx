@@ -105,6 +105,7 @@ export function PlacesMap() {
     { x: mapWidth / 2, y: mapHeight / 2 },
     transform.scale * factor,
   );
+  const pinScale = 1 / transform.scale;
 
   return (
     <div className="places-map">
@@ -134,7 +135,7 @@ export function PlacesMap() {
                 <g
                   className={`places-map-pin${selectedSlug === collection.slug ? " is-selected" : ""}`}
                   key={collection.slug}
-                  transform={`translate(${x} ${y})`}
+                  transform={`translate(${x} ${y}) scale(${pinScale})`}
                 >
                   <circle
                     aria-label={`Show ${collection.title}`}
