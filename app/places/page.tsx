@@ -17,13 +17,15 @@ export default function PlacesPage() {
         <p>Locations, light, and the small details that keep a trip from feeling far away.</p>
       </section>
       <section className="index-section" aria-labelledby="index-title">
-        <div className="index-header"><p className="eyebrow">Alphabetical index</p><h2 id="index-title">All places</h2><span>{String(collections.length).padStart(2, "0")} currently published</span></div>
-        <div className="place-index">
+        <div className="index-header"><p className="eyebrow">Alphabetical archive</p><h2 id="index-title">All places</h2><span>{String(collections.length).padStart(2, "0")} currently published</span></div>
+        <div className="place-archive-grid">
           {collections.map((collection) => {
             const cover = getCover(collection);
-            return <Link href={`/places/${collection.slug}`} className="place-index-item" key={collection.slug}>
-              <img src={cover.variants["768"]} alt="" />
-              <div><strong>{collection.title}</strong><span>{collection.location}</span></div><em>{String(collection.images.length).padStart(2, "0")}</em>
+            const ratio = cover.width / cover.height;
+            const layout = ratio > 2 ? "is-panoramic" : ratio > 1.15 ? "is-landscape" : "is-portrait";
+            return <Link href={`/places/${collection.slug}`} className={`place-archive-card ${layout}`} key={collection.slug}>
+              <div className="place-archive-image"><img src={cover.variants["768"]} alt={`Cover photograph from ${collection.title}`} /></div>
+              <div className="place-archive-copy"><h3>{collection.title}</h3><div><span>{collection.location}</span><em>{String(collection.images.length).padStart(2, "0")} photographs</em></div></div>
             </Link>;
           })}
         </div>
