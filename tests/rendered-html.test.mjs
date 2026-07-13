@@ -29,7 +29,7 @@ test("server-renders kurtis.photo", async () => {
 
   const html = await response.text();
   assert.match(html, /<title>kurtis\.photo<\/title>/i);
-  assert.match(html, /Photos that take me back\./);
+  assert.match(html, /Things I saw along the way\./);
   assert.match(html, /Yosemite/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
 });

@@ -18,7 +18,7 @@ export default function Home() {
             <div className="hero-scrim" />
             <div className="hero-copy">
               <p className="eyebrow">Kurtis Schlepp · San Diego, California</p>
-              <h1>Photos that take me back.</h1>
+              <h1>Things I saw along the way.</h1>
               <p className="lede">Travel, streets, landscapes, and people—collected in the moments that made them feel like something.</p>
               <div className="button-row">
                 <Link className="button button-light" href="/places">Explore places</Link>
