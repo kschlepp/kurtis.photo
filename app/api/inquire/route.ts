@@ -9,14 +9,15 @@ export async function POST(request: Request) {
   }
   const input = await request.json() as Record<string, unknown>;
   const fields = ["name", "email", "shootType", "date", "location", "budget", "message"] as const;
+  const requiredFields = ["name", "email", "shootType", "message"] as const;
   if (input.website) return Response.json({ ok: true });
-  if (!input.consent || fields.some((field) => typeof input[field] !== "string" || !input[field].trim())) {
+  if (!input.consent || requiredFields.some((field) => typeof input[field] !== "string" || !input[field].trim())) {
     return Response.json({ error: "Please complete the required fields." }, { status: 400 });
   }
   const email = String(input.email).trim();
   if (!/^\S+@\S+\.\S+$/.test(email)) return Response.json({ error: "Please enter a valid email address." }, { status: 400 });
 
-  const data = Object.fromEntries(fields.map((field) => [field, escapeHtml(String(input[field]).trim())]));
+  const data = Object.fromEntries(fields.map((field) => [field, escapeHtml(typeof input[field] === "string" ? input[field].trim() : "")]));
   const sender = process.env.RESEND_FROM ?? "kurtis.photo <hello@updates.kurtis.photo>";
   const owner = process.env.INQUIRY_TO ?? "ks@kurtis.photo";
   const messages = [
