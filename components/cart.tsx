@@ -45,12 +45,20 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const timeout = window.setTimeout(() => {
-      const saved = window.localStorage.getItem(storageKey);
-      if (saved) {
-        try {
-          setLines(JSON.parse(saved) as CartLine[]);
-        } catch {
-          window.localStorage.removeItem(storageKey);
+      const returnedFromCheckout = new URLSearchParams(window.location.search).get("order") === "received";
+
+      if (returnedFromCheckout) {
+        window.localStorage.removeItem(storageKey);
+        setLines([]);
+        setOpen(false);
+      } else {
+        const saved = window.localStorage.getItem(storageKey);
+        if (saved) {
+          try {
+            setLines(JSON.parse(saved) as CartLine[]);
+          } catch {
+            window.localStorage.removeItem(storageKey);
+          }
         }
       }
       setHasLoaded(true);
