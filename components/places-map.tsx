@@ -5,7 +5,7 @@
 import { geoNaturalEarth1, geoPath } from "d3-geo";
 import type { FeatureCollection, Geometry } from "geojson";
 import Link from "next/link";
-import { type PointerEvent, type WheelEvent, useMemo, useRef, useState } from "react";
+import { type PointerEvent, useEffect, useMemo, useRef, useState } from "react";
 import { feature } from "topojson-client";
 import type { GeometryCollection, Topology } from "topojson-specification";
 import worldAtlas from "world-atlas/countries-110m.json";
@@ -16,6 +16,7 @@ type CountryTopology = Topology<{ countries: GeometryCollection }>;
 type MapTransform = { scale: number; x: number; y: number };
 type MapPoint = { x: number; y: number };
 type DragState = { pointerId: number; point: MapPoint; transform: MapTransform };
+type PinchState = { distance: number; midpoint: MapPoint; transform: MapTransform };
 
 const topology = worldAtlas as unknown as CountryTopology;
 const countries = feature(topology, topology.objects.countries) as FeatureCollection<Geometry>;
@@ -25,8 +26,18 @@ const minimumZoom = 1;
 const maximumZoom = 8;
 const initialTransform: MapTransform = { scale: 1, x: 0, y: 0 };
 
+function distanceBetween(left: MapPoint, right: MapPoint) {
+  return Math.hypot(right.x - left.x, right.y - left.y);
+}
+
+function midpointBetween(left: MapPoint, right: MapPoint): MapPoint {
+  return { x: (left.x + right.x) / 2, y: (left.y + right.y) / 2 };
+}
+
 export function PlacesMap() {
   const mapRef = useRef<SVGSVGElement>(null);
+  const touchPoints = useRef(new Map<number, MapPoint>());
+  const pinch = useRef<PinchState | null>(null);
   const [selectedSlug, setSelectedSlug] = useState<string | null>(
     collections.find((collection) => collection.featured)?.slug ?? collections[0]?.slug ?? null,
   );
@@ -63,19 +74,39 @@ export function PlacesMap() {
     return matrix ? point.matrixTransform(matrix.inverse()) : null;
   };
 
-  const zoomAt = (point: MapPoint, targetScale: number) => {
+  const zoomBy = (point: MapPoint, factor: number) => {
     setTransform((previous) => {
-      const scale = Math.min(maximumZoom, Math.max(minimumZoom, targetScale));
+      const scale = Math.min(maximumZoom, Math.max(minimumZoom, previous.scale * factor));
       const worldX = (point.x - previous.x) / previous.scale;
       const worldY = (point.y - previous.y) / previous.scale;
       return { scale, x: point.x - worldX * scale, y: point.y - worldY * scale };
     });
   };
 
-  const handleWheel = (event: WheelEvent<SVGSVGElement>) => {
-    event.preventDefault();
-    const point = pointFor(event.clientX, event.clientY);
-    if (point) zoomAt(point, transform.scale * (event.deltaY > 0 ? 0.8 : 1.25));
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+
+    const handleTrackpadPinch = (event: WheelEvent) => {
+      if (!event.ctrlKey) return;
+      event.preventDefault();
+      const point = pointFor(event.clientX, event.clientY);
+      if (point) zoomBy(point, Math.exp(-event.deltaY * 0.01));
+    };
+
+    map.addEventListener("wheel", handleTrackpadPinch, { passive: false });
+    return () => map.removeEventListener("wheel", handleTrackpadPinch);
+  });
+
+  const startPinch = () => {
+    const points = [...touchPoints.current.values()];
+    if (points.length !== 2) return;
+    pinch.current = {
+      distance: distanceBetween(points[0], points[1]),
+      midpoint: midpointBetween(points[0], points[1]),
+      transform,
+    };
+    setDrag(null);
   };
 
   const handlePointerDown = (event: PointerEvent<SVGSVGElement>) => {
@@ -83,13 +114,40 @@ export function PlacesMap() {
     const point = pointFor(event.clientX, event.clientY);
     if (!point) return;
     event.currentTarget.setPointerCapture(event.pointerId);
+
+    if (event.pointerType === "touch") {
+      touchPoints.current.set(event.pointerId, point);
+      if (touchPoints.current.size === 2) startPinch();
+      return;
+    }
+
     setDrag({ pointerId: event.pointerId, point, transform });
   };
 
   const handlePointerMove = (event: PointerEvent<SVGSVGElement>) => {
-    if (!drag || drag.pointerId !== event.pointerId) return;
     const point = pointFor(event.clientX, event.clientY);
     if (!point) return;
+
+    if (event.pointerType === "touch" && touchPoints.current.has(event.pointerId)) {
+      touchPoints.current.set(event.pointerId, point);
+      const currentPinch = pinch.current;
+      const points = [...touchPoints.current.values()];
+      if (currentPinch && points.length === 2) {
+        const distance = distanceBetween(points[0], points[1]);
+        if (distance === 0 || currentPinch.distance === 0) return;
+        const midpoint = midpointBetween(points[0], points[1]);
+        const scale = Math.min(
+          maximumZoom,
+          Math.max(minimumZoom, currentPinch.transform.scale * (distance / currentPinch.distance)),
+        );
+        const worldX = (currentPinch.midpoint.x - currentPinch.transform.x) / currentPinch.transform.scale;
+        const worldY = (currentPinch.midpoint.y - currentPinch.transform.y) / currentPinch.transform.scale;
+        setTransform({ scale, x: midpoint.x - worldX * scale, y: midpoint.y - worldY * scale });
+      }
+      return;
+    }
+
+    if (!drag || drag.pointerId !== event.pointerId) return;
     setTransform({
       ...drag.transform,
       x: drag.transform.x + point.x - drag.point.x,
@@ -98,12 +156,17 @@ export function PlacesMap() {
   };
 
   const finishDrag = (event: PointerEvent<SVGSVGElement>) => {
+    if (event.pointerType === "touch") {
+      touchPoints.current.delete(event.pointerId);
+      pinch.current = null;
+      return;
+    }
     if (drag?.pointerId === event.pointerId) setDrag(null);
   };
 
-  const zoomAtCenter = (factor: number) => zoomAt(
+  const zoomAtCenter = (factor: number) => zoomBy(
     { x: mapWidth / 2, y: mapHeight / 2 },
-    transform.scale * factor,
+    factor,
   );
   const pinScale = 1 / transform.scale;
 
@@ -121,10 +184,9 @@ export function PlacesMap() {
           onPointerDown={handlePointerDown}
           onPointerMove={handlePointerMove}
           onPointerUp={finishDrag}
-          onWheel={handleWheel}
           ref={mapRef}
           role="application"
-          aria-label="Interactive map of photography collections. Drag to explore and use the mouse wheel to zoom."
+          aria-label="Interactive map of photography collections. Drag to explore and pinch to zoom."
           viewBox={`0 0 ${mapWidth} ${mapHeight}`}
         >
           <g transform={`translate(${transform.x} ${transform.y}) scale(${transform.scale})`}>

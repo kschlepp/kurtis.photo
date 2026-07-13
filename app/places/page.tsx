@@ -29,7 +29,7 @@ export default function PlacesPage() {
         </div>
       </section>
       <section className="map-section">
-        <div className="map-section-copy"><p className="eyebrow">Map view</p><h2>Follow the pins.</h2><p>Drag to explore, scroll to zoom, and select a pin to open a collection. Every pin represents a place, never a precise capture location.</p></div>
+        <div className="map-section-copy"><p className="eyebrow">Map view</p><h2>Follow the pins.</h2><p>Drag to explore, pinch to zoom, and select a pin to open a collection. Every pin represents a place, never a precise capture location.</p></div>
         <PlacesMap />
       </section>
       <SiteFooter />
