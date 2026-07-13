@@ -37,12 +37,13 @@ if (files.length === 0) {
 async function uploadObject(localFile, objectKey) {
   for (let attempt = 1; attempt <= maxUploadAttempts; attempt += 1) {
     try {
+      console.log(`Uploading ${objectKey}…`);
       await execFileAsync(path.join(root, "node_modules", ".bin", "wrangler"), [
         "r2", "object", "put", `${bucket}/${objectKey}`,
         "--file", localFile,
         "--content-type", "image/jpeg",
         "--remote",
-      ], { stdio: "inherit" });
+      ]);
       return;
     } catch (error) {
       if (attempt === maxUploadAttempts) throw error;

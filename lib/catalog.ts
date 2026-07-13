@@ -118,7 +118,7 @@ export function getCover(collection: Collection) {
 }
 
 export function formatPhotoName(collection: Collection, photo: Photo) {
-  return photo.title ?? `${collection.title.replace(/['’]\\d+$/, "")} No. ${String(photo.order).padStart(2, "0")}`;
+  return photo.title ?? `${collection.title.replace(/\s*['’]\d+$/, "")} No. ${String(photo.order).padStart(2, "0")}`;
 }
 
 export function formatPrintName(collection: Collection, photo: Photo) {

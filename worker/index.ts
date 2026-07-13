@@ -2,6 +2,18 @@
 import { handleImageOptimization, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES } from "vinext/server/image-optimization";
 import handler from "vinext/server/app-router-entry";
 
+interface Fetcher {
+  fetch(request: Request): Promise<Response>;
+}
+
+interface R2Bucket {
+  get(key: string): Promise<{
+    body: ReadableStream;
+    httpEtag: string;
+    httpMetadata?: { contentType?: string };
+  } | null>;
+}
+
 interface Env {
   ASSETS: Fetcher;
   MEDIA?: R2Bucket;

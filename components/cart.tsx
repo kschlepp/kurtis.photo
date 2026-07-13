@@ -31,6 +31,8 @@ type CartContextValue = {
 
 const CartContext = createContext<CartContextValue | null>(null);
 const storageKey = "kurtis-photo-cart";
+// Checkout (app/api/checkout/route.ts) rejects quantities above 10.
+const maxQuantity = 10;
 
 function useCart() {
   const context = useContext(CartContext);
@@ -55,11 +57,11 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         const saved = window.localStorage.getItem(storageKey);
         if (saved) {
           try {
-          const savedLines = JSON.parse(saved) as CartLine[];
-          setLines(savedLines.filter((line) => {
-            const photo = getPhoto(line.collectionSlug, line.photoId);
-            return Boolean(photo && getPrintOptionForPhoto(line.collectionSlug, photo, line.sizeId));
-          }));
+            const savedLines = JSON.parse(saved) as CartLine[];
+            setLines(savedLines.filter((line) => {
+              const photo = getPhoto(line.collectionSlug, line.photoId);
+              return Boolean(photo && getPrintOptionForPhoto(line.collectionSlug, photo, line.sizeId));
+            }));
           } catch {
             window.localStorage.removeItem(storageKey);
           }
@@ -89,7 +91,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         );
         if (matching) {
           return current.map((item) =>
-            item.id === matching.id ? { ...item, quantity: item.quantity + 1 } : item,
+            item.id === matching.id ? { ...item, quantity: Math.min(item.quantity + 1, maxQuantity) } : item,
           );
         }
         return [...current, { ...line, id: crypto.randomUUID(), quantity: 1 }];
@@ -101,7 +103,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       setLines((current) =>
         quantity < 1
           ? current.filter((line) => line.id !== id)
-          : current.map((line) => (line.id === id ? { ...line, quantity } : line)),
+          : current.map((line) => (line.id === id ? { ...line, quantity: Math.min(quantity, maxQuantity) } : line)),
       ),
   }), [lines, open]);
 
@@ -187,7 +189,7 @@ function CartPanel() {
   }
 
   return (
-    <aside className={`cart-panel ${open ? "is-open" : ""}`} aria-hidden={!open} aria-label="Shopping cart">
+    <aside className={`cart-panel ${open ? "is-open" : ""}`} inert={!open} aria-label="Shopping cart">
       <div className="cart-panel-header">
         <div>
           <p className="eyebrow">Your selections</p>

@@ -40,6 +40,8 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+/tsconfig.tsbuildinfo
+/.claude/launch.json
 
 # Private high-resolution photo intake and generated public media.
 /photo-intake/
