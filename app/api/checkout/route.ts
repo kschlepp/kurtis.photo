@@ -1,4 +1,4 @@
-import { getCollection, getPhoto, printOptions } from "@/lib/catalog";
+import { formatPrintName, getCollection, getPhoto, getPrintOptionForPhoto } from "@/lib/catalog";
 
 type RequestedLine = { collectionSlug?: unknown; photoId?: unknown; sizeId?: unknown; quantity?: unknown };
 
@@ -18,7 +18,7 @@ export async function POST(request: Request) {
     "automatic_tax[enabled]": "true",
     "allow_promotion_codes": "true",
     "shipping_address_collection[allowed_countries][0]": "US",
-    success_url: `${new URL(request.url).origin}/print-info?order=received`,
+    success_url: `${new URL(request.url).origin}/prints?order=received`,
     cancel_url: `${new URL(request.url).origin}/places`,
   });
 
@@ -30,14 +30,14 @@ export async function POST(request: Request) {
     const quantity = Number(requested.quantity);
     const collection = getCollection(requested.collectionSlug);
     const photo = getPhoto(requested.collectionSlug, requested.photoId);
-    const option = printOptions.find((item) => item.id === requested.sizeId);
-    if (!collection || !photo || !photo.sellable || !option || !Number.isInteger(quantity) || quantity < 1 || quantity > 10) {
+    const option = photo && getPrintOptionForPhoto(requested.collectionSlug, photo, requested.sizeId);
+    if (!collection || !photo || !option || !Number.isInteger(quantity) || quantity < 1 || quantity > 10) {
       return Response.json({ error: "One cart item is no longer available." }, { status: 400 });
     }
     if (option.shippingClass === "tube") largestShippingClass = "tube";
     form.set(`line_items[${index}][price_data][currency]`, "usd");
     form.set(`line_items[${index}][price_data][unit_amount]`, String(option.price));
-    form.set(`line_items[${index}][price_data][product_data][name]`, `${collection.title} — ${photo.title ?? `${collection.title.replace(/['’]\\d+$/, "")} No. ${String(photo.order).padStart(2, "0")}`}`);
+    form.set(`line_items[${index}][price_data][product_data][name]`, `${collection.title} — ${formatPrintName(collection, photo)}`);
     form.set(`line_items[${index}][price_data][product_data][tax_code]`, "txcd_99999999");
     form.set(`line_items[${index}][quantity]`, String(quantity));
   }

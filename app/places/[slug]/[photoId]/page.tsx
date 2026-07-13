@@ -2,7 +2,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { PrintConfigurator } from "@/components/cart";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { displayDate, formatPhotoName, getCollection, getPhoto } from "@/lib/catalog";
@@ -33,7 +32,7 @@ export default async function PhotoPage({ params }: { params: Promise<{ slug: st
     <SiteHeader />
     <article className="photo-page">
       <img className="photo-page-image" src={photo.variants["2400"]} alt={photo.alt} />
-      <div className="photo-page-details"><div><p className="eyebrow">{collection.location}</p><h1>{formatPhotoName(collection, photo)}</h1><p className="metadata-line">{[photo.metadata.cameraMake, photo.metadata.cameraBody].filter(Boolean).join(" ")}{displayDate(photo.metadata.captureDate) ? ` · ${displayDate(photo.metadata.captureDate)}` : ""}</p></div><PrintConfigurator collectionSlug={collection.slug} photo={photo} /></div>
+      <div className="photo-page-details"><div><p className="eyebrow">{collection.location}</p><h1>{formatPhotoName(collection, photo)}</h1><p className="metadata-line">{[photo.metadata.cameraMake, photo.metadata.cameraBody].filter(Boolean).join(" ")}{displayDate(photo.metadata.captureDate) ? ` · ${displayDate(photo.metadata.captureDate)}` : ""}</p></div></div>
       <nav className="photo-pagination" aria-label="Photo navigation"><Link href={`/places/${collection.slug}/${previous.id}`}>← Previous</Link><Link href={`/places/${collection.slug}`}>All photographs</Link><Link href={`/places/${collection.slug}/${next.id}`}>Next →</Link></nav>
     </article>
     <SiteFooter />

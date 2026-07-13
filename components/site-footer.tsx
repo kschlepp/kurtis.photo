@@ -6,7 +6,6 @@ export function SiteFooter() {
       <p>© {new Date().getFullYear()} Kurtis Schlepp</p>
       <div>
         <a href="mailto:ks@kurtis.photo">ks@kurtis.photo</a>
-        <Link href="/print-info">Print info</Link>
         <Link href="/privacy">Privacy</Link>
         <Link href="/terms">Terms</Link>
       </div>

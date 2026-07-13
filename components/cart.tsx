@@ -3,12 +3,12 @@
 
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import {
-  compatiblePrintOptions,
-  formatPhotoName,
+  formatPrintName,
   formatPrice,
   getCollection,
   getPhoto,
-  printOptions,
+  getPrintOptionForPhoto,
+  getPrintOptionsForPhoto,
   type Photo,
 } from "@/lib/catalog";
 
@@ -55,7 +55,11 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         const saved = window.localStorage.getItem(storageKey);
         if (saved) {
           try {
-            setLines(JSON.parse(saved) as CartLine[]);
+          const savedLines = JSON.parse(saved) as CartLine[];
+          setLines(savedLines.filter((line) => {
+            const photo = getPhoto(line.collectionSlug, line.photoId);
+            return Boolean(photo && getPrintOptionForPhoto(line.collectionSlug, photo, line.sizeId));
+          }));
           } catch {
             window.localStorage.removeItem(storageKey);
           }
@@ -112,6 +116,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 export function CartToggle() {
   const { lines, setOpen } = useCart();
   const totalItems = lines.reduce((sum, line) => sum + line.quantity, 0);
+  if (totalItems === 0) return null;
   return (
     <button className="cart-toggle" type="button" onClick={() => setOpen(true)}>
       Cart <span aria-label={`${totalItems} items`}>· {totalItems}</span>
@@ -121,12 +126,10 @@ export function CartToggle() {
 
 export function PrintConfigurator({ collectionSlug, photo }: { collectionSlug: string; photo: Photo }) {
   const { add } = useCart();
-  const options = compatiblePrintOptions(photo);
+  const options = getPrintOptionsForPhoto(collectionSlug, photo);
   const [sizeId, setSizeId] = useState(options[0]?.id ?? "");
 
-  if (!photo.sellable || options.length === 0) {
-    return <p className="availability-note">This photograph is not currently available as a print.</p>;
-  }
+  if (options.length === 0) return null;
 
   return (
     <div className="print-configurator">
@@ -159,7 +162,7 @@ function CartPanel() {
   const resolvedLines = lines.flatMap((line) => {
     const collection = getCollection(line.collectionSlug);
     const photo = getPhoto(line.collectionSlug, line.photoId);
-    const option = printOptions.find((item) => item.id === line.sizeId);
+    const option = photo && getPrintOptionForPhoto(line.collectionSlug, photo, line.sizeId);
     return collection && photo && option ? [{ line, collection, photo, option }] : [];
   });
   const subtotal = resolvedLines.reduce((sum, item) => sum + item.option.price * item.line.quantity, 0);
@@ -201,7 +204,7 @@ function CartPanel() {
               <li key={line.id}>
                 <img src={photo.variants["768"]} alt="" />
                 <div>
-                  <strong>{formatPhotoName(collection, photo)}</strong>
+                  <strong>{formatPrintName(collection, photo)}</strong>
                   <span>{option.label} · {formatPrice(option.price)}</span>
                   <div className="quantity-control">
                     <button type="button" onClick={() => updateQuantity(line.id, line.quantity - 1)} aria-label="Decrease quantity">−</button>

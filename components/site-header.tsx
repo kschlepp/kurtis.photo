@@ -10,6 +10,7 @@ export function SiteHeader() {
       <nav aria-label="Primary navigation">
         <Link href="/places">Places</Link>
         <Link href="/portraits">Portraits</Link>
+        <Link href="/prints">Prints</Link>
         <Link href="/about">About</Link>
       </nav>
       <CartToggle />

@@ -2,7 +2,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { PrintConfigurator } from "@/components/cart";
 import { displayDate, formatPhotoName, type Collection } from "@/lib/catalog";
 
 export function PhotoGallery({ collection }: { collection: Collection }) {
@@ -75,7 +74,6 @@ export function PhotoGallery({ collection }: { collection: Collection }) {
                 {displayDate(activePhoto.metadata.captureDate) ? ` · ${displayDate(activePhoto.metadata.captureDate)}` : ""}
               </p>
             </div>
-            <PrintConfigurator collectionSlug={collection.slug} photo={activePhoto} />
           </div>
         </div>
       )}
