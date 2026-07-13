@@ -9,15 +9,21 @@ import { promisify } from "node:util";
 
 const execFileAsync = promisify(execFile);
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const [collectionSlug] = process.argv.slice(2);
+const [collectionSlug, ...options] = process.argv.slice(2);
+const replaceExisting = options.includes("--replace");
 
 if (!collectionSlug) {
-  console.error("Usage: npm run photos:prepare -- <collection-slug>");
+  console.error("Usage: npm run photos:prepare -- <collection-slug> [--replace]");
   process.exit(1);
 }
 
 if (!/^[a-z0-9-]+$/.test(collectionSlug)) {
   console.error("Collection slugs may contain lowercase letters, numbers, and hyphens only.");
+  process.exit(1);
+}
+
+if (options.some((option) => option !== "--replace")) {
+  console.error("The only supported option is --replace.");
   process.exit(1);
 }
 
@@ -178,14 +184,14 @@ for (const [index, filename] of files.entries()) {
 }
 
 const intakeFilenames = new Set(files);
-const images = [
+const images = (replaceExisting ? preparedImages : [
   ...previousPhotos.filter((photo) => !intakeFilenames.has(photo.sourceFile)),
   ...preparedImages,
-]
+])
   .sort(sortPhotos)
   .map((photo, index) => ({ ...photo, order: index + 1 }));
 
-const preservedCover = previousManifest?.coverImageId;
+const preservedCover = replaceExisting ? null : previousManifest?.coverImageId;
 const coverImageId = images.some((image) => image.id === preservedCover)
   ? preservedCover
   : images.find((image) => image.width / image.height > 1.6)?.id ?? images[0].id;
@@ -203,4 +209,4 @@ await writeFile(
 );
 
 await rm(workDirectory, { recursive: true, force: true });
-console.log(`Prepared ${images.length} photographs for ${collectionSlug}.`);
+console.log(`Prepared ${images.length} photographs for ${collectionSlug}${replaceExisting ? " (replaced existing collection)" : ""}.`);

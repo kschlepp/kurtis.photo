@@ -13,25 +13,28 @@ export default function Home() {
       <div className="page-shell home-shell">
         <SiteHeader />
         <section className="home-hero">
-          <div className="hero-copy">
-            <p className="eyebrow">Kurtis Schlepp · San Diego, California</p>
-            <h1>Photos that take me back.</h1>
-            <p className="lede">Travel, streets, landscapes, and people—collected in the moments that made them feel like something.</p>
-            <div className="button-row">
-              <Link className="button button-ink" href="/places">Explore places</Link>
-              <Link className="button button-outline" href="/inquire">Let’s take some photos</Link>
-            </div>
-          </div>
-          <Link className="hero-image" href={`/places/${featuredCollection.slug}`}>
+          <div className="hero-image">
             <img src={cover.variants["2400"]} alt={cover.alt} />
-            <span className="image-caption"><em>{featuredCollection.title}</em><small>{featuredCollection.location}</small></span>
-          </Link>
+            <div className="hero-scrim" />
+            <div className="hero-copy">
+              <p className="eyebrow">Kurtis Schlepp · San Diego, California</p>
+              <h1>Photos that take me back.</h1>
+              <p className="lede">Travel, streets, landscapes, and people—collected in the moments that made them feel like something.</p>
+              <div className="button-row">
+                <Link className="button button-light" href="/places">Explore places</Link>
+                <Link className="button button-on-image" href="/inquire">Let’s take some photos</Link>
+              </div>
+            </div>
+            <Link className="image-caption" href={`/places/${featuredCollection.slug}`}>
+              <em>{featuredCollection.title}</em><small>{featuredCollection.location}</small><b>↗</b>
+            </Link>
+          </div>
         </section>
         <section className="featured-section" aria-labelledby="featured-title">
           <div className="section-heading">
-            <p className="eyebrow">Featured place</p>
-            <h2 id="featured-title">Yosemite, in late fall.</h2>
-            <p>Golden trees, cold granite, and a few days that stayed with me.</p>
+            <p className="eyebrow">From the archive</p>
+            <h2 id="featured-title">A few from {featuredCollection.title}.</h2>
+            <p>A small sequence from a place that has stayed with me.</p>
           </div>
           <div className="feature-grid">
             {featuredCollection.images.slice(0, 3).map((photo) => (
@@ -43,13 +46,13 @@ export default function Home() {
           <Link className="inline-link" href={`/places/${featuredCollection.slug}`}>See the full collection <span>↗</span></Link>
         </section>
         <section className="places-teaser">
-          <div>
+          <div className="places-teaser-copy">
             <p className="eyebrow">Places, near and far</p>
-            <h2>An archive built one trip at a time.</h2>
-            <p>A growing collection of places, with an alphabetical index and a map view to wander through.</p>
+            <h2>Find a place, then wander.</h2>
+            <p>A growing collection of places, with an alphabetical index and an interactive map to explore.</p>
             <Link className="inline-link" href="/places">Browse places <span>↗</span></Link>
           </div>
-          <PlacesMap compact />
+          <PlacesMap />
         </section>
         <section className="portrait-cta">
           <p className="eyebrow">Portraits</p>
