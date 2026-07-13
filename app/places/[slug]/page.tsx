@@ -13,7 +13,7 @@ export default async function CollectionPage({ params }: { params: Promise<{ slu
       <SiteHeader />
       <section className="collection-intro">
         <div><p className="eyebrow">{collection.location}</p><h1>{collection.title}</h1></div>
-        <p>{collection.note ?? "A collection of photographs made over a few days in Yosemite National Park."}</p>
+        <p>{collection.note ?? `A collection of photographs made in ${collection.location}.`}</p>
       </section>
       <PhotoGallery collection={collection} />
       <SiteFooter />

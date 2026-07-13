@@ -1,0 +1,126 @@
+{
+  "slug": "seattle",
+  "title": "Seattle",
+  "location": "Seattle, Washington",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 47.6062,
+    "longitude": -122.3321
+  },
+  "coverImageId": "dscf7325",
+  "images": [
+    {
+      "id": "dscf7325",
+      "title": null,
+      "alt": "Seattle photograph 1",
+      "sourceFile": "DSCF7325.jpeg",
+      "printSource": "DSCF7325.jpeg",
+      "assetKey": "dscf7325-19c08cd5ae4c",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/seattle/dscf7325-19c08cd5ae4c-768.jpg",
+        "1600": "/media/seattle/dscf7325-19c08cd5ae4c-1600.jpg",
+        "2400": "/media/seattle/dscf7325-19c08cd5ae4c-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:07:28 20:57:01"
+      }
+    },
+    {
+      "id": "dscf7390",
+      "title": null,
+      "alt": "Seattle photograph 2",
+      "sourceFile": "DSCF7390.jpeg",
+      "printSource": "DSCF7390.jpeg",
+      "assetKey": "dscf7390-79a8931af714",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/seattle/dscf7390-79a8931af714-768.jpg",
+        "1600": "/media/seattle/dscf7390-79a8931af714-1600.jpg",
+        "2400": "/media/seattle/dscf7390-79a8931af714-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:07:28 21:07:42"
+      }
+    },
+    {
+      "id": "dscf7406",
+      "title": null,
+      "alt": "Seattle photograph 3",
+      "sourceFile": "DSCF7406.jpeg",
+      "printSource": "DSCF7406.jpeg",
+      "assetKey": "dscf7406-284f6cc0e0d4",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/seattle/dscf7406-284f6cc0e0d4-768.jpg",
+        "1600": "/media/seattle/dscf7406-284f6cc0e0d4-1600.jpg",
+        "2400": "/media/seattle/dscf7406-284f6cc0e0d4-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:07:28 21:09:32"
+      }
+    },
+    {
+      "id": "dscf7503",
+      "title": null,
+      "alt": "Seattle photograph 4",
+      "sourceFile": "DSCF7503.jpeg",
+      "printSource": "DSCF7503.jpeg",
+      "assetKey": "dscf7503-80b679644ba3",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/seattle/dscf7503-80b679644ba3-768.jpg",
+        "1600": "/media/seattle/dscf7503-80b679644ba3-1600.jpg",
+        "2400": "/media/seattle/dscf7503-80b679644ba3-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:07:28 21:30:45"
+      }
+    }
+  ]
+}

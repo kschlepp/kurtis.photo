@@ -1,0 +1,994 @@
+{
+  "slug": "algarve",
+  "title": "Algarve",
+  "location": "Algarve, Portugal",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 37.0179,
+    "longitude": -7.9308
+  },
+  "coverImageId": "dscf9427",
+  "images": [
+    {
+      "id": "dscf8767",
+      "title": null,
+      "alt": "Algarve photograph 1",
+      "sourceFile": "DSCF8767.jpg",
+      "printSource": "DSCF8767.jpg",
+      "assetKey": "dscf8767-9bdf50acf558",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/algarve/dscf8767-9bdf50acf558-768.jpg",
+        "1600": "/media/algarve/dscf8767-9bdf50acf558-1600.jpg",
+        "2400": "/media/algarve/dscf8767-9bdf50acf558-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:29 01:16:30"
+      }
+    },
+    {
+      "id": "dscf8768",
+      "title": null,
+      "alt": "Algarve photograph 2",
+      "sourceFile": "DSCF8768.jpg",
+      "printSource": "DSCF8768.jpg",
+      "assetKey": "dscf8768-0a453fd09f8a",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/algarve/dscf8768-0a453fd09f8a-768.jpg",
+        "1600": "/media/algarve/dscf8768-0a453fd09f8a-1600.jpg",
+        "2400": "/media/algarve/dscf8768-0a453fd09f8a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:29 01:17:40"
+      }
+    },
+    {
+      "id": "dscf8785",
+      "title": null,
+      "alt": "Algarve photograph 3",
+      "sourceFile": "DSCF8785.jpg",
+      "printSource": "DSCF8785.jpg",
+      "assetKey": "dscf8785-e3de4357e9ee",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/algarve/dscf8785-e3de4357e9ee-768.jpg",
+        "1600": "/media/algarve/dscf8785-e3de4357e9ee-1600.jpg",
+        "2400": "/media/algarve/dscf8785-e3de4357e9ee-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:29 01:32:27"
+      }
+    },
+    {
+      "id": "dscf8788",
+      "title": null,
+      "alt": "Algarve photograph 4",
+      "sourceFile": "DSCF8788.jpg",
+      "printSource": "DSCF8788.jpg",
+      "assetKey": "dscf8788-8456bbc131d5",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/algarve/dscf8788-8456bbc131d5-768.jpg",
+        "1600": "/media/algarve/dscf8788-8456bbc131d5-1600.jpg",
+        "2400": "/media/algarve/dscf8788-8456bbc131d5-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:29 01:34:51"
+      }
+    },
+    {
+      "id": "dscf8802",
+      "title": null,
+      "alt": "Algarve photograph 5",
+      "sourceFile": "DSCF8802.jpg",
+      "printSource": "DSCF8802.jpg",
+      "assetKey": "dscf8802-ef7966d9c853",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/algarve/dscf8802-ef7966d9c853-768.jpg",
+        "1600": "/media/algarve/dscf8802-ef7966d9c853-1600.jpg",
+        "2400": "/media/algarve/dscf8802-ef7966d9c853-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:29 01:45:27"
+      }
+    },
+    {
+      "id": "dscf8874",
+      "title": null,
+      "alt": "Algarve photograph 6",
+      "sourceFile": "DSCF8874.jpg",
+      "printSource": "DSCF8874.jpg",
+      "assetKey": "dscf8874-010d23a7edcb",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4128,
+      "height": 6192,
+      "variants": {
+        "768": "/media/algarve/dscf8874-010d23a7edcb-768.jpg",
+        "1600": "/media/algarve/dscf8874-010d23a7edcb-1600.jpg",
+        "2400": "/media/algarve/dscf8874-010d23a7edcb-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:30 00:03:04"
+      }
+    },
+    {
+      "id": "dscf8877",
+      "title": null,
+      "alt": "Algarve photograph 7",
+      "sourceFile": "DSCF8877.jpg",
+      "printSource": "DSCF8877.jpg",
+      "assetKey": "dscf8877-00735e42a598",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4245,
+      "height": 6367,
+      "variants": {
+        "768": "/media/algarve/dscf8877-00735e42a598-768.jpg",
+        "1600": "/media/algarve/dscf8877-00735e42a598-1600.jpg",
+        "2400": "/media/algarve/dscf8877-00735e42a598-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:30 00:06:42"
+      }
+    },
+    {
+      "id": "dscf8897",
+      "title": null,
+      "alt": "Algarve photograph 8",
+      "sourceFile": "DSCF8897.jpg",
+      "printSource": "DSCF8897.jpg",
+      "assetKey": "dscf8897-bd34035cd16a",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/algarve/dscf8897-bd34035cd16a-768.jpg",
+        "1600": "/media/algarve/dscf8897-bd34035cd16a-1600.jpg",
+        "2400": "/media/algarve/dscf8897-bd34035cd16a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:30 00:12:02"
+      }
+    },
+    {
+      "id": "dscf8923",
+      "title": null,
+      "alt": "Algarve photograph 9",
+      "sourceFile": "DSCF8923.jpg",
+      "printSource": "DSCF8923.jpg",
+      "assetKey": "dscf8923-6121dd46e40f",
+      "order": 9,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/algarve/dscf8923-6121dd46e40f-768.jpg",
+        "1600": "/media/algarve/dscf8923-6121dd46e40f-1600.jpg",
+        "2400": "/media/algarve/dscf8923-6121dd46e40f-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:30 00:26:14"
+      }
+    },
+    {
+      "id": "dscf8931",
+      "title": null,
+      "alt": "Algarve photograph 10",
+      "sourceFile": "DSCF8931.jpg",
+      "printSource": "DSCF8931.jpg",
+      "assetKey": "dscf8931-4b702bf1dbc8",
+      "order": 10,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/algarve/dscf8931-4b702bf1dbc8-768.jpg",
+        "1600": "/media/algarve/dscf8931-4b702bf1dbc8-1600.jpg",
+        "2400": "/media/algarve/dscf8931-4b702bf1dbc8-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:30 00:28:23"
+      }
+    },
+    {
+      "id": "dscf8950",
+      "title": null,
+      "alt": "Algarve photograph 11",
+      "sourceFile": "DSCF8950.jpg",
+      "printSource": "DSCF8950.jpg",
+      "assetKey": "dscf8950-b5961db9125d",
+      "order": 11,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/algarve/dscf8950-b5961db9125d-768.jpg",
+        "1600": "/media/algarve/dscf8950-b5961db9125d-1600.jpg",
+        "2400": "/media/algarve/dscf8950-b5961db9125d-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:30 20:48:53"
+      }
+    },
+    {
+      "id": "dscf8958",
+      "title": null,
+      "alt": "Algarve photograph 12",
+      "sourceFile": "DSCF8958.jpg",
+      "printSource": "DSCF8958.jpg",
+      "assetKey": "dscf8958-db52e46af313",
+      "order": 12,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/algarve/dscf8958-db52e46af313-768.jpg",
+        "1600": "/media/algarve/dscf8958-db52e46af313-1600.jpg",
+        "2400": "/media/algarve/dscf8958-db52e46af313-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:30 20:59:57"
+      }
+    },
+    {
+      "id": "dscf8959",
+      "title": null,
+      "alt": "Algarve photograph 13",
+      "sourceFile": "DSCF8959.jpg",
+      "printSource": "DSCF8959.jpg",
+      "assetKey": "dscf8959-0d31bf5dbdba",
+      "order": 13,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/algarve/dscf8959-0d31bf5dbdba-768.jpg",
+        "1600": "/media/algarve/dscf8959-0d31bf5dbdba-1600.jpg",
+        "2400": "/media/algarve/dscf8959-0d31bf5dbdba-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:30 21:00:26"
+      }
+    },
+    {
+      "id": "dscf8962",
+      "title": null,
+      "alt": "Algarve photograph 14",
+      "sourceFile": "DSCF8962.jpg",
+      "printSource": "DSCF8962.jpg",
+      "assetKey": "dscf8962-9aa2bb11d64c",
+      "order": 14,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7387,
+      "height": 4925,
+      "variants": {
+        "768": "/media/algarve/dscf8962-9aa2bb11d64c-768.jpg",
+        "1600": "/media/algarve/dscf8962-9aa2bb11d64c-1600.jpg",
+        "2400": "/media/algarve/dscf8962-9aa2bb11d64c-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:30 21:02:25"
+      }
+    },
+    {
+      "id": "dscf8968",
+      "title": null,
+      "alt": "Algarve photograph 15",
+      "sourceFile": "DSCF8968.jpg",
+      "printSource": "DSCF8968.jpg",
+      "assetKey": "dscf8968-394e90381dc0",
+      "order": 15,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/algarve/dscf8968-394e90381dc0-768.jpg",
+        "1600": "/media/algarve/dscf8968-394e90381dc0-1600.jpg",
+        "2400": "/media/algarve/dscf8968-394e90381dc0-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:30 21:04:49"
+      }
+    },
+    {
+      "id": "dscf8993",
+      "title": null,
+      "alt": "Algarve photograph 16",
+      "sourceFile": "DSCF8993.jpg",
+      "printSource": "DSCF8993.jpg",
+      "assetKey": "dscf8993-dfa19ce85bdf",
+      "order": 16,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/algarve/dscf8993-dfa19ce85bdf-768.jpg",
+        "1600": "/media/algarve/dscf8993-dfa19ce85bdf-1600.jpg",
+        "2400": "/media/algarve/dscf8993-dfa19ce85bdf-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:30 21:10:39"
+      }
+    },
+    {
+      "id": "dscf9040",
+      "title": null,
+      "alt": "Algarve photograph 17",
+      "sourceFile": "DSCF9040.jpg",
+      "printSource": "DSCF9040.jpg",
+      "assetKey": "dscf9040-865752d4d507",
+      "order": 17,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/algarve/dscf9040-865752d4d507-768.jpg",
+        "1600": "/media/algarve/dscf9040-865752d4d507-1600.jpg",
+        "2400": "/media/algarve/dscf9040-865752d4d507-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:30 21:22:06"
+      }
+    },
+    {
+      "id": "dscf9058",
+      "title": null,
+      "alt": "Algarve photograph 18",
+      "sourceFile": "DSCF9058.jpg",
+      "printSource": "DSCF9058.jpg",
+      "assetKey": "dscf9058-b9c6dc34fe48",
+      "order": 18,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/algarve/dscf9058-b9c6dc34fe48-768.jpg",
+        "1600": "/media/algarve/dscf9058-b9c6dc34fe48-1600.jpg",
+        "2400": "/media/algarve/dscf9058-b9c6dc34fe48-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:01 00:52:02"
+      }
+    },
+    {
+      "id": "dscf9201",
+      "title": null,
+      "alt": "Algarve photograph 19",
+      "sourceFile": "DSCF9201.jpg",
+      "printSource": "DSCF9201.jpg",
+      "assetKey": "dscf9201-01677d7cca16",
+      "order": 19,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 6010,
+      "height": 4007,
+      "variants": {
+        "768": "/media/algarve/dscf9201-01677d7cca16-768.jpg",
+        "1600": "/media/algarve/dscf9201-01677d7cca16-1600.jpg",
+        "2400": "/media/algarve/dscf9201-01677d7cca16-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:01 16:48:19"
+      }
+    },
+    {
+      "id": "dscf9205",
+      "title": null,
+      "alt": "Algarve photograph 20",
+      "sourceFile": "DSCF9205.jpg",
+      "printSource": "DSCF9205.jpg",
+      "assetKey": "dscf9205-99835579f654",
+      "order": 20,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 6370,
+      "height": 4246,
+      "variants": {
+        "768": "/media/algarve/dscf9205-99835579f654-768.jpg",
+        "1600": "/media/algarve/dscf9205-99835579f654-1600.jpg",
+        "2400": "/media/algarve/dscf9205-99835579f654-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:01 16:51:19"
+      }
+    },
+    {
+      "id": "dscf9208",
+      "title": null,
+      "alt": "Algarve photograph 21",
+      "sourceFile": "DSCF9208.jpg",
+      "printSource": "DSCF9208.jpg",
+      "assetKey": "dscf9208-ff31dc749638",
+      "order": 21,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/algarve/dscf9208-ff31dc749638-768.jpg",
+        "1600": "/media/algarve/dscf9208-ff31dc749638-1600.jpg",
+        "2400": "/media/algarve/dscf9208-ff31dc749638-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:01 17:07:52"
+      }
+    },
+    {
+      "id": "dscf9225",
+      "title": null,
+      "alt": "Algarve photograph 22",
+      "sourceFile": "DSCF9225.jpg",
+      "printSource": "DSCF9225.jpg",
+      "assetKey": "dscf9225-008ad5193014",
+      "order": 22,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/algarve/dscf9225-008ad5193014-768.jpg",
+        "1600": "/media/algarve/dscf9225-008ad5193014-1600.jpg",
+        "2400": "/media/algarve/dscf9225-008ad5193014-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:01 18:01:02"
+      }
+    },
+    {
+      "id": "dscf9229",
+      "title": null,
+      "alt": "Algarve photograph 23",
+      "sourceFile": "DSCF9229.jpg",
+      "printSource": "DSCF9229.jpg",
+      "assetKey": "dscf9229-09ad046bf1b6",
+      "order": 23,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/algarve/dscf9229-09ad046bf1b6-768.jpg",
+        "1600": "/media/algarve/dscf9229-09ad046bf1b6-1600.jpg",
+        "2400": "/media/algarve/dscf9229-09ad046bf1b6-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:01 18:03:34"
+      }
+    },
+    {
+      "id": "dscf9234",
+      "title": null,
+      "alt": "Algarve photograph 24",
+      "sourceFile": "DSCF9234.jpg",
+      "printSource": "DSCF9234.jpg",
+      "assetKey": "dscf9234-67cf682b3667",
+      "order": 24,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/algarve/dscf9234-67cf682b3667-768.jpg",
+        "1600": "/media/algarve/dscf9234-67cf682b3667-1600.jpg",
+        "2400": "/media/algarve/dscf9234-67cf682b3667-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:01 23:17:20"
+      }
+    },
+    {
+      "id": "dscf9245",
+      "title": null,
+      "alt": "Algarve photograph 25",
+      "sourceFile": "DSCF9245.jpg",
+      "printSource": "DSCF9245.jpg",
+      "assetKey": "dscf9245-52e51b1f1e9c",
+      "order": 25,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/algarve/dscf9245-52e51b1f1e9c-768.jpg",
+        "1600": "/media/algarve/dscf9245-52e51b1f1e9c-1600.jpg",
+        "2400": "/media/algarve/dscf9245-52e51b1f1e9c-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:01 23:36:05"
+      }
+    },
+    {
+      "id": "dscf9270",
+      "title": null,
+      "alt": "Algarve photograph 26",
+      "sourceFile": "DSCF9270.jpg",
+      "printSource": "DSCF9270.jpg",
+      "assetKey": "dscf9270-41fe22f10b8a",
+      "order": 26,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/algarve/dscf9270-41fe22f10b8a-768.jpg",
+        "1600": "/media/algarve/dscf9270-41fe22f10b8a-1600.jpg",
+        "2400": "/media/algarve/dscf9270-41fe22f10b8a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:03 10:07:54"
+      }
+    },
+    {
+      "id": "dscf9275",
+      "title": null,
+      "alt": "Algarve photograph 27",
+      "sourceFile": "DSCF9275.jpg",
+      "printSource": "DSCF9275.jpg",
+      "assetKey": "dscf9275-152133815617",
+      "order": 27,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/algarve/dscf9275-152133815617-768.jpg",
+        "1600": "/media/algarve/dscf9275-152133815617-1600.jpg",
+        "2400": "/media/algarve/dscf9275-152133815617-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:03 10:34:27"
+      }
+    },
+    {
+      "id": "dscf9282",
+      "title": null,
+      "alt": "Algarve photograph 28",
+      "sourceFile": "DSCF9282.jpg",
+      "printSource": "DSCF9282.jpg",
+      "assetKey": "dscf9282-28cc8ab22d14",
+      "order": 28,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5061,
+      "height": 7591,
+      "variants": {
+        "768": "/media/algarve/dscf9282-28cc8ab22d14-768.jpg",
+        "1600": "/media/algarve/dscf9282-28cc8ab22d14-1600.jpg",
+        "2400": "/media/algarve/dscf9282-28cc8ab22d14-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:04 23:39:09"
+      }
+    },
+    {
+      "id": "dscf9284",
+      "title": null,
+      "alt": "Algarve photograph 29",
+      "sourceFile": "DSCF9284.jpg",
+      "printSource": "DSCF9284.jpg",
+      "assetKey": "dscf9284-32c92bb25341",
+      "order": 29,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5136,
+      "height": 3423,
+      "variants": {
+        "768": "/media/algarve/dscf9284-32c92bb25341-768.jpg",
+        "1600": "/media/algarve/dscf9284-32c92bb25341-1600.jpg",
+        "2400": "/media/algarve/dscf9284-32c92bb25341-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:04 23:41:26"
+      }
+    },
+    {
+      "id": "dscf9286",
+      "title": null,
+      "alt": "Algarve photograph 30",
+      "sourceFile": "DSCF9286.jpg",
+      "printSource": "DSCF9286.jpg",
+      "assetKey": "dscf9286-27d1c83c1d82",
+      "order": 30,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/algarve/dscf9286-27d1c83c1d82-768.jpg",
+        "1600": "/media/algarve/dscf9286-27d1c83c1d82-1600.jpg",
+        "2400": "/media/algarve/dscf9286-27d1c83c1d82-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:04 23:42:57"
+      }
+    },
+    {
+      "id": "dscf9288",
+      "title": null,
+      "alt": "Algarve photograph 31",
+      "sourceFile": "DSCF9288.jpg",
+      "printSource": "DSCF9288.jpg",
+      "assetKey": "dscf9288-4be578232654",
+      "order": 31,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5783,
+      "height": 3854,
+      "variants": {
+        "768": "/media/algarve/dscf9288-4be578232654-768.jpg",
+        "1600": "/media/algarve/dscf9288-4be578232654-1600.jpg",
+        "2400": "/media/algarve/dscf9288-4be578232654-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:04 23:45:33"
+      }
+    },
+    {
+      "id": "dscf9331",
+      "title": null,
+      "alt": "Algarve photograph 32",
+      "sourceFile": "DSCF9331.jpg",
+      "printSource": "DSCF9331.jpg",
+      "assetKey": "dscf9331-26c42d5b84c3",
+      "order": 32,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/algarve/dscf9331-26c42d5b84c3-768.jpg",
+        "1600": "/media/algarve/dscf9331-26c42d5b84c3-1600.jpg",
+        "2400": "/media/algarve/dscf9331-26c42d5b84c3-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 00:00:28"
+      }
+    },
+    {
+      "id": "dscf9338",
+      "title": null,
+      "alt": "Algarve photograph 33",
+      "sourceFile": "DSCF9338.jpg",
+      "printSource": "DSCF9338.jpg",
+      "assetKey": "dscf9338-d6e9677fe1bd",
+      "order": 33,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/algarve/dscf9338-d6e9677fe1bd-768.jpg",
+        "1600": "/media/algarve/dscf9338-d6e9677fe1bd-1600.jpg",
+        "2400": "/media/algarve/dscf9338-d6e9677fe1bd-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 00:03:22"
+      }
+    },
+    {
+      "id": "dscf9385",
+      "title": null,
+      "alt": "Algarve photograph 34",
+      "sourceFile": "DSCF9385.jpg",
+      "printSource": "DSCF9385.jpg",
+      "assetKey": "dscf9385-22c49a387bd2",
+      "order": 34,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/algarve/dscf9385-22c49a387bd2-768.jpg",
+        "1600": "/media/algarve/dscf9385-22c49a387bd2-1600.jpg",
+        "2400": "/media/algarve/dscf9385-22c49a387bd2-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 00:07:15"
+      }
+    },
+    {
+      "id": "dscf9427",
+      "title": null,
+      "alt": "Algarve photograph 35",
+      "sourceFile": "DSCF9427.jpg",
+      "printSource": "DSCF9427.jpg",
+      "assetKey": "dscf9427-34221a568523",
+      "order": 35,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 4348,
+      "variants": {
+        "768": "/media/algarve/dscf9427-34221a568523-768.jpg",
+        "1600": "/media/algarve/dscf9427-34221a568523-1600.jpg",
+        "2400": "/media/algarve/dscf9427-34221a568523-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 00:22:33"
+      }
+    }
+  ]
+}

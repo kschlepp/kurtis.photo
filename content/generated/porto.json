@@ -1,0 +1,714 @@
+{
+  "slug": "porto",
+  "title": "Porto",
+  "location": "Porto, Portugal",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 41.1579,
+    "longitude": -8.6291
+  },
+  "coverImageId": "dscf0733",
+  "images": [
+    {
+      "id": "dscf0733",
+      "title": null,
+      "alt": "Porto photograph 2",
+      "sourceFile": "DSCF0733.jpg",
+      "printSource": "DSCF0733.jpg",
+      "assetKey": "dscf0733-5aca77186225",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/porto/dscf0733-5aca77186225-768.jpg",
+        "1600": "/media/porto/dscf0733-5aca77186225-1600.jpg",
+        "2400": "/media/porto/dscf0733-5aca77186225-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:21 00:29:59"
+      }
+    },
+    {
+      "id": "dscf0734",
+      "title": null,
+      "alt": "Porto photograph 3",
+      "sourceFile": "DSCF0734.jpg",
+      "printSource": "DSCF0734.jpg",
+      "assetKey": "dscf0734-e0d18e69ae07",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7600,
+      "height": 5067,
+      "variants": {
+        "768": "/media/porto/dscf0734-e0d18e69ae07-768.jpg",
+        "1600": "/media/porto/dscf0734-e0d18e69ae07-1600.jpg",
+        "2400": "/media/porto/dscf0734-e0d18e69ae07-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:21 00:30:23"
+      }
+    },
+    {
+      "id": "dscf0732",
+      "title": null,
+      "alt": "Porto photograph 1",
+      "sourceFile": "DSCF0732.jpg",
+      "printSource": "DSCF0732.jpg",
+      "assetKey": "dscf0732-53849dff7df5",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 3407,
+      "height": 5111,
+      "variants": {
+        "768": "/media/porto/dscf0732-53849dff7df5-768.jpg",
+        "1600": "/media/porto/dscf0732-53849dff7df5-1600.jpg",
+        "2400": "/media/porto/dscf0732-53849dff7df5-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:21 00:32:44"
+      }
+    },
+    {
+      "id": "dscf0737",
+      "title": null,
+      "alt": "Porto photograph 4",
+      "sourceFile": "DSCF0737.jpg",
+      "printSource": "DSCF0737.jpg",
+      "assetKey": "dscf0737-d6e7b83f0634",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/porto/dscf0737-d6e7b83f0634-768.jpg",
+        "1600": "/media/porto/dscf0737-d6e7b83f0634-1600.jpg",
+        "2400": "/media/porto/dscf0737-d6e7b83f0634-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:24 19:24:34"
+      }
+    },
+    {
+      "id": "dscf0809",
+      "title": null,
+      "alt": "Porto photograph 5",
+      "sourceFile": "DSCF0809.jpg",
+      "printSource": "DSCF0809.jpg",
+      "assetKey": "dscf0809-b3c72cc995d0",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/porto/dscf0809-b3c72cc995d0-768.jpg",
+        "1600": "/media/porto/dscf0809-b3c72cc995d0-1600.jpg",
+        "2400": "/media/porto/dscf0809-b3c72cc995d0-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:24 20:13:07"
+      }
+    },
+    {
+      "id": "dscf0814",
+      "title": null,
+      "alt": "Porto photograph 6",
+      "sourceFile": "DSCF0814.jpg",
+      "printSource": "DSCF0814.jpg",
+      "assetKey": "dscf0814-30a0abdfa175",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/porto/dscf0814-30a0abdfa175-768.jpg",
+        "1600": "/media/porto/dscf0814-30a0abdfa175-1600.jpg",
+        "2400": "/media/porto/dscf0814-30a0abdfa175-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:24 20:17:00"
+      }
+    },
+    {
+      "id": "dscf0842",
+      "title": null,
+      "alt": "Porto photograph 7",
+      "sourceFile": "DSCF0842.jpg",
+      "printSource": "DSCF0842.jpg",
+      "assetKey": "dscf0842-5209af1c7b18",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/porto/dscf0842-5209af1c7b18-768.jpg",
+        "1600": "/media/porto/dscf0842-5209af1c7b18-1600.jpg",
+        "2400": "/media/porto/dscf0842-5209af1c7b18-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:24 20:48:44"
+      }
+    },
+    {
+      "id": "dscf0846-2",
+      "title": null,
+      "alt": "Porto photograph 8",
+      "sourceFile": "DSCF0846-2.jpg",
+      "printSource": "DSCF0846-2.jpg",
+      "assetKey": "dscf0846-2-1e812260af6f",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/porto/dscf0846-2-1e812260af6f-768.jpg",
+        "1600": "/media/porto/dscf0846-2-1e812260af6f-1600.jpg",
+        "2400": "/media/porto/dscf0846-2-1e812260af6f-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:24 20:52:15"
+      }
+    },
+    {
+      "id": "dscf0853",
+      "title": null,
+      "alt": "Porto photograph 9",
+      "sourceFile": "DSCF0853.jpg",
+      "printSource": "DSCF0853.jpg",
+      "assetKey": "dscf0853-89d234faf22a",
+      "order": 9,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4050,
+      "height": 6075,
+      "variants": {
+        "768": "/media/porto/dscf0853-89d234faf22a-768.jpg",
+        "1600": "/media/porto/dscf0853-89d234faf22a-1600.jpg",
+        "2400": "/media/porto/dscf0853-89d234faf22a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:24 20:56:17"
+      }
+    },
+    {
+      "id": "dscf0856",
+      "title": null,
+      "alt": "Porto photograph 10",
+      "sourceFile": "DSCF0856.jpg",
+      "printSource": "DSCF0856.jpg",
+      "assetKey": "dscf0856-666c0a722d27",
+      "order": 10,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 6582,
+      "height": 4388,
+      "variants": {
+        "768": "/media/porto/dscf0856-666c0a722d27-768.jpg",
+        "1600": "/media/porto/dscf0856-666c0a722d27-1600.jpg",
+        "2400": "/media/porto/dscf0856-666c0a722d27-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:24 20:58:32"
+      }
+    },
+    {
+      "id": "dscf0870",
+      "title": null,
+      "alt": "Porto photograph 11",
+      "sourceFile": "DSCF0870.jpg",
+      "printSource": "DSCF0870.jpg",
+      "assetKey": "dscf0870-041f10c17e1b",
+      "order": 11,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 3420,
+      "height": 5130,
+      "variants": {
+        "768": "/media/porto/dscf0870-041f10c17e1b-768.jpg",
+        "1600": "/media/porto/dscf0870-041f10c17e1b-1600.jpg",
+        "2400": "/media/porto/dscf0870-041f10c17e1b-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:24 21:06:41"
+      }
+    },
+    {
+      "id": "dscf0902",
+      "title": null,
+      "alt": "Porto photograph 12",
+      "sourceFile": "DSCF0902.jpg",
+      "printSource": "DSCF0902.jpg",
+      "assetKey": "dscf0902-cc181bca90ca",
+      "order": 12,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/porto/dscf0902-cc181bca90ca-768.jpg",
+        "1600": "/media/porto/dscf0902-cc181bca90ca-1600.jpg",
+        "2400": "/media/porto/dscf0902-cc181bca90ca-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:24 21:36:42"
+      }
+    },
+    {
+      "id": "dscf0916",
+      "title": null,
+      "alt": "Porto photograph 13",
+      "sourceFile": "DSCF0916.jpg",
+      "printSource": "DSCF0916.jpg",
+      "assetKey": "dscf0916-d46aa4356802",
+      "order": 13,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/porto/dscf0916-d46aa4356802-768.jpg",
+        "1600": "/media/porto/dscf0916-d46aa4356802-1600.jpg",
+        "2400": "/media/porto/dscf0916-d46aa4356802-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:24 21:44:49"
+      }
+    },
+    {
+      "id": "dscf0941",
+      "title": null,
+      "alt": "Porto photograph 14",
+      "sourceFile": "DSCF0941.jpg",
+      "printSource": "DSCF0941.jpg",
+      "assetKey": "dscf0941-ba095093fd56",
+      "order": 14,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/porto/dscf0941-ba095093fd56-768.jpg",
+        "1600": "/media/porto/dscf0941-ba095093fd56-1600.jpg",
+        "2400": "/media/porto/dscf0941-ba095093fd56-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:24 21:47:50"
+      }
+    },
+    {
+      "id": "dscf0958",
+      "title": null,
+      "alt": "Porto photograph 15",
+      "sourceFile": "DSCF0958.jpg",
+      "printSource": "DSCF0958.jpg",
+      "assetKey": "dscf0958-7201e518ee4a",
+      "order": 15,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/porto/dscf0958-7201e518ee4a-768.jpg",
+        "1600": "/media/porto/dscf0958-7201e518ee4a-1600.jpg",
+        "2400": "/media/porto/dscf0958-7201e518ee4a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:10 21:09:48"
+      }
+    },
+    {
+      "id": "dscf0960",
+      "title": null,
+      "alt": "Porto photograph 16",
+      "sourceFile": "DSCF0960.jpg",
+      "printSource": "DSCF0960.jpg",
+      "assetKey": "dscf0960-38eef0df7e1e",
+      "order": 16,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/porto/dscf0960-38eef0df7e1e-768.jpg",
+        "1600": "/media/porto/dscf0960-38eef0df7e1e-1600.jpg",
+        "2400": "/media/porto/dscf0960-38eef0df7e1e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:10 21:10:29"
+      }
+    },
+    {
+      "id": "dscf0975",
+      "title": null,
+      "alt": "Porto photograph 17",
+      "sourceFile": "DSCF0975.jpg",
+      "printSource": "DSCF0975.jpg",
+      "assetKey": "dscf0975-a5c50350fc7f",
+      "order": 17,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5034,
+      "height": 7551,
+      "variants": {
+        "768": "/media/porto/dscf0975-a5c50350fc7f-768.jpg",
+        "1600": "/media/porto/dscf0975-a5c50350fc7f-1600.jpg",
+        "2400": "/media/porto/dscf0975-a5c50350fc7f-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:10 21:12:12"
+      }
+    },
+    {
+      "id": "dscf0995",
+      "title": null,
+      "alt": "Porto photograph 18",
+      "sourceFile": "DSCF0995.jpg",
+      "printSource": "DSCF0995.jpg",
+      "assetKey": "dscf0995-e455d65e798b",
+      "order": 18,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5006,
+      "height": 7509,
+      "variants": {
+        "768": "/media/porto/dscf0995-e455d65e798b-768.jpg",
+        "1600": "/media/porto/dscf0995-e455d65e798b-1600.jpg",
+        "2400": "/media/porto/dscf0995-e455d65e798b-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:10 21:17:16"
+      }
+    },
+    {
+      "id": "dscf1000",
+      "title": null,
+      "alt": "Porto photograph 19",
+      "sourceFile": "DSCF1000.jpg",
+      "printSource": "DSCF1000.jpg",
+      "assetKey": "dscf1000-19ee1ca4b30e",
+      "order": 19,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4181,
+      "height": 6271,
+      "variants": {
+        "768": "/media/porto/dscf1000-19ee1ca4b30e-768.jpg",
+        "1600": "/media/porto/dscf1000-19ee1ca4b30e-1600.jpg",
+        "2400": "/media/porto/dscf1000-19ee1ca4b30e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:10 21:18:15"
+      }
+    },
+    {
+      "id": "dscf1013",
+      "title": null,
+      "alt": "Porto photograph 20",
+      "sourceFile": "DSCF1013.jpg",
+      "printSource": "DSCF1013.jpg",
+      "assetKey": "dscf1013-cb91ddb12488",
+      "order": 20,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/porto/dscf1013-cb91ddb12488-768.jpg",
+        "1600": "/media/porto/dscf1013-cb91ddb12488-1600.jpg",
+        "2400": "/media/porto/dscf1013-cb91ddb12488-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:10 21:19:24"
+      }
+    },
+    {
+      "id": "dscf1022",
+      "title": null,
+      "alt": "Porto photograph 21",
+      "sourceFile": "DSCF1022.jpg",
+      "printSource": "DSCF1022.jpg",
+      "assetKey": "dscf1022-45b7f83d4387",
+      "order": 21,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/porto/dscf1022-45b7f83d4387-768.jpg",
+        "1600": "/media/porto/dscf1022-45b7f83d4387-1600.jpg",
+        "2400": "/media/porto/dscf1022-45b7f83d4387-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:10 21:20:16"
+      }
+    },
+    {
+      "id": "dscf1047",
+      "title": null,
+      "alt": "Porto photograph 22",
+      "sourceFile": "DSCF1047.jpg",
+      "printSource": "DSCF1047.jpg",
+      "assetKey": "dscf1047-8226458788a9",
+      "order": 22,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/porto/dscf1047-8226458788a9-768.jpg",
+        "1600": "/media/porto/dscf1047-8226458788a9-1600.jpg",
+        "2400": "/media/porto/dscf1047-8226458788a9-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:10 21:25:43"
+      }
+    },
+    {
+      "id": "dscf1118",
+      "title": null,
+      "alt": "Porto photograph 23",
+      "sourceFile": "DSCF1118.jpg",
+      "printSource": "DSCF1118.jpg",
+      "assetKey": "dscf1118-9876a641072b",
+      "order": 23,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/porto/dscf1118-9876a641072b-768.jpg",
+        "1600": "/media/porto/dscf1118-9876a641072b-1600.jpg",
+        "2400": "/media/porto/dscf1118-9876a641072b-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:10 23:44:17"
+      }
+    },
+    {
+      "id": "dscf1155",
+      "title": null,
+      "alt": "Porto photograph 24",
+      "sourceFile": "DSCF1155.jpg",
+      "printSource": "DSCF1155.jpg",
+      "assetKey": "dscf1155-6cb39947984d",
+      "order": 24,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/porto/dscf1155-6cb39947984d-768.jpg",
+        "1600": "/media/porto/dscf1155-6cb39947984d-1600.jpg",
+        "2400": "/media/porto/dscf1155-6cb39947984d-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:10 23:50:02"
+      }
+    },
+    {
+      "id": "dscf1161-zagreus-lan-sep-12-121806-2024-conflict",
+      "title": null,
+      "alt": "Porto photograph 25",
+      "sourceFile": "DSCF1161_zagreus.lan_Sep-12-121806-2024_Conflict.jpg",
+      "printSource": "DSCF1161_zagreus.lan_Sep-12-121806-2024_Conflict.jpg",
+      "assetKey": "dscf1161-zagreus-lan-sep-12-121806-2024-conflict-e84cd70b1841",
+      "order": 25,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/porto/dscf1161-zagreus-lan-sep-12-121806-2024-conflict-e84cd70b1841-768.jpg",
+        "1600": "/media/porto/dscf1161-zagreus-lan-sep-12-121806-2024-conflict-e84cd70b1841-1600.jpg",
+        "2400": "/media/porto/dscf1161-zagreus-lan-sep-12-121806-2024-conflict-e84cd70b1841-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:10 23:51:14"
+      }
+    }
+  ]
+}

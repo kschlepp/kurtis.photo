@@ -1,0 +1,686 @@
+{
+  "slug": "aveiro-and-costa-nova",
+  "title": "Aveiro & Costa Nova",
+  "location": "Aveiro & Costa Nova, Portugal",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 40.6405,
+    "longitude": -8.7501
+  },
+  "coverImageId": "dscf0303",
+  "images": [
+    {
+      "id": "dscf0303",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 1",
+      "sourceFile": "DSCF0303.jpg",
+      "printSource": "DSCF0303.jpg",
+      "assetKey": "dscf0303-cb8755a60b4c",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5093,
+      "height": 7639,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0303-cb8755a60b4c-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0303-cb8755a60b4c-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0303-cb8755a60b4c-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:25:26"
+      }
+    },
+    {
+      "id": "dscf0313",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 2",
+      "sourceFile": "DSCF0313.jpg",
+      "printSource": "DSCF0313.jpg",
+      "assetKey": "dscf0313-cc02684cb93c",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0313-cc02684cb93c-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0313-cc02684cb93c-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0313-cc02684cb93c-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:27:03"
+      }
+    },
+    {
+      "id": "dscf0333",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 3",
+      "sourceFile": "DSCF0333.jpg",
+      "printSource": "DSCF0333.jpg",
+      "assetKey": "dscf0333-d55fea926ac7",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4337,
+      "height": 6506,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0333-d55fea926ac7-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0333-d55fea926ac7-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0333-d55fea926ac7-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:29:42"
+      }
+    },
+    {
+      "id": "dscf0334",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 4",
+      "sourceFile": "DSCF0334.jpg",
+      "printSource": "DSCF0334.jpg",
+      "assetKey": "dscf0334-dfa161d4f56b",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4297,
+      "height": 6446,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0334-dfa161d4f56b-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0334-dfa161d4f56b-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0334-dfa161d4f56b-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:30:01"
+      }
+    },
+    {
+      "id": "dscf0357",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 5",
+      "sourceFile": "DSCF0357.jpg",
+      "printSource": "DSCF0357.jpg",
+      "assetKey": "dscf0357-ca9d4f9566de",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0357-ca9d4f9566de-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0357-ca9d4f9566de-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0357-ca9d4f9566de-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:31:48"
+      }
+    },
+    {
+      "id": "dscf0363",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 6",
+      "sourceFile": "DSCF0363.jpg",
+      "printSource": "DSCF0363.jpg",
+      "assetKey": "dscf0363-7f249550af00",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0363-7f249550af00-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0363-7f249550af00-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0363-7f249550af00-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:32:08"
+      }
+    },
+    {
+      "id": "dscf0396",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 7",
+      "sourceFile": "DSCF0396.jpg",
+      "printSource": "DSCF0396.jpg",
+      "assetKey": "dscf0396-9ac977a91679",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0396-9ac977a91679-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0396-9ac977a91679-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0396-9ac977a91679-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:33:49"
+      }
+    },
+    {
+      "id": "dscf0422",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 8",
+      "sourceFile": "DSCF0422.jpg",
+      "printSource": "DSCF0422.jpg",
+      "assetKey": "dscf0422-05d8cde7012b",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0422-05d8cde7012b-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0422-05d8cde7012b-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0422-05d8cde7012b-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:36:19"
+      }
+    },
+    {
+      "id": "dscf0459",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 9",
+      "sourceFile": "DSCF0459.jpg",
+      "printSource": "DSCF0459.jpg",
+      "assetKey": "dscf0459-637308e46566",
+      "order": 9,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0459-637308e46566-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0459-637308e46566-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0459-637308e46566-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:38:21"
+      }
+    },
+    {
+      "id": "dscf0523",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 10",
+      "sourceFile": "DSCF0523.jpg",
+      "printSource": "DSCF0523.jpg",
+      "assetKey": "dscf0523-1870c8ea56c3",
+      "order": 10,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0523-1870c8ea56c3-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0523-1870c8ea56c3-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0523-1870c8ea56c3-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:42:25"
+      }
+    },
+    {
+      "id": "dscf0546",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 11",
+      "sourceFile": "DSCF0546.jpg",
+      "printSource": "DSCF0546.jpg",
+      "assetKey": "dscf0546-9175cfea9f67",
+      "order": 11,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0546-9175cfea9f67-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0546-9175cfea9f67-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0546-9175cfea9f67-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:43:19"
+      }
+    },
+    {
+      "id": "dscf0551",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 12",
+      "sourceFile": "DSCF0551.jpg",
+      "printSource": "DSCF0551.jpg",
+      "assetKey": "dscf0551-62c2dd8d768d",
+      "order": 12,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0551-62c2dd8d768d-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0551-62c2dd8d768d-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0551-62c2dd8d768d-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:43:53"
+      }
+    },
+    {
+      "id": "dscf0555",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 13",
+      "sourceFile": "DSCF0555.jpg",
+      "printSource": "DSCF0555.jpg",
+      "assetKey": "dscf0555-7ce28855d10f",
+      "order": 13,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0555-7ce28855d10f-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0555-7ce28855d10f-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0555-7ce28855d10f-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:44:10"
+      }
+    },
+    {
+      "id": "dscf0565",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 14",
+      "sourceFile": "DSCF0565.jpg",
+      "printSource": "DSCF0565.jpg",
+      "assetKey": "dscf0565-ddd06f620292",
+      "order": 14,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0565-ddd06f620292-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0565-ddd06f620292-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0565-ddd06f620292-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:45:18"
+      }
+    },
+    {
+      "id": "dscf0581",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 15",
+      "sourceFile": "DSCF0581.jpg",
+      "printSource": "DSCF0581.jpg",
+      "assetKey": "dscf0581-6d0bc4b7de73",
+      "order": 15,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5067,
+      "height": 7601,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0581-6d0bc4b7de73-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0581-6d0bc4b7de73-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0581-6d0bc4b7de73-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:17 14:50:15"
+      }
+    },
+    {
+      "id": "dscf0595",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 16",
+      "sourceFile": "DSCF0595.jpg",
+      "printSource": "DSCF0595.jpg",
+      "assetKey": "dscf0595-5d5967748edc",
+      "order": 16,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0595-5d5967748edc-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0595-5d5967748edc-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0595-5d5967748edc-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:17 14:56:52"
+      }
+    },
+    {
+      "id": "dscf0604",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 17",
+      "sourceFile": "DSCF0604.jpg",
+      "printSource": "DSCF0604.jpg",
+      "assetKey": "dscf0604-62b785731a18",
+      "order": 17,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0604-62b785731a18-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0604-62b785731a18-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0604-62b785731a18-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:17 15:07:39"
+      }
+    },
+    {
+      "id": "dscf0607",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 18",
+      "sourceFile": "DSCF0607.jpg",
+      "printSource": "DSCF0607.jpg",
+      "assetKey": "dscf0607-d8e90992ab09",
+      "order": 18,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0607-d8e90992ab09-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0607-d8e90992ab09-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0607-d8e90992ab09-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:17 15:08:12"
+      }
+    },
+    {
+      "id": "dscf0651",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 19",
+      "sourceFile": "DSCF0651.jpg",
+      "printSource": "DSCF0651.jpg",
+      "assetKey": "dscf0651-4724bda1a592",
+      "order": 19,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5488,
+      "height": 3659,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0651-4724bda1a592-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0651-4724bda1a592-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0651-4724bda1a592-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:20 23:55:29"
+      }
+    },
+    {
+      "id": "dscf0657",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 20",
+      "sourceFile": "DSCF0657.jpg",
+      "printSource": "DSCF0657.jpg",
+      "assetKey": "dscf0657-111f5e2fc10b",
+      "order": 20,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7459,
+      "height": 4973,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0657-111f5e2fc10b-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0657-111f5e2fc10b-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0657-111f5e2fc10b-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:21 00:01:34"
+      }
+    },
+    {
+      "id": "dscf0664",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 21",
+      "sourceFile": "DSCF0664.jpg",
+      "printSource": "DSCF0664.jpg",
+      "assetKey": "dscf0664-d769dd7e38fe",
+      "order": 21,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0664-d769dd7e38fe-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0664-d769dd7e38fe-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0664-d769dd7e38fe-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:21 00:04:48"
+      }
+    },
+    {
+      "id": "dscf0695",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 22",
+      "sourceFile": "DSCF0695.jpg",
+      "printSource": "DSCF0695.jpg",
+      "assetKey": "dscf0695-e42491fca6bb",
+      "order": 22,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0695-e42491fca6bb-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0695-e42491fca6bb-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0695-e42491fca6bb-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:21 00:17:59"
+      }
+    },
+    {
+      "id": "dscf0705",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 23",
+      "sourceFile": "DSCF0705.jpg",
+      "printSource": "DSCF0705.jpg",
+      "assetKey": "dscf0705-4c976200948e",
+      "order": 23,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0705-4c976200948e-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0705-4c976200948e-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0705-4c976200948e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:21 00:19:55"
+      }
+    },
+    {
+      "id": "dscf0720",
+      "title": null,
+      "alt": "Aveiro & Costa Nova photograph 24",
+      "sourceFile": "DSCF0720.jpg",
+      "printSource": "DSCF0720.jpg",
+      "assetKey": "dscf0720-3383d51c9cf4",
+      "order": 24,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/aveiro-and-costa-nova/dscf0720-3383d51c9cf4-768.jpg",
+        "1600": "/media/aveiro-and-costa-nova/dscf0720-3383d51c9cf4-1600.jpg",
+        "2400": "/media/aveiro-and-costa-nova/dscf0720-3383d51c9cf4-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:21 00:28:18"
+      }
+    }
+  ]
+}

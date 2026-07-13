@@ -25,6 +25,8 @@ const sourceDirectory = path.join(root, "photo-intake", "places", collectionSlug
 const publicDirectory = path.join(root, "public", "media", collectionSlug);
 const workDirectory = path.join(root, ".photo-work", collectionSlug);
 const manifestDirectory = path.join(root, "content", "generated");
+const collectionDetailsPath = path.join(root, "content", "collection-details.json");
+const manifestPath = path.join(manifestDirectory, `${collectionSlug}.json`);
 const imageSizes = [768, 1600, 2400];
 const jpegtran = "/opt/homebrew/bin/jpegtran";
 
@@ -91,6 +93,36 @@ async function createVariant(sourcePath, assetKey, longestEdge) {
   return `/media/${collectionSlug}/${assetKey}-${longestEdge}.jpg`;
 }
 
+async function readJson(pathname, fallback) {
+  try {
+    return JSON.parse(await readFile(pathname, "utf8"));
+  } catch (error) {
+    if (error.code === "ENOENT") return fallback;
+    throw error;
+  }
+}
+
+function captureDateValue(image) {
+  return image.metadata?.captureDate ?? "9999-99-99";
+}
+
+function sortPhotos(left, right) {
+  return captureDateValue(left).localeCompare(captureDateValue(right))
+    || left.sourceFile.localeCompare(right.sourceFile);
+}
+
+const collectionDetails = await readJson(collectionDetailsPath, {});
+const collection = collectionDetails[collectionSlug];
+
+if (!collection) {
+  console.error(`No collection details found for ${collectionSlug} in ${collectionDetailsPath}`);
+  process.exit(1);
+}
+
+const previousManifest = await readJson(manifestPath, null);
+const previousPhotos = previousManifest?.images ?? [];
+const previousBySource = new Map(previousPhotos.map((photo) => [photo.sourceFile, photo]));
+
 await rm(publicDirectory, { recursive: true, force: true });
 await mkdir(publicDirectory, { recursive: true });
 await mkdir(workDirectory, { recursive: true });
@@ -105,9 +137,10 @@ if (files.length === 0) {
   process.exit(1);
 }
 
-const images = [];
+const preparedImages = [];
 for (const [index, filename] of files.entries()) {
   const sourcePath = path.join(sourceDirectory, filename);
+  const previous = previousBySource.get(filename);
   const id = publicId(filename);
   const hash = await contentHash(sourcePath);
   const assetKey = `${id}-${hash}`;
@@ -118,45 +151,54 @@ for (const [index, filename] of files.entries()) {
     variants[String(size)] = await createVariant(sourcePath, assetKey, size);
   }
 
-  images.push({
+  preparedImages.push({
     id,
-    title: null,
-    alt: `${collectionSlug.replace(/-/g, " ")} photograph ${index + 1}`,
+    title: previous?.title ?? null,
+    alt: previous?.alt ?? `${collection.title} photograph ${index + 1}`,
     sourceFile: filename,
     printSource: filename,
     assetKey,
-    order: index + 1,
-    sellable: true,
-    releaseStatus: "not-applicable",
+    order: 0,
+    sellable: false,
+    releaseStatus: previous?.releaseStatus ?? "not-applicable",
     width: metadata.width,
     height: metadata.height,
     variants,
     metadata: {
-      cameraMake: metadata.cameraMake,
-      cameraBody: metadata.cameraBody,
-      lens: null,
-      focalLength: null,
-      aperture: null,
-      shutterSpeed: null,
-      iso: null,
-      captureDate: metadata.captureDate,
+      cameraMake: metadata.cameraMake ?? previous?.metadata?.cameraMake ?? null,
+      cameraBody: metadata.cameraBody ?? previous?.metadata?.cameraBody ?? null,
+      lens: previous?.metadata?.lens ?? null,
+      focalLength: previous?.metadata?.focalLength ?? null,
+      aperture: previous?.metadata?.aperture ?? null,
+      shutterSpeed: previous?.metadata?.shutterSpeed ?? null,
+      iso: previous?.metadata?.iso ?? null,
+      captureDate: metadata.captureDate ?? previous?.metadata?.captureDate ?? null,
     },
   });
 }
 
+const intakeFilenames = new Set(files);
+const images = [
+  ...previousPhotos.filter((photo) => !intakeFilenames.has(photo.sourceFile)),
+  ...preparedImages,
+]
+  .sort(sortPhotos)
+  .map((photo, index) => ({ ...photo, order: index + 1 }));
+
+const preservedCover = previousManifest?.coverImageId;
+const coverImageId = images.some((image) => image.id === preservedCover)
+  ? preservedCover
+  : images.find((image) => image.width / image.height > 1.6)?.id ?? images[0].id;
+
 const manifest = {
   slug: collectionSlug,
-  title: "Yosemite '25",
-  location: "Yosemite National Park, California",
-  note: null,
-  featured: true,
-  coverImageId: images.find((image) => image.width / image.height > 1.6)?.id ?? images[0].id,
-  coordinates: { latitude: 37.8651, longitude: -119.5383 },
+  ...collection,
+  coverImageId,
   images,
 };
 
 await writeFile(
-  path.join(manifestDirectory, `${collectionSlug}.json`),
+  manifestPath,
   `${JSON.stringify(manifest, null, 2)}\n`,
 );
 

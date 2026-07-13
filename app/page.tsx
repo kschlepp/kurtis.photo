@@ -6,8 +6,8 @@ import { PlacesMap } from "@/components/places-map";
 import { collections, getCover } from "@/lib/catalog";
 
 export default function Home() {
-  const yosemite = collections[0];
-  const cover = getCover(yosemite);
+  const featuredCollection = collections.find((collection) => collection.featured) ?? collections[0];
+  const cover = getCover(featuredCollection);
   return (
     <main>
       <div className="page-shell home-shell">
@@ -22,9 +22,9 @@ export default function Home() {
               <Link className="button button-outline" href="/inquire">Let’s take some photos</Link>
             </div>
           </div>
-          <Link className="hero-image" href={`/places/${yosemite.slug}`}>
+          <Link className="hero-image" href={`/places/${featuredCollection.slug}`}>
             <img src={cover.variants["2400"]} alt={cover.alt} />
-            <span className="image-caption"><em>{yosemite.title}</em><small>{yosemite.location}</small></span>
+            <span className="image-caption"><em>{featuredCollection.title}</em><small>{featuredCollection.location}</small></span>
           </Link>
         </section>
         <section className="featured-section" aria-labelledby="featured-title">
@@ -34,19 +34,19 @@ export default function Home() {
             <p>Golden trees, cold granite, and a few days that stayed with me.</p>
           </div>
           <div className="feature-grid">
-            {yosemite.images.slice(0, 3).map((photo) => (
-              <Link key={photo.id} className="feature-image" href={`/places/${yosemite.slug}/${photo.id}`}>
+            {featuredCollection.images.slice(0, 3).map((photo) => (
+              <Link key={photo.id} className="feature-image" href={`/places/${featuredCollection.slug}/${photo.id}`}>
                 <img src={photo.variants["1600"]} alt={photo.alt} loading="lazy" />
               </Link>
             ))}
           </div>
-          <Link className="inline-link" href={`/places/${yosemite.slug}`}>See the full collection <span>↗</span></Link>
+          <Link className="inline-link" href={`/places/${featuredCollection.slug}`}>See the full collection <span>↗</span></Link>
         </section>
         <section className="places-teaser">
           <div>
             <p className="eyebrow">Places, near and far</p>
             <h2>An archive built one trip at a time.</h2>
-            <p>There’s one place here now. The rest will appear as the archive grows, always with an alphabetical index and a map view to wander through.</p>
+            <p>A growing collection of places, with an alphabetical index and a map view to wander through.</p>
             <Link className="inline-link" href="/places">Browse places <span>↗</span></Link>
           </div>
           <PlacesMap compact />

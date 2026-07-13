@@ -1,0 +1,58 @@
+{
+  "algarve": {
+    "title": "Algarve",
+    "location": "Algarve, Portugal",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 37.0179, "longitude": -7.9308 }
+  },
+  "aveiro-and-costa-nova": {
+    "title": "Aveiro & Costa Nova",
+    "location": "Aveiro & Costa Nova, Portugal",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 40.6405, "longitude": -8.7501 }
+  },
+  "lisbon": {
+    "title": "Lisbon",
+    "location": "Lisbon, Portugal",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 38.7223, "longitude": -9.1393 }
+  },
+  "porto": {
+    "title": "Porto",
+    "location": "Porto, Portugal",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 41.1579, "longitude": -8.6291 }
+  },
+  "san-diego": {
+    "title": "San Diego",
+    "location": "San Diego, California",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 32.7157, "longitude": -117.1611 }
+  },
+  "seattle": {
+    "title": "Seattle",
+    "location": "Seattle, Washington",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 47.6062, "longitude": -122.3321 }
+  },
+  "sintra": {
+    "title": "Sintra",
+    "location": "Sintra, Portugal",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 38.7980, "longitude": -9.3904 }
+  },
+  "yosemite": {
+    "title": "Yosemite '25",
+    "location": "Yosemite National Park, California",
+    "note": null,
+    "featured": true,
+    "coordinates": { "latitude": 37.8651, "longitude": -119.5383 }
+  }
+}

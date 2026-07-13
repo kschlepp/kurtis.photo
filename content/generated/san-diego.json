@@ -1,0 +1,98 @@
+{
+  "slug": "san-diego",
+  "title": "San Diego",
+  "location": "San Diego, California",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 32.7157,
+    "longitude": -117.1611
+  },
+  "coverImageId": "dscf1586",
+  "images": [
+    {
+      "id": "dscf1586",
+      "title": null,
+      "alt": "San Diego photograph 3",
+      "sourceFile": "DSCF1586.jpg",
+      "printSource": "DSCF1586.jpg",
+      "assetKey": "dscf1586-bb66f91097ee",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/san-diego/dscf1586-bb66f91097ee-768.jpg",
+        "1600": "/media/san-diego/dscf1586-bb66f91097ee-1600.jpg",
+        "2400": "/media/san-diego/dscf1586-bb66f91097ee-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:09 11:42:05"
+      }
+    },
+    {
+      "id": "dscf1300",
+      "title": null,
+      "alt": "San Diego photograph 1",
+      "sourceFile": "DSCF1300.jpg",
+      "printSource": "DSCF1300.jpg",
+      "assetKey": "dscf1300-02918228b7be",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/san-diego/dscf1300-02918228b7be-768.jpg",
+        "1600": "/media/san-diego/dscf1300-02918228b7be-1600.jpg",
+        "2400": "/media/san-diego/dscf1300-02918228b7be-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:10 19:47:37"
+      }
+    },
+    {
+      "id": "dscf1324",
+      "title": null,
+      "alt": "San Diego photograph 2",
+      "sourceFile": "DSCF1324.jpg",
+      "printSource": "DSCF1324.jpg",
+      "assetKey": "dscf1324-775ad4d54bc1",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/san-diego/dscf1324-775ad4d54bc1-768.jpg",
+        "1600": "/media/san-diego/dscf1324-775ad4d54bc1-1600.jpg",
+        "2400": "/media/san-diego/dscf1324-775ad4d54bc1-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:10 19:48:47"
+      }
+    }
+  ]
+}

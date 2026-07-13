@@ -1,0 +1,1078 @@
+{
+  "slug": "lisbon",
+  "title": "Lisbon",
+  "location": "Lisbon, Portugal",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 38.7223,
+    "longitude": -9.1393
+  },
+  "coverImageId": "dscf9478",
+  "images": [
+    {
+      "id": "dscf9478",
+      "title": null,
+      "alt": "Lisbon photograph 15",
+      "sourceFile": "DSCF9478.jpg",
+      "printSource": "DSCF9478.jpg",
+      "assetKey": "dscf9478-20aa3d0fbb8c",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lisbon/dscf9478-20aa3d0fbb8c-768.jpg",
+        "1600": "/media/lisbon/dscf9478-20aa3d0fbb8c-1600.jpg",
+        "2400": "/media/lisbon/dscf9478-20aa3d0fbb8c-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 09:42:43"
+      }
+    },
+    {
+      "id": "dscf9488",
+      "title": null,
+      "alt": "Lisbon photograph 16",
+      "sourceFile": "DSCF9488.jpg",
+      "printSource": "DSCF9488.jpg",
+      "assetKey": "dscf9488-3d9796f68d94",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lisbon/dscf9488-3d9796f68d94-768.jpg",
+        "1600": "/media/lisbon/dscf9488-3d9796f68d94-1600.jpg",
+        "2400": "/media/lisbon/dscf9488-3d9796f68d94-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 09:48:11"
+      }
+    },
+    {
+      "id": "dscf9497",
+      "title": null,
+      "alt": "Lisbon photograph 17",
+      "sourceFile": "DSCF9497.jpg",
+      "printSource": "DSCF9497.jpg",
+      "assetKey": "dscf9497-2e7c796fd8e9",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/lisbon/dscf9497-2e7c796fd8e9-768.jpg",
+        "1600": "/media/lisbon/dscf9497-2e7c796fd8e9-1600.jpg",
+        "2400": "/media/lisbon/dscf9497-2e7c796fd8e9-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 09:55:02"
+      }
+    },
+    {
+      "id": "dscf9503",
+      "title": null,
+      "alt": "Lisbon photograph 18",
+      "sourceFile": "DSCF9503.jpg",
+      "printSource": "DSCF9503.jpg",
+      "assetKey": "dscf9503-34e07732566e",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/lisbon/dscf9503-34e07732566e-768.jpg",
+        "1600": "/media/lisbon/dscf9503-34e07732566e-1600.jpg",
+        "2400": "/media/lisbon/dscf9503-34e07732566e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 09:56:38"
+      }
+    },
+    {
+      "id": "dscf9505",
+      "title": null,
+      "alt": "Lisbon photograph 19",
+      "sourceFile": "DSCF9505.jpg",
+      "printSource": "DSCF9505.jpg",
+      "assetKey": "dscf9505-58005414dce9",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lisbon/dscf9505-58005414dce9-768.jpg",
+        "1600": "/media/lisbon/dscf9505-58005414dce9-1600.jpg",
+        "2400": "/media/lisbon/dscf9505-58005414dce9-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 09:57:55"
+      }
+    },
+    {
+      "id": "dscf9526",
+      "title": null,
+      "alt": "Lisbon photograph 20",
+      "sourceFile": "DSCF9526.jpg",
+      "printSource": "DSCF9526.jpg",
+      "assetKey": "dscf9526-b18f5adaa3ba",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 3865,
+      "height": 5798,
+      "variants": {
+        "768": "/media/lisbon/dscf9526-b18f5adaa3ba-768.jpg",
+        "1600": "/media/lisbon/dscf9526-b18f5adaa3ba-1600.jpg",
+        "2400": "/media/lisbon/dscf9526-b18f5adaa3ba-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 10:02:34"
+      }
+    },
+    {
+      "id": "dscf9527",
+      "title": null,
+      "alt": "Lisbon photograph 21",
+      "sourceFile": "DSCF9527.jpg",
+      "printSource": "DSCF9527.jpg",
+      "assetKey": "dscf9527-9a79a6207cd6",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lisbon/dscf9527-9a79a6207cd6-768.jpg",
+        "1600": "/media/lisbon/dscf9527-9a79a6207cd6-1600.jpg",
+        "2400": "/media/lisbon/dscf9527-9a79a6207cd6-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 10:03:05"
+      }
+    },
+    {
+      "id": "dscf9532",
+      "title": null,
+      "alt": "Lisbon photograph 22",
+      "sourceFile": "DSCF9532.jpg",
+      "printSource": "DSCF9532.jpg",
+      "assetKey": "dscf9532-77e1768af85c",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4432,
+      "height": 6648,
+      "variants": {
+        "768": "/media/lisbon/dscf9532-77e1768af85c-768.jpg",
+        "1600": "/media/lisbon/dscf9532-77e1768af85c-1600.jpg",
+        "2400": "/media/lisbon/dscf9532-77e1768af85c-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 10:04:44"
+      }
+    },
+    {
+      "id": "dscf9533",
+      "title": null,
+      "alt": "Lisbon photograph 23",
+      "sourceFile": "DSCF9533.jpg",
+      "printSource": "DSCF9533.jpg",
+      "assetKey": "dscf9533-3ac3e2549741",
+      "order": 9,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/lisbon/dscf9533-3ac3e2549741-768.jpg",
+        "1600": "/media/lisbon/dscf9533-3ac3e2549741-1600.jpg",
+        "2400": "/media/lisbon/dscf9533-3ac3e2549741-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 10:04:56"
+      }
+    },
+    {
+      "id": "dscf9554",
+      "title": null,
+      "alt": "Lisbon photograph 24",
+      "sourceFile": "DSCF9554.jpg",
+      "printSource": "DSCF9554.jpg",
+      "assetKey": "dscf9554-9f7ae8a6daa6",
+      "order": 10,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lisbon/dscf9554-9f7ae8a6daa6-768.jpg",
+        "1600": "/media/lisbon/dscf9554-9f7ae8a6daa6-1600.jpg",
+        "2400": "/media/lisbon/dscf9554-9f7ae8a6daa6-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 10:12:59"
+      }
+    },
+    {
+      "id": "dscf9557",
+      "title": null,
+      "alt": "Lisbon photograph 25",
+      "sourceFile": "DSCF9557.jpg",
+      "printSource": "DSCF9557.jpg",
+      "assetKey": "dscf9557-ba483694986e",
+      "order": 11,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/lisbon/dscf9557-ba483694986e-768.jpg",
+        "1600": "/media/lisbon/dscf9557-ba483694986e-1600.jpg",
+        "2400": "/media/lisbon/dscf9557-ba483694986e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 10:13:51"
+      }
+    },
+    {
+      "id": "dscf9570",
+      "title": null,
+      "alt": "Lisbon photograph 26",
+      "sourceFile": "DSCF9570.jpg",
+      "printSource": "DSCF9570.jpg",
+      "assetKey": "dscf9570-00ff97829052",
+      "order": 12,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/lisbon/dscf9570-00ff97829052-768.jpg",
+        "1600": "/media/lisbon/dscf9570-00ff97829052-1600.jpg",
+        "2400": "/media/lisbon/dscf9570-00ff97829052-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 10:18:30"
+      }
+    },
+    {
+      "id": "dscf9626",
+      "title": null,
+      "alt": "Lisbon photograph 27",
+      "sourceFile": "DSCF9626.jpg",
+      "printSource": "DSCF9626.jpg",
+      "assetKey": "dscf9626-d75a49bac799",
+      "order": 13,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lisbon/dscf9626-d75a49bac799-768.jpg",
+        "1600": "/media/lisbon/dscf9626-d75a49bac799-1600.jpg",
+        "2400": "/media/lisbon/dscf9626-d75a49bac799-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 10:44:45"
+      }
+    },
+    {
+      "id": "dscf9860",
+      "title": null,
+      "alt": "Lisbon photograph 28",
+      "sourceFile": "DSCF9860.jpg",
+      "printSource": "DSCF9860.jpg",
+      "assetKey": "dscf9860-b26f621f7c41",
+      "order": 14,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lisbon/dscf9860-b26f621f7c41-768.jpg",
+        "1600": "/media/lisbon/dscf9860-b26f621f7c41-1600.jpg",
+        "2400": "/media/lisbon/dscf9860-b26f621f7c41-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:07 19:41:27"
+      }
+    },
+    {
+      "id": "dscf9882",
+      "title": null,
+      "alt": "Lisbon photograph 29",
+      "sourceFile": "DSCF9882.jpg",
+      "printSource": "DSCF9882.jpg",
+      "assetKey": "dscf9882-dda6144d6ed6",
+      "order": 15,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5643,
+      "height": 3762,
+      "variants": {
+        "768": "/media/lisbon/dscf9882-dda6144d6ed6-768.jpg",
+        "1600": "/media/lisbon/dscf9882-dda6144d6ed6-1600.jpg",
+        "2400": "/media/lisbon/dscf9882-dda6144d6ed6-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:07 19:58:59"
+      }
+    },
+    {
+      "id": "dscf9888",
+      "title": null,
+      "alt": "Lisbon photograph 30",
+      "sourceFile": "DSCF9888.jpg",
+      "printSource": "DSCF9888.jpg",
+      "assetKey": "dscf9888-72bcb31e8c28",
+      "order": 16,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lisbon/dscf9888-72bcb31e8c28-768.jpg",
+        "1600": "/media/lisbon/dscf9888-72bcb31e8c28-1600.jpg",
+        "2400": "/media/lisbon/dscf9888-72bcb31e8c28-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:07 23:15:20"
+      }
+    },
+    {
+      "id": "dscf9890",
+      "title": null,
+      "alt": "Lisbon photograph 31",
+      "sourceFile": "DSCF9890.jpg",
+      "printSource": "DSCF9890.jpg",
+      "assetKey": "dscf9890-b96e7e3a610a",
+      "order": 17,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lisbon/dscf9890-b96e7e3a610a-768.jpg",
+        "1600": "/media/lisbon/dscf9890-b96e7e3a610a-1600.jpg",
+        "2400": "/media/lisbon/dscf9890-b96e7e3a610a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:07 23:16:27"
+      }
+    },
+    {
+      "id": "dscf9900",
+      "title": null,
+      "alt": "Lisbon photograph 32",
+      "sourceFile": "DSCF9900.jpg",
+      "printSource": "DSCF9900.jpg",
+      "assetKey": "dscf9900-eb0092dc0bbd",
+      "order": 18,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/lisbon/dscf9900-eb0092dc0bbd-768.jpg",
+        "1600": "/media/lisbon/dscf9900-eb0092dc0bbd-1600.jpg",
+        "2400": "/media/lisbon/dscf9900-eb0092dc0bbd-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:07 23:18:08"
+      }
+    },
+    {
+      "id": "dscf9918",
+      "title": null,
+      "alt": "Lisbon photograph 33",
+      "sourceFile": "DSCF9918.jpg",
+      "printSource": "DSCF9918.jpg",
+      "assetKey": "dscf9918-9786d75c82b8",
+      "order": 19,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5980,
+      "height": 3987,
+      "variants": {
+        "768": "/media/lisbon/dscf9918-9786d75c82b8-768.jpg",
+        "1600": "/media/lisbon/dscf9918-9786d75c82b8-1600.jpg",
+        "2400": "/media/lisbon/dscf9918-9786d75c82b8-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:07 23:21:26"
+      }
+    },
+    {
+      "id": "dscf9919",
+      "title": null,
+      "alt": "Lisbon photograph 34",
+      "sourceFile": "DSCF9919.jpg",
+      "printSource": "DSCF9919.jpg",
+      "assetKey": "dscf9919-98660f4c1fd6",
+      "order": 20,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7168,
+      "height": 4779,
+      "variants": {
+        "768": "/media/lisbon/dscf9919-98660f4c1fd6-768.jpg",
+        "1600": "/media/lisbon/dscf9919-98660f4c1fd6-1600.jpg",
+        "2400": "/media/lisbon/dscf9919-98660f4c1fd6-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:07 23:22:50"
+      }
+    },
+    {
+      "id": "dscf9934",
+      "title": null,
+      "alt": "Lisbon photograph 35",
+      "sourceFile": "DSCF9934.jpg",
+      "printSource": "DSCF9934.jpg",
+      "assetKey": "dscf9934-e26b9d203245",
+      "order": 21,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5083,
+      "height": 7624,
+      "variants": {
+        "768": "/media/lisbon/dscf9934-e26b9d203245-768.jpg",
+        "1600": "/media/lisbon/dscf9934-e26b9d203245-1600.jpg",
+        "2400": "/media/lisbon/dscf9934-e26b9d203245-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:07 23:25:59"
+      }
+    },
+    {
+      "id": "dscf9956",
+      "title": null,
+      "alt": "Lisbon photograph 36",
+      "sourceFile": "DSCF9956.jpg",
+      "printSource": "DSCF9956.jpg",
+      "assetKey": "dscf9956-3cc987e1804b",
+      "order": 22,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lisbon/dscf9956-3cc987e1804b-768.jpg",
+        "1600": "/media/lisbon/dscf9956-3cc987e1804b-1600.jpg",
+        "2400": "/media/lisbon/dscf9956-3cc987e1804b-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:07 23:30:39"
+      }
+    },
+    {
+      "id": "dscf9962",
+      "title": null,
+      "alt": "Lisbon photograph 37",
+      "sourceFile": "DSCF9962.jpg",
+      "printSource": "DSCF9962.jpg",
+      "assetKey": "dscf9962-1dbd84130bd1",
+      "order": 23,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/lisbon/dscf9962-1dbd84130bd1-768.jpg",
+        "1600": "/media/lisbon/dscf9962-1dbd84130bd1-1600.jpg",
+        "2400": "/media/lisbon/dscf9962-1dbd84130bd1-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:07 23:31:23"
+      }
+    },
+    {
+      "id": "dscf9982",
+      "title": null,
+      "alt": "Lisbon photograph 38",
+      "sourceFile": "DSCF9982.jpg",
+      "printSource": "DSCF9982.jpg",
+      "assetKey": "dscf9982-72147130f094",
+      "order": 24,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lisbon/dscf9982-72147130f094-768.jpg",
+        "1600": "/media/lisbon/dscf9982-72147130f094-1600.jpg",
+        "2400": "/media/lisbon/dscf9982-72147130f094-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:07 23:33:54"
+      }
+    },
+    {
+      "id": "dscf0003",
+      "title": null,
+      "alt": "Lisbon photograph 1",
+      "sourceFile": "DSCF0003.jpg",
+      "printSource": "DSCF0003.jpg",
+      "assetKey": "dscf0003-8e1d3f7c28cb",
+      "order": 25,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5880,
+      "height": 3920,
+      "variants": {
+        "768": "/media/lisbon/dscf0003-8e1d3f7c28cb-768.jpg",
+        "1600": "/media/lisbon/dscf0003-8e1d3f7c28cb-1600.jpg",
+        "2400": "/media/lisbon/dscf0003-8e1d3f7c28cb-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:07 23:39:04"
+      }
+    },
+    {
+      "id": "dscf0015",
+      "title": null,
+      "alt": "Lisbon photograph 2",
+      "sourceFile": "DSCF0015.jpg",
+      "printSource": "DSCF0015.jpg",
+      "assetKey": "dscf0015-c19b3ce7b1eb",
+      "order": 26,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lisbon/dscf0015-c19b3ce7b1eb-768.jpg",
+        "1600": "/media/lisbon/dscf0015-c19b3ce7b1eb-1600.jpg",
+        "2400": "/media/lisbon/dscf0015-c19b3ce7b1eb-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:07 23:43:03"
+      }
+    },
+    {
+      "id": "dscf0047",
+      "title": null,
+      "alt": "Lisbon photograph 3",
+      "sourceFile": "DSCF0047.jpg",
+      "printSource": "DSCF0047.jpg",
+      "assetKey": "dscf0047-c8823150840e",
+      "order": 27,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lisbon/dscf0047-c8823150840e-768.jpg",
+        "1600": "/media/lisbon/dscf0047-c8823150840e-1600.jpg",
+        "2400": "/media/lisbon/dscf0047-c8823150840e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 10:15:11"
+      }
+    },
+    {
+      "id": "dscf0060",
+      "title": null,
+      "alt": "Lisbon photograph 4",
+      "sourceFile": "DSCF0060.jpg",
+      "printSource": "DSCF0060.jpg",
+      "assetKey": "dscf0060-c020cf1199cb",
+      "order": 28,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4297,
+      "height": 6445,
+      "variants": {
+        "768": "/media/lisbon/dscf0060-c020cf1199cb-768.jpg",
+        "1600": "/media/lisbon/dscf0060-c020cf1199cb-1600.jpg",
+        "2400": "/media/lisbon/dscf0060-c020cf1199cb-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 10:16:09"
+      }
+    },
+    {
+      "id": "dscf0075",
+      "title": null,
+      "alt": "Lisbon photograph 5",
+      "sourceFile": "DSCF0075.jpg",
+      "printSource": "DSCF0075.jpg",
+      "assetKey": "dscf0075-467366854afc",
+      "order": 29,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4325,
+      "height": 6487,
+      "variants": {
+        "768": "/media/lisbon/dscf0075-467366854afc-768.jpg",
+        "1600": "/media/lisbon/dscf0075-467366854afc-1600.jpg",
+        "2400": "/media/lisbon/dscf0075-467366854afc-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 10:27:44"
+      }
+    },
+    {
+      "id": "dscf0105",
+      "title": null,
+      "alt": "Lisbon photograph 6",
+      "sourceFile": "DSCF0105.jpg",
+      "printSource": "DSCF0105.jpg",
+      "assetKey": "dscf0105-dd7f6af93066",
+      "order": 30,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lisbon/dscf0105-dd7f6af93066-768.jpg",
+        "1600": "/media/lisbon/dscf0105-dd7f6af93066-1600.jpg",
+        "2400": "/media/lisbon/dscf0105-dd7f6af93066-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 10:29:26"
+      }
+    },
+    {
+      "id": "dscf0196",
+      "title": null,
+      "alt": "Lisbon photograph 7",
+      "sourceFile": "DSCF0196.jpg",
+      "printSource": "DSCF0196.jpg",
+      "assetKey": "dscf0196-d8f913fa92d1",
+      "order": 31,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/lisbon/dscf0196-d8f913fa92d1-768.jpg",
+        "1600": "/media/lisbon/dscf0196-d8f913fa92d1-1600.jpg",
+        "2400": "/media/lisbon/dscf0196-d8f913fa92d1-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 10:36:18"
+      }
+    },
+    {
+      "id": "dscf0211",
+      "title": null,
+      "alt": "Lisbon photograph 8",
+      "sourceFile": "DSCF0211.jpg",
+      "printSource": "DSCF0211.jpg",
+      "assetKey": "dscf0211-a5e84887fec0",
+      "order": 32,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/lisbon/dscf0211-a5e84887fec0-768.jpg",
+        "1600": "/media/lisbon/dscf0211-a5e84887fec0-1600.jpg",
+        "2400": "/media/lisbon/dscf0211-a5e84887fec0-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 10:38:05"
+      }
+    },
+    {
+      "id": "dscf0214",
+      "title": null,
+      "alt": "Lisbon photograph 9",
+      "sourceFile": "DSCF0214.jpg",
+      "printSource": "DSCF0214.jpg",
+      "assetKey": "dscf0214-2556ee11f66b",
+      "order": 33,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7451,
+      "height": 4967,
+      "variants": {
+        "768": "/media/lisbon/dscf0214-2556ee11f66b-768.jpg",
+        "1600": "/media/lisbon/dscf0214-2556ee11f66b-1600.jpg",
+        "2400": "/media/lisbon/dscf0214-2556ee11f66b-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 10:38:31"
+      }
+    },
+    {
+      "id": "dscf0226",
+      "title": null,
+      "alt": "Lisbon photograph 10",
+      "sourceFile": "DSCF0226.jpg",
+      "printSource": "DSCF0226.jpg",
+      "assetKey": "dscf0226-3155653b929a",
+      "order": 34,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4320,
+      "height": 2880,
+      "variants": {
+        "768": "/media/lisbon/dscf0226-3155653b929a-768.jpg",
+        "1600": "/media/lisbon/dscf0226-3155653b929a-1600.jpg",
+        "2400": "/media/lisbon/dscf0226-3155653b929a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:08:39"
+      }
+    },
+    {
+      "id": "dscf0227",
+      "title": null,
+      "alt": "Lisbon photograph 11",
+      "sourceFile": "DSCF0227.jpg",
+      "printSource": "DSCF0227.jpg",
+      "assetKey": "dscf0227-9628a5463e09",
+      "order": 35,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4629,
+      "height": 6944,
+      "variants": {
+        "768": "/media/lisbon/dscf0227-9628a5463e09-768.jpg",
+        "1600": "/media/lisbon/dscf0227-9628a5463e09-1600.jpg",
+        "2400": "/media/lisbon/dscf0227-9628a5463e09-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:09:51"
+      }
+    },
+    {
+      "id": "dscf0236",
+      "title": null,
+      "alt": "Lisbon photograph 12",
+      "sourceFile": "DSCF0236.jpg",
+      "printSource": "DSCF0236.jpg",
+      "assetKey": "dscf0236-17edcad3703e",
+      "order": 36,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lisbon/dscf0236-17edcad3703e-768.jpg",
+        "1600": "/media/lisbon/dscf0236-17edcad3703e-1600.jpg",
+        "2400": "/media/lisbon/dscf0236-17edcad3703e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:11:24"
+      }
+    },
+    {
+      "id": "dscf0241",
+      "title": null,
+      "alt": "Lisbon photograph 13",
+      "sourceFile": "DSCF0241.jpg",
+      "printSource": "DSCF0241.jpg",
+      "assetKey": "dscf0241-0ad6a600f0b0",
+      "order": 37,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lisbon/dscf0241-0ad6a600f0b0-768.jpg",
+        "1600": "/media/lisbon/dscf0241-0ad6a600f0b0-1600.jpg",
+        "2400": "/media/lisbon/dscf0241-0ad6a600f0b0-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:11:44"
+      }
+    },
+    {
+      "id": "dscf0292",
+      "title": null,
+      "alt": "Lisbon photograph 14",
+      "sourceFile": "DSCF0292.jpg",
+      "printSource": "DSCF0292.jpg",
+      "assetKey": "dscf0292-b86a8aacfb29",
+      "order": 38,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4507,
+      "height": 6761,
+      "variants": {
+        "768": "/media/lisbon/dscf0292-b86a8aacfb29-768.jpg",
+        "1600": "/media/lisbon/dscf0292-b86a8aacfb29-1600.jpg",
+        "2400": "/media/lisbon/dscf0292-b86a8aacfb29-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:16 13:22:02"
+      }
+    }
+  ]
+}

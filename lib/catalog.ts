@@ -1,3 +1,10 @@
+import algarveData from "@/content/generated/algarve.json";
+import aveiroAndCostaNovaData from "@/content/generated/aveiro-and-costa-nova.json";
+import lisbonData from "@/content/generated/lisbon.json";
+import portoData from "@/content/generated/porto.json";
+import sanDiegoData from "@/content/generated/san-diego.json";
+import seattleData from "@/content/generated/seattle.json";
+import sintraData from "@/content/generated/sintra.json";
 import yosemiteData from "@/content/generated/yosemite.json";
 import printsData from "@/content/prints.json";
 
@@ -58,9 +65,16 @@ export type PrintSelection = {
 
 type PrintsData = { items: PrintSelection[] };
 
-export const collections = [yosemiteData as Collection].sort((left, right) =>
-  left.title.localeCompare(right.title),
-);
+export const collections = [
+  algarveData as Collection,
+  aveiroAndCostaNovaData as Collection,
+  lisbonData as Collection,
+  portoData as Collection,
+  sanDiegoData as Collection,
+  seattleData as Collection,
+  sintraData as Collection,
+  yosemiteData as Collection,
+].sort((left, right) => left.title.localeCompare(right.title));
 
 export const printOptions: PrintOption[] = [
   { id: "4x6", label: '4 × 6 in', ratio: 1.5, price: 1000, shippingClass: "flat" },

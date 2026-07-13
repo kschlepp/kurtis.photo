@@ -1,0 +1,238 @@
+{
+  "slug": "sintra",
+  "title": "Sintra",
+  "location": "Sintra, Portugal",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 38.798,
+    "longitude": -9.3904
+  },
+  "coverImageId": "dscf9641-1",
+  "images": [
+    {
+      "id": "dscf9641-1",
+      "title": null,
+      "alt": "Sintra photograph 3",
+      "sourceFile": "DSCF9641(1).jpg",
+      "printSource": "DSCF9641(1).jpg",
+      "assetKey": "dscf9641-1-2904d130e2d6",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/sintra/dscf9641-1-2904d130e2d6-768.jpg",
+        "1600": "/media/sintra/dscf9641-1-2904d130e2d6-1600.jpg",
+        "2400": "/media/sintra/dscf9641-1-2904d130e2d6-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 19:15:00"
+      }
+    },
+    {
+      "id": "dscf9640-1",
+      "title": null,
+      "alt": "Sintra photograph 2",
+      "sourceFile": "DSCF9640(1).jpg",
+      "printSource": "DSCF9640(1).jpg",
+      "assetKey": "dscf9640-1-46944f48d398",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/sintra/dscf9640-1-46944f48d398-768.jpg",
+        "1600": "/media/sintra/dscf9640-1-46944f48d398-1600.jpg",
+        "2400": "/media/sintra/dscf9640-1-46944f48d398-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 19:34:37"
+      }
+    },
+    {
+      "id": "dscf9670",
+      "title": null,
+      "alt": "Sintra photograph 4",
+      "sourceFile": "DSCF9670.jpg",
+      "printSource": "DSCF9670.jpg",
+      "assetKey": "dscf9670-1c7750b880ba",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/sintra/dscf9670-1c7750b880ba-768.jpg",
+        "1600": "/media/sintra/dscf9670-1c7750b880ba-1600.jpg",
+        "2400": "/media/sintra/dscf9670-1c7750b880ba-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 19:40:22"
+      }
+    },
+    {
+      "id": "dscf9675",
+      "title": null,
+      "alt": "Sintra photograph 5",
+      "sourceFile": "DSCF9675.jpg",
+      "printSource": "DSCF9675.jpg",
+      "assetKey": "dscf9675-01b9a41caa7c",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/sintra/dscf9675-01b9a41caa7c-768.jpg",
+        "1600": "/media/sintra/dscf9675-01b9a41caa7c-1600.jpg",
+        "2400": "/media/sintra/dscf9675-01b9a41caa7c-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 19:42:31"
+      }
+    },
+    {
+      "id": "dscf9761",
+      "title": null,
+      "alt": "Sintra photograph 6",
+      "sourceFile": "DSCF9761.jpg",
+      "printSource": "DSCF9761.jpg",
+      "assetKey": "dscf9761-4d676d43c204",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/sintra/dscf9761-4d676d43c204-768.jpg",
+        "1600": "/media/sintra/dscf9761-4d676d43c204-1600.jpg",
+        "2400": "/media/sintra/dscf9761-4d676d43c204-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 20:18:47"
+      }
+    },
+    {
+      "id": "dscf9795",
+      "title": null,
+      "alt": "Sintra photograph 7",
+      "sourceFile": "DSCF9795.jpg",
+      "printSource": "DSCF9795.jpg",
+      "assetKey": "dscf9795-4c5514b53b57",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/sintra/dscf9795-4c5514b53b57-768.jpg",
+        "1600": "/media/sintra/dscf9795-4c5514b53b57-1600.jpg",
+        "2400": "/media/sintra/dscf9795-4c5514b53b57-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:05 20:23:46"
+      }
+    },
+    {
+      "id": "dscf9831",
+      "title": null,
+      "alt": "Sintra photograph 8",
+      "sourceFile": "DSCF9831.jpg",
+      "printSource": "DSCF9831.jpg",
+      "assetKey": "dscf9831-758b3f5f0545",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/sintra/dscf9831-758b3f5f0545-768.jpg",
+        "1600": "/media/sintra/dscf9831-758b3f5f0545-1600.jpg",
+        "2400": "/media/sintra/dscf9831-758b3f5f0545-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:06 12:14:02"
+      }
+    },
+    {
+      "id": "dscf0015",
+      "title": null,
+      "alt": "Sintra photograph 1",
+      "sourceFile": "DSCF0015.jpg",
+      "printSource": "DSCF0015.jpg",
+      "assetKey": "dscf0015-c19b3ce7b1eb",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/sintra/dscf0015-c19b3ce7b1eb-768.jpg",
+        "1600": "/media/sintra/dscf0015-c19b3ce7b1eb-1600.jpg",
+        "2400": "/media/sintra/dscf0015-c19b3ce7b1eb-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:09:07 23:43:03"
+      }
+    }
+  ]
+}
