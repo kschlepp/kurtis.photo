@@ -121,6 +121,90 @@
         "iso": null,
         "captureDate": "2024:07:28 21:30:45"
       }
+    },
+    {
+      "id": "dscf1727",
+      "title": null,
+      "alt": "Seattle photograph 1",
+      "sourceFile": "DSCF1727.jpg",
+      "printSource": "DSCF1727.jpg",
+      "assetKey": "dscf1727-b7ae679eafe1",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/seattle/dscf1727-b7ae679eafe1-768.jpg",
+        "1600": "/media/seattle/dscf1727-b7ae679eafe1-1600.jpg",
+        "2400": "/media/seattle/dscf1727-b7ae679eafe1-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:12 16:53:56"
+      }
+    },
+    {
+      "id": "dscf1728",
+      "title": null,
+      "alt": "Seattle photograph 2",
+      "sourceFile": "DSCF1728.jpg",
+      "printSource": "DSCF1728.jpg",
+      "assetKey": "dscf1728-280ed0764918",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/seattle/dscf1728-280ed0764918-768.jpg",
+        "1600": "/media/seattle/dscf1728-280ed0764918-1600.jpg",
+        "2400": "/media/seattle/dscf1728-280ed0764918-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:12 16:54:03"
+      }
+    },
+    {
+      "id": "dscf1731",
+      "title": null,
+      "alt": "Seattle photograph 3",
+      "sourceFile": "DSCF1731.jpg",
+      "printSource": "DSCF1731.jpg",
+      "assetKey": "dscf1731-f5dfc8bd895e",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/seattle/dscf1731-f5dfc8bd895e-768.jpg",
+        "1600": "/media/seattle/dscf1731-f5dfc8bd895e-1600.jpg",
+        "2400": "/media/seattle/dscf1731-f5dfc8bd895e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:12 16:54:22"
+      }
     }
   ]
 }

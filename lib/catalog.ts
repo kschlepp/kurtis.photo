@@ -1,6 +1,9 @@
 import algarveData from "@/content/generated/algarve.json";
 import aveiroAndCostaNovaData from "@/content/generated/aveiro-and-costa-nova.json";
+import coronadoData from "@/content/generated/coronado.json";
+import joshuaTreeData from "@/content/generated/joshua-tree.json";
 import lisbonData from "@/content/generated/lisbon.json";
+import mexicoCityData from "@/content/generated/mexico-city.json";
 import portoData from "@/content/generated/porto.json";
 import sanDiegoData from "@/content/generated/san-diego.json";
 import seattleData from "@/content/generated/seattle.json";
@@ -68,7 +71,10 @@ type PrintsData = { items: PrintSelection[] };
 export const collections = [
   algarveData as Collection,
   aveiroAndCostaNovaData as Collection,
+  coronadoData as Collection,
+  joshuaTreeData as Collection,
   lisbonData as Collection,
+  mexicoCityData as Collection,
   portoData as Collection,
   sanDiegoData as Collection,
   seattleData as Collection,

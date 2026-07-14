@@ -1,0 +1,322 @@
+{
+  "slug": "joshua-tree",
+  "title": "Joshua Tree",
+  "location": "Joshua Tree National Park, California",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 33.8734,
+    "longitude": -115.901
+  },
+  "coverImageId": "dscf5483",
+  "images": [
+    {
+      "id": "dscf5483",
+      "title": null,
+      "alt": "Joshua Tree photograph 1",
+      "sourceFile": "DSCF5483.jpg",
+      "printSource": "DSCF5483.jpg",
+      "assetKey": "dscf5483-a340f2ffe0aa",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 3120,
+      "variants": {
+        "768": "/media/joshua-tree/dscf5483-a340f2ffe0aa-768.jpg",
+        "1600": "/media/joshua-tree/dscf5483-a340f2ffe0aa-1600.jpg",
+        "2400": "/media/joshua-tree/dscf5483-a340f2ffe0aa-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:03:09 22:41:18"
+      }
+    },
+    {
+      "id": "dscf5495",
+      "title": null,
+      "alt": "Joshua Tree photograph 2",
+      "sourceFile": "DSCF5495.jpg",
+      "printSource": "DSCF5495.jpg",
+      "assetKey": "dscf5495-25edc0ce4999",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 2787,
+      "variants": {
+        "768": "/media/joshua-tree/dscf5495-25edc0ce4999-768.jpg",
+        "1600": "/media/joshua-tree/dscf5495-25edc0ce4999-1600.jpg",
+        "2400": "/media/joshua-tree/dscf5495-25edc0ce4999-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:03:09 22:46:47"
+      }
+    },
+    {
+      "id": "dscf5508",
+      "title": null,
+      "alt": "Joshua Tree photograph 3",
+      "sourceFile": "DSCF5508.jpg",
+      "printSource": "DSCF5508.jpg",
+      "assetKey": "dscf5508-81ff0944e048",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 3369,
+      "variants": {
+        "768": "/media/joshua-tree/dscf5508-81ff0944e048-768.jpg",
+        "1600": "/media/joshua-tree/dscf5508-81ff0944e048-1600.jpg",
+        "2400": "/media/joshua-tree/dscf5508-81ff0944e048-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:03:09 22:48:39"
+      }
+    },
+    {
+      "id": "dscf5509",
+      "title": null,
+      "alt": "Joshua Tree photograph 4",
+      "sourceFile": "DSCF5509.jpg",
+      "printSource": "DSCF5509.jpg",
+      "assetKey": "dscf5509-b719ccadb678",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/joshua-tree/dscf5509-b719ccadb678-768.jpg",
+        "1600": "/media/joshua-tree/dscf5509-b719ccadb678-1600.jpg",
+        "2400": "/media/joshua-tree/dscf5509-b719ccadb678-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:03:09 22:49:03"
+      }
+    },
+    {
+      "id": "dscf5514",
+      "title": null,
+      "alt": "Joshua Tree photograph 5",
+      "sourceFile": "DSCF5514.jpg",
+      "printSource": "DSCF5514.jpg",
+      "assetKey": "dscf5514-6d80b14fad95",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4617,
+      "height": 6925,
+      "variants": {
+        "768": "/media/joshua-tree/dscf5514-6d80b14fad95-768.jpg",
+        "1600": "/media/joshua-tree/dscf5514-6d80b14fad95-1600.jpg",
+        "2400": "/media/joshua-tree/dscf5514-6d80b14fad95-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:03:09 22:50:31"
+      }
+    },
+    {
+      "id": "dscf5530",
+      "title": null,
+      "alt": "Joshua Tree photograph 6",
+      "sourceFile": "DSCF5530.jpg",
+      "printSource": "DSCF5530.jpg",
+      "assetKey": "dscf5530-2d63693c1395",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/joshua-tree/dscf5530-2d63693c1395-768.jpg",
+        "1600": "/media/joshua-tree/dscf5530-2d63693c1395-1600.jpg",
+        "2400": "/media/joshua-tree/dscf5530-2d63693c1395-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:03:09 22:52:16"
+      }
+    },
+    {
+      "id": "dscf5588",
+      "title": null,
+      "alt": "Joshua Tree photograph 7",
+      "sourceFile": "DSCF5588.jpg",
+      "printSource": "DSCF5588.jpg",
+      "assetKey": "dscf5588-726108fc79b0",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/joshua-tree/dscf5588-726108fc79b0-768.jpg",
+        "1600": "/media/joshua-tree/dscf5588-726108fc79b0-1600.jpg",
+        "2400": "/media/joshua-tree/dscf5588-726108fc79b0-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:03:09 22:54:12"
+      }
+    },
+    {
+      "id": "dscf5600",
+      "title": null,
+      "alt": "Joshua Tree photograph 8",
+      "sourceFile": "DSCF5600.jpg",
+      "printSource": "DSCF5600.jpg",
+      "assetKey": "dscf5600-96d5a35cc43c",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7697,
+      "height": 5131,
+      "variants": {
+        "768": "/media/joshua-tree/dscf5600-96d5a35cc43c-768.jpg",
+        "1600": "/media/joshua-tree/dscf5600-96d5a35cc43c-1600.jpg",
+        "2400": "/media/joshua-tree/dscf5600-96d5a35cc43c-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:03:09 22:55:35"
+      }
+    },
+    {
+      "id": "dscf5601",
+      "title": null,
+      "alt": "Joshua Tree photograph 9",
+      "sourceFile": "DSCF5601.jpg",
+      "printSource": "DSCF5601.jpg",
+      "assetKey": "dscf5601-ef1c2fa17fed",
+      "order": 9,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/joshua-tree/dscf5601-ef1c2fa17fed-768.jpg",
+        "1600": "/media/joshua-tree/dscf5601-ef1c2fa17fed-1600.jpg",
+        "2400": "/media/joshua-tree/dscf5601-ef1c2fa17fed-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:03:09 22:55:46"
+      }
+    },
+    {
+      "id": "dscf5610",
+      "title": null,
+      "alt": "Joshua Tree photograph 10",
+      "sourceFile": "DSCF5610.jpg",
+      "printSource": "DSCF5610.jpg",
+      "assetKey": "dscf5610-22b154879cf3",
+      "order": 10,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/joshua-tree/dscf5610-22b154879cf3-768.jpg",
+        "1600": "/media/joshua-tree/dscf5610-22b154879cf3-1600.jpg",
+        "2400": "/media/joshua-tree/dscf5610-22b154879cf3-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:03:09 22:56:31"
+      }
+    },
+    {
+      "id": "dscf5612",
+      "title": null,
+      "alt": "Joshua Tree photograph 11",
+      "sourceFile": "DSCF5612.jpg",
+      "printSource": "DSCF5612.jpg",
+      "assetKey": "dscf5612-5a536a2a6ef9",
+      "order": 11,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4977,
+      "height": 7466,
+      "variants": {
+        "768": "/media/joshua-tree/dscf5612-5a536a2a6ef9-768.jpg",
+        "1600": "/media/joshua-tree/dscf5612-5a536a2a6ef9-1600.jpg",
+        "2400": "/media/joshua-tree/dscf5612-5a536a2a6ef9-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:03:09 22:56:50"
+      }
+    }
+  ]
+}

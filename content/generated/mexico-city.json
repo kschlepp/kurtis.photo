@@ -1,0 +1,322 @@
+{
+  "slug": "mexico-city",
+  "title": "Mexico City",
+  "location": "Mexico City, Mexico",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 19.4326,
+    "longitude": -99.1332
+  },
+  "coverImageId": "dscf7232",
+  "images": [
+    {
+      "id": "dscf7232",
+      "title": null,
+      "alt": "Mexico City photograph 1",
+      "sourceFile": "DSCF7232.jpg",
+      "printSource": "DSCF7232.jpg",
+      "assetKey": "dscf7232-f2e73f332fbf",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7211,
+      "height": 4807,
+      "variants": {
+        "768": "/media/mexico-city/dscf7232-f2e73f332fbf-768.jpg",
+        "1600": "/media/mexico-city/dscf7232-f2e73f332fbf-1600.jpg",
+        "2400": "/media/mexico-city/dscf7232-f2e73f332fbf-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:06:01 11:45:38"
+      }
+    },
+    {
+      "id": "dscf7238",
+      "title": null,
+      "alt": "Mexico City photograph 2",
+      "sourceFile": "DSCF7238.jpg",
+      "printSource": "DSCF7238.jpg",
+      "assetKey": "dscf7238-eee3d2e513fd",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4848,
+      "height": 7272,
+      "variants": {
+        "768": "/media/mexico-city/dscf7238-eee3d2e513fd-768.jpg",
+        "1600": "/media/mexico-city/dscf7238-eee3d2e513fd-1600.jpg",
+        "2400": "/media/mexico-city/dscf7238-eee3d2e513fd-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:06:01 11:51:21"
+      }
+    },
+    {
+      "id": "dscf7295",
+      "title": null,
+      "alt": "Mexico City photograph 3",
+      "sourceFile": "DSCF7295.jpg",
+      "printSource": "DSCF7295.jpg",
+      "assetKey": "dscf7295-70db3e748072",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/mexico-city/dscf7295-70db3e748072-768.jpg",
+        "1600": "/media/mexico-city/dscf7295-70db3e748072-1600.jpg",
+        "2400": "/media/mexico-city/dscf7295-70db3e748072-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:06:01 12:02:46"
+      }
+    },
+    {
+      "id": "dscf7343",
+      "title": null,
+      "alt": "Mexico City photograph 4",
+      "sourceFile": "DSCF7343.jpg",
+      "printSource": "DSCF7343.jpg",
+      "assetKey": "dscf7343-15fcbe32a26a",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/mexico-city/dscf7343-15fcbe32a26a-768.jpg",
+        "1600": "/media/mexico-city/dscf7343-15fcbe32a26a-1600.jpg",
+        "2400": "/media/mexico-city/dscf7343-15fcbe32a26a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:06:01 12:57:26"
+      }
+    },
+    {
+      "id": "dscf7367",
+      "title": null,
+      "alt": "Mexico City photograph 5",
+      "sourceFile": "DSCF7367.jpg",
+      "printSource": "DSCF7367.jpg",
+      "assetKey": "dscf7367-4896c2271d1c",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4955,
+      "height": 7433,
+      "variants": {
+        "768": "/media/mexico-city/dscf7367-4896c2271d1c-768.jpg",
+        "1600": "/media/mexico-city/dscf7367-4896c2271d1c-1600.jpg",
+        "2400": "/media/mexico-city/dscf7367-4896c2271d1c-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:06:01 13:03:15"
+      }
+    },
+    {
+      "id": "dscf7382",
+      "title": null,
+      "alt": "Mexico City photograph 6",
+      "sourceFile": "DSCF7382.jpg",
+      "printSource": "DSCF7382.jpg",
+      "assetKey": "dscf7382-37ec68b3b5ee",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7618,
+      "height": 5079,
+      "variants": {
+        "768": "/media/mexico-city/dscf7382-37ec68b3b5ee-768.jpg",
+        "1600": "/media/mexico-city/dscf7382-37ec68b3b5ee-1600.jpg",
+        "2400": "/media/mexico-city/dscf7382-37ec68b3b5ee-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:06:01 13:07:13"
+      }
+    },
+    {
+      "id": "dscf7386",
+      "title": null,
+      "alt": "Mexico City photograph 7",
+      "sourceFile": "DSCF7386.jpg",
+      "printSource": "DSCF7386.jpg",
+      "assetKey": "dscf7386-14e389875a76",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 3811,
+      "height": 5717,
+      "variants": {
+        "768": "/media/mexico-city/dscf7386-14e389875a76-768.jpg",
+        "1600": "/media/mexico-city/dscf7386-14e389875a76-1600.jpg",
+        "2400": "/media/mexico-city/dscf7386-14e389875a76-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:06:01 13:07:55"
+      }
+    },
+    {
+      "id": "dscf7388",
+      "title": null,
+      "alt": "Mexico City photograph 8",
+      "sourceFile": "DSCF7388.jpg",
+      "printSource": "DSCF7388.jpg",
+      "assetKey": "dscf7388-3d7778cecb19",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/mexico-city/dscf7388-3d7778cecb19-768.jpg",
+        "1600": "/media/mexico-city/dscf7388-3d7778cecb19-1600.jpg",
+        "2400": "/media/mexico-city/dscf7388-3d7778cecb19-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:06:01 13:08:30"
+      }
+    },
+    {
+      "id": "dscf7396",
+      "title": null,
+      "alt": "Mexico City photograph 9",
+      "sourceFile": "DSCF7396.jpg",
+      "printSource": "DSCF7396.jpg",
+      "assetKey": "dscf7396-745b3dfbf354",
+      "order": 9,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/mexico-city/dscf7396-745b3dfbf354-768.jpg",
+        "1600": "/media/mexico-city/dscf7396-745b3dfbf354-1600.jpg",
+        "2400": "/media/mexico-city/dscf7396-745b3dfbf354-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:06:01 13:08:48"
+      }
+    },
+    {
+      "id": "dscf7413",
+      "title": null,
+      "alt": "Mexico City photograph 10",
+      "sourceFile": "DSCF7413.jpg",
+      "printSource": "DSCF7413.jpg",
+      "assetKey": "dscf7413-61e96c2741e7",
+      "order": 10,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/mexico-city/dscf7413-61e96c2741e7-768.jpg",
+        "1600": "/media/mexico-city/dscf7413-61e96c2741e7-1600.jpg",
+        "2400": "/media/mexico-city/dscf7413-61e96c2741e7-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:06:01 13:12:34"
+      }
+    },
+    {
+      "id": "dscf7477",
+      "title": null,
+      "alt": "Mexico City photograph 11",
+      "sourceFile": "DSCF7477.jpg",
+      "printSource": "DSCF7477.jpg",
+      "assetKey": "dscf7477-8a5f9ca7bb1e",
+      "order": 11,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/mexico-city/dscf7477-8a5f9ca7bb1e-768.jpg",
+        "1600": "/media/mexico-city/dscf7477-8a5f9ca7bb1e-1600.jpg",
+        "2400": "/media/mexico-city/dscf7477-8a5f9ca7bb1e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:06:01 13:23:32"
+      }
+    }
+  ]
+}

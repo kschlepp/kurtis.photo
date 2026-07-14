@@ -13,12 +13,33 @@
     "featured": false,
     "coordinates": { "latitude": 40.6405, "longitude": -8.7501 }
   },
+  "coronado": {
+    "title": "Coronado",
+    "location": "Coronado, California",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 32.6859, "longitude": -117.1831 }
+  },
+  "joshua-tree": {
+    "title": "Joshua Tree",
+    "location": "Joshua Tree National Park, California",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 33.8734, "longitude": -115.9010 }
+  },
   "lisbon": {
     "title": "Lisbon",
     "location": "Lisbon, Portugal",
     "note": null,
     "featured": false,
     "coordinates": { "latitude": 38.7223, "longitude": -9.1393 }
+  },
+  "mexico-city": {
+    "title": "Mexico City",
+    "location": "Mexico City, Mexico",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 19.4326, "longitude": -99.1332 }
   },
   "porto": {
     "title": "Porto",

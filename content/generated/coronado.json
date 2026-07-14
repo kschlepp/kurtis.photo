@@ -1,0 +1,238 @@
+{
+  "slug": "coronado",
+  "title": "Coronado",
+  "location": "Coronado, California",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 32.6859,
+    "longitude": -117.1831
+  },
+  "coverImageId": "dscf1905",
+  "images": [
+    {
+      "id": "dscf1905",
+      "title": null,
+      "alt": "Coronado photograph 1",
+      "sourceFile": "DSCF1905.jpg",
+      "printSource": "DSCF1905.jpg",
+      "assetKey": "dscf1905-decba2ac9354",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 3435,
+      "variants": {
+        "768": "/media/coronado/dscf1905-decba2ac9354-768.jpg",
+        "1600": "/media/coronado/dscf1905-decba2ac9354-1600.jpg",
+        "2400": "/media/coronado/dscf1905-decba2ac9354-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:23 21:50:22"
+      }
+    },
+    {
+      "id": "dscf1909",
+      "title": null,
+      "alt": "Coronado photograph 2",
+      "sourceFile": "DSCF1909.jpg",
+      "printSource": "DSCF1909.jpg",
+      "assetKey": "dscf1909-3a97958e0798",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 3955,
+      "height": 5932,
+      "variants": {
+        "768": "/media/coronado/dscf1909-3a97958e0798-768.jpg",
+        "1600": "/media/coronado/dscf1909-3a97958e0798-1600.jpg",
+        "2400": "/media/coronado/dscf1909-3a97958e0798-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:23 21:51:36"
+      }
+    },
+    {
+      "id": "dscf1912",
+      "title": null,
+      "alt": "Coronado photograph 3",
+      "sourceFile": "DSCF1912.jpg",
+      "printSource": "DSCF1912.jpg",
+      "assetKey": "dscf1912-648e5f370261",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/coronado/dscf1912-648e5f370261-768.jpg",
+        "1600": "/media/coronado/dscf1912-648e5f370261-1600.jpg",
+        "2400": "/media/coronado/dscf1912-648e5f370261-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:23 21:51:53"
+      }
+    },
+    {
+      "id": "dscf1936",
+      "title": null,
+      "alt": "Coronado photograph 4",
+      "sourceFile": "DSCF1936.jpg",
+      "printSource": "DSCF1936.jpg",
+      "assetKey": "dscf1936-10ef8689d839",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 3435,
+      "variants": {
+        "768": "/media/coronado/dscf1936-10ef8689d839-768.jpg",
+        "1600": "/media/coronado/dscf1936-10ef8689d839-1600.jpg",
+        "2400": "/media/coronado/dscf1936-10ef8689d839-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:23 21:55:21"
+      }
+    },
+    {
+      "id": "dscf1940",
+      "title": null,
+      "alt": "Coronado photograph 5",
+      "sourceFile": "DSCF1940.jpg",
+      "printSource": "DSCF1940.jpg",
+      "assetKey": "dscf1940-091f6708fd9e",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/coronado/dscf1940-091f6708fd9e-768.jpg",
+        "1600": "/media/coronado/dscf1940-091f6708fd9e-1600.jpg",
+        "2400": "/media/coronado/dscf1940-091f6708fd9e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:23 21:55:47"
+      }
+    },
+    {
+      "id": "dscf1942",
+      "title": null,
+      "alt": "Coronado photograph 6",
+      "sourceFile": "DSCF1942.jpg",
+      "printSource": "DSCF1942.jpg",
+      "assetKey": "dscf1942-5ac6e090dfa8",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/coronado/dscf1942-5ac6e090dfa8-768.jpg",
+        "1600": "/media/coronado/dscf1942-5ac6e090dfa8-1600.jpg",
+        "2400": "/media/coronado/dscf1942-5ac6e090dfa8-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:23 21:56:20"
+      }
+    },
+    {
+      "id": "dscf1967",
+      "title": null,
+      "alt": "Coronado photograph 7",
+      "sourceFile": "DSCF1967.jpg",
+      "printSource": "DSCF1967.jpg",
+      "assetKey": "dscf1967-7013f390b0f3",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7274,
+      "height": 4849,
+      "variants": {
+        "768": "/media/coronado/dscf1967-7013f390b0f3-768.jpg",
+        "1600": "/media/coronado/dscf1967-7013f390b0f3-1600.jpg",
+        "2400": "/media/coronado/dscf1967-7013f390b0f3-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:23 21:59:56"
+      }
+    },
+    {
+      "id": "dscf1974",
+      "title": null,
+      "alt": "Coronado photograph 8",
+      "sourceFile": "DSCF1974.jpg",
+      "printSource": "DSCF1974.jpg",
+      "assetKey": "dscf1974-976fea66b370",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7487,
+      "height": 4991,
+      "variants": {
+        "768": "/media/coronado/dscf1974-976fea66b370-768.jpg",
+        "1600": "/media/coronado/dscf1974-976fea66b370-1600.jpg",
+        "2400": "/media/coronado/dscf1974-976fea66b370-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:10:23 22:00:56"
+      }
+    }
+  ]
+}
