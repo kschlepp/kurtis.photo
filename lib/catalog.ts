@@ -123,7 +123,7 @@ export function getCover(collection: Collection) {
   return collection.images.find((photo) => photo.id === collection.coverImageId) ?? collection.images[0];
 }
 
-export function formatPhotoName(collection: Collection, photo: Photo) {
+export function formatPhotoName(collection: Pick<Collection, "title">, photo: Photo) {
   return photo.title ?? `${collection.title.replace(/\s*['’]\d+$/, "")} No. ${String(photo.order).padStart(2, "0")}`;
 }
 

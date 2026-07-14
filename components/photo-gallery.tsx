@@ -4,7 +4,17 @@
 import { useEffect, useState } from "react";
 import { displayDate, formatPhotoName, type Collection } from "@/lib/catalog";
 
-export function PhotoGallery({ collection }: { collection: Collection }) {
+type GalleryCollection = Pick<Collection, "slug" | "title" | "images"> & { location?: string };
+
+export function PhotoGallery({
+  collection,
+  basePath = "/places",
+  showMetadata = true,
+}: {
+  collection: GalleryCollection;
+  basePath?: string;
+  showMetadata?: boolean;
+}) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const activePhoto = activeIndex === null ? null : collection.images[activeIndex];
 
@@ -15,19 +25,19 @@ export function PhotoGallery({ collection }: { collection: Collection }) {
   }, []);
 
   function open(index: number) {
-    window.history.pushState({}, "", `/places/${collection.slug}/${collection.images[index].id}`);
+    window.history.pushState({}, "", `${basePath}/${collection.slug}/${collection.images[index].id}`);
     setActiveIndex(index);
   }
 
   function close() {
-    window.history.replaceState({}, "", `/places/${collection.slug}`);
+    window.history.replaceState({}, "", `${basePath}/${collection.slug}`);
     setActiveIndex(null);
   }
 
   function move(direction: -1 | 1) {
     if (activeIndex === null) return;
     const nextIndex = (activeIndex + direction + collection.images.length) % collection.images.length;
-    window.history.replaceState({}, "", `/places/${collection.slug}/${collection.images[nextIndex].id}`);
+    window.history.replaceState({}, "", `${basePath}/${collection.slug}/${collection.images[nextIndex].id}`);
     setActiveIndex(nextIndex);
   }
 
@@ -67,12 +77,12 @@ export function PhotoGallery({ collection }: { collection: Collection }) {
           </nav>
           <div className="viewer-details">
             <div>
-              <p className="eyebrow">{collection.location}</p>
+              {showMetadata && collection.location ? <p className="eyebrow">{collection.location}</p> : null}
               <h2>{formatPhotoName(collection, activePhoto)}</h2>
-              <p className="metadata-line">
+              {showMetadata ? <p className="metadata-line">
                 {[activePhoto.metadata.cameraMake, activePhoto.metadata.cameraBody].filter(Boolean).join(" ")}
                 {displayDate(activePhoto.metadata.captureDate) ? ` · ${displayDate(activePhoto.metadata.captureDate)}` : ""}
-              </p>
+              </p> : null}
             </div>
           </div>
         </div>

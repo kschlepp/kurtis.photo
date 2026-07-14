@@ -46,6 +46,18 @@ R2_BUCKET=<bucket-name> npm run photos:upload -- yosemite
 The media worker reads those images from the `MEDIA` R2 binding in production.
 Local development falls back to `public/media/` automatically.
 
+Portrait sessions live in `photo-intake/portraits/<session>/`. Prepare each
+session through the portrait workflow, then upload its public media folder:
+
+```bash
+npm run portraits:prepare -- <session-slug>
+R2_BUCKET=<bucket-name> npm run photos:upload -- portrait-<session-slug>
+```
+
+Portrait derivatives have no embedded metadata, opaque public filenames, and
+no camera, capture-date, or original-filename data in their manifest. They
+default to review-required / not-for-sale.
+
 ## Services and secrets
 
 Copy `.env.example` to `.env.local` and add values only when you are ready to

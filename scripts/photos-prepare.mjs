@@ -9,11 +9,14 @@ import { promisify } from "node:util";
 
 const execFileAsync = promisify(execFile);
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const [collectionSlug, ...options] = process.argv.slice(2);
+const argumentsList = process.argv.slice(2);
+const collectionSlug = argumentsList.find((argument) => !argument.startsWith("--"));
+const options = argumentsList.filter((argument) => argument.startsWith("--"));
 const replaceExisting = options.includes("--replace");
+const portraits = options.includes("--portraits");
 
 if (!collectionSlug) {
-  console.error("Usage: npm run photos:prepare -- <collection-slug> [--replace]");
+  console.error("Usage: npm run photos:prepare -- <collection-slug> [--replace] | npm run portraits:prepare -- <collection-slug> [--replace]");
   process.exit(1);
 }
 
@@ -22,16 +25,16 @@ if (!/^[a-z0-9-]+$/.test(collectionSlug)) {
   process.exit(1);
 }
 
-if (options.some((option) => option !== "--replace")) {
-  console.error("The only supported option is --replace.");
+if (options.some((option) => option !== "--replace" && option !== "--portraits")) {
+  console.error("The only supported options are --replace and --portraits.");
   process.exit(1);
 }
 
-const sourceDirectory = path.join(root, "photo-intake", "places", collectionSlug);
-const publicDirectory = path.join(root, "public", "media", collectionSlug);
-const workDirectory = path.join(root, ".photo-work", collectionSlug);
-const manifestDirectory = path.join(root, "content", "generated");
-const collectionDetailsPath = path.join(root, "content", "collection-details.json");
+const publicCollectionSlug = portraits ? `portrait-${collectionSlug}` : collectionSlug;
+const publicDirectory = path.join(root, "public", "media", publicCollectionSlug);
+const workDirectory = path.join(root, ".photo-work", publicCollectionSlug);
+const manifestDirectory = path.join(root, "content", "generated", ...(portraits ? ["portraits"] : []));
+const collectionDetailsPath = path.join(root, "content", portraits ? "portrait-details.json" : "collection-details.json");
 const manifestPath = path.join(manifestDirectory, `${collectionSlug}.json`);
 const imageSizes = [768, 1600, 2400];
 const jpegtran = "/opt/homebrew/bin/jpegtran";
@@ -96,7 +99,7 @@ async function createVariant(sourcePath, assetKey, longestEdge) {
     temporaryPath,
   ]);
 
-  return `/media/${collectionSlug}/${assetKey}-${longestEdge}.jpg`;
+  return `/media/${publicCollectionSlug}/${assetKey}-${longestEdge}.jpg`;
 }
 
 async function readJson(pathname, fallback) {
@@ -109,7 +112,7 @@ async function readJson(pathname, fallback) {
 }
 
 function captureDateValue(image) {
-  return image.metadata?.captureDate ?? "9999-99-99";
+  return image.sortCaptureDate ?? image.metadata?.captureDate ?? "9999-99-99";
 }
 
 function sortPhotos(left, right) {
@@ -125,9 +128,17 @@ if (!collection) {
   process.exit(1);
 }
 
+if (portraits && typeof collection.sourceDirectory !== "string") {
+  console.error(`Portrait collection ${collectionSlug} needs a sourceDirectory in ${collectionDetailsPath}`);
+  process.exit(1);
+}
+
+const sourceDirectory = path.join(root, "photo-intake", portraits ? "portraits" : "places", portraits ? collection.sourceDirectory : collectionSlug);
+
 const previousManifest = await readJson(manifestPath, null);
 const previousPhotos = previousManifest?.images ?? [];
 const previousBySource = new Map(previousPhotos.map((photo) => [photo.sourceFile, photo]));
+const previousByAssetKey = new Map(previousPhotos.map((photo) => [photo.assetKey, photo]));
 
 await rm(publicDirectory, { recursive: true, force: true });
 await mkdir(publicDirectory, { recursive: true });
@@ -146,10 +157,10 @@ if (files.length === 0) {
 const preparedImages = [];
 for (const [index, filename] of files.entries()) {
   const sourcePath = path.join(sourceDirectory, filename);
-  const previous = previousBySource.get(filename);
-  const id = publicId(filename);
   const hash = await contentHash(sourcePath);
-  const assetKey = `${id}-${hash}`;
+  const id = portraits ? `photo-${hash}` : publicId(filename);
+  const assetKey = portraits ? `portrait-${hash}` : `${id}-${hash}`;
+  const previous = portraits ? previousByAssetKey.get(assetKey) : previousBySource.get(filename);
   const metadata = await inspect(sourcePath);
   const variants = {};
 
@@ -161,16 +172,25 @@ for (const [index, filename] of files.entries()) {
     id,
     title: previous?.title ?? null,
     alt: previous?.alt ?? `${collection.title} photograph ${index + 1}`,
-    sourceFile: filename,
-    printSource: filename,
+    ...(portraits ? {} : { sourceFile: filename, printSource: filename }),
     assetKey,
+    sortCaptureDate: metadata.captureDate,
     order: 0,
     sellable: false,
-    releaseStatus: previous?.releaseStatus ?? "not-applicable",
+    releaseStatus: portraits ? "review-required" : previous?.releaseStatus ?? "not-applicable",
     width: metadata.width,
     height: metadata.height,
     variants,
-    metadata: {
+    metadata: portraits ? {
+      cameraMake: null,
+      cameraBody: null,
+      lens: null,
+      focalLength: null,
+      aperture: null,
+      shutterSpeed: null,
+      iso: null,
+      captureDate: null,
+    } : {
       cameraMake: metadata.cameraMake ?? previous?.metadata?.cameraMake ?? null,
       cameraBody: metadata.cameraBody ?? previous?.metadata?.cameraBody ?? null,
       lens: previous?.metadata?.lens ?? null,
@@ -184,21 +204,28 @@ for (const [index, filename] of files.entries()) {
 }
 
 const intakeFilenames = new Set(files);
-const images = (replaceExisting ? preparedImages : [
+const images = (portraits || replaceExisting ? preparedImages : [
   ...previousPhotos.filter((photo) => !intakeFilenames.has(photo.sourceFile)),
   ...preparedImages,
 ])
   .sort(sortPhotos)
-  .map((photo, index) => ({ ...photo, order: index + 1 }));
+  .map((photo, index) => {
+    const publicPhoto = { ...photo };
+    delete publicPhoto.sortCaptureDate;
+    return { ...publicPhoto, order: index + 1 };
+  });
 
 const preservedCover = replaceExisting ? null : previousManifest?.coverImageId;
 const coverImageId = images.some((image) => image.id === preservedCover)
   ? preservedCover
   : images.find((image) => image.width / image.height > 1.6)?.id ?? images[0].id;
 
+const collectionData = portraits
+  ? { title: collection.title, note: collection.note, featured: collection.featured }
+  : collection;
 const manifest = {
   slug: collectionSlug,
-  ...collection,
+  ...collectionData,
   coverImageId,
   images,
 };

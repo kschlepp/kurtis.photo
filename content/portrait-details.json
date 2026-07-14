@@ -1,0 +1,14 @@
+{
+  "ashley": {
+    "title": "Ashley",
+    "note": null,
+    "featured": false,
+    "sourceDirectory": "ashley"
+  },
+  "maternity": {
+    "title": "Maternity",
+    "note": null,
+    "featured": false,
+    "sourceDirectory": "maternity shoot"
+  }
+}
