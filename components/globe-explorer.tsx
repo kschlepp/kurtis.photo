@@ -163,9 +163,14 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
       },
     ],
     sky: {
-      "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 0.92, 5, 0.2],
+      "sky-color": light.ocean,
+      "horizon-color": "#c6d1d2",
+      "fog-color": "#c6d1d2",
+      "sky-horizon-blend": 0.35,
+      "horizon-fog-blend": 0.35,
+      "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 0.32, 5, 0.08],
     },
-    light: { anchor: "map", position: light.position },
+    light: { anchor: "map", position: light.position, color: "#eee8dc", intensity: 0.28 },
   } as StyleSpecification;
 }
 
@@ -291,7 +296,15 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
             instance.setPaintProperty("ocean", "background-color", light.ocean);
             instance.setPaintProperty("country-fill", "fill-color", light.land);
             instance.setPaintProperty("country-line", "line-color", light.line);
-            instance.setLight({ anchor: "map", position: light.position });
+            instance.setSky({
+              "sky-color": light.ocean,
+              "horizon-color": light.daylight > 0.42 ? "#c6d1d2" : "#899b9f",
+              "fog-color": light.daylight > 0.42 ? "#c6d1d2" : "#899b9f",
+              "sky-horizon-blend": 0.35,
+              "horizon-fog-blend": 0.35,
+              "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 0.32, 5, 0.08],
+            });
+            instance.setLight({ anchor: "map", position: light.position, color: "#eee8dc", intensity: 0.28 });
           };
           updateLighting();
           lightingTimer = setInterval(updateLighting, 5 * 60 * 1000);
