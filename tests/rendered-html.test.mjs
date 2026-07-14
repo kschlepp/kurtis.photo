@@ -56,3 +56,14 @@ test("keeps the archive separate from the curated Prints page", async () => {
   assert.match(html, /Nothing is for sale right now\./);
   assert.doesNotMatch(html, /Add print/i);
 });
+
+test("leads the portraits page with photography", async () => {
+  const response = await render("/portraits");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  const image = html.indexOf("portrait-hero-image");
+  const heading = html.indexOf("People, as they are.");
+  assert.ok(image >= 0 && heading >= 0 && image < heading);
+  assert.match(html, /Portrait from/);
+});

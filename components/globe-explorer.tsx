@@ -33,6 +33,18 @@ const countries = feature(topology, topology.objects.countries) as FeatureCollec
 const worldView = { center: [-18, 24] as [number, number], zoom: 0.72 };
 const emptyPoints: FeatureCollection<Point, PlaceProperties> = { type: "FeatureCollection", features: [] };
 
+function localLight(date = new Date()) {
+  const hour = date.getHours() + date.getMinutes() / 60;
+  const daylight = (Math.cos(((hour - 12) / 12) * Math.PI) + 1) / 2;
+  return {
+    daylight,
+    night: 1 - daylight,
+    ocean: daylight > 0.42 ? "#dfe7e7" : "#aebdc1",
+    land: daylight > 0.42 ? "#d9d3c8" : "#b8b4ae",
+    line: daylight > 0.42 ? "#8e918d" : "#737b7b",
+  };
+}
+
 function placeFeature(place: GlobePlace): Feature<Point, PlaceProperties> {
   return {
     type: "Feature",
@@ -44,7 +56,8 @@ function placeFeature(place: GlobePlace): Feature<Point, PlaceProperties> {
   };
 }
 
-function makeGlobeStyle(places: GlobePlace[]): StyleSpecification {
+function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecification {
+  const light = localLight(date);
   const placePoints: FeatureCollection<Point, PlaceProperties> = {
     type: "FeatureCollection",
     features: places.map(placeFeature),
@@ -68,14 +81,14 @@ function makeGlobeStyle(places: GlobePlace[]): StyleSpecification {
       {
         id: "ocean",
         type: "background",
-        paint: { "background-color": "#dfe7e7" },
+        paint: { "background-color": light.ocean },
       },
       {
         id: "country-fill",
         type: "fill",
         source: "countries",
         paint: {
-          "fill-color": "#d9d3c8",
+          "fill-color": light.land,
           "fill-opacity": 0.98,
         },
       },
@@ -84,7 +97,7 @@ function makeGlobeStyle(places: GlobePlace[]): StyleSpecification {
         type: "line",
         source: "countries",
         paint: {
-          "line-color": "#8e918d",
+          "line-color": light.line,
           "line-opacity": 0.52,
           "line-width": 0.75,
         },
@@ -169,6 +182,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const [filter, setFilter] = useState("");
   const [sheetOpen, setSheetOpen] = useState(false);
+  const [nightShade, setNightShade] = useState(0);
 
   const placeBySlug = useMemo(
     () => new Map(places.map((place) => [place.slug, place])),
@@ -237,6 +251,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
   useEffect(() => {
     let cancelled = false;
     let instance: MapLibreMap | null = null;
+    let lightingTimer: ReturnType<typeof setInterval> | null = null;
 
     async function initializeMap() {
       const container = mapContainerRef.current;
@@ -248,7 +263,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
         const coarsePointer = window.matchMedia("(pointer: coarse)").matches;
         instance = new MapConstructor({
           container,
-          style: makeGlobeStyle(places),
+          style: makeGlobeStyle(places, new Date()),
           center: worldView.center,
           zoom: worldView.zoom,
           minZoom: 0,
@@ -265,6 +280,17 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
         instance.on("load", () => {
           if (cancelled || !instance) return;
           setMapReady(true);
+
+          const updateLighting = () => {
+            if (!instance) return;
+            const light = localLight();
+            setNightShade(light.night);
+            instance.setPaintProperty("ocean", "background-color", light.ocean);
+            instance.setPaintProperty("country-fill", "fill-color", light.land);
+            instance.setPaintProperty("country-line", "line-color", light.line);
+          };
+          updateLighting();
+          lightingTimer = setInterval(updateLighting, 5 * 60 * 1000);
 
           instance.on("click", "place-pins", (event) => {
             const slug = event.features?.[0]?.properties?.slug;
@@ -304,6 +330,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
     void initializeMap();
     return () => {
       cancelled = true;
+      if (lightingTimer) clearInterval(lightingTimer);
       instance?.remove();
       mapRef.current = null;
     };
@@ -383,6 +410,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
           ref={mapContainerRef}
           role="region"
         />
+        <div aria-hidden="true" className="globe-time-shade" style={{ opacity: nightShade * 0.26 }} />
         {!mapReady && !mapFailed ? <div className="globe-loading"><span /><p>Drawing the world…</p></div> : null}
         {mapFailed ? (
           <div className="globe-fallback">
@@ -401,15 +429,17 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
 
         {selectedPlace ? (
           <article aria-live="polite" className="globe-photo-card">
-            <img src={selectedPlace.cover.src} alt={selectedPlace.cover.alt} />
-            <div>
-              <button aria-label="Close selected place" className="globe-card-close" onClick={clearSelection} type="button">×</button>
-              <p className="eyebrow">Selected place</p>
-              <h2>{selectedPlace.title}</h2>
-              <p className="globe-card-location">{selectedPlace.location}</p>
-              {selectedPlace.note ? <p>{selectedPlace.note}</p> : <p>{selectedPlace.photoCount} photographs from this place.</p>}
-              <Link className="inline-link" href={"/places/" + selectedPlace.slug}>Open collection <span>↗</span></Link>
-            </div>
+            <Link className="globe-photo-card-link" href={"/places/" + selectedPlace.slug} aria-label={`Open ${selectedPlace.title} collection`}>
+              <img src={selectedPlace.cover.src} alt={selectedPlace.cover.alt} />
+              <div>
+                <p className="eyebrow">Selected place</p>
+                <h2>{selectedPlace.title}</h2>
+                <p className="globe-card-location">{selectedPlace.location}</p>
+                {selectedPlace.note ? <p>{selectedPlace.note}</p> : <p>{selectedPlace.photoCount} photographs from this place.</p>}
+                <span className="inline-link">Open collection <span>↗</span></span>
+              </div>
+            </Link>
+            <button aria-label="Close selected place" className="globe-card-close" onClick={clearSelection} type="button">×</button>
           </article>
         ) : (
           <div className="globe-instructions">
