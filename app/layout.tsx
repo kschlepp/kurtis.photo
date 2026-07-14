@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import Script from "next/script";
 import { CartProvider } from "@/components/cart";
+import "maplibre-gl/dist/maplibre-gl.css";
 import "./globals.css";
 
 export const dynamic = "force-dynamic";
@@ -17,9 +18,9 @@ export async function generateMetadata(): Promise<Metadata> {
     description: "Travel, landscape, street, and portrait photography by Kurtis Schlepp.",
     openGraph: {
       title: "kurtis.photo",
-      description: "Photographs that take Kurtis back to the moment they were made.",
+      description: "Things Kurtis saw along the way—travel, landscape, street, and portrait photography.",
       type: "website",
-      images: [{ url: "/og.png", width: 1200, height: 630, alt: "kurtis.photo — Yosemite '25" }],
+      images: [{ url: "/og.png", width: 1200, height: 630, alt: "kurtis.photo — photography by Kurtis Schlepp" }],
     },
     twitter: { card: "summary_large_image", images: ["/og.png"] },
   };

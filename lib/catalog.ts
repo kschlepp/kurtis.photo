@@ -26,8 +26,8 @@ export type Photo = {
   id: string;
   title: string | null;
   alt: string;
-  sourceFile: string;
-  printSource: string;
+  sourceFile?: string;
+  printSource?: string;
   order: number;
   sellable: boolean;
   releaseStatus: "not-applicable" | "released" | "review-required";

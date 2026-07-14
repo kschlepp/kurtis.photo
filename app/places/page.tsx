@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { PlacesMap } from "@/components/places-map";
 import { collections, getCover } from "@/lib/catalog";
 
 export const metadata = { title: "Places" };
@@ -15,6 +14,7 @@ export default function PlacesPage() {
         <p className="eyebrow">The archive</p>
         <h1>Places</h1>
         <p>Locations, light, and the small details that keep a trip from feeling far away.</p>
+        <Link className="button button-outline" href="/">Explore the globe</Link>
       </section>
       <section className="index-section" aria-labelledby="index-title">
         <div className="index-header"><p className="eyebrow">Alphabetical archive</p><h2 id="index-title">All places</h2><span>{String(collections.length).padStart(2, "0")} currently published</span></div>
@@ -29,10 +29,6 @@ export default function PlacesPage() {
             </Link>;
           })}
         </div>
-      </section>
-      <section className="map-section">
-        <div className="map-section-copy"><p className="eyebrow">Map view</p><h2>Follow the pins.</h2><p>Drag to explore, pinch to zoom, and select a pin to open a collection. Every pin represents a place, never a precise capture location.</p></div>
-        <PlacesMap />
       </section>
       <SiteFooter />
     </div></main>
