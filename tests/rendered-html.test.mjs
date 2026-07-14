@@ -67,4 +67,5 @@ test("leads the portraits page with photography", async () => {
   const heading = html.indexOf("People, as they are.");
   assert.ok(image >= 0 && heading >= 0 && image < heading);
   assert.match(html, /Portrait from/);
+  assert.doesNotMatch(html, /Have a person, occasion, or loose idea/);
 });
