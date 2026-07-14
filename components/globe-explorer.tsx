@@ -36,9 +36,12 @@ const emptyPoints: FeatureCollection<Point, PlaceProperties> = { type: "FeatureC
 function localLight(date = new Date()) {
   const hour = date.getHours() + date.getMinutes() / 60;
   const daylight = (Math.cos(((hour - 12) / 12) * Math.PI) + 1) / 2;
+  const azimuth = (hour * 15) % 360;
+  const polar = 78 - daylight * 43;
   return {
     daylight,
     night: 1 - daylight,
+    position: [1.5, azimuth, polar] as [number, number, number],
     ocean: daylight > 0.42 ? "#dfe7e7" : "#aebdc1",
     land: daylight > 0.42 ? "#d9d3c8" : "#b8b4ae",
     line: daylight > 0.42 ? "#8e918d" : "#737b7b",
@@ -162,7 +165,7 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
     sky: {
       "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 0.92, 5, 0.2],
     },
-    light: { anchor: "map", position: [1.5, 105, 65] },
+    light: { anchor: "map", position: light.position },
   } as StyleSpecification;
 }
 
@@ -288,6 +291,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
             instance.setPaintProperty("ocean", "background-color", light.ocean);
             instance.setPaintProperty("country-fill", "fill-color", light.land);
             instance.setPaintProperty("country-line", "line-color", light.line);
+            instance.setLight({ anchor: "map", position: light.position });
           };
           updateLighting();
           lightingTimer = setInterval(updateLighting, 5 * 60 * 1000);
