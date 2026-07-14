@@ -8,6 +8,7 @@ export function SiteHeader() {
         kurtis<span>.</span>photo
       </Link>
       <nav aria-label="Primary navigation">
+        <Link href="/">Places</Link>
         <Link href="/portraits">Portraits</Link>
         <Link href="/prints">Prints</Link>
         <Link href="/about">About</Link>
