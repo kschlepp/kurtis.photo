@@ -5,7 +5,7 @@
 import type { Feature, FeatureCollection, Geometry, Point } from "geojson";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { feature } from "topojson-client";
+import { feature, mesh } from "topojson-client";
 import type { GeometryCollection, Topology } from "topojson-specification";
 import type { GeoJSONSource, Map as MapLibreMap, StyleSpecification } from "maplibre-gl";
 import worldAtlas from "world-atlas/countries-110m.json";
@@ -30,6 +30,7 @@ type PlaceProperties = { slug: string; title: string };
 
 const topology = worldAtlas as unknown as CountryTopology;
 const countries = feature(topology, topology.objects.countries) as FeatureCollection<Geometry>;
+const countryBorders = mesh(topology, topology.objects.countries, (left, right) => left !== right);
 const worldView = { center: [-18, 24] as [number, number], zoom: 0.72 };
 const emptyPoints: FeatureCollection<Point, PlaceProperties> = { type: "FeatureCollection", features: [] };
 
@@ -71,6 +72,7 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
     projection: { type: "globe" },
     sources: {
       countries: { type: "geojson", data: countries },
+      "country-borders": { type: "geojson", data: countryBorders },
       places: {
         type: "geojson",
         data: placePoints,
@@ -98,7 +100,7 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
       {
         id: "country-line",
         type: "line",
-        source: "countries",
+        source: "country-borders",
         paint: {
           "line-color": light.line,
           "line-opacity": 0.52,
