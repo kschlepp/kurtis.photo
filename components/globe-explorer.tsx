@@ -9,6 +9,7 @@ import { feature } from "topojson-client";
 import type { GeometryCollection, Topology } from "topojson-specification";
 import type { GeoJSONSource, Map as MapLibreMap, StyleSpecification } from "maplibre-gl";
 import worldAtlas from "world-atlas/land-110m.json";
+import { densifyLandPolygons, rewindLandPolygons, splitAntimeridianPolygons } from "@/lib/rewind-geojson.mjs";
 
 export type GlobePlace = {
   slug: string;
@@ -29,7 +30,11 @@ type LandTopology = Topology<{ land: GeometryCollection }>;
 type PlaceProperties = { slug: string; title: string };
 
 const topology = worldAtlas as unknown as LandTopology;
-const land = feature(topology, topology.objects.land) as FeatureCollection<Geometry>;
+const land = rewindLandPolygons(
+  densifyLandPolygons(
+    splitAntimeridianPolygons(feature(topology, topology.objects.land) as FeatureCollection<Geometry>),
+  ),
+) as FeatureCollection<Geometry>;
 const worldView = { center: [-18, 24] as [number, number], zoom: 1.08 };
 const emptyPoints: FeatureCollection<Point, PlaceProperties> = { type: "FeatureCollection", features: [] };
 

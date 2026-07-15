@@ -1,5 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { feature } from "topojson-client";
+import worldAtlas from "world-atlas/land-110m.json" with { type: "json" };
+import { rewindLandPolygons, signedRingArea } from "../lib/rewind-geojson.mjs";
 
 async function render(path = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
@@ -36,6 +39,18 @@ test("server-renders kurtis.photo", async () => {
   assert.match(html, /href="\/">Places<\/a>/);
   assert.doesNotMatch(html, /From the archive|Find a place, then wander/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
+});
+
+test("normalizes globe land polygons to GeoJSON winding order", () => {
+  const land = rewindLandPolygons(feature(worldAtlas, worldAtlas.objects.land));
+  const polygons = land.features[0].geometry.coordinates;
+
+  for (const polygon of polygons) {
+    assert.ok(signedRingArea(polygon[0]) > 0, "exterior rings must be counterclockwise");
+    for (const hole of polygon.slice(1)) {
+      assert.ok(signedRingArea(hole) < 0, "interior rings must be clockwise");
+    }
+  }
 });
 
 test("keeps a photo-led archive behind the globe home", async () => {
