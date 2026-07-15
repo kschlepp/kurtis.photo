@@ -5,7 +5,7 @@
 import type { Feature, FeatureCollection, Geometry, Point } from "geojson";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { feature, mesh } from "topojson-client";
+import { feature } from "topojson-client";
 import type { GeometryCollection, Topology } from "topojson-specification";
 import type { GeoJSONSource, Map as MapLibreMap, StyleSpecification } from "maplibre-gl";
 import worldAtlas from "world-atlas/countries-110m.json";
@@ -30,9 +30,12 @@ type PlaceProperties = { slug: string; title: string };
 
 const topology = worldAtlas as unknown as CountryTopology;
 const countries = feature(topology, topology.objects.countries) as FeatureCollection<Geometry>;
-const countryBorders = mesh(topology, topology.objects.countries, (left, right) => left !== right);
-const worldView = { center: [-18, 24] as [number, number], zoom: 0.72 };
+const worldView = { center: [-18, 24] as [number, number], zoom: 1.08 };
 const emptyPoints: FeatureCollection<Point, PlaceProperties> = { type: "FeatureCollection", features: [] };
+
+function worldPadding() {
+  return { top: 0, right: 0, bottom: window.matchMedia("(max-width: 780px)").matches ? 92 : 138, left: 0 };
+}
 
 function localLight(date = new Date()) {
   const hour = date.getHours() + date.getMinutes() / 60;
@@ -45,7 +48,6 @@ function localLight(date = new Date()) {
     position: [1.5, azimuth, polar] as [number, number, number],
     ocean: daylight > 0.42 ? "#dfe7e7" : "#aebdc1",
     land: daylight > 0.42 ? "#d9d3c8" : "#b8b4ae",
-    line: daylight > 0.42 ? "#8e918d" : "#737b7b",
   };
 }
 
@@ -72,7 +74,6 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
     projection: { type: "globe" },
     sources: {
       countries: { type: "geojson", data: countries },
-      "country-borders": { type: "geojson", data: countryBorders },
       places: {
         type: "geojson",
         data: placePoints,
@@ -95,16 +96,6 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
         paint: {
           "fill-color": light.land,
           "fill-opacity": 0.98,
-        },
-      },
-      {
-        id: "country-line",
-        type: "line",
-        source: "country-borders",
-        paint: {
-          "line-color": light.line,
-          "line-opacity": 0.52,
-          "line-width": 0.75,
         },
       },
       {
@@ -214,7 +205,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
           bearing: 0,
           pitch: 0,
         }
-      : { ...worldView, bearing: 0, pitch: 0 };
+      : { ...worldView, padding: worldPadding(), bearing: 0, pitch: 0 };
 
     if (reducedMotion) map.jumpTo(camera);
     else map.easeTo({ ...camera, duration: place ? 1050 : 850, essential: false });
@@ -270,7 +261,6 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
       try {
         const { Map: MapConstructor } = await import("maplibre-gl");
         if (cancelled) return;
-        const coarsePointer = window.matchMedia("(pointer: coarse)").matches;
         instance = new MapConstructor({
           container,
           style: makeGlobeStyle(places, new Date()),
@@ -280,12 +270,13 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
           maxZoom: 5.25,
           pitch: 0,
           bearing: 0,
-          cooperativeGestures: !coarsePointer,
+          cooperativeGestures: false,
           attributionControl: false,
           renderWorldCopies: false,
           canvasContextAttributes: { antialias: true, powerPreference: "high-performance" },
         });
         mapRef.current = instance;
+        instance.setPadding(worldPadding());
 
         instance.on("load", () => {
           if (cancelled || !instance) return;
@@ -297,7 +288,6 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
             setNightShade(light.night);
             instance.setPaintProperty("ocean", "background-color", light.ocean);
             instance.setPaintProperty("country-fill", "fill-color", light.land);
-            instance.setPaintProperty("country-line", "line-color", light.line);
             instance.setSky({
               "sky-color": light.ocean,
               "horizon-color": light.daylight > 0.42 ? "#c6d1d2" : "#899b9f",
@@ -464,7 +454,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
           <div className="globe-instructions">
             <p className="eyebrow">The archive, geographically</p>
             <p>Drag to rotate. Select a pin or choose a place from the list.</p>
-            <small>Use two fingers on touch screens. Hold Command or Control while scrolling to zoom.</small>
+            <small>Scroll or pinch to zoom. Use two fingers on touch screens.</small>
           </div>
         )}
       </div>
