@@ -8,7 +8,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { feature } from "topojson-client";
 import type { GeometryCollection, Topology } from "topojson-specification";
 import type { GeoJSONSource, Map as MapLibreMap, StyleSpecification } from "maplibre-gl";
-import worldAtlas from "world-atlas/countries-110m.json";
+import worldAtlas from "world-atlas/land-110m.json";
 
 export type GlobePlace = {
   slug: string;
@@ -25,11 +25,11 @@ export type GlobePlace = {
   };
 };
 
-type CountryTopology = Topology<{ countries: GeometryCollection }>;
+type LandTopology = Topology<{ land: GeometryCollection }>;
 type PlaceProperties = { slug: string; title: string };
 
-const topology = worldAtlas as unknown as CountryTopology;
-const countries = feature(topology, topology.objects.countries) as FeatureCollection<Geometry>;
+const topology = worldAtlas as unknown as LandTopology;
+const land = feature(topology, topology.objects.land) as FeatureCollection<Geometry>;
 const worldView = { center: [-18, 24] as [number, number], zoom: 1.08 };
 const emptyPoints: FeatureCollection<Point, PlaceProperties> = { type: "FeatureCollection", features: [] };
 
@@ -73,7 +73,7 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
     version: 8,
     projection: { type: "globe" },
     sources: {
-      countries: { type: "geojson", data: countries },
+      land: { type: "geojson", data: land },
       places: {
         type: "geojson",
         data: placePoints,
@@ -90,9 +90,9 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
         paint: { "background-color": light.ocean },
       },
       {
-        id: "country-fill",
+        id: "land-fill",
         type: "fill",
-        source: "countries",
+        source: "land",
         paint: {
           "fill-color": light.land,
           "fill-opacity": 0.98,
@@ -287,7 +287,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
             const light = localLight();
             setNightShade(light.night);
             instance.setPaintProperty("ocean", "background-color", light.ocean);
-            instance.setPaintProperty("country-fill", "fill-color", light.land);
+            instance.setPaintProperty("land-fill", "fill-color", light.land);
             instance.setSky({
               "sky-color": light.ocean,
               "horizon-color": light.daylight > 0.42 ? "#c6d1d2" : "#899b9f",
