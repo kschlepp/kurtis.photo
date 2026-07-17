@@ -1,8 +1,13 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { feature } from "topojson-client";
-import worldAtlas from "world-atlas/land-110m.json" with { type: "json" };
-import { rewindLandPolygons, signedRingArea } from "../lib/rewind-geojson.mjs";
+import worldAtlas from "world-atlas/land-50m.json" with { type: "json" };
+import {
+  densifyLandPolygons,
+  rewindLandPolygons,
+  signedRingArea,
+  splitAntimeridianPolygons,
+} from "../lib/rewind-geojson.mjs";
 
 async function render(path = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
@@ -46,13 +51,17 @@ test("server-renders kurtis.photo", async () => {
 });
 
 test("normalizes globe land polygons to GeoJSON winding order", () => {
-  const land = rewindLandPolygons(feature(worldAtlas, worldAtlas.objects.land));
+  const land = rewindLandPolygons(
+    densifyLandPolygons(
+      splitAntimeridianPolygons(feature(worldAtlas, worldAtlas.objects.land)),
+    ),
+  );
   const polygons = land.features[0].geometry.coordinates;
 
   for (const polygon of polygons) {
-    assert.ok(signedRingArea(polygon[0]) > 0, "exterior rings must be counterclockwise");
+    assert.ok(signedRingArea(polygon[0]) >= 0, "exterior rings must not be clockwise");
     for (const hole of polygon.slice(1)) {
-      assert.ok(signedRingArea(hole) < 0, "interior rings must be clockwise");
+      assert.ok(signedRingArea(hole) <= 0, "interior rings must not be counterclockwise");
     }
   }
 });

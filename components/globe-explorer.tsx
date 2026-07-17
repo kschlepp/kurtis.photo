@@ -8,7 +8,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { feature } from "topojson-client";
 import type { GeometryCollection, Topology } from "topojson-specification";
 import type { GeoJSONSource, Map as MapLibreMap, StyleSpecification } from "maplibre-gl";
-import worldAtlas from "world-atlas/land-110m.json";
+import worldAtlas from "world-atlas/land-50m.json";
 import { densifyLandPolygons, rewindLandPolygons, splitAntimeridianPolygons } from "@/lib/rewind-geojson.mjs";
 
 export type GlobePlace = {
@@ -36,6 +36,8 @@ const land = rewindLandPolygons(
   ),
 ) as FeatureCollection<Geometry>;
 const worldView = { center: [-18, 24] as [number, number], zoom: 1.08 };
+const maxGlobeZoom = 9.5;
+const selectedPlaceZoom = 9.2;
 const emptyPoints: FeatureCollection<Point, PlaceProperties> = { type: "FeatureCollection", features: [] };
 
 function worldPadding() {
@@ -83,8 +85,8 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
         type: "geojson",
         data: placePoints,
         cluster: true,
-        clusterMaxZoom: 3,
-        clusterRadius: 34,
+          clusterMaxZoom: 8,
+          clusterRadius: 24,
       },
       "selected-place": { type: "geojson", data: emptyPoints },
     },
@@ -133,7 +135,7 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
         filter: ["!", ["has", "point_count"]],
         paint: {
           "circle-color": "#c98e7e",
-          "circle-radius": ["interpolate", ["linear"], ["zoom"], 0, 5.5, 4, 8],
+          "circle-radius": ["interpolate", ["linear"], ["zoom"], 0, 5.5, 4, 7.5, 9.5, 5.5],
           "circle-stroke-color": "#f8f7f2",
           "circle-stroke-width": 2,
         },
@@ -206,7 +208,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
     const camera = place
       ? {
           center: [place.coordinates.longitude, place.coordinates.latitude] as [number, number],
-          zoom: Math.min(Math.max(map.getZoom(), 2.85), 3.5),
+          zoom: Math.max(map.getZoom(), selectedPlaceZoom),
           bearing: 0,
           pitch: 0,
         }
@@ -272,7 +274,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
           center: worldView.center,
           zoom: worldView.zoom,
           minZoom: 0,
-          maxZoom: 5.25,
+          maxZoom: maxGlobeZoom,
           pitch: 0,
           bearing: 0,
           cooperativeGestures: false,
@@ -362,7 +364,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
     const map = mapRef.current;
     if (!map) return;
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const zoom = Math.min(5.25, Math.max(0, map.getZoom() + amount));
+    const zoom = Math.min(maxGlobeZoom, Math.max(0, map.getZoom() + amount));
     if (reducedMotion) map.jumpTo({ zoom });
     else map.easeTo({ zoom, duration: 300, essential: false });
   };
@@ -459,7 +461,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
           <div className="globe-instructions">
             <p className="eyebrow">The archive, geographically</p>
             <p>Drag to rotate. Select a pin or choose a place from the list.</p>
-            <small>Scroll or pinch to zoom. Use two fingers on touch screens.</small>
+            <small>Larger pins group nearby places—select one to zoom in. Scroll or pinch to zoom.</small>
           </div>
         )}
       </div>
