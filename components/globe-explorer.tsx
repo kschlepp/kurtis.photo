@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { feature } from "topojson-client";
 import type { GeometryCollection, Topology } from "topojson-specification";
-import type { GeoJSONSource, Map as MapLibreMap, StyleSpecification } from "maplibre-gl";
+import type { GeoJSONSource, Map as MapLibreMap, Marker as MapLibreMarker, StyleSpecification } from "maplibre-gl";
 import worldAtlas from "world-atlas/land-50m.json";
 import { densifyLandPolygons, rewindLandPolygons, splitAntimeridianPolygons } from "@/lib/rewind-geojson.mjs";
 
@@ -85,8 +85,8 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
         type: "geojson",
         data: placePoints,
         cluster: true,
-          clusterMaxZoom: 8,
-          clusterRadius: 24,
+        clusterMaxZoom: 8,
+        clusterRadius: 24,
       },
       "selected-place": { type: "geojson", data: emptyPoints },
     },
@@ -184,6 +184,7 @@ function updatePlaceQuery(slug: string | null) {
 export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
+  const clusterMarkersRef = useRef<MapLibreMarker[]>([]);
   const initializedUrlRef = useRef(false);
   const [mapReady, setMapReady] = useState(false);
   const [mapFailed, setMapFailed] = useState(false);
@@ -204,6 +205,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
   }, [filter, places]);
 
   const moveCamera = useCallback((map: MapLibreMap, place: GlobePlace | null) => {
+    map.stop();
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const camera = place
       ? {
@@ -266,7 +268,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
       if (!container) return;
 
       try {
-        const { Map: MapConstructor } = await import("maplibre-gl");
+        const { Map: MapConstructor, Marker } = await import("maplibre-gl");
         if (cancelled) return;
         instance = new MapConstructor({
           container,
@@ -284,6 +286,38 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
         });
         mapRef.current = instance;
         instance.setPadding(worldPadding());
+
+        const clearClusterMarkers = () => {
+          for (const marker of clusterMarkersRef.current) marker.remove();
+          clusterMarkersRef.current = [];
+        };
+
+        const updateClusterMarkers = () => {
+          if (!instance?.isStyleLoaded()) return;
+          clearClusterMarkers();
+          const seen = new Set<number>();
+          const markers: MapLibreMarker[] = [];
+          for (const cluster of instance.querySourceFeatures("places")) {
+            const clusterId = cluster.properties?.cluster_id;
+            const count = cluster.properties?.point_count;
+            if (typeof clusterId !== "number" || typeof count !== "number" || seen.has(clusterId)) continue;
+            if (cluster.geometry.type !== "Point") continue;
+            seen.add(clusterId);
+            const label = document.createElement("span");
+            label.className = "globe-cluster-count";
+            label.textContent = String(count);
+            label.setAttribute("aria-hidden", "true");
+            markers.push(new Marker({ element: label, anchor: "center" })
+              .setLngLat(cluster.geometry.coordinates as [number, number])
+              .addTo(instance));
+          }
+          clusterMarkersRef.current = markers;
+        };
+
+        const stopIntroduction = () => instance?.stop();
+        for (const eventName of ["pointerdown", "wheel", "touchstart"] as const) {
+          container.addEventListener(eventName, stopIntroduction, { passive: true });
+        }
 
         instance.on("load", () => {
           if (cancelled || !instance) return;
@@ -307,6 +341,21 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
           };
           updateLighting();
           lightingTimer = setInterval(updateLighting, 5 * 60 * 1000);
+          instance.on("idle", updateClusterMarkers);
+          instance.on("moveend", updateClusterMarkers);
+
+          const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          const opensOnPlace = new URLSearchParams(window.location.search).has("place");
+          if (!reducedMotion && !opensOnPlace) {
+            instance.jumpTo({ center: [145, 18], zoom: 0.92, bearing: 0, pitch: 0 });
+            instance.easeTo({
+              ...worldView,
+              padding: worldPadding(),
+              duration: 6200,
+              easing: (progress) => 1 - Math.pow(1 - progress, 3),
+              essential: false,
+            });
+          }
 
           instance.on("click", "place-pins", (event) => {
             const slug = event.features?.[0]?.properties?.slug;
@@ -347,6 +396,8 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
     return () => {
       cancelled = true;
       if (lightingTimer) clearInterval(lightingTimer);
+      for (const marker of clusterMarkersRef.current) marker.remove();
+      clusterMarkersRef.current = [];
       instance?.remove();
       mapRef.current = null;
     };
@@ -363,6 +414,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
   const zoomBy = (amount: number) => {
     const map = mapRef.current;
     if (!map) return;
+    map.stop();
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const zoom = Math.min(maxGlobeZoom, Math.max(0, map.getZoom() + amount));
     if (reducedMotion) map.jumpTo({ zoom });

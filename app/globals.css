@@ -262,6 +262,7 @@ h2 { font-size: clamp(2.1rem, 3.7vw, 4rem); }
 .globe-map .maplibregl-canvas:focus-visible { outline: 2px solid var(--ocean); outline-offset: -4px; }
 .globe-map .maplibregl-cooperative-gesture-screen { background: color-mix(in srgb, var(--ink) 48%, transparent); color: var(--paper-bright); font-size: .86rem; }
 .globe-map .maplibregl-ctrl-logo { opacity: .45; filter: grayscale(1); }
+.globe-cluster-count { display: grid; place-items: center; width: 22px; height: 22px; pointer-events: none; color: var(--paper-bright); font: 700 .68rem / 1 var(--font-mono); text-align: center; text-shadow: 0 1px 1px color-mix(in srgb, var(--ink) 35%, transparent); }
 .globe-loading, .globe-fallback { position: absolute; z-index: 2; inset: 0; display: grid; place-content: center; justify-items: center; padding: 2rem; background: #dfe7e7; text-align: center; }
 .globe-loading { pointer-events: none; color: var(--muted); }
 .globe-loading span { width: 54px; height: 54px; border: 1px solid color-mix(in srgb, var(--ink) 28%, transparent); border-top-color: var(--ocean); border-radius: 50%; animation: globe-loading-spin 1.4s linear infinite; }
