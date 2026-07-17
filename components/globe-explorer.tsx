@@ -44,7 +44,7 @@ const countryBorders: MultiLineString = mesh(
   countriesTopology.objects.countries,
   (left, right) => left !== right,
 ) as MultiLineString;
-const worldView = { center: [-18, 24] as [number, number], zoom: 1.08 };
+const worldView = { center: [-115, 24] as [number, number], zoom: 1.5 };
 const maxGlobeZoom = 9.5;
 const selectedPlaceZoom = 9.2;
 const emptyPoints: FeatureCollection<Point, PlaceProperties> = { type: "FeatureCollection", features: [] };
@@ -393,7 +393,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
           const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
           const opensOnPlace = new URLSearchParams(window.location.search).has("place");
           if (!reducedMotion && !opensOnPlace) {
-            instance.jumpTo({ center: [145, 18], zoom: 0.92, bearing: 0, pitch: 0 });
+            instance.jumpTo({ center: [50, -18], zoom: 0.5, bearing: 0, pitch: 0 });
             instance.easeTo({
               ...worldView,
               padding: worldPadding(),
@@ -417,7 +417,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
             const clusterId = cluster?.properties?.cluster_id;
             if (typeof clusterId !== "number" || cluster?.geometry.type !== "Point") return;
             const source = instance.getSource("places") as GeoJSONSource;
-            const zoom = await source.getClusterExpansionZoom(clusterId);
+            const zoom = await source.getClusterExpansionZoom(clusterId) + 1;
             const center = cluster.geometry.coordinates as [number, number];
             const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
             if (reducedMotion) instance.jumpTo({ center, zoom });

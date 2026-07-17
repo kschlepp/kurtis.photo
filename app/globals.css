@@ -254,7 +254,7 @@ h2 { font-size: clamp(2.1rem, 3.7vw, 4rem); }
 .globe-sidebar-links a { color: var(--ocean); font-size: .73rem; font-weight: 700; letter-spacing: .04em; }
 .globe-sidebar-links a span { display: inline-block; transition: transform .2s ease; }
 .globe-sidebar-links a:hover span { transform: translate(2px, -2px); }
-.globe-stage { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #83d8ef; isolation: isolate; }
+.globe-stage { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #a5e0f0; isolation: isolate; }
 .globe-map { position: absolute; inset: 0; }
 .globe-map .maplibregl-canvas { cursor: grab; outline: none; }
 .globe-map .maplibregl-canvas:active { cursor: grabbing; }
