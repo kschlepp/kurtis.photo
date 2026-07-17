@@ -1,0 +1,742 @@
+{
+  "slug": "costa-rica",
+  "title": "Costa Rica",
+  "location": "Costa Rica",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 9.7489,
+    "longitude": -83.7534
+  },
+  "coverImageId": "dscf7864-zagreus-lan-aug-09-213727-2024-conflict",
+  "images": [
+    {
+      "id": "dscf7864-zagreus-lan-aug-09-213727-2024-conflict",
+      "title": null,
+      "alt": "Costa Rica photograph 1",
+      "sourceFile": "DSCF7864_zagreus.lan_Aug-09-213727-2024_Conflict.jpg",
+      "printSource": "DSCF7864_zagreus.lan_Aug-09-213727-2024_Conflict.jpg",
+      "assetKey": "dscf7864-zagreus-lan-aug-09-213727-2024-conflict-2043bed23ae9",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/costa-rica/dscf7864-zagreus-lan-aug-09-213727-2024-conflict-2043bed23ae9-768.jpg",
+        "1600": "/media/costa-rica/dscf7864-zagreus-lan-aug-09-213727-2024-conflict-2043bed23ae9-1600.jpg",
+        "2400": "/media/costa-rica/dscf7864-zagreus-lan-aug-09-213727-2024-conflict-2043bed23ae9-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:09 22:11:18"
+      }
+    },
+    {
+      "id": "dscf7888-zagreus-lan-aug-09-213727-2024-conflict",
+      "title": null,
+      "alt": "Costa Rica photograph 2",
+      "sourceFile": "DSCF7888_zagreus.lan_Aug-09-213727-2024_Conflict.jpg",
+      "printSource": "DSCF7888_zagreus.lan_Aug-09-213727-2024_Conflict.jpg",
+      "assetKey": "dscf7888-zagreus-lan-aug-09-213727-2024-conflict-63917010cbde",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 3435,
+      "height": 5152,
+      "variants": {
+        "768": "/media/costa-rica/dscf7888-zagreus-lan-aug-09-213727-2024-conflict-63917010cbde-768.jpg",
+        "1600": "/media/costa-rica/dscf7888-zagreus-lan-aug-09-213727-2024-conflict-63917010cbde-1600.jpg",
+        "2400": "/media/costa-rica/dscf7888-zagreus-lan-aug-09-213727-2024-conflict-63917010cbde-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:09 22:14:53"
+      }
+    },
+    {
+      "id": "dscf7906-zagreus-lan-aug-09-214232-2024-conflict",
+      "title": null,
+      "alt": "Costa Rica photograph 3",
+      "sourceFile": "DSCF7906_zagreus.lan_Aug-09-214232-2024_Conflict.jpg",
+      "printSource": "DSCF7906_zagreus.lan_Aug-09-214232-2024_Conflict.jpg",
+      "assetKey": "dscf7906-zagreus-lan-aug-09-214232-2024-conflict-e7ceb8f6f593",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/costa-rica/dscf7906-zagreus-lan-aug-09-214232-2024-conflict-e7ceb8f6f593-768.jpg",
+        "1600": "/media/costa-rica/dscf7906-zagreus-lan-aug-09-214232-2024-conflict-e7ceb8f6f593-1600.jpg",
+        "2400": "/media/costa-rica/dscf7906-zagreus-lan-aug-09-214232-2024-conflict-e7ceb8f6f593-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:10 23:22:46"
+      }
+    },
+    {
+      "id": "dscf7917-zagreus-lan-aug-09-214232-2024-conflict",
+      "title": null,
+      "alt": "Costa Rica photograph 4",
+      "sourceFile": "DSCF7917_zagreus.lan_Aug-09-214232-2024_Conflict.jpg",
+      "printSource": "DSCF7917_zagreus.lan_Aug-09-214232-2024_Conflict.jpg",
+      "assetKey": "dscf7917-zagreus-lan-aug-09-214232-2024-conflict-861584a9718e",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/costa-rica/dscf7917-zagreus-lan-aug-09-214232-2024-conflict-861584a9718e-768.jpg",
+        "1600": "/media/costa-rica/dscf7917-zagreus-lan-aug-09-214232-2024-conflict-861584a9718e-1600.jpg",
+        "2400": "/media/costa-rica/dscf7917-zagreus-lan-aug-09-214232-2024-conflict-861584a9718e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:10 23:26:20"
+      }
+    },
+    {
+      "id": "dscf8015-zagreus-lan-aug-09-214233-2024-conflict",
+      "title": null,
+      "alt": "Costa Rica photograph 5",
+      "sourceFile": "DSCF8015_zagreus.lan_Aug-09-214233-2024_Conflict.jpg",
+      "printSource": "DSCF8015_zagreus.lan_Aug-09-214233-2024_Conflict.jpg",
+      "assetKey": "dscf8015-zagreus-lan-aug-09-214233-2024-conflict-742faf1e4070",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/costa-rica/dscf8015-zagreus-lan-aug-09-214233-2024-conflict-742faf1e4070-768.jpg",
+        "1600": "/media/costa-rica/dscf8015-zagreus-lan-aug-09-214233-2024-conflict-742faf1e4070-1600.jpg",
+        "2400": "/media/costa-rica/dscf8015-zagreus-lan-aug-09-214233-2024-conflict-742faf1e4070-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:10 23:49:54"
+      }
+    },
+    {
+      "id": "dscf8031-zagreus-lan-aug-09-224047-2024-conflict",
+      "title": null,
+      "alt": "Costa Rica photograph 6",
+      "sourceFile": "DSCF8031_zagreus.lan_Aug-09-224047-2024_Conflict.jpg",
+      "printSource": "DSCF8031_zagreus.lan_Aug-09-224047-2024_Conflict.jpg",
+      "assetKey": "dscf8031-zagreus-lan-aug-09-224047-2024-conflict-9a9d16f0aec3",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/costa-rica/dscf8031-zagreus-lan-aug-09-224047-2024-conflict-9a9d16f0aec3-768.jpg",
+        "1600": "/media/costa-rica/dscf8031-zagreus-lan-aug-09-224047-2024-conflict-9a9d16f0aec3-1600.jpg",
+        "2400": "/media/costa-rica/dscf8031-zagreus-lan-aug-09-224047-2024-conflict-9a9d16f0aec3-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:10 23:52:07"
+      }
+    },
+    {
+      "id": "dscf8046-zagreus-lan-aug-09-224047-2024-conflict",
+      "title": null,
+      "alt": "Costa Rica photograph 7",
+      "sourceFile": "DSCF8046_zagreus.lan_Aug-09-224047-2024_Conflict.jpg",
+      "printSource": "DSCF8046_zagreus.lan_Aug-09-224047-2024_Conflict.jpg",
+      "assetKey": "dscf8046-zagreus-lan-aug-09-224047-2024-conflict-b502d078a1d6",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/costa-rica/dscf8046-zagreus-lan-aug-09-224047-2024-conflict-b502d078a1d6-768.jpg",
+        "1600": "/media/costa-rica/dscf8046-zagreus-lan-aug-09-224047-2024-conflict-b502d078a1d6-1600.jpg",
+        "2400": "/media/costa-rica/dscf8046-zagreus-lan-aug-09-224047-2024-conflict-b502d078a1d6-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:10 23:52:33"
+      }
+    },
+    {
+      "id": "dscf8052-zagreus-lan-aug-09-224047-2024-conflict",
+      "title": null,
+      "alt": "Costa Rica photograph 8",
+      "sourceFile": "DSCF8052_zagreus.lan_Aug-09-224047-2024_Conflict.jpg",
+      "printSource": "DSCF8052_zagreus.lan_Aug-09-224047-2024_Conflict.jpg",
+      "assetKey": "dscf8052-zagreus-lan-aug-09-224047-2024-conflict-fb77146ce632",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/costa-rica/dscf8052-zagreus-lan-aug-09-224047-2024-conflict-fb77146ce632-768.jpg",
+        "1600": "/media/costa-rica/dscf8052-zagreus-lan-aug-09-224047-2024-conflict-fb77146ce632-1600.jpg",
+        "2400": "/media/costa-rica/dscf8052-zagreus-lan-aug-09-224047-2024-conflict-fb77146ce632-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:10 23:53:44"
+      }
+    },
+    {
+      "id": "dscf8075-zagreus-lan-aug-09-224048-2024-conflict",
+      "title": null,
+      "alt": "Costa Rica photograph 9",
+      "sourceFile": "DSCF8075_zagreus.lan_Aug-09-224048-2024_Conflict.jpg",
+      "printSource": "DSCF8075_zagreus.lan_Aug-09-224048-2024_Conflict.jpg",
+      "assetKey": "dscf8075-zagreus-lan-aug-09-224048-2024-conflict-3cdb96490dcb",
+      "order": 9,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/costa-rica/dscf8075-zagreus-lan-aug-09-224048-2024-conflict-3cdb96490dcb-768.jpg",
+        "1600": "/media/costa-rica/dscf8075-zagreus-lan-aug-09-224048-2024-conflict-3cdb96490dcb-1600.jpg",
+        "2400": "/media/costa-rica/dscf8075-zagreus-lan-aug-09-224048-2024-conflict-3cdb96490dcb-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:10 23:55:32"
+      }
+    },
+    {
+      "id": "dscf8086-zagreus-lan-aug-09-224048-2024-conflict",
+      "title": null,
+      "alt": "Costa Rica photograph 10",
+      "sourceFile": "DSCF8086_zagreus.lan_Aug-09-224048-2024_Conflict.jpg",
+      "printSource": "DSCF8086_zagreus.lan_Aug-09-224048-2024_Conflict.jpg",
+      "assetKey": "dscf8086-zagreus-lan-aug-09-224048-2024-conflict-2383cf7cbfcf",
+      "order": 10,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/costa-rica/dscf8086-zagreus-lan-aug-09-224048-2024-conflict-2383cf7cbfcf-768.jpg",
+        "1600": "/media/costa-rica/dscf8086-zagreus-lan-aug-09-224048-2024-conflict-2383cf7cbfcf-1600.jpg",
+        "2400": "/media/costa-rica/dscf8086-zagreus-lan-aug-09-224048-2024-conflict-2383cf7cbfcf-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:10 23:56:16"
+      }
+    },
+    {
+      "id": "dscf8146-zagreus-lan-aug-09-224048-2024-conflict",
+      "title": null,
+      "alt": "Costa Rica photograph 11",
+      "sourceFile": "DSCF8146_zagreus.lan_Aug-09-224048-2024_Conflict.jpg",
+      "printSource": "DSCF8146_zagreus.lan_Aug-09-224048-2024_Conflict.jpg",
+      "assetKey": "dscf8146-zagreus-lan-aug-09-224048-2024-conflict-e9f98729c262",
+      "order": 11,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/costa-rica/dscf8146-zagreus-lan-aug-09-224048-2024-conflict-e9f98729c262-768.jpg",
+        "1600": "/media/costa-rica/dscf8146-zagreus-lan-aug-09-224048-2024-conflict-e9f98729c262-1600.jpg",
+        "2400": "/media/costa-rica/dscf8146-zagreus-lan-aug-09-224048-2024-conflict-e9f98729c262-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:11 13:20:05"
+      }
+    },
+    {
+      "id": "dscf8164",
+      "title": null,
+      "alt": "Costa Rica photograph 12",
+      "sourceFile": "DSCF8164.jpg",
+      "printSource": "DSCF8164.jpg",
+      "assetKey": "dscf8164-6c6dc4047c40",
+      "order": 12,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/costa-rica/dscf8164-6c6dc4047c40-768.jpg",
+        "1600": "/media/costa-rica/dscf8164-6c6dc4047c40-1600.jpg",
+        "2400": "/media/costa-rica/dscf8164-6c6dc4047c40-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:11 13:28:03"
+      }
+    },
+    {
+      "id": "dscf8192",
+      "title": null,
+      "alt": "Costa Rica photograph 13",
+      "sourceFile": "DSCF8192.jpg",
+      "printSource": "DSCF8192.jpg",
+      "assetKey": "dscf8192-d5d471126aca",
+      "order": 13,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/costa-rica/dscf8192-d5d471126aca-768.jpg",
+        "1600": "/media/costa-rica/dscf8192-d5d471126aca-1600.jpg",
+        "2400": "/media/costa-rica/dscf8192-d5d471126aca-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:11 13:35:04"
+      }
+    },
+    {
+      "id": "dscf8206",
+      "title": null,
+      "alt": "Costa Rica photograph 14",
+      "sourceFile": "DSCF8206.jpg",
+      "printSource": "DSCF8206.jpg",
+      "assetKey": "dscf8206-9017f87e313d",
+      "order": 14,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/costa-rica/dscf8206-9017f87e313d-768.jpg",
+        "1600": "/media/costa-rica/dscf8206-9017f87e313d-1600.jpg",
+        "2400": "/media/costa-rica/dscf8206-9017f87e313d-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:11 13:41:08"
+      }
+    },
+    {
+      "id": "dscf8218",
+      "title": null,
+      "alt": "Costa Rica photograph 15",
+      "sourceFile": "DSCF8218.jpg",
+      "printSource": "DSCF8218.jpg",
+      "assetKey": "dscf8218-581b210d9908",
+      "order": 15,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/costa-rica/dscf8218-581b210d9908-768.jpg",
+        "1600": "/media/costa-rica/dscf8218-581b210d9908-1600.jpg",
+        "2400": "/media/costa-rica/dscf8218-581b210d9908-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:11 13:42:43"
+      }
+    },
+    {
+      "id": "dscf8297",
+      "title": null,
+      "alt": "Costa Rica photograph 16",
+      "sourceFile": "DSCF8297.jpg",
+      "printSource": "DSCF8297.jpg",
+      "assetKey": "dscf8297-00310a4b4046",
+      "order": 16,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/costa-rica/dscf8297-00310a4b4046-768.jpg",
+        "1600": "/media/costa-rica/dscf8297-00310a4b4046-1600.jpg",
+        "2400": "/media/costa-rica/dscf8297-00310a4b4046-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:11 13:53:32"
+      }
+    },
+    {
+      "id": "dscf8302",
+      "title": null,
+      "alt": "Costa Rica photograph 17",
+      "sourceFile": "DSCF8302.jpg",
+      "printSource": "DSCF8302.jpg",
+      "assetKey": "dscf8302-fd603b9a5b7c",
+      "order": 17,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/costa-rica/dscf8302-fd603b9a5b7c-768.jpg",
+        "1600": "/media/costa-rica/dscf8302-fd603b9a5b7c-1600.jpg",
+        "2400": "/media/costa-rica/dscf8302-fd603b9a5b7c-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:11 13:53:57"
+      }
+    },
+    {
+      "id": "dscf8319",
+      "title": null,
+      "alt": "Costa Rica photograph 18",
+      "sourceFile": "DSCF8319.jpg",
+      "printSource": "DSCF8319.jpg",
+      "assetKey": "dscf8319-dd5164bcd23c",
+      "order": 18,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/costa-rica/dscf8319-dd5164bcd23c-768.jpg",
+        "1600": "/media/costa-rica/dscf8319-dd5164bcd23c-1600.jpg",
+        "2400": "/media/costa-rica/dscf8319-dd5164bcd23c-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:11 13:55:13"
+      }
+    },
+    {
+      "id": "dscf8365",
+      "title": null,
+      "alt": "Costa Rica photograph 19",
+      "sourceFile": "DSCF8365.jpg",
+      "printSource": "DSCF8365.jpg",
+      "assetKey": "dscf8365-f04b8379d631",
+      "order": 19,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/costa-rica/dscf8365-f04b8379d631-768.jpg",
+        "1600": "/media/costa-rica/dscf8365-f04b8379d631-1600.jpg",
+        "2400": "/media/costa-rica/dscf8365-f04b8379d631-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:17 22:15:49"
+      }
+    },
+    {
+      "id": "dscf8366",
+      "title": null,
+      "alt": "Costa Rica photograph 20",
+      "sourceFile": "DSCF8366.jpg",
+      "printSource": "DSCF8366.jpg",
+      "assetKey": "dscf8366-93bf750e06a1",
+      "order": 20,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4173,
+      "height": 6259,
+      "variants": {
+        "768": "/media/costa-rica/dscf8366-93bf750e06a1-768.jpg",
+        "1600": "/media/costa-rica/dscf8366-93bf750e06a1-1600.jpg",
+        "2400": "/media/costa-rica/dscf8366-93bf750e06a1-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:17 22:15:49"
+      }
+    },
+    {
+      "id": "dscf8367",
+      "title": null,
+      "alt": "Costa Rica photograph 21",
+      "sourceFile": "DSCF8367.jpg",
+      "printSource": "DSCF8367.jpg",
+      "assetKey": "dscf8367-6ad1bf20edd4",
+      "order": 21,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/costa-rica/dscf8367-6ad1bf20edd4-768.jpg",
+        "1600": "/media/costa-rica/dscf8367-6ad1bf20edd4-1600.jpg",
+        "2400": "/media/costa-rica/dscf8367-6ad1bf20edd4-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:17 22:15:49"
+      }
+    },
+    {
+      "id": "dscf8383",
+      "title": null,
+      "alt": "Costa Rica photograph 22",
+      "sourceFile": "DSCF8383.jpg",
+      "printSource": "DSCF8383.jpg",
+      "assetKey": "dscf8383-e5d0648fbd9e",
+      "order": 22,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/costa-rica/dscf8383-e5d0648fbd9e-768.jpg",
+        "1600": "/media/costa-rica/dscf8383-e5d0648fbd9e-1600.jpg",
+        "2400": "/media/costa-rica/dscf8383-e5d0648fbd9e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:17 22:28:47"
+      }
+    },
+    {
+      "id": "dscf8405",
+      "title": null,
+      "alt": "Costa Rica photograph 23",
+      "sourceFile": "DSCF8405.jpg",
+      "printSource": "DSCF8405.jpg",
+      "assetKey": "dscf8405-09520ab82379",
+      "order": 23,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5062,
+      "height": 7593,
+      "variants": {
+        "768": "/media/costa-rica/dscf8405-09520ab82379-768.jpg",
+        "1600": "/media/costa-rica/dscf8405-09520ab82379-1600.jpg",
+        "2400": "/media/costa-rica/dscf8405-09520ab82379-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:17 22:29:32"
+      }
+    },
+    {
+      "id": "dscf8480-2",
+      "title": null,
+      "alt": "Costa Rica photograph 24",
+      "sourceFile": "DSCF8480-2.jpg",
+      "printSource": "DSCF8480-2.jpg",
+      "assetKey": "dscf8480-2-d47b263bbefa",
+      "order": 24,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4531,
+      "height": 6796,
+      "variants": {
+        "768": "/media/costa-rica/dscf8480-2-d47b263bbefa-768.jpg",
+        "1600": "/media/costa-rica/dscf8480-2-d47b263bbefa-1600.jpg",
+        "2400": "/media/costa-rica/dscf8480-2-d47b263bbefa-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:18 12:20:49"
+      }
+    },
+    {
+      "id": "dscf8482-2",
+      "title": null,
+      "alt": "Costa Rica photograph 25",
+      "sourceFile": "DSCF8482-2.jpg",
+      "printSource": "DSCF8482-2.jpg",
+      "assetKey": "dscf8482-2-60501357abd3",
+      "order": 25,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5871,
+      "height": 3914,
+      "variants": {
+        "768": "/media/costa-rica/dscf8482-2-60501357abd3-768.jpg",
+        "1600": "/media/costa-rica/dscf8482-2-60501357abd3-1600.jpg",
+        "2400": "/media/costa-rica/dscf8482-2-60501357abd3-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:18 12:22:03"
+      }
+    },
+    {
+      "id": "dscf8491-2",
+      "title": null,
+      "alt": "Costa Rica photograph 26",
+      "sourceFile": "DSCF8491-2.jpg",
+      "printSource": "DSCF8491-2.jpg",
+      "assetKey": "dscf8491-2-9c79edd08170",
+      "order": 26,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 6290,
+      "height": 4193,
+      "variants": {
+        "768": "/media/costa-rica/dscf8491-2-9c79edd08170-768.jpg",
+        "1600": "/media/costa-rica/dscf8491-2-9c79edd08170-1600.jpg",
+        "2400": "/media/costa-rica/dscf8491-2-9c79edd08170-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2024:08:18 12:24:40"
+      }
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "slug": "lake-tahoe",
+  "title": "Lake Tahoe",
+  "location": "California & Nevada",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 39.0968,
+    "longitude": -120.0324
+  },
+  "coverImageId": "dscf7369-2",
+  "images": [
+    {
+      "id": "dscf7340",
+      "title": null,
+      "alt": "Lake Tahoe photograph 1",
+      "sourceFile": "DSCF7340.jpg",
+      "printSource": "DSCF7340.jpg",
+      "assetKey": "dscf7340-1dccedd516ee",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/lake-tahoe/dscf7340-1dccedd516ee-768.jpg",
+        "1600": "/media/lake-tahoe/dscf7340-1dccedd516ee-1600.jpg",
+        "2400": "/media/lake-tahoe/dscf7340-1dccedd516ee-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:09 22:48:09"
+      }
+    },
+    {
+      "id": "dscf7351",
+      "title": null,
+      "alt": "Lake Tahoe photograph 2",
+      "sourceFile": "DSCF7351.jpg",
+      "printSource": "DSCF7351.jpg",
+      "assetKey": "dscf7351-e91a4030c6ef",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/lake-tahoe/dscf7351-e91a4030c6ef-768.jpg",
+        "1600": "/media/lake-tahoe/dscf7351-e91a4030c6ef-1600.jpg",
+        "2400": "/media/lake-tahoe/dscf7351-e91a4030c6ef-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:09 22:51:36"
+      }
+    },
+    {
+      "id": "dscf7369-2",
+      "title": null,
+      "alt": "Lake Tahoe photograph 3",
+      "sourceFile": "DSCF7369-2.jpg",
+      "printSource": "DSCF7369-2.jpg",
+      "assetKey": "dscf7369-2-d7100ce2d8ac",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7710,
+      "height": 3855,
+      "variants": {
+        "768": "/media/lake-tahoe/dscf7369-2-d7100ce2d8ac-768.jpg",
+        "1600": "/media/lake-tahoe/dscf7369-2-d7100ce2d8ac-1600.jpg",
+        "2400": "/media/lake-tahoe/dscf7369-2-d7100ce2d8ac-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:09 23:07:26"
+      }
+    },
+    {
+      "id": "dscf7373",
+      "title": null,
+      "alt": "Lake Tahoe photograph 4",
+      "sourceFile": "DSCF7373.jpg",
+      "printSource": "DSCF7373.jpg",
+      "assetKey": "dscf7373-29a3a6e1b7ba",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5135,
+      "height": 7702,
+      "variants": {
+        "768": "/media/lake-tahoe/dscf7373-29a3a6e1b7ba-768.jpg",
+        "1600": "/media/lake-tahoe/dscf7373-29a3a6e1b7ba-1600.jpg",
+        "2400": "/media/lake-tahoe/dscf7373-29a3a6e1b7ba-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:09 23:14:31"
+      }
+    },
+    {
+      "id": "dscf7377",
+      "title": null,
+      "alt": "Lake Tahoe photograph 5",
+      "sourceFile": "DSCF7377.jpg",
+      "printSource": "DSCF7377.jpg",
+      "assetKey": "dscf7377-55990552d895",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 6901,
+      "height": 4601,
+      "variants": {
+        "768": "/media/lake-tahoe/dscf7377-55990552d895-768.jpg",
+        "1600": "/media/lake-tahoe/dscf7377-55990552d895-1600.jpg",
+        "2400": "/media/lake-tahoe/dscf7377-55990552d895-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:09 23:17:07"
+      }
+    },
+    {
+      "id": "dscf7385",
+      "title": null,
+      "alt": "Lake Tahoe photograph 6",
+      "sourceFile": "DSCF7385.jpg",
+      "printSource": "DSCF7385.jpg",
+      "assetKey": "dscf7385-6782c3edff4e",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 3891,
+      "height": 5837,
+      "variants": {
+        "768": "/media/lake-tahoe/dscf7385-6782c3edff4e-768.jpg",
+        "1600": "/media/lake-tahoe/dscf7385-6782c3edff4e-1600.jpg",
+        "2400": "/media/lake-tahoe/dscf7385-6782c3edff4e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:09 23:22:24"
+      }
+    },
+    {
+      "id": "dscf7428",
+      "title": null,
+      "alt": "Lake Tahoe photograph 7",
+      "sourceFile": "DSCF7428.jpg",
+      "printSource": "DSCF7428.jpg",
+      "assetKey": "dscf7428-ee8faaddde7a",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lake-tahoe/dscf7428-ee8faaddde7a-768.jpg",
+        "1600": "/media/lake-tahoe/dscf7428-ee8faaddde7a-1600.jpg",
+        "2400": "/media/lake-tahoe/dscf7428-ee8faaddde7a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:09 23:31:25"
+      }
+    },
+    {
+      "id": "dscf7433",
+      "title": null,
+      "alt": "Lake Tahoe photograph 8",
+      "sourceFile": "DSCF7433.jpg",
+      "printSource": "DSCF7433.jpg",
+      "assetKey": "dscf7433-ec8977ede118",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5115,
+      "height": 2558,
+      "variants": {
+        "768": "/media/lake-tahoe/dscf7433-ec8977ede118-768.jpg",
+        "1600": "/media/lake-tahoe/dscf7433-ec8977ede118-1600.jpg",
+        "2400": "/media/lake-tahoe/dscf7433-ec8977ede118-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:09 23:32:53"
+      }
+    },
+    {
+      "id": "dscf7447",
+      "title": null,
+      "alt": "Lake Tahoe photograph 9",
+      "sourceFile": "DSCF7447.jpg",
+      "printSource": "DSCF7447.jpg",
+      "assetKey": "dscf7447-229e62ff17b1",
+      "order": 9,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7714,
+      "height": 5143,
+      "variants": {
+        "768": "/media/lake-tahoe/dscf7447-229e62ff17b1-768.jpg",
+        "1600": "/media/lake-tahoe/dscf7447-229e62ff17b1-1600.jpg",
+        "2400": "/media/lake-tahoe/dscf7447-229e62ff17b1-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:09 23:33:32"
+      }
+    },
+    {
+      "id": "dscf7455",
+      "title": null,
+      "alt": "Lake Tahoe photograph 10",
+      "sourceFile": "DSCF7455.jpg",
+      "printSource": "DSCF7455.jpg",
+      "assetKey": "dscf7455-aa34207b8610",
+      "order": 10,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/lake-tahoe/dscf7455-aa34207b8610-768.jpg",
+        "1600": "/media/lake-tahoe/dscf7455-aa34207b8610-1600.jpg",
+        "2400": "/media/lake-tahoe/dscf7455-aa34207b8610-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:09 23:34:15"
+      }
+    }
+  ]
+}

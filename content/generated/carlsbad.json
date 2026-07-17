@@ -1,0 +1,294 @@
+{
+  "slug": "carlsbad",
+  "title": "Carlsbad",
+  "location": "Carlsbad, California",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 33.1581,
+    "longitude": -117.3506
+  },
+  "coverImageId": "dscf7552",
+  "images": [
+    {
+      "id": "dscf7552",
+      "title": null,
+      "alt": "Carlsbad photograph 1",
+      "sourceFile": "DSCF7552.jpg",
+      "printSource": "DSCF7552.jpg",
+      "assetKey": "dscf7552-a263680202ac",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/carlsbad/dscf7552-a263680202ac-768.jpg",
+        "1600": "/media/carlsbad/dscf7552-a263680202ac-1600.jpg",
+        "2400": "/media/carlsbad/dscf7552-a263680202ac-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:29 12:56:30"
+      }
+    },
+    {
+      "id": "dscf7560",
+      "title": null,
+      "alt": "Carlsbad photograph 2",
+      "sourceFile": "DSCF7560.jpg",
+      "printSource": "DSCF7560.jpg",
+      "assetKey": "dscf7560-52bd3462ee79",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/carlsbad/dscf7560-52bd3462ee79-768.jpg",
+        "1600": "/media/carlsbad/dscf7560-52bd3462ee79-1600.jpg",
+        "2400": "/media/carlsbad/dscf7560-52bd3462ee79-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:29 13:00:01"
+      }
+    },
+    {
+      "id": "dscf7562",
+      "title": null,
+      "alt": "Carlsbad photograph 3",
+      "sourceFile": "DSCF7562.jpg",
+      "printSource": "DSCF7562.jpg",
+      "assetKey": "dscf7562-e695f56ecc9d",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 3711,
+      "height": 5566,
+      "variants": {
+        "768": "/media/carlsbad/dscf7562-e695f56ecc9d-768.jpg",
+        "1600": "/media/carlsbad/dscf7562-e695f56ecc9d-1600.jpg",
+        "2400": "/media/carlsbad/dscf7562-e695f56ecc9d-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:29 13:01:44"
+      }
+    },
+    {
+      "id": "dscf7568",
+      "title": null,
+      "alt": "Carlsbad photograph 4",
+      "sourceFile": "DSCF7568.jpg",
+      "printSource": "DSCF7568.jpg",
+      "assetKey": "dscf7568-a4cf098469a5",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 3435,
+      "variants": {
+        "768": "/media/carlsbad/dscf7568-a4cf098469a5-768.jpg",
+        "1600": "/media/carlsbad/dscf7568-a4cf098469a5-1600.jpg",
+        "2400": "/media/carlsbad/dscf7568-a4cf098469a5-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:29 13:11:29"
+      }
+    },
+    {
+      "id": "dscf7576",
+      "title": null,
+      "alt": "Carlsbad photograph 5",
+      "sourceFile": "DSCF7576.jpg",
+      "printSource": "DSCF7576.jpg",
+      "assetKey": "dscf7576-8fca797277d4",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/carlsbad/dscf7576-8fca797277d4-768.jpg",
+        "1600": "/media/carlsbad/dscf7576-8fca797277d4-1600.jpg",
+        "2400": "/media/carlsbad/dscf7576-8fca797277d4-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:29 13:21:40"
+      }
+    },
+    {
+      "id": "dscf7756",
+      "title": null,
+      "alt": "Carlsbad photograph 6",
+      "sourceFile": "DSCF7756.jpg",
+      "printSource": "DSCF7756.jpg",
+      "assetKey": "dscf7756-e1217b867ccb",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/carlsbad/dscf7756-e1217b867ccb-768.jpg",
+        "1600": "/media/carlsbad/dscf7756-e1217b867ccb-1600.jpg",
+        "2400": "/media/carlsbad/dscf7756-e1217b867ccb-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:07 13:36:59"
+      }
+    },
+    {
+      "id": "dscf7768",
+      "title": null,
+      "alt": "Carlsbad photograph 7",
+      "sourceFile": "DSCF7768.jpg",
+      "printSource": "DSCF7768.jpg",
+      "assetKey": "dscf7768-9de38dfd8b9b",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 3612,
+      "height": 5418,
+      "variants": {
+        "768": "/media/carlsbad/dscf7768-9de38dfd8b9b-768.jpg",
+        "1600": "/media/carlsbad/dscf7768-9de38dfd8b9b-1600.jpg",
+        "2400": "/media/carlsbad/dscf7768-9de38dfd8b9b-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:07 13:39:53"
+      }
+    },
+    {
+      "id": "dscf7772-2",
+      "title": null,
+      "alt": "Carlsbad photograph 8",
+      "sourceFile": "DSCF7772-2.jpg",
+      "printSource": "DSCF7772-2.jpg",
+      "assetKey": "dscf7772-2-cfb74409ebfb",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/carlsbad/dscf7772-2-cfb74409ebfb-768.jpg",
+        "1600": "/media/carlsbad/dscf7772-2-cfb74409ebfb-1600.jpg",
+        "2400": "/media/carlsbad/dscf7772-2-cfb74409ebfb-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:07 13:41:28"
+      }
+    },
+    {
+      "id": "dscf7789",
+      "title": null,
+      "alt": "Carlsbad photograph 9",
+      "sourceFile": "DSCF7789.jpg",
+      "printSource": "DSCF7789.jpg",
+      "assetKey": "dscf7789-5df37e15e545",
+      "order": 9,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/carlsbad/dscf7789-5df37e15e545-768.jpg",
+        "1600": "/media/carlsbad/dscf7789-5df37e15e545-1600.jpg",
+        "2400": "/media/carlsbad/dscf7789-5df37e15e545-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:07 13:45:44"
+      }
+    },
+    {
+      "id": "dscf7792",
+      "title": null,
+      "alt": "Carlsbad photograph 10",
+      "sourceFile": "DSCF7792.jpg",
+      "printSource": "DSCF7792.jpg",
+      "assetKey": "dscf7792-689bde6172a5",
+      "order": 10,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/carlsbad/dscf7792-689bde6172a5-768.jpg",
+        "1600": "/media/carlsbad/dscf7792-689bde6172a5-1600.jpg",
+        "2400": "/media/carlsbad/dscf7792-689bde6172a5-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:07 13:48:07"
+      }
+    }
+  ]
+}

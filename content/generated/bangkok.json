@@ -1,0 +1,350 @@
+{
+  "slug": "bangkok",
+  "title": "Bangkok",
+  "location": "Bangkok, Thailand",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 13.7563,
+    "longitude": 100.5018
+  },
+  "coverImageId": "dscf2106",
+  "images": [
+    {
+      "id": "dscf2106",
+      "title": null,
+      "alt": "Bangkok photograph 1",
+      "sourceFile": "DSCF2106.JPG",
+      "printSource": "DSCF2106.JPG",
+      "assetKey": "dscf2106-0228aae56de7",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/bangkok/dscf2106-0228aae56de7-768.jpg",
+        "1600": "/media/bangkok/dscf2106-0228aae56de7-1600.jpg",
+        "2400": "/media/bangkok/dscf2106-0228aae56de7-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:27 01:51:49"
+      }
+    },
+    {
+      "id": "dscf2108",
+      "title": null,
+      "alt": "Bangkok photograph 2",
+      "sourceFile": "DSCF2108.JPG",
+      "printSource": "DSCF2108.JPG",
+      "assetKey": "dscf2108-fc26636ed9c3",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/bangkok/dscf2108-fc26636ed9c3-768.jpg",
+        "1600": "/media/bangkok/dscf2108-fc26636ed9c3-1600.jpg",
+        "2400": "/media/bangkok/dscf2108-fc26636ed9c3-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:27 01:53:53"
+      }
+    },
+    {
+      "id": "dscf2125",
+      "title": null,
+      "alt": "Bangkok photograph 3",
+      "sourceFile": "DSCF2125.JPG",
+      "printSource": "DSCF2125.JPG",
+      "assetKey": "dscf2125-c6d7c9a20522",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/bangkok/dscf2125-c6d7c9a20522-768.jpg",
+        "1600": "/media/bangkok/dscf2125-c6d7c9a20522-1600.jpg",
+        "2400": "/media/bangkok/dscf2125-c6d7c9a20522-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:27 01:57:32"
+      }
+    },
+    {
+      "id": "dscf2158",
+      "title": null,
+      "alt": "Bangkok photograph 4",
+      "sourceFile": "DSCF2158.JPG",
+      "printSource": "DSCF2158.JPG",
+      "assetKey": "dscf2158-9f5e536400c4",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/bangkok/dscf2158-9f5e536400c4-768.jpg",
+        "1600": "/media/bangkok/dscf2158-9f5e536400c4-1600.jpg",
+        "2400": "/media/bangkok/dscf2158-9f5e536400c4-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:27 09:59:51"
+      }
+    },
+    {
+      "id": "dscf2236",
+      "title": null,
+      "alt": "Bangkok photograph 5",
+      "sourceFile": "DSCF2236.JPG",
+      "printSource": "DSCF2236.JPG",
+      "assetKey": "dscf2236-1ed07950b156",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/bangkok/dscf2236-1ed07950b156-768.jpg",
+        "1600": "/media/bangkok/dscf2236-1ed07950b156-1600.jpg",
+        "2400": "/media/bangkok/dscf2236-1ed07950b156-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:09:01 16:00:59"
+      }
+    },
+    {
+      "id": "dscf2282",
+      "title": null,
+      "alt": "Bangkok photograph 6",
+      "sourceFile": "DSCF2282.JPG",
+      "printSource": "DSCF2282.JPG",
+      "assetKey": "dscf2282-9eedfac737de",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/bangkok/dscf2282-9eedfac737de-768.jpg",
+        "1600": "/media/bangkok/dscf2282-9eedfac737de-1600.jpg",
+        "2400": "/media/bangkok/dscf2282-9eedfac737de-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:09:06 23:49:25"
+      }
+    },
+    {
+      "id": "dscf2292",
+      "title": null,
+      "alt": "Bangkok photograph 7",
+      "sourceFile": "DSCF2292.JPG",
+      "printSource": "DSCF2292.JPG",
+      "assetKey": "dscf2292-c7d46b1a3905",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/bangkok/dscf2292-c7d46b1a3905-768.jpg",
+        "1600": "/media/bangkok/dscf2292-c7d46b1a3905-1600.jpg",
+        "2400": "/media/bangkok/dscf2292-c7d46b1a3905-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:09:06 23:53:27"
+      }
+    },
+    {
+      "id": "dscf2330",
+      "title": null,
+      "alt": "Bangkok photograph 8",
+      "sourceFile": "DSCF2330.JPG",
+      "printSource": "DSCF2330.JPG",
+      "assetKey": "dscf2330-e000774cadc9",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 3548,
+      "height": 5322,
+      "variants": {
+        "768": "/media/bangkok/dscf2330-e000774cadc9-768.jpg",
+        "1600": "/media/bangkok/dscf2330-e000774cadc9-1600.jpg",
+        "2400": "/media/bangkok/dscf2330-e000774cadc9-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:09:07 00:02:03"
+      }
+    },
+    {
+      "id": "dscf2365",
+      "title": null,
+      "alt": "Bangkok photograph 9",
+      "sourceFile": "DSCF2365.JPG",
+      "printSource": "DSCF2365.JPG",
+      "assetKey": "dscf2365-3655f3f079a6",
+      "order": 9,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/bangkok/dscf2365-3655f3f079a6-768.jpg",
+        "1600": "/media/bangkok/dscf2365-3655f3f079a6-1600.jpg",
+        "2400": "/media/bangkok/dscf2365-3655f3f079a6-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:09:07 00:11:03"
+      }
+    },
+    {
+      "id": "dscf2402",
+      "title": null,
+      "alt": "Bangkok photograph 10",
+      "sourceFile": "DSCF2402.JPG",
+      "printSource": "DSCF2402.JPG",
+      "assetKey": "dscf2402-51dd459d3068",
+      "order": 10,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/bangkok/dscf2402-51dd459d3068-768.jpg",
+        "1600": "/media/bangkok/dscf2402-51dd459d3068-1600.jpg",
+        "2400": "/media/bangkok/dscf2402-51dd459d3068-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:11:02 17:04:48"
+      }
+    },
+    {
+      "id": "dscf2404",
+      "title": null,
+      "alt": "Bangkok photograph 11",
+      "sourceFile": "DSCF2404.JPG",
+      "printSource": "DSCF2404.JPG",
+      "assetKey": "dscf2404-98a200df5b24",
+      "order": 11,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/bangkok/dscf2404-98a200df5b24-768.jpg",
+        "1600": "/media/bangkok/dscf2404-98a200df5b24-1600.jpg",
+        "2400": "/media/bangkok/dscf2404-98a200df5b24-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:11:02 17:07:50"
+      }
+    },
+    {
+      "id": "dscf2407",
+      "title": null,
+      "alt": "Bangkok photograph 12",
+      "sourceFile": "DSCF2407.JPG",
+      "printSource": "DSCF2407.JPG",
+      "assetKey": "dscf2407-9ad6ce5813e4",
+      "order": 12,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/bangkok/dscf2407-9ad6ce5813e4-768.jpg",
+        "1600": "/media/bangkok/dscf2407-9ad6ce5813e4-1600.jpg",
+        "2400": "/media/bangkok/dscf2407-9ad6ce5813e4-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:11:02 17:12:40"
+      }
+    }
+  ]
+}

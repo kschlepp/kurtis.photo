@@ -1,0 +1,1078 @@
+{
+  "slug": "tokyo",
+  "title": "Tokyo",
+  "location": "Tokyo, Japan",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 35.6762,
+    "longitude": 139.6503
+  },
+  "coverImageId": "dscf8618",
+  "images": [
+    {
+      "id": "dscf8475",
+      "title": null,
+      "alt": "Tokyo photograph 1",
+      "sourceFile": "DSCF8475.jpg",
+      "printSource": "DSCF8475.jpg",
+      "assetKey": "dscf8475-b067972c06fb",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8475-b067972c06fb-768.jpg",
+        "1600": "/media/tokyo/dscf8475-b067972c06fb-1600.jpg",
+        "2400": "/media/tokyo/dscf8475-b067972c06fb-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:05:31 20:11:19"
+      }
+    },
+    {
+      "id": "dscf8478",
+      "title": null,
+      "alt": "Tokyo photograph 2",
+      "sourceFile": "DSCF8478.jpg",
+      "printSource": "DSCF8478.jpg",
+      "assetKey": "dscf8478-4dd4b747d27f",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8478-4dd4b747d27f-768.jpg",
+        "1600": "/media/tokyo/dscf8478-4dd4b747d27f-1600.jpg",
+        "2400": "/media/tokyo/dscf8478-4dd4b747d27f-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:05:31 20:21:14"
+      }
+    },
+    {
+      "id": "dscf8487",
+      "title": null,
+      "alt": "Tokyo photograph 3",
+      "sourceFile": "DSCF8487.jpg",
+      "printSource": "DSCF8487.jpg",
+      "assetKey": "dscf8487-3f333da290c1",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8487-3f333da290c1-768.jpg",
+        "1600": "/media/tokyo/dscf8487-3f333da290c1-1600.jpg",
+        "2400": "/media/tokyo/dscf8487-3f333da290c1-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:05:31 20:38:14"
+      }
+    },
+    {
+      "id": "dscf8496",
+      "title": null,
+      "alt": "Tokyo photograph 4",
+      "sourceFile": "DSCF8496.jpg",
+      "printSource": "DSCF8496.jpg",
+      "assetKey": "dscf8496-91a5612fce37",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8496-91a5612fce37-768.jpg",
+        "1600": "/media/tokyo/dscf8496-91a5612fce37-1600.jpg",
+        "2400": "/media/tokyo/dscf8496-91a5612fce37-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:05:31 20:47:19"
+      }
+    },
+    {
+      "id": "dscf8514",
+      "title": null,
+      "alt": "Tokyo photograph 5",
+      "sourceFile": "DSCF8514.jpg",
+      "printSource": "DSCF8514.jpg",
+      "assetKey": "dscf8514-1baef4cef4f1",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4778,
+      "height": 7167,
+      "variants": {
+        "768": "/media/tokyo/dscf8514-1baef4cef4f1-768.jpg",
+        "1600": "/media/tokyo/dscf8514-1baef4cef4f1-1600.jpg",
+        "2400": "/media/tokyo/dscf8514-1baef4cef4f1-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:05:31 20:54:48"
+      }
+    },
+    {
+      "id": "dscf8534",
+      "title": null,
+      "alt": "Tokyo photograph 6",
+      "sourceFile": "DSCF8534.jpg",
+      "printSource": "DSCF8534.jpg",
+      "assetKey": "dscf8534-5171c19f6e05",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8534-5171c19f6e05-768.jpg",
+        "1600": "/media/tokyo/dscf8534-5171c19f6e05-1600.jpg",
+        "2400": "/media/tokyo/dscf8534-5171c19f6e05-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:05:31 20:58:47"
+      }
+    },
+    {
+      "id": "dscf8554",
+      "title": null,
+      "alt": "Tokyo photograph 7",
+      "sourceFile": "DSCF8554.jpg",
+      "printSource": "DSCF8554.jpg",
+      "assetKey": "dscf8554-9aedcc483470",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8554-9aedcc483470-768.jpg",
+        "1600": "/media/tokyo/dscf8554-9aedcc483470-1600.jpg",
+        "2400": "/media/tokyo/dscf8554-9aedcc483470-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:05:31 21:44:48"
+      }
+    },
+    {
+      "id": "dscf8555",
+      "title": null,
+      "alt": "Tokyo photograph 8",
+      "sourceFile": "DSCF8555.jpg",
+      "printSource": "DSCF8555.jpg",
+      "assetKey": "dscf8555-155fe79a13d9",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8555-155fe79a13d9-768.jpg",
+        "1600": "/media/tokyo/dscf8555-155fe79a13d9-1600.jpg",
+        "2400": "/media/tokyo/dscf8555-155fe79a13d9-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:05:31 21:45:17"
+      }
+    },
+    {
+      "id": "dscf8556",
+      "title": null,
+      "alt": "Tokyo photograph 9",
+      "sourceFile": "DSCF8556.jpg",
+      "printSource": "DSCF8556.jpg",
+      "assetKey": "dscf8556-7d0a52ba4acf",
+      "order": 9,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8556-7d0a52ba4acf-768.jpg",
+        "1600": "/media/tokyo/dscf8556-7d0a52ba4acf-1600.jpg",
+        "2400": "/media/tokyo/dscf8556-7d0a52ba4acf-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:05:31 21:46:45"
+      }
+    },
+    {
+      "id": "dscf8560",
+      "title": null,
+      "alt": "Tokyo photograph 10",
+      "sourceFile": "DSCF8560.jpg",
+      "printSource": "DSCF8560.jpg",
+      "assetKey": "dscf8560-90849d694fd4",
+      "order": 10,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8560-90849d694fd4-768.jpg",
+        "1600": "/media/tokyo/dscf8560-90849d694fd4-1600.jpg",
+        "2400": "/media/tokyo/dscf8560-90849d694fd4-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:05:31 21:51:35"
+      }
+    },
+    {
+      "id": "dscf8610",
+      "title": null,
+      "alt": "Tokyo photograph 11",
+      "sourceFile": "DSCF8610.jpg",
+      "printSource": "DSCF8610.jpg",
+      "assetKey": "dscf8610-5626e6af6f01",
+      "order": 11,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8610-5626e6af6f01-768.jpg",
+        "1600": "/media/tokyo/dscf8610-5626e6af6f01-1600.jpg",
+        "2400": "/media/tokyo/dscf8610-5626e6af6f01-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:05:31 22:01:46"
+      }
+    },
+    {
+      "id": "dscf8618",
+      "title": null,
+      "alt": "Tokyo photograph 12",
+      "sourceFile": "DSCF8618.jpg",
+      "printSource": "DSCF8618.jpg",
+      "assetKey": "dscf8618-4385de25e611",
+      "order": 12,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7681,
+      "height": 4321,
+      "variants": {
+        "768": "/media/tokyo/dscf8618-4385de25e611-768.jpg",
+        "1600": "/media/tokyo/dscf8618-4385de25e611-1600.jpg",
+        "2400": "/media/tokyo/dscf8618-4385de25e611-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:05:31 22:11:18"
+      }
+    },
+    {
+      "id": "dscf8621",
+      "title": null,
+      "alt": "Tokyo photograph 13",
+      "sourceFile": "DSCF8621.jpg",
+      "printSource": "DSCF8621.jpg",
+      "assetKey": "dscf8621-58caf3d82d1a",
+      "order": 13,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8621-58caf3d82d1a-768.jpg",
+        "1600": "/media/tokyo/dscf8621-58caf3d82d1a-1600.jpg",
+        "2400": "/media/tokyo/dscf8621-58caf3d82d1a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:05:31 22:19:00"
+      }
+    },
+    {
+      "id": "dscf8647",
+      "title": null,
+      "alt": "Tokyo photograph 14",
+      "sourceFile": "DSCF8647.jpg",
+      "printSource": "DSCF8647.jpg",
+      "assetKey": "dscf8647-40d60ec7093b",
+      "order": 14,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8647-40d60ec7093b-768.jpg",
+        "1600": "/media/tokyo/dscf8647-40d60ec7093b-1600.jpg",
+        "2400": "/media/tokyo/dscf8647-40d60ec7093b-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:05:31 22:28:34"
+      }
+    },
+    {
+      "id": "dscf8656",
+      "title": null,
+      "alt": "Tokyo photograph 15",
+      "sourceFile": "DSCF8656.jpg",
+      "printSource": "DSCF8656.jpg",
+      "assetKey": "dscf8656-80bd1b6ba775",
+      "order": 15,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 4347,
+      "variants": {
+        "768": "/media/tokyo/dscf8656-80bd1b6ba775-768.jpg",
+        "1600": "/media/tokyo/dscf8656-80bd1b6ba775-1600.jpg",
+        "2400": "/media/tokyo/dscf8656-80bd1b6ba775-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:01 10:21:34"
+      }
+    },
+    {
+      "id": "dscf8660",
+      "title": null,
+      "alt": "Tokyo photograph 16",
+      "sourceFile": "DSCF8660.jpg",
+      "printSource": "DSCF8660.jpg",
+      "assetKey": "dscf8660-3c13201d05eb",
+      "order": 16,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4734,
+      "height": 7101,
+      "variants": {
+        "768": "/media/tokyo/dscf8660-3c13201d05eb-768.jpg",
+        "1600": "/media/tokyo/dscf8660-3c13201d05eb-1600.jpg",
+        "2400": "/media/tokyo/dscf8660-3c13201d05eb-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:01 10:22:34"
+      }
+    },
+    {
+      "id": "dscf8665",
+      "title": null,
+      "alt": "Tokyo photograph 17",
+      "sourceFile": "DSCF8665.jpg",
+      "printSource": "DSCF8665.jpg",
+      "assetKey": "dscf8665-fb7efdceac92",
+      "order": 17,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8665-fb7efdceac92-768.jpg",
+        "1600": "/media/tokyo/dscf8665-fb7efdceac92-1600.jpg",
+        "2400": "/media/tokyo/dscf8665-fb7efdceac92-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 17:35:25"
+      }
+    },
+    {
+      "id": "dscf8686",
+      "title": null,
+      "alt": "Tokyo photograph 18",
+      "sourceFile": "DSCF8686.jpg",
+      "printSource": "DSCF8686.jpg",
+      "assetKey": "dscf8686-24b7a80542e7",
+      "order": 18,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8686-24b7a80542e7-768.jpg",
+        "1600": "/media/tokyo/dscf8686-24b7a80542e7-1600.jpg",
+        "2400": "/media/tokyo/dscf8686-24b7a80542e7-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 17:41:03"
+      }
+    },
+    {
+      "id": "dscf8709",
+      "title": null,
+      "alt": "Tokyo photograph 19",
+      "sourceFile": "DSCF8709.jpg",
+      "printSource": "DSCF8709.jpg",
+      "assetKey": "dscf8709-e057126a39d0",
+      "order": 19,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/tokyo/dscf8709-e057126a39d0-768.jpg",
+        "1600": "/media/tokyo/dscf8709-e057126a39d0-1600.jpg",
+        "2400": "/media/tokyo/dscf8709-e057126a39d0-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 17:44:12"
+      }
+    },
+    {
+      "id": "dscf8727-copy",
+      "title": null,
+      "alt": "Tokyo photograph 20",
+      "sourceFile": "DSCF8727 copy.jpg",
+      "printSource": "DSCF8727 copy.jpg",
+      "assetKey": "dscf8727-copy-a5156815d448",
+      "order": 20,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8727-copy-a5156815d448-768.jpg",
+        "1600": "/media/tokyo/dscf8727-copy-a5156815d448-1600.jpg",
+        "2400": "/media/tokyo/dscf8727-copy-a5156815d448-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 17:49:17"
+      }
+    },
+    {
+      "id": "dscf8731",
+      "title": null,
+      "alt": "Tokyo photograph 21",
+      "sourceFile": "DSCF8731.jpg",
+      "printSource": "DSCF8731.jpg",
+      "assetKey": "dscf8731-af6a697ff831",
+      "order": 21,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8731-af6a697ff831-768.jpg",
+        "1600": "/media/tokyo/dscf8731-af6a697ff831-1600.jpg",
+        "2400": "/media/tokyo/dscf8731-af6a697ff831-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 17:49:34"
+      }
+    },
+    {
+      "id": "dscf8741",
+      "title": null,
+      "alt": "Tokyo photograph 22",
+      "sourceFile": "DSCF8741.jpg",
+      "printSource": "DSCF8741.jpg",
+      "assetKey": "dscf8741-31e297d970a5",
+      "order": 22,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5131,
+      "height": 7696,
+      "variants": {
+        "768": "/media/tokyo/dscf8741-31e297d970a5-768.jpg",
+        "1600": "/media/tokyo/dscf8741-31e297d970a5-1600.jpg",
+        "2400": "/media/tokyo/dscf8741-31e297d970a5-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 17:51:26"
+      }
+    },
+    {
+      "id": "dscf8781",
+      "title": null,
+      "alt": "Tokyo photograph 23",
+      "sourceFile": "DSCF8781.jpg",
+      "printSource": "DSCF8781.jpg",
+      "assetKey": "dscf8781-7be76b279972",
+      "order": 23,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8781-7be76b279972-768.jpg",
+        "1600": "/media/tokyo/dscf8781-7be76b279972-1600.jpg",
+        "2400": "/media/tokyo/dscf8781-7be76b279972-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 17:54:26"
+      }
+    },
+    {
+      "id": "dscf8815",
+      "title": null,
+      "alt": "Tokyo photograph 24",
+      "sourceFile": "DSCF8815.jpg",
+      "printSource": "DSCF8815.jpg",
+      "assetKey": "dscf8815-ad323c8a8992",
+      "order": 24,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/tokyo/dscf8815-ad323c8a8992-768.jpg",
+        "1600": "/media/tokyo/dscf8815-ad323c8a8992-1600.jpg",
+        "2400": "/media/tokyo/dscf8815-ad323c8a8992-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 17:59:16"
+      }
+    },
+    {
+      "id": "dscf8817",
+      "title": null,
+      "alt": "Tokyo photograph 25",
+      "sourceFile": "DSCF8817.jpg",
+      "printSource": "DSCF8817.jpg",
+      "assetKey": "dscf8817-801204429546",
+      "order": 25,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8817-801204429546-768.jpg",
+        "1600": "/media/tokyo/dscf8817-801204429546-1600.jpg",
+        "2400": "/media/tokyo/dscf8817-801204429546-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 17:59:42"
+      }
+    },
+    {
+      "id": "dscf8820",
+      "title": null,
+      "alt": "Tokyo photograph 26",
+      "sourceFile": "DSCF8820.jpg",
+      "printSource": "DSCF8820.jpg",
+      "assetKey": "dscf8820-f549f7fa689f",
+      "order": 26,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8820-f549f7fa689f-768.jpg",
+        "1600": "/media/tokyo/dscf8820-f549f7fa689f-1600.jpg",
+        "2400": "/media/tokyo/dscf8820-f549f7fa689f-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 18:00:08"
+      }
+    },
+    {
+      "id": "dscf8821",
+      "title": null,
+      "alt": "Tokyo photograph 27",
+      "sourceFile": "DSCF8821.jpg",
+      "printSource": "DSCF8821.jpg",
+      "assetKey": "dscf8821-365224069319",
+      "order": 27,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 3483,
+      "height": 5225,
+      "variants": {
+        "768": "/media/tokyo/dscf8821-365224069319-768.jpg",
+        "1600": "/media/tokyo/dscf8821-365224069319-1600.jpg",
+        "2400": "/media/tokyo/dscf8821-365224069319-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 18:01:03"
+      }
+    },
+    {
+      "id": "dscf8833",
+      "title": null,
+      "alt": "Tokyo photograph 28",
+      "sourceFile": "DSCF8833.jpg",
+      "printSource": "DSCF8833.jpg",
+      "assetKey": "dscf8833-5c97a2498d1e",
+      "order": 28,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8833-5c97a2498d1e-768.jpg",
+        "1600": "/media/tokyo/dscf8833-5c97a2498d1e-1600.jpg",
+        "2400": "/media/tokyo/dscf8833-5c97a2498d1e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 18:02:06"
+      }
+    },
+    {
+      "id": "dscf8869",
+      "title": null,
+      "alt": "Tokyo photograph 29",
+      "sourceFile": "DSCF8869.jpg",
+      "printSource": "DSCF8869.jpg",
+      "assetKey": "dscf8869-b45b9689fff0",
+      "order": 29,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8869-b45b9689fff0-768.jpg",
+        "1600": "/media/tokyo/dscf8869-b45b9689fff0-1600.jpg",
+        "2400": "/media/tokyo/dscf8869-b45b9689fff0-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 18:05:02"
+      }
+    },
+    {
+      "id": "dscf8953",
+      "title": null,
+      "alt": "Tokyo photograph 30",
+      "sourceFile": "DSCF8953.jpg",
+      "printSource": "DSCF8953.jpg",
+      "assetKey": "dscf8953-587edc0d130f",
+      "order": 30,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf8953-587edc0d130f-768.jpg",
+        "1600": "/media/tokyo/dscf8953-587edc0d130f-1600.jpg",
+        "2400": "/media/tokyo/dscf8953-587edc0d130f-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 18:08:27"
+      }
+    },
+    {
+      "id": "dscf9034",
+      "title": null,
+      "alt": "Tokyo photograph 31",
+      "sourceFile": "DSCF9034.jpg",
+      "printSource": "DSCF9034.jpg",
+      "assetKey": "dscf9034-10af668e4c0a",
+      "order": 31,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/tokyo/dscf9034-10af668e4c0a-768.jpg",
+        "1600": "/media/tokyo/dscf9034-10af668e4c0a-1600.jpg",
+        "2400": "/media/tokyo/dscf9034-10af668e4c0a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 18:11:03"
+      }
+    },
+    {
+      "id": "dscf9048",
+      "title": null,
+      "alt": "Tokyo photograph 32",
+      "sourceFile": "DSCF9048.jpg",
+      "printSource": "DSCF9048.jpg",
+      "assetKey": "dscf9048-ab726aba5a32",
+      "order": 32,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 6688,
+      "height": 4459,
+      "variants": {
+        "768": "/media/tokyo/dscf9048-ab726aba5a32-768.jpg",
+        "1600": "/media/tokyo/dscf9048-ab726aba5a32-1600.jpg",
+        "2400": "/media/tokyo/dscf9048-ab726aba5a32-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 18:12:02"
+      }
+    },
+    {
+      "id": "dscf9054",
+      "title": null,
+      "alt": "Tokyo photograph 33",
+      "sourceFile": "DSCF9054.jpg",
+      "printSource": "DSCF9054.jpg",
+      "assetKey": "dscf9054-270b2d05ea7e",
+      "order": 33,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/tokyo/dscf9054-270b2d05ea7e-768.jpg",
+        "1600": "/media/tokyo/dscf9054-270b2d05ea7e-1600.jpg",
+        "2400": "/media/tokyo/dscf9054-270b2d05ea7e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 18:12:29"
+      }
+    },
+    {
+      "id": "dscf9080",
+      "title": null,
+      "alt": "Tokyo photograph 34",
+      "sourceFile": "DSCF9080.jpg",
+      "printSource": "DSCF9080.jpg",
+      "assetKey": "dscf9080-d67b2ac5d4b7",
+      "order": 34,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf9080-d67b2ac5d4b7-768.jpg",
+        "1600": "/media/tokyo/dscf9080-d67b2ac5d4b7-1600.jpg",
+        "2400": "/media/tokyo/dscf9080-d67b2ac5d4b7-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 18:13:44"
+      }
+    },
+    {
+      "id": "dscf9085",
+      "title": null,
+      "alt": "Tokyo photograph 35",
+      "sourceFile": "DSCF9085.jpg",
+      "printSource": "DSCF9085.jpg",
+      "assetKey": "dscf9085-c8f78ec78790",
+      "order": 35,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf9085-c8f78ec78790-768.jpg",
+        "1600": "/media/tokyo/dscf9085-c8f78ec78790-1600.jpg",
+        "2400": "/media/tokyo/dscf9085-c8f78ec78790-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 18:14:22"
+      }
+    },
+    {
+      "id": "dscf9098",
+      "title": null,
+      "alt": "Tokyo photograph 36",
+      "sourceFile": "DSCF9098.jpg",
+      "printSource": "DSCF9098.jpg",
+      "assetKey": "dscf9098-3ec9172755e6",
+      "order": 36,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf9098-3ec9172755e6-768.jpg",
+        "1600": "/media/tokyo/dscf9098-3ec9172755e6-1600.jpg",
+        "2400": "/media/tokyo/dscf9098-3ec9172755e6-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 18:15:39"
+      }
+    },
+    {
+      "id": "dscf9104",
+      "title": null,
+      "alt": "Tokyo photograph 37",
+      "sourceFile": "DSCF9104.jpg",
+      "printSource": "DSCF9104.jpg",
+      "assetKey": "dscf9104-7d1d7d4bd46d",
+      "order": 37,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf9104-7d1d7d4bd46d-768.jpg",
+        "1600": "/media/tokyo/dscf9104-7d1d7d4bd46d-1600.jpg",
+        "2400": "/media/tokyo/dscf9104-7d1d7d4bd46d-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 18:16:12"
+      }
+    },
+    {
+      "id": "dscf9115",
+      "title": null,
+      "alt": "Tokyo photograph 38",
+      "sourceFile": "DSCF9115.jpg",
+      "printSource": "DSCF9115.jpg",
+      "assetKey": "dscf9115-c3495acd5cc5",
+      "order": 38,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/tokyo/dscf9115-c3495acd5cc5-768.jpg",
+        "1600": "/media/tokyo/dscf9115-c3495acd5cc5-1600.jpg",
+        "2400": "/media/tokyo/dscf9115-c3495acd5cc5-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:06:24 18:17:03"
+      }
+    }
+  ]
+}

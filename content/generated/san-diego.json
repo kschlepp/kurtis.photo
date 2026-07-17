@@ -1437,6 +1437,90 @@
         "iso": null,
         "captureDate": "2025:04:24 22:28:43"
       }
+    },
+    {
+      "id": "dscf7991",
+      "title": null,
+      "alt": "San Diego photograph 52",
+      "sourceFile": "DSCF7991.jpg",
+      "printSource": "DSCF7991.jpg",
+      "assetKey": "dscf7991-872434f25c67",
+      "order": 52,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/san-diego/dscf7991-872434f25c67-768.jpg",
+        "1600": "/media/san-diego/dscf7991-872434f25c67-1600.jpg",
+        "2400": "/media/san-diego/dscf7991-872434f25c67-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:27 16:03:47"
+      }
+    },
+    {
+      "id": "dscf7998",
+      "title": null,
+      "alt": "San Diego photograph 53",
+      "sourceFile": "DSCF7998.jpg",
+      "printSource": "DSCF7998.jpg",
+      "assetKey": "dscf7998-69ecf54c9ce6",
+      "order": 53,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/san-diego/dscf7998-69ecf54c9ce6-768.jpg",
+        "1600": "/media/san-diego/dscf7998-69ecf54c9ce6-1600.jpg",
+        "2400": "/media/san-diego/dscf7998-69ecf54c9ce6-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:27 16:09:17"
+      }
+    },
+    {
+      "id": "dscf8003",
+      "title": null,
+      "alt": "San Diego photograph 54",
+      "sourceFile": "DSCF8003.jpg",
+      "printSource": "DSCF8003.jpg",
+      "assetKey": "dscf8003-0aed41061120",
+      "order": 54,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/san-diego/dscf8003-0aed41061120-768.jpg",
+        "1600": "/media/san-diego/dscf8003-0aed41061120-1600.jpg",
+        "2400": "/media/san-diego/dscf8003-0aed41061120-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:03:27 16:10:19"
+      }
     }
   ]
 }

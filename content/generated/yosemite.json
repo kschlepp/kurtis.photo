@@ -11,13 +11,153 @@
   "coverImageId": "dscf5006-2",
   "images": [
     {
+      "id": "dscf4863",
+      "title": null,
+      "alt": "Yosemite photograph 1",
+      "sourceFile": "DSCF4863.jpg",
+      "printSource": "DSCF4863.jpg",
+      "assetKey": "dscf4863-b4e180005c55",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5092,
+      "height": 7638,
+      "variants": {
+        "768": "/media/yosemite/dscf4863-b4e180005c55-768.jpg",
+        "1600": "/media/yosemite/dscf4863-b4e180005c55-1600.jpg",
+        "2400": "/media/yosemite/dscf4863-b4e180005c55-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:11:18 22:43:48"
+      }
+    },
+    {
+      "id": "dscf4865",
+      "title": null,
+      "alt": "Yosemite photograph 2",
+      "sourceFile": "DSCF4865.jpg",
+      "printSource": "DSCF4865.jpg",
+      "assetKey": "dscf4865-dc9b2e1d531a",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/yosemite/dscf4865-dc9b2e1d531a-768.jpg",
+        "1600": "/media/yosemite/dscf4865-dc9b2e1d531a-1600.jpg",
+        "2400": "/media/yosemite/dscf4865-dc9b2e1d531a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:11:18 22:46:40"
+      }
+    },
+    {
+      "id": "dscf4875-2",
+      "title": null,
+      "alt": "Yosemite photograph 3",
+      "sourceFile": "DSCF4875-2.jpg",
+      "printSource": "DSCF4875-2.jpg",
+      "assetKey": "dscf4875-2-a97e359ad3b8",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/yosemite/dscf4875-2-a97e359ad3b8-768.jpg",
+        "1600": "/media/yosemite/dscf4875-2-a97e359ad3b8-1600.jpg",
+        "2400": "/media/yosemite/dscf4875-2-a97e359ad3b8-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:11:18 22:50:01"
+      }
+    },
+    {
+      "id": "dscf4884",
+      "title": null,
+      "alt": "Yosemite photograph 4",
+      "sourceFile": "DSCF4884.jpg",
+      "printSource": "DSCF4884.jpg",
+      "assetKey": "dscf4884-5c9b4ed0331a",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/yosemite/dscf4884-5c9b4ed0331a-768.jpg",
+        "1600": "/media/yosemite/dscf4884-5c9b4ed0331a-1600.jpg",
+        "2400": "/media/yosemite/dscf4884-5c9b4ed0331a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:11:18 22:55:21"
+      }
+    },
+    {
+      "id": "dscf4889",
+      "title": null,
+      "alt": "Yosemite photograph 5",
+      "sourceFile": "DSCF4889.jpg",
+      "printSource": "DSCF4889.jpg",
+      "assetKey": "dscf4889-3f5e4a73b489",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/yosemite/dscf4889-3f5e4a73b489-768.jpg",
+        "1600": "/media/yosemite/dscf4889-3f5e4a73b489-1600.jpg",
+        "2400": "/media/yosemite/dscf4889-3f5e4a73b489-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:11:18 22:55:51"
+      }
+    },
+    {
       "id": "dscf4891",
       "title": null,
       "alt": "yosemite photograph 1",
       "sourceFile": "DSCF4891.jpg",
       "printSource": "DSCF4891.jpg",
       "assetKey": "dscf4891-470fd4478ce1",
-      "order": 1,
+      "order": 6,
       "sellable": false,
       "releaseStatus": "not-applicable",
       "width": 7728,
@@ -45,7 +185,7 @@
       "sourceFile": "DSCF4904.jpg",
       "printSource": "DSCF4904.jpg",
       "assetKey": "dscf4904-075a078e992a",
-      "order": 2,
+      "order": 7,
       "sellable": false,
       "releaseStatus": "not-applicable",
       "width": 3948,
@@ -67,13 +207,41 @@
       }
     },
     {
+      "id": "dscf4919-2",
+      "title": null,
+      "alt": "Yosemite photograph 7",
+      "sourceFile": "DSCF4919-2.jpg",
+      "printSource": "DSCF4919-2.jpg",
+      "assetKey": "dscf4919-2-6af081ccbba8",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/yosemite/dscf4919-2-6af081ccbba8-768.jpg",
+        "1600": "/media/yosemite/dscf4919-2-6af081ccbba8-1600.jpg",
+        "2400": "/media/yosemite/dscf4919-2-6af081ccbba8-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:11:18 23:03:23"
+      }
+    },
+    {
       "id": "dscf4927",
       "title": null,
       "alt": "yosemite photograph 4",
       "sourceFile": "DSCF4927.jpg",
       "printSource": "DSCF4927.jpg",
       "assetKey": "dscf4927-d714576b5018",
-      "order": 3,
+      "order": 9,
       "sellable": false,
       "releaseStatus": "not-applicable",
       "width": 5152,
@@ -95,13 +263,97 @@
       }
     },
     {
+      "id": "dscf4928",
+      "title": null,
+      "alt": "Yosemite photograph 9",
+      "sourceFile": "DSCF4928.jpg",
+      "printSource": "DSCF4928.jpg",
+      "assetKey": "dscf4928-de95e337263a",
+      "order": 10,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4371,
+      "height": 6557,
+      "variants": {
+        "768": "/media/yosemite/dscf4928-de95e337263a-768.jpg",
+        "1600": "/media/yosemite/dscf4928-de95e337263a-1600.jpg",
+        "2400": "/media/yosemite/dscf4928-de95e337263a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:11:18 23:05:17"
+      }
+    },
+    {
+      "id": "dscf4941",
+      "title": null,
+      "alt": "Yosemite photograph 10",
+      "sourceFile": "DSCF4941.jpg",
+      "printSource": "DSCF4941.jpg",
+      "assetKey": "dscf4941-358159a9f3a3",
+      "order": 11,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/yosemite/dscf4941-358159a9f3a3-768.jpg",
+        "1600": "/media/yosemite/dscf4941-358159a9f3a3-1600.jpg",
+        "2400": "/media/yosemite/dscf4941-358159a9f3a3-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:11:19 09:27:11"
+      }
+    },
+    {
+      "id": "dscf4948",
+      "title": null,
+      "alt": "Yosemite photograph 11",
+      "sourceFile": "DSCF4948.jpg",
+      "printSource": "DSCF4948.jpg",
+      "assetKey": "dscf4948-c230c70477dc",
+      "order": 12,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/yosemite/dscf4948-c230c70477dc-768.jpg",
+        "1600": "/media/yosemite/dscf4948-c230c70477dc-1600.jpg",
+        "2400": "/media/yosemite/dscf4948-c230c70477dc-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:11:19 09:28:48"
+      }
+    },
+    {
       "id": "dscf5006-2",
       "title": null,
       "alt": "yosemite photograph 6",
       "sourceFile": "DSCF5006-2.jpg",
       "printSource": "DSCF5006-2.jpg",
       "assetKey": "dscf5006-2-6e79530194f4",
-      "order": 4,
+      "order": 13,
       "sellable": false,
       "releaseStatus": "not-applicable",
       "width": 7728,
@@ -123,13 +375,41 @@
       }
     },
     {
+      "id": "dscf5067",
+      "title": null,
+      "alt": "Yosemite photograph 13",
+      "sourceFile": "DSCF5067.jpg",
+      "printSource": "DSCF5067.jpg",
+      "assetKey": "dscf5067-66af9c48269c",
+      "order": 14,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 5152,
+      "variants": {
+        "768": "/media/yosemite/dscf5067-66af9c48269c-768.jpg",
+        "1600": "/media/yosemite/dscf5067-66af9c48269c-1600.jpg",
+        "2400": "/media/yosemite/dscf5067-66af9c48269c-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:11:19 09:53:11"
+      }
+    },
+    {
       "id": "dscf5071",
       "title": null,
       "alt": "yosemite photograph 7",
       "sourceFile": "DSCF5071.jpg",
       "printSource": "DSCF5071.jpg",
       "assetKey": "dscf5071-68a38585e81e",
-      "order": 5,
+      "order": 15,
       "sellable": false,
       "releaseStatus": "not-applicable",
       "width": 5152,
@@ -151,13 +431,97 @@
       }
     },
     {
+      "id": "dscf5105",
+      "title": null,
+      "alt": "Yosemite photograph 15",
+      "sourceFile": "DSCF5105.jpg",
+      "printSource": "DSCF5105.jpg",
+      "assetKey": "dscf5105-99bbce2f2fe0",
+      "order": 16,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/yosemite/dscf5105-99bbce2f2fe0-768.jpg",
+        "1600": "/media/yosemite/dscf5105-99bbce2f2fe0-1600.jpg",
+        "2400": "/media/yosemite/dscf5105-99bbce2f2fe0-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:11:19 10:11:02"
+      }
+    },
+    {
+      "id": "dscf5108",
+      "title": null,
+      "alt": "Yosemite photograph 16",
+      "sourceFile": "DSCF5108.jpg",
+      "printSource": "DSCF5108.jpg",
+      "assetKey": "dscf5108-4e6341640fc4",
+      "order": 17,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/yosemite/dscf5108-4e6341640fc4-768.jpg",
+        "1600": "/media/yosemite/dscf5108-4e6341640fc4-1600.jpg",
+        "2400": "/media/yosemite/dscf5108-4e6341640fc4-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:11:19 10:12:46"
+      }
+    },
+    {
+      "id": "dscf5160",
+      "title": null,
+      "alt": "Yosemite photograph 17",
+      "sourceFile": "DSCF5160.jpg",
+      "printSource": "DSCF5160.jpg",
+      "assetKey": "dscf5160-ff0086984e25",
+      "order": 18,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 3312,
+      "variants": {
+        "768": "/media/yosemite/dscf5160-ff0086984e25-768.jpg",
+        "1600": "/media/yosemite/dscf5160-ff0086984e25-1600.jpg",
+        "2400": "/media/yosemite/dscf5160-ff0086984e25-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:11:20 19:06:00"
+      }
+    },
+    {
       "id": "dscf5172",
       "title": null,
       "alt": "yosemite photograph 10",
       "sourceFile": "DSCF5172.jpg",
       "printSource": "DSCF5172.jpg",
       "assetKey": "dscf5172-16d4aa8dacc5",
-      "order": 6,
+      "order": 19,
       "sellable": false,
       "releaseStatus": "not-applicable",
       "width": 5873,

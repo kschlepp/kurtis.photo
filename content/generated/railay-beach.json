@@ -1,0 +1,378 @@
+{
+  "slug": "railay-beach",
+  "title": "Railay Beach",
+  "location": "Krabi, Thailand",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 8.0115,
+    "longitude": 98.8371
+  },
+  "coverImageId": "dscf1474",
+  "images": [
+    {
+      "id": "dscf1474",
+      "title": null,
+      "alt": "Railay Beach photograph 1",
+      "sourceFile": "DSCF1474.JPG",
+      "printSource": "DSCF1474.JPG",
+      "assetKey": "dscf1474-99583bbf09fe",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/railay-beach/dscf1474-99583bbf09fe-768.jpg",
+        "1600": "/media/railay-beach/dscf1474-99583bbf09fe-1600.jpg",
+        "2400": "/media/railay-beach/dscf1474-99583bbf09fe-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:26 19:38:53"
+      }
+    },
+    {
+      "id": "dscf1568",
+      "title": null,
+      "alt": "Railay Beach photograph 2",
+      "sourceFile": "DSCF1568.JPG",
+      "printSource": "DSCF1568.JPG",
+      "assetKey": "dscf1568-ec357f5cd9fd",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/railay-beach/dscf1568-ec357f5cd9fd-768.jpg",
+        "1600": "/media/railay-beach/dscf1568-ec357f5cd9fd-1600.jpg",
+        "2400": "/media/railay-beach/dscf1568-ec357f5cd9fd-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:26 19:54:09"
+      }
+    },
+    {
+      "id": "dscf1661",
+      "title": null,
+      "alt": "Railay Beach photograph 3",
+      "sourceFile": "DSCF1661.JPG",
+      "printSource": "DSCF1661.JPG",
+      "assetKey": "dscf1661-27f5a0df7034",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/railay-beach/dscf1661-27f5a0df7034-768.jpg",
+        "1600": "/media/railay-beach/dscf1661-27f5a0df7034-1600.jpg",
+        "2400": "/media/railay-beach/dscf1661-27f5a0df7034-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:26 20:19:20"
+      }
+    },
+    {
+      "id": "dscf1728-1",
+      "title": null,
+      "alt": "Railay Beach photograph 8",
+      "sourceFile": "DSCF1728 1.JPG",
+      "printSource": "DSCF1728 1.JPG",
+      "assetKey": "dscf1728-1-e8df39c03ecb",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/railay-beach/dscf1728-1-e8df39c03ecb-768.jpg",
+        "1600": "/media/railay-beach/dscf1728-1-e8df39c03ecb-1600.jpg",
+        "2400": "/media/railay-beach/dscf1728-1-e8df39c03ecb-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:26 22:34:26"
+      }
+    },
+    {
+      "id": "dscf1747",
+      "title": null,
+      "alt": "Railay Beach photograph 9",
+      "sourceFile": "DSCF1747.JPG",
+      "printSource": "DSCF1747.JPG",
+      "assetKey": "dscf1747-b7f0393bbc14",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/railay-beach/dscf1747-b7f0393bbc14-768.jpg",
+        "1600": "/media/railay-beach/dscf1747-b7f0393bbc14-1600.jpg",
+        "2400": "/media/railay-beach/dscf1747-b7f0393bbc14-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:26 22:49:29"
+      }
+    },
+    {
+      "id": "dscf1834",
+      "title": null,
+      "alt": "Railay Beach photograph 10",
+      "sourceFile": "DSCF1834.JPG",
+      "printSource": "DSCF1834.JPG",
+      "assetKey": "dscf1834-9a83874de9d9",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/railay-beach/dscf1834-9a83874de9d9-768.jpg",
+        "1600": "/media/railay-beach/dscf1834-9a83874de9d9-1600.jpg",
+        "2400": "/media/railay-beach/dscf1834-9a83874de9d9-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:26 23:14:00"
+      }
+    },
+    {
+      "id": "dscf2039",
+      "title": null,
+      "alt": "Railay Beach photograph 11",
+      "sourceFile": "DSCF2039.JPG",
+      "printSource": "DSCF2039.JPG",
+      "assetKey": "dscf2039-770e2e64301d",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/railay-beach/dscf2039-770e2e64301d-768.jpg",
+        "1600": "/media/railay-beach/dscf2039-770e2e64301d-1600.jpg",
+        "2400": "/media/railay-beach/dscf2039-770e2e64301d-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:26 23:30:00"
+      }
+    },
+    {
+      "id": "dscf2077",
+      "title": null,
+      "alt": "Railay Beach photograph 12",
+      "sourceFile": "DSCF2077.JPG",
+      "printSource": "DSCF2077.JPG",
+      "assetKey": "dscf2077-30929bb24f45",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/railay-beach/dscf2077-30929bb24f45-768.jpg",
+        "1600": "/media/railay-beach/dscf2077-30929bb24f45-1600.jpg",
+        "2400": "/media/railay-beach/dscf2077-30929bb24f45-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:26 23:39:11"
+      }
+    },
+    {
+      "id": "dscf2092",
+      "title": null,
+      "alt": "Railay Beach photograph 13",
+      "sourceFile": "DSCF2092.JPG",
+      "printSource": "DSCF2092.JPG",
+      "assetKey": "dscf2092-bb9bc2a2f28d",
+      "order": 9,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7574,
+      "height": 5049,
+      "variants": {
+        "768": "/media/railay-beach/dscf2092-bb9bc2a2f28d-768.jpg",
+        "1600": "/media/railay-beach/dscf2092-bb9bc2a2f28d-1600.jpg",
+        "2400": "/media/railay-beach/dscf2092-bb9bc2a2f28d-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:26 23:45:27"
+      }
+    },
+    {
+      "id": "dscf1677-1",
+      "title": null,
+      "alt": "Railay Beach photograph 4",
+      "sourceFile": "DSCF1677 1.JPG",
+      "printSource": "DSCF1677 1.JPG",
+      "assetKey": "dscf1677-1-506594dc785a",
+      "order": 10,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/railay-beach/dscf1677-1-506594dc785a-768.jpg",
+        "1600": "/media/railay-beach/dscf1677-1-506594dc785a-1600.jpg",
+        "2400": "/media/railay-beach/dscf1677-1-506594dc785a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:27 09:59:41"
+      }
+    },
+    {
+      "id": "dscf1687",
+      "title": null,
+      "alt": "Railay Beach photograph 5",
+      "sourceFile": "DSCF1687.JPG",
+      "printSource": "DSCF1687.JPG",
+      "assetKey": "dscf1687-66c7527c2b78",
+      "order": 11,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/railay-beach/dscf1687-66c7527c2b78-768.jpg",
+        "1600": "/media/railay-beach/dscf1687-66c7527c2b78-1600.jpg",
+        "2400": "/media/railay-beach/dscf1687-66c7527c2b78-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:27 10:04:20"
+      }
+    },
+    {
+      "id": "dscf1709",
+      "title": null,
+      "alt": "Railay Beach photograph 6",
+      "sourceFile": "DSCF1709.JPG",
+      "printSource": "DSCF1709.JPG",
+      "assetKey": "dscf1709-d9ce92d0889c",
+      "order": 12,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/railay-beach/dscf1709-d9ce92d0889c-768.jpg",
+        "1600": "/media/railay-beach/dscf1709-d9ce92d0889c-1600.jpg",
+        "2400": "/media/railay-beach/dscf1709-d9ce92d0889c-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:27 10:10:14"
+      }
+    },
+    {
+      "id": "dscf1718",
+      "title": null,
+      "alt": "Railay Beach photograph 7",
+      "sourceFile": "DSCF1718.JPG",
+      "printSource": "DSCF1718.JPG",
+      "assetKey": "dscf1718-0d633663a1ad",
+      "order": 13,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/railay-beach/dscf1718-0d633663a1ad-768.jpg",
+        "1600": "/media/railay-beach/dscf1718-0d633663a1ad-1600.jpg",
+        "2400": "/media/railay-beach/dscf1718-0d633663a1ad-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:27 10:13:28"
+      }
+    }
+  ]
+}

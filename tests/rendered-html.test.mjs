@@ -34,6 +34,10 @@ test("server-renders kurtis.photo", async () => {
   assert.match(html, /<title>kurtis\.photo<\/title>/i);
   assert.match(html, /Things I saw along the way\./);
   assert.match(html, /Yosemite/);
+  assert.match(html, /Bangkok/);
+  assert.match(html, /Tokyo/);
+  assert.match(html, /Koh Samui/);
+  assert.match(html, /Costa Rica/);
   assert.match(html, /Explore places/);
   assert.match(html, /Photo index/);
   assert.match(html, /href="\/">Places<\/a>/);
@@ -82,6 +86,8 @@ test("leads the portraits page with photography", async () => {
   const heading = html.indexOf("People, as they are.");
   assert.ok(image >= 0 && heading >= 0 && image < heading);
   assert.match(html, /Portrait from/);
+  assert.match(html, /Family/);
+  assert.match(html, /Newborn/);
   assert.match(html, /Tell me what you have in mind/);
   assert.doesNotMatch(html, /Have a person, occasion, or loose idea/);
 });

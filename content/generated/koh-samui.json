@@ -1,0 +1,854 @@
+{
+  "slug": "koh-samui",
+  "title": "Koh Samui",
+  "location": "Koh Samui, Thailand",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 9.512,
+    "longitude": 100.0136
+  },
+  "coverImageId": "dscf0507",
+  "images": [
+    {
+      "id": "dscf0507",
+      "title": null,
+      "alt": "Koh Samui photograph 1",
+      "sourceFile": "DSCF0507.JPG",
+      "printSource": "DSCF0507.JPG",
+      "assetKey": "dscf0507-f75f7c655c0c",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/koh-samui/dscf0507-f75f7c655c0c-768.jpg",
+        "1600": "/media/koh-samui/dscf0507-f75f7c655c0c-1600.jpg",
+        "2400": "/media/koh-samui/dscf0507-f75f7c655c0c-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 15:14:30"
+      }
+    },
+    {
+      "id": "dscf0511",
+      "title": null,
+      "alt": "Koh Samui photograph 2",
+      "sourceFile": "DSCF0511.JPG",
+      "printSource": "DSCF0511.JPG",
+      "assetKey": "dscf0511-50dfbc6bd5a8",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/koh-samui/dscf0511-50dfbc6bd5a8-768.jpg",
+        "1600": "/media/koh-samui/dscf0511-50dfbc6bd5a8-1600.jpg",
+        "2400": "/media/koh-samui/dscf0511-50dfbc6bd5a8-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 15:18:02"
+      }
+    },
+    {
+      "id": "dscf0517",
+      "title": null,
+      "alt": "Koh Samui photograph 3",
+      "sourceFile": "DSCF0517.JPG",
+      "printSource": "DSCF0517.JPG",
+      "assetKey": "dscf0517-0bc3f9e77865",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7608,
+      "height": 5072,
+      "variants": {
+        "768": "/media/koh-samui/dscf0517-0bc3f9e77865-768.jpg",
+        "1600": "/media/koh-samui/dscf0517-0bc3f9e77865-1600.jpg",
+        "2400": "/media/koh-samui/dscf0517-0bc3f9e77865-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 15:23:33"
+      }
+    },
+    {
+      "id": "dscf0540",
+      "title": null,
+      "alt": "Koh Samui photograph 4",
+      "sourceFile": "DSCF0540.JPG",
+      "printSource": "DSCF0540.JPG",
+      "assetKey": "dscf0540-d9e4f2d436d3",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 6704,
+      "height": 4469,
+      "variants": {
+        "768": "/media/koh-samui/dscf0540-d9e4f2d436d3-768.jpg",
+        "1600": "/media/koh-samui/dscf0540-d9e4f2d436d3-1600.jpg",
+        "2400": "/media/koh-samui/dscf0540-d9e4f2d436d3-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 15:35:37"
+      }
+    },
+    {
+      "id": "dscf0561",
+      "title": null,
+      "alt": "Koh Samui photograph 5",
+      "sourceFile": "DSCF0561.JPG",
+      "printSource": "DSCF0561.JPG",
+      "assetKey": "dscf0561-6b8023810e74",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/koh-samui/dscf0561-6b8023810e74-768.jpg",
+        "1600": "/media/koh-samui/dscf0561-6b8023810e74-1600.jpg",
+        "2400": "/media/koh-samui/dscf0561-6b8023810e74-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 15:43:11"
+      }
+    },
+    {
+      "id": "dscf0567",
+      "title": null,
+      "alt": "Koh Samui photograph 6",
+      "sourceFile": "DSCF0567.JPG",
+      "printSource": "DSCF0567.JPG",
+      "assetKey": "dscf0567-821dbbf7ed23",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/koh-samui/dscf0567-821dbbf7ed23-768.jpg",
+        "1600": "/media/koh-samui/dscf0567-821dbbf7ed23-1600.jpg",
+        "2400": "/media/koh-samui/dscf0567-821dbbf7ed23-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 15:46:53"
+      }
+    },
+    {
+      "id": "dscf0575",
+      "title": null,
+      "alt": "Koh Samui photograph 7",
+      "sourceFile": "DSCF0575.JPG",
+      "printSource": "DSCF0575.JPG",
+      "assetKey": "dscf0575-d0c0fb707ac2",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/koh-samui/dscf0575-d0c0fb707ac2-768.jpg",
+        "1600": "/media/koh-samui/dscf0575-d0c0fb707ac2-1600.jpg",
+        "2400": "/media/koh-samui/dscf0575-d0c0fb707ac2-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 15:47:27"
+      }
+    },
+    {
+      "id": "dscf0591",
+      "title": null,
+      "alt": "Koh Samui photograph 8",
+      "sourceFile": "DSCF0591.JPG",
+      "printSource": "DSCF0591.JPG",
+      "assetKey": "dscf0591-c0b1b3535fb5",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7629,
+      "height": 5086,
+      "variants": {
+        "768": "/media/koh-samui/dscf0591-c0b1b3535fb5-768.jpg",
+        "1600": "/media/koh-samui/dscf0591-c0b1b3535fb5-1600.jpg",
+        "2400": "/media/koh-samui/dscf0591-c0b1b3535fb5-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 17:08:42"
+      }
+    },
+    {
+      "id": "dscf0596",
+      "title": null,
+      "alt": "Koh Samui photograph 9",
+      "sourceFile": "DSCF0596.JPG",
+      "printSource": "DSCF0596.JPG",
+      "assetKey": "dscf0596-3e74936fad82",
+      "order": 9,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/koh-samui/dscf0596-3e74936fad82-768.jpg",
+        "1600": "/media/koh-samui/dscf0596-3e74936fad82-1600.jpg",
+        "2400": "/media/koh-samui/dscf0596-3e74936fad82-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 17:09:28"
+      }
+    },
+    {
+      "id": "dscf0629",
+      "title": null,
+      "alt": "Koh Samui photograph 10",
+      "sourceFile": "DSCF0629.JPG",
+      "printSource": "DSCF0629.JPG",
+      "assetKey": "dscf0629-f8a4bc76ca03",
+      "order": 10,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/koh-samui/dscf0629-f8a4bc76ca03-768.jpg",
+        "1600": "/media/koh-samui/dscf0629-f8a4bc76ca03-1600.jpg",
+        "2400": "/media/koh-samui/dscf0629-f8a4bc76ca03-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 17:14:05"
+      }
+    },
+    {
+      "id": "dscf0635",
+      "title": null,
+      "alt": "Koh Samui photograph 11",
+      "sourceFile": "DSCF0635.JPG",
+      "printSource": "DSCF0635.JPG",
+      "assetKey": "dscf0635-9a06272fabcc",
+      "order": 11,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/koh-samui/dscf0635-9a06272fabcc-768.jpg",
+        "1600": "/media/koh-samui/dscf0635-9a06272fabcc-1600.jpg",
+        "2400": "/media/koh-samui/dscf0635-9a06272fabcc-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 17:15:10"
+      }
+    },
+    {
+      "id": "dscf0668",
+      "title": null,
+      "alt": "Koh Samui photograph 12",
+      "sourceFile": "DSCF0668.JPG",
+      "printSource": "DSCF0668.JPG",
+      "assetKey": "dscf0668-7b90a92dcb3d",
+      "order": 12,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/koh-samui/dscf0668-7b90a92dcb3d-768.jpg",
+        "1600": "/media/koh-samui/dscf0668-7b90a92dcb3d-1600.jpg",
+        "2400": "/media/koh-samui/dscf0668-7b90a92dcb3d-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 17:21:14"
+      }
+    },
+    {
+      "id": "dscf0803",
+      "title": null,
+      "alt": "Koh Samui photograph 13",
+      "sourceFile": "DSCF0803.JPG",
+      "printSource": "DSCF0803.JPG",
+      "assetKey": "dscf0803-580de9ada2fa",
+      "order": 13,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/koh-samui/dscf0803-580de9ada2fa-768.jpg",
+        "1600": "/media/koh-samui/dscf0803-580de9ada2fa-1600.jpg",
+        "2400": "/media/koh-samui/dscf0803-580de9ada2fa-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 17:23:53"
+      }
+    },
+    {
+      "id": "dscf0857",
+      "title": null,
+      "alt": "Koh Samui photograph 14",
+      "sourceFile": "DSCF0857.JPG",
+      "printSource": "DSCF0857.JPG",
+      "assetKey": "dscf0857-66ae27129538",
+      "order": 14,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/koh-samui/dscf0857-66ae27129538-768.jpg",
+        "1600": "/media/koh-samui/dscf0857-66ae27129538-1600.jpg",
+        "2400": "/media/koh-samui/dscf0857-66ae27129538-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 17:27:31"
+      }
+    },
+    {
+      "id": "dscf0862",
+      "title": null,
+      "alt": "Koh Samui photograph 15",
+      "sourceFile": "DSCF0862.JPG",
+      "printSource": "DSCF0862.JPG",
+      "assetKey": "dscf0862-e7bd818bf67f",
+      "order": 15,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4973,
+      "height": 4193,
+      "variants": {
+        "768": "/media/koh-samui/dscf0862-e7bd818bf67f-768.jpg",
+        "1600": "/media/koh-samui/dscf0862-e7bd818bf67f-1600.jpg",
+        "2400": "/media/koh-samui/dscf0862-e7bd818bf67f-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 17:33:04"
+      }
+    },
+    {
+      "id": "dscf0879",
+      "title": null,
+      "alt": "Koh Samui photograph 16",
+      "sourceFile": "DSCF0879.JPG",
+      "printSource": "DSCF0879.JPG",
+      "assetKey": "dscf0879-ffec4b876616",
+      "order": 16,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/koh-samui/dscf0879-ffec4b876616-768.jpg",
+        "1600": "/media/koh-samui/dscf0879-ffec4b876616-1600.jpg",
+        "2400": "/media/koh-samui/dscf0879-ffec4b876616-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 17:36:48"
+      }
+    },
+    {
+      "id": "dscf0883",
+      "title": null,
+      "alt": "Koh Samui photograph 17",
+      "sourceFile": "DSCF0883.JPG",
+      "printSource": "DSCF0883.JPG",
+      "assetKey": "dscf0883-14ef56b0deb7",
+      "order": 17,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5039,
+      "height": 7558,
+      "variants": {
+        "768": "/media/koh-samui/dscf0883-14ef56b0deb7-768.jpg",
+        "1600": "/media/koh-samui/dscf0883-14ef56b0deb7-1600.jpg",
+        "2400": "/media/koh-samui/dscf0883-14ef56b0deb7-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 17:38:23"
+      }
+    },
+    {
+      "id": "dscf0900",
+      "title": null,
+      "alt": "Koh Samui photograph 18",
+      "sourceFile": "DSCF0900.JPG",
+      "printSource": "DSCF0900.JPG",
+      "assetKey": "dscf0900-803f972d72c7",
+      "order": 18,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/koh-samui/dscf0900-803f972d72c7-768.jpg",
+        "1600": "/media/koh-samui/dscf0900-803f972d72c7-1600.jpg",
+        "2400": "/media/koh-samui/dscf0900-803f972d72c7-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 17:40:44"
+      }
+    },
+    {
+      "id": "dscf0937",
+      "title": null,
+      "alt": "Koh Samui photograph 19",
+      "sourceFile": "DSCF0937.JPG",
+      "printSource": "DSCF0937.JPG",
+      "assetKey": "dscf0937-17c0a7c46562",
+      "order": 19,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/koh-samui/dscf0937-17c0a7c46562-768.jpg",
+        "1600": "/media/koh-samui/dscf0937-17c0a7c46562-1600.jpg",
+        "2400": "/media/koh-samui/dscf0937-17c0a7c46562-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 17:46:19"
+      }
+    },
+    {
+      "id": "dscf0970",
+      "title": null,
+      "alt": "Koh Samui photograph 20",
+      "sourceFile": "DSCF0970.JPG",
+      "printSource": "DSCF0970.JPG",
+      "assetKey": "dscf0970-81c2bd092b9a",
+      "order": 20,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/koh-samui/dscf0970-81c2bd092b9a-768.jpg",
+        "1600": "/media/koh-samui/dscf0970-81c2bd092b9a-1600.jpg",
+        "2400": "/media/koh-samui/dscf0970-81c2bd092b9a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 17:52:55"
+      }
+    },
+    {
+      "id": "dscf0979",
+      "title": null,
+      "alt": "Koh Samui photograph 21",
+      "sourceFile": "DSCF0979.JPG",
+      "printSource": "DSCF0979.JPG",
+      "assetKey": "dscf0979-a678820d3a01",
+      "order": 21,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/koh-samui/dscf0979-a678820d3a01-768.jpg",
+        "1600": "/media/koh-samui/dscf0979-a678820d3a01-1600.jpg",
+        "2400": "/media/koh-samui/dscf0979-a678820d3a01-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:16 17:54:32"
+      }
+    },
+    {
+      "id": "dscf1027",
+      "title": null,
+      "alt": "Koh Samui photograph 22",
+      "sourceFile": "DSCF1027.JPG",
+      "printSource": "DSCF1027.JPG",
+      "assetKey": "dscf1027-4a28adc52bfd",
+      "order": 22,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 3639,
+      "height": 5458,
+      "variants": {
+        "768": "/media/koh-samui/dscf1027-4a28adc52bfd-768.jpg",
+        "1600": "/media/koh-samui/dscf1027-4a28adc52bfd-1600.jpg",
+        "2400": "/media/koh-samui/dscf1027-4a28adc52bfd-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:17 12:28:58"
+      }
+    },
+    {
+      "id": "dscf1044",
+      "title": null,
+      "alt": "Koh Samui photograph 23",
+      "sourceFile": "DSCF1044.JPG",
+      "printSource": "DSCF1044.JPG",
+      "assetKey": "dscf1044-0e20c9a5579b",
+      "order": 23,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/koh-samui/dscf1044-0e20c9a5579b-768.jpg",
+        "1600": "/media/koh-samui/dscf1044-0e20c9a5579b-1600.jpg",
+        "2400": "/media/koh-samui/dscf1044-0e20c9a5579b-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:17 15:36:02"
+      }
+    },
+    {
+      "id": "dscf1073",
+      "title": null,
+      "alt": "Koh Samui photograph 24",
+      "sourceFile": "DSCF1073.JPG",
+      "printSource": "DSCF1073.JPG",
+      "assetKey": "dscf1073-6ee042ec0693",
+      "order": 24,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/koh-samui/dscf1073-6ee042ec0693-768.jpg",
+        "1600": "/media/koh-samui/dscf1073-6ee042ec0693-1600.jpg",
+        "2400": "/media/koh-samui/dscf1073-6ee042ec0693-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:17 15:42:55"
+      }
+    },
+    {
+      "id": "dscf1241",
+      "title": null,
+      "alt": "Koh Samui photograph 25",
+      "sourceFile": "DSCF1241.JPG",
+      "printSource": "DSCF1241.JPG",
+      "assetKey": "dscf1241-da7a267196d7",
+      "order": 25,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/koh-samui/dscf1241-da7a267196d7-768.jpg",
+        "1600": "/media/koh-samui/dscf1241-da7a267196d7-1600.jpg",
+        "2400": "/media/koh-samui/dscf1241-da7a267196d7-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:17 16:07:28"
+      }
+    },
+    {
+      "id": "dscf1248",
+      "title": null,
+      "alt": "Koh Samui photograph 26",
+      "sourceFile": "DSCF1248.JPG",
+      "printSource": "DSCF1248.JPG",
+      "assetKey": "dscf1248-f10dd27cdafc",
+      "order": 26,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 6487,
+      "height": 4325,
+      "variants": {
+        "768": "/media/koh-samui/dscf1248-f10dd27cdafc-768.jpg",
+        "1600": "/media/koh-samui/dscf1248-f10dd27cdafc-1600.jpg",
+        "2400": "/media/koh-samui/dscf1248-f10dd27cdafc-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:17 16:11:03"
+      }
+    },
+    {
+      "id": "dscf1304",
+      "title": null,
+      "alt": "Koh Samui photograph 27",
+      "sourceFile": "DSCF1304.JPG",
+      "printSource": "DSCF1304.JPG",
+      "assetKey": "dscf1304-016fd1447936",
+      "order": 27,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/koh-samui/dscf1304-016fd1447936-768.jpg",
+        "1600": "/media/koh-samui/dscf1304-016fd1447936-1600.jpg",
+        "2400": "/media/koh-samui/dscf1304-016fd1447936-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:26 12:40:00"
+      }
+    },
+    {
+      "id": "dscf1392",
+      "title": null,
+      "alt": "Koh Samui photograph 28",
+      "sourceFile": "DSCF1392.JPG",
+      "printSource": "DSCF1392.JPG",
+      "assetKey": "dscf1392-54159da4958e",
+      "order": 28,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/koh-samui/dscf1392-54159da4958e-768.jpg",
+        "1600": "/media/koh-samui/dscf1392-54159da4958e-1600.jpg",
+        "2400": "/media/koh-samui/dscf1392-54159da4958e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:26 19:03:06"
+      }
+    },
+    {
+      "id": "dscf1395",
+      "title": null,
+      "alt": "Koh Samui photograph 29",
+      "sourceFile": "DSCF1395.JPG",
+      "printSource": "DSCF1395.JPG",
+      "assetKey": "dscf1395-3f0b4deca99b",
+      "order": 29,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5133,
+      "height": 7700,
+      "variants": {
+        "768": "/media/koh-samui/dscf1395-3f0b4deca99b-768.jpg",
+        "1600": "/media/koh-samui/dscf1395-3f0b4deca99b-1600.jpg",
+        "2400": "/media/koh-samui/dscf1395-3f0b4deca99b-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:26 19:04:29"
+      }
+    },
+    {
+      "id": "dscf1403",
+      "title": null,
+      "alt": "Koh Samui photograph 30",
+      "sourceFile": "DSCF1403.JPG",
+      "printSource": "DSCF1403.JPG",
+      "assetKey": "dscf1403-72d569dd8546",
+      "order": 30,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4834,
+      "height": 7251,
+      "variants": {
+        "768": "/media/koh-samui/dscf1403-72d569dd8546-768.jpg",
+        "1600": "/media/koh-samui/dscf1403-72d569dd8546-1600.jpg",
+        "2400": "/media/koh-samui/dscf1403-72d569dd8546-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2025:08:26 19:07:52"
+      }
+    }
+  ]
+}

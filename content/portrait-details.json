@@ -5,10 +5,22 @@
     "featured": false,
     "sourceDirectory": "ashley"
   },
+  "family": {
+    "title": "Family",
+    "note": null,
+    "featured": false,
+    "sourceDirectory": "family shoot"
+  },
   "maternity": {
     "title": "Maternity",
     "note": null,
     "featured": false,
     "sourceDirectory": "maternity shoot"
+  },
+  "newborn": {
+    "title": "Newborn",
+    "note": null,
+    "featured": false,
+    "sourceDirectory": "newborn shoot"
   }
 }

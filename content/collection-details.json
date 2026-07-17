@@ -13,6 +13,27 @@
     "featured": false,
     "coordinates": { "latitude": 40.6405, "longitude": -8.7501 }
   },
+  "bangkok": {
+    "title": "Bangkok",
+    "location": "Bangkok, Thailand",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 13.7563, "longitude": 100.5018 }
+  },
+  "belmont-park": {
+    "title": "Belmont Park",
+    "location": "San Diego, California",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 32.7708, "longitude": -117.2523 }
+  },
+  "carlsbad": {
+    "title": "Carlsbad",
+    "location": "Carlsbad, California",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 33.1581, "longitude": -117.3506 }
+  },
   "coronado": {
     "title": "Coronado",
     "location": "Coronado, California",
@@ -20,12 +41,33 @@
     "featured": false,
     "coordinates": { "latitude": 32.6859, "longitude": -117.1831 }
   },
+  "costa-rica": {
+    "title": "Costa Rica",
+    "location": "Costa Rica",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 9.7489, "longitude": -83.7534 }
+  },
   "joshua-tree": {
     "title": "Joshua Tree",
     "location": "Joshua Tree National Park, California",
     "note": null,
     "featured": false,
     "coordinates": { "latitude": 33.8734, "longitude": -115.9010 }
+  },
+  "koh-samui": {
+    "title": "Koh Samui",
+    "location": "Koh Samui, Thailand",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 9.5120, "longitude": 100.0136 }
+  },
+  "lake-tahoe": {
+    "title": "Lake Tahoe",
+    "location": "California & Nevada",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 39.0968, "longitude": -120.0324 }
   },
   "lisbon": {
     "title": "Lisbon",
@@ -48,6 +90,13 @@
     "featured": false,
     "coordinates": { "latitude": 41.1579, "longitude": -8.6291 }
   },
+  "railay-beach": {
+    "title": "Railay Beach",
+    "location": "Krabi, Thailand",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 8.0115, "longitude": 98.8371 }
+  },
   "san-diego": {
     "title": "San Diego",
     "location": "San Diego, California",
@@ -68,6 +117,13 @@
     "note": null,
     "featured": false,
     "coordinates": { "latitude": 38.7980, "longitude": -9.3904 }
+  },
+  "tokyo": {
+    "title": "Tokyo",
+    "location": "Tokyo, Japan",
+    "note": null,
+    "featured": false,
+    "coordinates": { "latitude": 35.6762, "longitude": 139.6503 }
   },
   "yosemite": {
     "title": "Yosemite",

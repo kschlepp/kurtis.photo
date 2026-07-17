@@ -1,0 +1,113 @@
+{
+  "slug": "family",
+  "title": "Family",
+  "note": null,
+  "featured": false,
+  "coverImageId": "photo-0cdaed335a3e",
+  "images": [
+    {
+      "id": "photo-0cdaed335a3e",
+      "title": null,
+      "alt": "Family photograph 1",
+      "assetKey": "portrait-0cdaed335a3e",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "review-required",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/portrait-family/portrait-0cdaed335a3e-768.jpg",
+        "1600": "/media/portrait-family/portrait-0cdaed335a3e-1600.jpg",
+        "2400": "/media/portrait-family/portrait-0cdaed335a3e-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": null,
+        "cameraBody": null,
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": null
+      }
+    },
+    {
+      "id": "photo-5c64c5987d0c",
+      "title": null,
+      "alt": "Family photograph 2",
+      "assetKey": "portrait-5c64c5987d0c",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "review-required",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/portrait-family/portrait-5c64c5987d0c-768.jpg",
+        "1600": "/media/portrait-family/portrait-5c64c5987d0c-1600.jpg",
+        "2400": "/media/portrait-family/portrait-5c64c5987d0c-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": null,
+        "cameraBody": null,
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": null
+      }
+    },
+    {
+      "id": "photo-87d6b1785eaa",
+      "title": null,
+      "alt": "Family photograph 3",
+      "assetKey": "portrait-87d6b1785eaa",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "review-required",
+      "width": 7728,
+      "height": 5152,
+      "variants": {
+        "768": "/media/portrait-family/portrait-87d6b1785eaa-768.jpg",
+        "1600": "/media/portrait-family/portrait-87d6b1785eaa-1600.jpg",
+        "2400": "/media/portrait-family/portrait-87d6b1785eaa-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": null,
+        "cameraBody": null,
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": null
+      }
+    },
+    {
+      "id": "photo-699e8d2f9b19",
+      "title": null,
+      "alt": "Family photograph 4",
+      "assetKey": "portrait-699e8d2f9b19",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "review-required",
+      "width": 4149,
+      "height": 6223,
+      "variants": {
+        "768": "/media/portrait-family/portrait-699e8d2f9b19-768.jpg",
+        "1600": "/media/portrait-family/portrait-699e8d2f9b19-1600.jpg",
+        "2400": "/media/portrait-family/portrait-699e8d2f9b19-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": null,
+        "cameraBody": null,
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": null
+      }
+    }
+  ]
+}

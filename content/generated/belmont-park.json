@@ -1,0 +1,378 @@
+{
+  "slug": "belmont-park",
+  "title": "Belmont Park",
+  "location": "San Diego, California",
+  "note": null,
+  "featured": false,
+  "coordinates": {
+    "latitude": 32.7708,
+    "longitude": -117.2523
+  },
+  "coverImageId": "belmontparkapril2026-3",
+  "images": [
+    {
+      "id": "belmontparkapril2026-3",
+      "title": null,
+      "alt": "Belmont Park photograph 7",
+      "sourceFile": "BelmontParkApril2026-3.jpg",
+      "printSource": "BelmontParkApril2026-3.jpg",
+      "assetKey": "belmontparkapril2026-3-b3fca8fb4936",
+      "order": 1,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7584,
+      "height": 5056,
+      "variants": {
+        "768": "/media/belmont-park/belmontparkapril2026-3-b3fca8fb4936-768.jpg",
+        "1600": "/media/belmont-park/belmontparkapril2026-3-b3fca8fb4936-1600.jpg",
+        "2400": "/media/belmont-park/belmontparkapril2026-3-b3fca8fb4936-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:23 10:38:27"
+      }
+    },
+    {
+      "id": "belmontparkapril2026-6",
+      "title": null,
+      "alt": "Belmont Park photograph 13",
+      "sourceFile": "BelmontParkApril2026-6.jpg",
+      "printSource": "BelmontParkApril2026-6.jpg",
+      "assetKey": "belmontparkapril2026-6-3de4f9a506a7",
+      "order": 2,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/belmont-park/belmontparkapril2026-6-3de4f9a506a7-768.jpg",
+        "1600": "/media/belmont-park/belmontparkapril2026-6-3de4f9a506a7-1600.jpg",
+        "2400": "/media/belmont-park/belmontparkapril2026-6-3de4f9a506a7-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:23 10:38:27"
+      }
+    },
+    {
+      "id": "belmontparkapril2026-5",
+      "title": null,
+      "alt": "Belmont Park photograph 12",
+      "sourceFile": "BelmontParkApril2026-5.jpg",
+      "printSource": "BelmontParkApril2026-5.jpg",
+      "assetKey": "belmontparkapril2026-5-2d482060ece4",
+      "order": 3,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 6599,
+      "height": 4399,
+      "variants": {
+        "768": "/media/belmont-park/belmontparkapril2026-5-2d482060ece4-768.jpg",
+        "1600": "/media/belmont-park/belmontparkapril2026-5-2d482060ece4-1600.jpg",
+        "2400": "/media/belmont-park/belmontparkapril2026-5-2d482060ece4-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:23 10:38:28"
+      }
+    },
+    {
+      "id": "belmontparkapril2026-13",
+      "title": null,
+      "alt": "Belmont Park photograph 1",
+      "sourceFile": "BelmontParkApril2026-13.jpg",
+      "printSource": "BelmontParkApril2026-13.jpg",
+      "assetKey": "belmontparkapril2026-13-30d900886a4a",
+      "order": 4,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/belmont-park/belmontparkapril2026-13-30d900886a4a-768.jpg",
+        "1600": "/media/belmont-park/belmontparkapril2026-13-30d900886a4a-1600.jpg",
+        "2400": "/media/belmont-park/belmontparkapril2026-13-30d900886a4a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:23 10:38:38"
+      }
+    },
+    {
+      "id": "belmontparkapril2026-17",
+      "title": null,
+      "alt": "Belmont Park photograph 2",
+      "sourceFile": "BelmontParkApril2026-17.jpg",
+      "printSource": "BelmontParkApril2026-17.jpg",
+      "assetKey": "belmontparkapril2026-17-c9f60ab07f71",
+      "order": 5,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/belmont-park/belmontparkapril2026-17-c9f60ab07f71-768.jpg",
+        "1600": "/media/belmont-park/belmontparkapril2026-17-c9f60ab07f71-1600.jpg",
+        "2400": "/media/belmont-park/belmontparkapril2026-17-c9f60ab07f71-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:23 10:38:43"
+      }
+    },
+    {
+      "id": "belmontparkapril2026-22",
+      "title": null,
+      "alt": "Belmont Park photograph 3",
+      "sourceFile": "BelmontParkApril2026-22.jpg",
+      "printSource": "BelmontParkApril2026-22.jpg",
+      "assetKey": "belmontparkapril2026-22-42ae92117578",
+      "order": 6,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 6291,
+      "height": 4194,
+      "variants": {
+        "768": "/media/belmont-park/belmontparkapril2026-22-42ae92117578-768.jpg",
+        "1600": "/media/belmont-park/belmontparkapril2026-22-42ae92117578-1600.jpg",
+        "2400": "/media/belmont-park/belmontparkapril2026-22-42ae92117578-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:23 10:38:48"
+      }
+    },
+    {
+      "id": "belmontparkapril2026-24",
+      "title": null,
+      "alt": "Belmont Park photograph 4",
+      "sourceFile": "BelmontParkApril2026-24.jpg",
+      "printSource": "BelmontParkApril2026-24.jpg",
+      "assetKey": "belmontparkapril2026-24-741d25f355ef",
+      "order": 7,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 4090,
+      "height": 6135,
+      "variants": {
+        "768": "/media/belmont-park/belmontparkapril2026-24-741d25f355ef-768.jpg",
+        "1600": "/media/belmont-park/belmontparkapril2026-24-741d25f355ef-1600.jpg",
+        "2400": "/media/belmont-park/belmontparkapril2026-24-741d25f355ef-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:23 10:38:52"
+      }
+    },
+    {
+      "id": "belmontparkapril2026-25",
+      "title": null,
+      "alt": "Belmont Park photograph 5",
+      "sourceFile": "BelmontParkApril2026-25.jpg",
+      "printSource": "BelmontParkApril2026-25.jpg",
+      "assetKey": "belmontparkapril2026-25-f73017982ef8",
+      "order": 8,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/belmont-park/belmontparkapril2026-25-f73017982ef8-768.jpg",
+        "1600": "/media/belmont-park/belmontparkapril2026-25-f73017982ef8-1600.jpg",
+        "2400": "/media/belmont-park/belmontparkapril2026-25-f73017982ef8-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:23 10:38:52"
+      }
+    },
+    {
+      "id": "belmontparkapril2026-28",
+      "title": null,
+      "alt": "Belmont Park photograph 6",
+      "sourceFile": "BelmontParkApril2026-28.jpg",
+      "printSource": "BelmontParkApril2026-28.jpg",
+      "assetKey": "belmontparkapril2026-28-5202cef3546a",
+      "order": 9,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/belmont-park/belmontparkapril2026-28-5202cef3546a-768.jpg",
+        "1600": "/media/belmont-park/belmontparkapril2026-28-5202cef3546a-1600.jpg",
+        "2400": "/media/belmont-park/belmontparkapril2026-28-5202cef3546a-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:23 10:38:54"
+      }
+    },
+    {
+      "id": "belmontparkapril2026-34",
+      "title": null,
+      "alt": "Belmont Park photograph 8",
+      "sourceFile": "BelmontParkApril2026-34.jpg",
+      "printSource": "BelmontParkApril2026-34.jpg",
+      "assetKey": "belmontparkapril2026-34-22cdffecd523",
+      "order": 10,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 3029,
+      "height": 4543,
+      "variants": {
+        "768": "/media/belmont-park/belmontparkapril2026-34-22cdffecd523-768.jpg",
+        "1600": "/media/belmont-park/belmontparkapril2026-34-22cdffecd523-1600.jpg",
+        "2400": "/media/belmont-park/belmontparkapril2026-34-22cdffecd523-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:23 10:39:03"
+      }
+    },
+    {
+      "id": "belmontparkapril2026-39",
+      "title": null,
+      "alt": "Belmont Park photograph 10",
+      "sourceFile": "BelmontParkApril2026-39.jpg",
+      "printSource": "BelmontParkApril2026-39.jpg",
+      "assetKey": "belmontparkapril2026-39-b6f8fba32c80",
+      "order": 11,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 5152,
+      "height": 7728,
+      "variants": {
+        "768": "/media/belmont-park/belmontparkapril2026-39-b6f8fba32c80-768.jpg",
+        "1600": "/media/belmont-park/belmontparkapril2026-39-b6f8fba32c80-1600.jpg",
+        "2400": "/media/belmont-park/belmontparkapril2026-39-b6f8fba32c80-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:23 10:39:06"
+      }
+    },
+    {
+      "id": "belmontparkapril2026-38",
+      "title": null,
+      "alt": "Belmont Park photograph 9",
+      "sourceFile": "BelmontParkApril2026-38.jpg",
+      "printSource": "BelmontParkApril2026-38.jpg",
+      "assetKey": "belmontparkapril2026-38-68f61dc5c3c8",
+      "order": 12,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7696,
+      "height": 5131,
+      "variants": {
+        "768": "/media/belmont-park/belmontparkapril2026-38-68f61dc5c3c8-768.jpg",
+        "1600": "/media/belmont-park/belmontparkapril2026-38-68f61dc5c3c8-1600.jpg",
+        "2400": "/media/belmont-park/belmontparkapril2026-38-68f61dc5c3c8-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:23 10:39:07"
+      }
+    },
+    {
+      "id": "belmontparkapril2026-40",
+      "title": null,
+      "alt": "Belmont Park photograph 11",
+      "sourceFile": "BelmontParkApril2026-40.jpg",
+      "printSource": "BelmontParkApril2026-40.jpg",
+      "assetKey": "belmontparkapril2026-40-cceb6cb196d8",
+      "order": 13,
+      "sellable": false,
+      "releaseStatus": "not-applicable",
+      "width": 7706,
+      "height": 5137,
+      "variants": {
+        "768": "/media/belmont-park/belmontparkapril2026-40-cceb6cb196d8-768.jpg",
+        "1600": "/media/belmont-park/belmontparkapril2026-40-cceb6cb196d8-1600.jpg",
+        "2400": "/media/belmont-park/belmontparkapril2026-40-cceb6cb196d8-2400.jpg"
+      },
+      "metadata": {
+        "cameraMake": "FUJIFILM",
+        "cameraBody": "X-T5",
+        "lens": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "captureDate": "2026:04:23 10:39:07"
+      }
+    }
+  ]
+}

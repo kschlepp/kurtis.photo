@@ -1,13 +1,21 @@
 import algarveData from "@/content/generated/algarve.json";
 import aveiroAndCostaNovaData from "@/content/generated/aveiro-and-costa-nova.json";
+import bangkokData from "@/content/generated/bangkok.json";
+import belmontParkData from "@/content/generated/belmont-park.json";
+import carlsbadData from "@/content/generated/carlsbad.json";
 import coronadoData from "@/content/generated/coronado.json";
+import costaRicaData from "@/content/generated/costa-rica.json";
 import joshuaTreeData from "@/content/generated/joshua-tree.json";
+import kohSamuiData from "@/content/generated/koh-samui.json";
+import lakeTahoeData from "@/content/generated/lake-tahoe.json";
 import lisbonData from "@/content/generated/lisbon.json";
 import mexicoCityData from "@/content/generated/mexico-city.json";
 import portoData from "@/content/generated/porto.json";
+import railayBeachData from "@/content/generated/railay-beach.json";
 import sanDiegoData from "@/content/generated/san-diego.json";
 import seattleData from "@/content/generated/seattle.json";
 import sintraData from "@/content/generated/sintra.json";
+import tokyoData from "@/content/generated/tokyo.json";
 import yosemiteData from "@/content/generated/yosemite.json";
 import printsData from "@/content/prints.json";
 
@@ -71,14 +79,22 @@ type PrintsData = { items: PrintSelection[] };
 export const collections = [
   algarveData as Collection,
   aveiroAndCostaNovaData as Collection,
+  bangkokData as Collection,
+  belmontParkData as Collection,
+  carlsbadData as Collection,
   coronadoData as Collection,
+  costaRicaData as Collection,
   joshuaTreeData as Collection,
+  kohSamuiData as Collection,
+  lakeTahoeData as Collection,
   lisbonData as Collection,
   mexicoCityData as Collection,
   portoData as Collection,
+  railayBeachData as Collection,
   sanDiegoData as Collection,
   seattleData as Collection,
   sintraData as Collection,
+  tokyoData as Collection,
   yosemiteData as Collection,
 ].sort((left, right) => left.title.localeCompare(right.title));
 
