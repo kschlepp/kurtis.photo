@@ -254,16 +254,16 @@ h2 { font-size: clamp(2.1rem, 3.7vw, 4rem); }
 .globe-sidebar-links a { color: var(--ocean); font-size: .73rem; font-weight: 700; letter-spacing: .04em; }
 .globe-sidebar-links a span { display: inline-block; transition: transform .2s ease; }
 .globe-sidebar-links a:hover span { transform: translate(2px, -2px); }
-.globe-stage { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #bbdde7; isolation: isolate; }
+.globe-stage { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #83d8ef; isolation: isolate; }
 .globe-map { position: absolute; inset: 0; }
-.globe-time-shade { position: absolute; z-index: 1; inset: 0; pointer-events: none; background: linear-gradient(135deg, #152b39, #52616a); mix-blend-mode: multiply; transition: opacity 1.2s ease; }
+.globe-solar-shade { position: absolute; z-index: 1; overflow: hidden; border-radius: 50%; pointer-events: none; }
 .globe-map .maplibregl-canvas { cursor: grab; outline: none; }
 .globe-map .maplibregl-canvas:active { cursor: grabbing; }
 .globe-map .maplibregl-canvas:focus-visible { outline: 2px solid var(--ocean); outline-offset: -4px; }
 .globe-map .maplibregl-cooperative-gesture-screen { background: color-mix(in srgb, var(--ink) 48%, transparent); color: var(--paper-bright); font-size: .86rem; }
 .globe-map .maplibregl-ctrl-logo { opacity: .45; filter: grayscale(1); }
 .globe-cluster-count { display: grid; place-items: center; width: 22px; height: 22px; pointer-events: none; color: var(--paper-bright); font: 700 .68rem / 1 var(--font-mono); text-align: center; text-shadow: 0 1px 1px color-mix(in srgb, var(--ink) 35%, transparent); }
-.globe-loading, .globe-fallback { position: absolute; z-index: 2; inset: 0; display: grid; place-content: center; justify-items: center; padding: 2rem; background: #bbdde7; text-align: center; }
+.globe-loading, .globe-fallback { position: absolute; z-index: 2; inset: 0; display: grid; place-content: center; justify-items: center; padding: 2rem; background: #83d8ef; text-align: center; }
 .globe-loading { pointer-events: none; color: var(--muted); }
 .globe-loading span { width: 54px; height: 54px; border: 1px solid color-mix(in srgb, var(--ink) 28%, transparent); border-top-color: var(--ocean); border-radius: 50%; animation: globe-loading-spin 1.4s linear infinite; }
 .globe-loading p { margin: .8rem 0 0; font-size: .76rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }

@@ -53,18 +53,54 @@ function worldPadding() {
   return { top: 0, right: 0, bottom: window.matchMedia("(max-width: 780px)").matches ? 92 : 138, left: 0 };
 }
 
-function localLight(date = new Date()) {
-  const hour = date.getHours() + date.getMinutes() / 60;
-  const daylight = (Math.cos(((hour - 12) / 12) * Math.PI) + 1) / 2;
-  const azimuth = (hour * 15) % 360;
-  const polar = 78 - daylight * 43;
+function solarLight(date = new Date()) {
+  const utcHour = date.getUTCHours() + date.getUTCMinutes() / 60 + date.getUTCSeconds() / 3600;
+  const startOfYear = Date.UTC(date.getUTCFullYear(), 0, 0);
+  const currentDay = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
+  const dayOfYear = (currentDay - startOfYear) / 86_400_000;
+  const fractionalYear = (2 * Math.PI / 365) * (dayOfYear - 1 + (utcHour - 12) / 24);
+  const equationOfTime = 229.18 * (
+    0.000075
+    + 0.001868 * Math.cos(fractionalYear)
+    - 0.032077 * Math.sin(fractionalYear)
+    - 0.014615 * Math.cos(2 * fractionalYear)
+    - 0.040849 * Math.sin(2 * fractionalYear)
+  );
+  const declination = 0.006918
+    - 0.399912 * Math.cos(fractionalYear)
+    + 0.070257 * Math.sin(fractionalYear)
+    - 0.006758 * Math.cos(2 * fractionalYear)
+    + 0.000907 * Math.sin(2 * fractionalYear)
+    - 0.002697 * Math.cos(3 * fractionalYear)
+    + 0.00148 * Math.sin(3 * fractionalYear);
+  const subsolarLongitude = ((180 - (utcHour * 60 + equationOfTime) / 4 + 540) % 360) - 180;
+  const subsolarLatitude = declination * 180 / Math.PI;
   return {
-    daylight,
-    night: 1 - daylight,
-    position: [1.5, azimuth, polar] as [number, number, number],
-    ocean: daylight > 0.42 ? "#bbdde7" : "#789ba6",
-    land: daylight > 0.42 ? "#eedbb8" : "#aaa59a",
+    position: [1.5, (subsolarLongitude + 360) % 360, 90 - subsolarLatitude] as [number, number, number],
+    sun: [subsolarLongitude, subsolarLatitude] as [number, number],
+    ocean: "#83d8ef",
+    land: "#f5d38c",
   };
+}
+
+function destinationPoint(origin: { lat: number; lng: number }, distanceDegrees: number, bearingDegrees: number) {
+  const radians = Math.PI / 180;
+  const latitude = origin.lat * radians;
+  const longitude = origin.lng * radians;
+  const distance = distanceDegrees * radians;
+  const bearing = bearingDegrees * radians;
+  const destinationLatitude = Math.asin(
+    Math.sin(latitude) * Math.cos(distance)
+      + Math.cos(latitude) * Math.sin(distance) * Math.cos(bearing),
+  );
+  const destinationLongitude = longitude + Math.atan2(
+    Math.sin(bearing) * Math.sin(distance) * Math.cos(latitude),
+    Math.cos(distance) - Math.sin(latitude) * Math.sin(destinationLatitude),
+  );
+  return [
+    ((destinationLongitude / radians + 540) % 360) - 180,
+    destinationLatitude / radians,
+  ] as [number, number];
 }
 
 function placeFeature(place: GlobePlace): Feature<Point, PlaceProperties> {
@@ -89,7 +125,7 @@ function isOnVisibleHemisphere(center: { lat: number; lng: number }, coordinates
 }
 
 function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecification {
-  const light = localLight(date);
+  const light = solarLight(date);
   const placePoints: FeatureCollection<Point, PlaceProperties> = {
     type: "FeatureCollection",
     features: places.map(placeFeature),
@@ -130,9 +166,9 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
         type: "line",
         source: "country-borders",
         paint: {
-          "line-color": "#84999a",
-          "line-opacity": ["interpolate", ["linear"], ["zoom"], 0, 0.55, 5, 0.72],
-          "line-width": ["interpolate", ["linear"], ["zoom"], 0, 0.45, 5, 0.9],
+          "line-color": "#536b70",
+          "line-opacity": ["interpolate", ["linear"], ["zoom"], 0, 0.78, 5, 0.9],
+          "line-width": ["interpolate", ["linear"], ["zoom"], 0, 0.55, 5, 1.05],
         },
       },
       {
@@ -194,13 +230,13 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
     ],
     sky: {
       "sky-color": light.ocean,
-      "horizon-color": "#d6edf1",
-      "fog-color": "#d6edf1",
+      "horizon-color": "#c9eff7",
+      "fog-color": "#c9eff7",
       "sky-horizon-blend": 0.35,
       "horizon-fog-blend": 0.35,
       "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 0.32, 5, 0.08],
     },
-    light: { anchor: "map", position: light.position, color: "#eee8dc", intensity: 0.28 },
+    light: { anchor: "map", position: light.position, color: "#fff3d6", intensity: 0.38 },
   } as StyleSpecification;
 }
 
@@ -213,6 +249,7 @@ function updatePlaceQuery(slug: string | null) {
 
 export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
   const mapContainerRef = useRef<HTMLDivElement>(null);
+  const solarShadeRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const clusterMarkersRef = useRef(new Map<number, ClusterMarker>());
   const initializedUrlRef = useRef(false);
@@ -221,7 +258,6 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const [filter, setFilter] = useState("");
   const [sheetOpen, setSheetOpen] = useState(false);
-  const [nightShade, setNightShade] = useState(0);
 
   const placeBySlug = useMemo(
     () => new Map(places.map((place) => [place.slug, place])),
@@ -292,6 +328,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
     let cancelled = false;
     let instance: MapLibreMap | null = null;
     let lightingTimer: ReturnType<typeof setInterval> | null = null;
+    let currentSolar = solarLight();
     const clusterMarkers = clusterMarkersRef.current;
 
     async function initializeMap() {
@@ -353,29 +390,58 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
           }
         };
 
+        const updateSolarShade = () => {
+          if (!instance || !solarShadeRef.current) return;
+          const shade = solarShadeRef.current;
+          if (instance.getZoom() >= 4) {
+            shade.hidden = true;
+            return;
+          }
+          const center = instance.getCenter();
+          const centerPoint = instance.project(center);
+          const edgePoint = instance.project(destinationPoint(center, 89.5, 90));
+          const radius = Math.hypot(edgePoint.x - centerPoint.x, edgePoint.y - centerPoint.y);
+          if (!Number.isFinite(radius) || radius < 1) return;
+          shade.hidden = false;
+          shade.style.left = `${centerPoint.x - radius}px`;
+          shade.style.top = `${centerPoint.y - radius}px`;
+          shade.style.width = `${radius * 2}px`;
+          shade.style.height = `${radius * 2}px`;
+          if (!isOnVisibleHemisphere(center, currentSolar.sun)) {
+            shade.style.background = "rgba(17, 48, 61, 0.2)";
+            return;
+          }
+          const sunPoint = instance.project(currentSolar.sun);
+          const sunX = sunPoint.x - centerPoint.x + radius;
+          const sunY = sunPoint.y - centerPoint.y + radius;
+          shade.style.background = `radial-gradient(circle at ${sunX}px ${sunY}px, rgba(17, 48, 61, 0) 0%, rgba(17, 48, 61, 0.025) 36%, rgba(17, 48, 61, 0.12) 70%, rgba(17, 48, 61, 0.22) 100%)`;
+        };
+
         instance.on("load", () => {
           if (cancelled || !instance) return;
           setMapReady(true);
 
           const updateLighting = () => {
             if (!instance) return;
-            const light = localLight();
-            setNightShade(light.night);
+            const light = solarLight();
+            currentSolar = light;
             instance.setPaintProperty("ocean", "background-color", light.ocean);
             instance.setPaintProperty("land-fill", "fill-color", light.land);
             instance.setSky({
               "sky-color": light.ocean,
-              "horizon-color": light.daylight > 0.42 ? "#d6edf1" : "#668993",
-              "fog-color": light.daylight > 0.42 ? "#d6edf1" : "#668993",
+              "horizon-color": "#c9eff7",
+              "fog-color": "#c9eff7",
               "sky-horizon-blend": 0.35,
               "horizon-fog-blend": 0.35,
               "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 0.32, 5, 0.08],
             });
-            instance.setLight({ anchor: "map", position: light.position, color: "#eee8dc", intensity: 0.28 });
+            instance.setLight({ anchor: "map", position: light.position, color: "#fff3d6", intensity: 0.38 });
+            updateSolarShade();
           };
           updateLighting();
-          lightingTimer = setInterval(updateLighting, 5 * 60 * 1000);
+          lightingTimer = setInterval(updateLighting, 60 * 1000);
           instance.on("render", updateClusterMarkers);
+          instance.on("render", updateSolarShade);
 
           const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
           const opensOnPlace = new URLSearchParams(window.location.search).has("place");
@@ -511,7 +577,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
           ref={mapContainerRef}
           role="region"
         />
-        <div aria-hidden="true" className="globe-time-shade" style={{ opacity: nightShade * 0.16 }} />
+        <div aria-hidden="true" className="globe-solar-shade" ref={solarShadeRef} />
         {!mapReady && !mapFailed ? <div className="globe-loading"><span /><p>Drawing the world…</p></div> : null}
         {mapFailed ? (
           <div className="globe-fallback">
