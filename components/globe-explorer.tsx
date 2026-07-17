@@ -2,12 +2,13 @@
 
 /* eslint-disable @next/next/no-img-element */
 
-import type { Feature, FeatureCollection, Geometry, Point } from "geojson";
+import type { Feature, FeatureCollection, Geometry, MultiLineString, Point } from "geojson";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { feature } from "topojson-client";
+import { feature, mesh } from "topojson-client";
 import type { GeometryCollection, Topology } from "topojson-specification";
 import type { GeoJSONSource, Map as MapLibreMap, Marker as MapLibreMarker, StyleSpecification } from "maplibre-gl";
+import worldCountries from "world-atlas/countries-50m.json";
 import worldAtlas from "world-atlas/land-50m.json";
 import { densifyLandPolygons, rewindLandPolygons, splitAntimeridianPolygons } from "@/lib/rewind-geojson.mjs";
 
@@ -27,15 +28,22 @@ export type GlobePlace = {
 };
 
 type LandTopology = Topology<{ land: GeometryCollection }>;
+type CountriesTopology = Topology<{ countries: GeometryCollection; land: GeometryCollection }>;
 type PlaceProperties = { slug: string; title: string };
 type ClusterMarker = { marker: MapLibreMarker; element: HTMLSpanElement };
 
 const topology = worldAtlas as unknown as LandTopology;
+const countriesTopology = worldCountries as unknown as CountriesTopology;
 const land = rewindLandPolygons(
   densifyLandPolygons(
     splitAntimeridianPolygons(feature(topology, topology.objects.land) as FeatureCollection<Geometry>),
   ),
 ) as FeatureCollection<Geometry>;
+const countryBorders: MultiLineString = mesh(
+  countriesTopology,
+  countriesTopology.objects.countries,
+  (left, right) => left !== right,
+) as MultiLineString;
 const worldView = { center: [-18, 24] as [number, number], zoom: 1.08 };
 const maxGlobeZoom = 9.5;
 const selectedPlaceZoom = 9.2;
@@ -92,6 +100,7 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
     projection: { type: "globe" },
     sources: {
       land: { type: "geojson", data: land },
+      "country-borders": { type: "geojson", data: countryBorders },
       places: {
         type: "geojson",
         data: placePoints,
@@ -114,6 +123,16 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
         paint: {
           "fill-color": light.land,
           "fill-opacity": 0.98,
+        },
+      },
+      {
+        id: "country-borders",
+        type: "line",
+        source: "country-borders",
+        paint: {
+          "line-color": "#8d8d88",
+          "line-opacity": ["interpolate", ["linear"], ["zoom"], 0, 0.55, 5, 0.72],
+          "line-width": ["interpolate", ["linear"], ["zoom"], 0, 0.45, 5, 0.9],
         },
       },
       {
