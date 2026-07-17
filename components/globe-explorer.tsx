@@ -62,8 +62,8 @@ function localLight(date = new Date()) {
     daylight,
     night: 1 - daylight,
     position: [1.5, azimuth, polar] as [number, number, number],
-    ocean: daylight > 0.42 ? "#dfe7e7" : "#aebdc1",
-    land: daylight > 0.42 ? "#d9d3c8" : "#b8b4ae",
+    ocean: daylight > 0.42 ? "#bbdde7" : "#789ba6",
+    land: daylight > 0.42 ? "#eedbb8" : "#aaa59a",
   };
 }
 
@@ -130,7 +130,7 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
         type: "line",
         source: "country-borders",
         paint: {
-          "line-color": "#8d8d88",
+          "line-color": "#84999a",
           "line-opacity": ["interpolate", ["linear"], ["zoom"], 0, 0.55, 5, 0.72],
           "line-width": ["interpolate", ["linear"], ["zoom"], 0, 0.45, 5, 0.9],
         },
@@ -194,8 +194,8 @@ function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecifica
     ],
     sky: {
       "sky-color": light.ocean,
-      "horizon-color": "#c6d1d2",
-      "fog-color": "#c6d1d2",
+      "horizon-color": "#d6edf1",
+      "fog-color": "#d6edf1",
       "sky-horizon-blend": 0.35,
       "horizon-fog-blend": 0.35,
       "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 0.32, 5, 0.08],
@@ -365,8 +365,8 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
             instance.setPaintProperty("land-fill", "fill-color", light.land);
             instance.setSky({
               "sky-color": light.ocean,
-              "horizon-color": light.daylight > 0.42 ? "#c6d1d2" : "#899b9f",
-              "fog-color": light.daylight > 0.42 ? "#c6d1d2" : "#899b9f",
+              "horizon-color": light.daylight > 0.42 ? "#d6edf1" : "#668993",
+              "fog-color": light.daylight > 0.42 ? "#d6edf1" : "#668993",
               "sky-horizon-blend": 0.35,
               "horizon-fog-blend": 0.35,
               "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 0.32, 5, 0.08],
@@ -511,7 +511,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
           ref={mapContainerRef}
           role="region"
         />
-        <div aria-hidden="true" className="globe-time-shade" style={{ opacity: nightShade * 0.26 }} />
+        <div aria-hidden="true" className="globe-time-shade" style={{ opacity: nightShade * 0.16 }} />
         {!mapReady && !mapFailed ? <div className="globe-loading"><span /><p>Drawing the world…</p></div> : null}
         {mapFailed ? (
           <div className="globe-fallback">
