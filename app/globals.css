@@ -256,7 +256,6 @@ h2 { font-size: clamp(2.1rem, 3.7vw, 4rem); }
 .globe-sidebar-links a:hover span { transform: translate(2px, -2px); }
 .globe-stage { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #83d8ef; isolation: isolate; }
 .globe-map { position: absolute; inset: 0; }
-.globe-solar-shade { position: absolute; z-index: 1; overflow: hidden; border-radius: 50%; pointer-events: none; }
 .globe-map .maplibregl-canvas { cursor: grab; outline: none; }
 .globe-map .maplibregl-canvas:active { cursor: grabbing; }
 .globe-map .maplibregl-canvas:focus-visible { outline: 2px solid var(--ocean); outline-offset: -4px; }

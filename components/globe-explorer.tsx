@@ -77,30 +77,9 @@ function solarLight(date = new Date()) {
   const subsolarLatitude = declination * 180 / Math.PI;
   return {
     position: [1.5, (subsolarLongitude + 360) % 360, 90 - subsolarLatitude] as [number, number, number],
-    sun: [subsolarLongitude, subsolarLatitude] as [number, number],
     ocean: "#83d8ef",
     land: "#f5d38c",
   };
-}
-
-function destinationPoint(origin: { lat: number; lng: number }, distanceDegrees: number, bearingDegrees: number) {
-  const radians = Math.PI / 180;
-  const latitude = origin.lat * radians;
-  const longitude = origin.lng * radians;
-  const distance = distanceDegrees * radians;
-  const bearing = bearingDegrees * radians;
-  const destinationLatitude = Math.asin(
-    Math.sin(latitude) * Math.cos(distance)
-      + Math.cos(latitude) * Math.sin(distance) * Math.cos(bearing),
-  );
-  const destinationLongitude = longitude + Math.atan2(
-    Math.sin(bearing) * Math.sin(distance) * Math.cos(latitude),
-    Math.cos(distance) - Math.sin(latitude) * Math.sin(destinationLatitude),
-  );
-  return [
-    ((destinationLongitude / radians + 540) % 360) - 180,
-    destinationLatitude / radians,
-  ] as [number, number];
 }
 
 function placeFeature(place: GlobePlace): Feature<Point, PlaceProperties> {
@@ -249,7 +228,6 @@ function updatePlaceQuery(slug: string | null) {
 
 export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
   const mapContainerRef = useRef<HTMLDivElement>(null);
-  const solarShadeRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const clusterMarkersRef = useRef(new Map<number, ClusterMarker>());
   const initializedUrlRef = useRef(false);
@@ -328,7 +306,6 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
     let cancelled = false;
     let instance: MapLibreMap | null = null;
     let lightingTimer: ReturnType<typeof setInterval> | null = null;
-    let currentSolar = solarLight();
     const clusterMarkers = clusterMarkersRef.current;
 
     async function initializeMap() {
@@ -390,33 +367,6 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
           }
         };
 
-        const updateSolarShade = () => {
-          if (!instance || !solarShadeRef.current) return;
-          const shade = solarShadeRef.current;
-          if (instance.getZoom() >= 4) {
-            shade.hidden = true;
-            return;
-          }
-          const center = instance.getCenter();
-          const centerPoint = instance.project(center);
-          const edgePoint = instance.project(destinationPoint(center, 89.5, 90));
-          const radius = Math.hypot(edgePoint.x - centerPoint.x, edgePoint.y - centerPoint.y);
-          if (!Number.isFinite(radius) || radius < 1) return;
-          shade.hidden = false;
-          shade.style.left = `${centerPoint.x - radius}px`;
-          shade.style.top = `${centerPoint.y - radius}px`;
-          shade.style.width = `${radius * 2}px`;
-          shade.style.height = `${radius * 2}px`;
-          if (!isOnVisibleHemisphere(center, currentSolar.sun)) {
-            shade.style.background = "rgba(17, 48, 61, 0.2)";
-            return;
-          }
-          const sunPoint = instance.project(currentSolar.sun);
-          const sunX = sunPoint.x - centerPoint.x + radius;
-          const sunY = sunPoint.y - centerPoint.y + radius;
-          shade.style.background = `radial-gradient(circle at ${sunX}px ${sunY}px, rgba(17, 48, 61, 0) 0%, rgba(17, 48, 61, 0.025) 36%, rgba(17, 48, 61, 0.12) 70%, rgba(17, 48, 61, 0.22) 100%)`;
-        };
-
         instance.on("load", () => {
           if (cancelled || !instance) return;
           setMapReady(true);
@@ -424,7 +374,6 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
           const updateLighting = () => {
             if (!instance) return;
             const light = solarLight();
-            currentSolar = light;
             instance.setPaintProperty("ocean", "background-color", light.ocean);
             instance.setPaintProperty("land-fill", "fill-color", light.land);
             instance.setSky({
@@ -436,12 +385,10 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
               "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 0.32, 5, 0.08],
             });
             instance.setLight({ anchor: "map", position: light.position, color: "#fff3d6", intensity: 0.38 });
-            updateSolarShade();
           };
           updateLighting();
           lightingTimer = setInterval(updateLighting, 60 * 1000);
           instance.on("render", updateClusterMarkers);
-          instance.on("render", updateSolarShade);
 
           const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
           const opensOnPlace = new URLSearchParams(window.location.search).has("place");
@@ -577,7 +524,6 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
           ref={mapContainerRef}
           role="region"
         />
-        <div aria-hidden="true" className="globe-solar-shade" ref={solarShadeRef} />
         {!mapReady && !mapFailed ? <div className="globe-loading"><span /><p>Drawing the world…</p></div> : null}
         {mapFailed ? (
           <div className="globe-fallback">
