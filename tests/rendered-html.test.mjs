@@ -43,6 +43,8 @@ test("server-renders kurtis.photo", async () => {
 
   const html = await response.text();
   assert.match(html, /<title>kurtis\.photo<\/title>/i);
+  assert.match(html, /<link[^>]+rel="icon"[^>]+href="(?:https:\/\/kurtis\.photo)?\/favicon\.svg\?v=2"/i);
+  assert.match(html, /<link[^>]+rel="icon"[^>]+href="(?:https:\/\/kurtis\.photo)?\/favicon\.ico"/i);
   assert.match(html, /Things I saw along the way\./);
   assert.match(html, /Yosemite/);
   assert.match(html, /Bangkok/);

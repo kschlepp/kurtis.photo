@@ -16,6 +16,12 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase: new URL(origin),
     title: { default: "kurtis.photo", template: "%s — kurtis.photo" },
     description: "Travel, landscape, street, and portrait photography by Kurtis Schlepp.",
+    icons: {
+      icon: [
+        { url: "/favicon.svg?v=2", type: "image/svg+xml" },
+        { url: "/favicon.ico", sizes: "any" },
+      ],
+    },
     openGraph: {
       title: "kurtis.photo",
       description: "Things Kurtis saw along the way—travel, landscape, street, and portrait photography.",
