@@ -28,6 +28,7 @@ export type GlobePlace = {
 
 type LandTopology = Topology<{ land: GeometryCollection }>;
 type PlaceProperties = { slug: string; title: string };
+type ClusterMarker = { marker: MapLibreMarker; element: HTMLSpanElement };
 
 const topology = worldAtlas as unknown as LandTopology;
 const land = rewindLandPolygons(
@@ -67,6 +68,16 @@ function placeFeature(place: GlobePlace): Feature<Point, PlaceProperties> {
     },
     properties: { slug: place.slug, title: place.title },
   };
+}
+
+function isOnVisibleHemisphere(center: { lat: number; lng: number }, coordinates: [number, number]) {
+  const radians = Math.PI / 180;
+  const centerLatitude = center.lat * radians;
+  const pointLatitude = coordinates[1] * radians;
+  const longitudeDelta = (coordinates[0] - center.lng) * radians;
+  const cosineDistance = Math.sin(centerLatitude) * Math.sin(pointLatitude)
+    + Math.cos(centerLatitude) * Math.cos(pointLatitude) * Math.cos(longitudeDelta);
+  return cosineDistance > 0.025;
 }
 
 function makeGlobeStyle(places: GlobePlace[], date = new Date()): StyleSpecification {
@@ -184,7 +195,7 @@ function updatePlaceQuery(slug: string | null) {
 export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
-  const clusterMarkersRef = useRef<MapLibreMarker[]>([]);
+  const clusterMarkersRef = useRef(new Map<number, ClusterMarker>());
   const initializedUrlRef = useRef(false);
   const [mapReady, setMapReady] = useState(false);
   const [mapFailed, setMapFailed] = useState(false);
@@ -262,6 +273,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
     let cancelled = false;
     let instance: MapLibreMap | null = null;
     let lightingTimer: ReturnType<typeof setInterval> | null = null;
+    const clusterMarkers = clusterMarkersRef.current;
 
     async function initializeMap() {
       const container = mapContainerRef.current;
@@ -287,31 +299,36 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
         mapRef.current = instance;
         instance.setPadding(worldPadding());
 
-        const clearClusterMarkers = () => {
-          for (const marker of clusterMarkersRef.current) marker.remove();
-          clusterMarkersRef.current = [];
-        };
-
         const updateClusterMarkers = () => {
           if (!instance?.isStyleLoaded()) return;
-          clearClusterMarkers();
+          const center = instance.getCenter();
           const seen = new Set<number>();
-          const markers: MapLibreMarker[] = [];
           for (const cluster of instance.querySourceFeatures("places")) {
             const clusterId = cluster.properties?.cluster_id;
             const count = cluster.properties?.point_count;
             if (typeof clusterId !== "number" || typeof count !== "number" || seen.has(clusterId)) continue;
             if (cluster.geometry.type !== "Point") continue;
+            const coordinates = cluster.geometry.coordinates as [number, number];
+            if (!isOnVisibleHemisphere(center, coordinates)) continue;
             seen.add(clusterId);
-            const label = document.createElement("span");
-            label.className = "globe-cluster-count";
-            label.textContent = String(count);
-            label.setAttribute("aria-hidden", "true");
-            markers.push(new Marker({ element: label, anchor: "center" })
-              .setLngLat(cluster.geometry.coordinates as [number, number])
-              .addTo(instance));
+            const existing = clusterMarkers.get(clusterId);
+            if (existing) {
+              existing.element.textContent = String(count);
+              existing.marker.setLngLat(coordinates);
+              continue;
+            }
+            const element = document.createElement("span");
+            element.className = "globe-cluster-count";
+            element.textContent = String(count);
+            element.setAttribute("aria-hidden", "true");
+            const marker = new Marker({ element, anchor: "center" }).setLngLat(coordinates).addTo(instance);
+            clusterMarkers.set(clusterId, { marker, element });
           }
-          clusterMarkersRef.current = markers;
+          for (const [clusterId, { marker }] of clusterMarkers) {
+            if (seen.has(clusterId)) continue;
+            marker.remove();
+            clusterMarkers.delete(clusterId);
+          }
         };
 
         const stopIntroduction = () => instance?.stop();
@@ -341,8 +358,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
           };
           updateLighting();
           lightingTimer = setInterval(updateLighting, 5 * 60 * 1000);
-          instance.on("idle", updateClusterMarkers);
-          instance.on("moveend", updateClusterMarkers);
+          instance.on("render", updateClusterMarkers);
 
           const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
           const opensOnPlace = new URLSearchParams(window.location.search).has("place");
@@ -396,8 +412,8 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
     return () => {
       cancelled = true;
       if (lightingTimer) clearInterval(lightingTimer);
-      for (const marker of clusterMarkersRef.current) marker.remove();
-      clusterMarkersRef.current = [];
+      for (const { marker } of clusterMarkers.values()) marker.remove();
+      clusterMarkers.clear();
       instance?.remove();
       mapRef.current = null;
     };
