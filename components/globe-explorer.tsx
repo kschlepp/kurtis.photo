@@ -291,6 +291,9 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
           maxZoom: maxGlobeZoom,
           pitch: 0,
           bearing: 0,
+          dragPan: true,
+          scrollZoom: true,
+          touchZoomRotate: true,
           cooperativeGestures: false,
           attributionControl: false,
           renderWorldCopies: false,
@@ -330,11 +333,6 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
             clusterMarkers.delete(clusterId);
           }
         };
-
-        const stopIntroduction = () => instance?.stop();
-        for (const eventName of ["pointerdown", "wheel", "touchstart"] as const) {
-          container.addEventListener(eventName, stopIntroduction, { passive: true });
-        }
 
         instance.on("load", () => {
           if (cancelled || !instance) return;
