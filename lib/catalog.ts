@@ -18,6 +18,7 @@ import sintraData from "@/content/generated/sintra.json";
 import tokyoData from "@/content/generated/tokyo.json";
 import yosemiteData from "@/content/generated/yosemite.json";
 import printsData from "@/content/prints.json";
+import { getSellablePhotoKeys, printSelectionKey } from "@/lib/print-availability.mjs";
 
 export type ImageMetadata = {
   cameraMake: string | null;
@@ -76,7 +77,11 @@ export type PrintSelection = {
 
 type PrintsData = { items: PrintSelection[] };
 
-export const collections = [
+export const printSelections = (printsData as PrintsData).items;
+
+const sellablePhotoKeys = getSellablePhotoKeys(printSelections);
+
+const sourceCollections = [
   algarveData as Collection,
   aveiroAndCostaNovaData as Collection,
   bangkokData as Collection,
@@ -96,7 +101,17 @@ export const collections = [
   sintraData as Collection,
   tokyoData as Collection,
   yosemiteData as Collection,
-].sort((left, right) => left.title.localeCompare(right.title));
+];
+
+export const collections = sourceCollections
+  .map((collection) => ({
+    ...collection,
+    images: collection.images.map((photo) => ({
+      ...photo,
+      sellable: sellablePhotoKeys.has(printSelectionKey(collection.slug, photo.id)),
+    })),
+  }))
+  .sort((left, right) => left.title.localeCompare(right.title));
 
 export const printOptions: PrintOption[] = [
   { id: "4x6", label: '4 × 6 in', ratio: 1.5, price: 1000, shippingClass: "flat" },
@@ -109,8 +124,6 @@ export const printOptions: PrintOption[] = [
   { id: "16x24", label: '16 × 24 in', ratio: 1.5, price: 8000, shippingClass: "tube" },
   { id: "20x30", label: '20 × 30 in', ratio: 1.5, price: 12000, shippingClass: "tube" },
 ];
-
-export const printSelections = (printsData as PrintsData).items;
 
 export function getCollection(slug: string) {
   return collections.find((collection) => collection.slug === slug);

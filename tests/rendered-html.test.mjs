@@ -1,13 +1,19 @@
 import assert from "node:assert/strict";
+import { readdir, readFile } from "node:fs/promises";
+import path from "node:path";
 import test from "node:test";
+import { fileURLToPath } from "node:url";
 import { feature } from "topojson-client";
 import worldAtlas from "world-atlas/land-50m.json" with { type: "json" };
+import { getSellablePhotoKeys, printSelectionKey } from "../lib/print-availability.mjs";
 import {
   densifyLandPolygons,
   rewindLandPolygons,
   signedRingArea,
   splitAntimeridianPolygons,
 } from "../lib/rewind-geojson.mjs";
+
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 async function render(path = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
@@ -85,6 +91,26 @@ test("renders the curated Prints catalog", async () => {
   assert.match(html, /Algarve No\. 30/);
   assert.equal((html.match(/Add print/g) ?? []).length, 40);
   assert.doesNotMatch(html, /Nothing is for sale right now\./);
+});
+
+test("derives album sellability from the Prints catalog", async () => {
+  const prints = JSON.parse(await readFile(path.join(root, "content", "prints.json"), "utf8"));
+  const sellableKeys = getSellablePhotoKeys(prints.items);
+  const manifestDirectory = path.join(root, "content", "generated");
+  const manifestFiles = (await readdir(manifestDirectory)).filter((filename) => filename.endsWith(".json"));
+  let sellableCount = 0;
+
+  for (const filename of manifestFiles) {
+    const manifest = JSON.parse(await readFile(path.join(manifestDirectory, filename), "utf8"));
+    for (const photo of manifest.images) {
+      const expected = sellableKeys.has(printSelectionKey(manifest.slug, photo.id));
+      assert.equal(photo.sellable, expected, `${manifest.slug}:${photo.id} has a stale sellable value`);
+      if (photo.sellable) sellableCount += 1;
+    }
+  }
+
+  assert.equal(sellableCount, sellableKeys.size);
+  assert.equal(sellableCount, 40);
 });
 
 test("leads the portraits page with photography", async () => {

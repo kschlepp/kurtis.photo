@@ -46,7 +46,7 @@
       "printSource": "DSCF1909.jpg",
       "assetKey": "dscf1909-3a97958e0798",
       "order": 2,
-      "sellable": false,
+      "sellable": true,
       "releaseStatus": "not-applicable",
       "width": 3955,
       "height": 5932,

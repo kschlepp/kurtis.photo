@@ -242,7 +242,7 @@
       "printSource": "DSCF8556.jpg",
       "assetKey": "dscf8556-7d0a52ba4acf",
       "order": 9,
-      "sellable": false,
+      "sellable": true,
       "releaseStatus": "not-applicable",
       "width": 5152,
       "height": 7728,

@@ -186,7 +186,7 @@
       "printSource": "DSCF7386.jpg",
       "assetKey": "dscf7386-14e389875a76",
       "order": 7,
-      "sellable": false,
+      "sellable": true,
       "releaseStatus": "not-applicable",
       "width": 3811,
       "height": 5717,

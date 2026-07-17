@@ -6,6 +6,7 @@ import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { promisify } from "node:util";
+import { getSellablePhotoKeys, printSelectionKey } from "../lib/print-availability.mjs";
 
 const execFileAsync = promisify(execFile);
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -35,6 +36,7 @@ const publicDirectory = path.join(root, "public", "media", publicCollectionSlug)
 const workDirectory = path.join(root, ".photo-work", publicCollectionSlug);
 const manifestDirectory = path.join(root, "content", "generated", ...(portraits ? ["portraits"] : []));
 const collectionDetailsPath = path.join(root, "content", portraits ? "portrait-details.json" : "collection-details.json");
+const printSelectionsPath = path.join(root, "content", "prints.json");
 const manifestPath = path.join(manifestDirectory, `${collectionSlug}.json`);
 const imageSizes = [768, 1600, 2400];
 const jpegtran = "/opt/homebrew/bin/jpegtran";
@@ -122,6 +124,8 @@ function sortPhotos(left, right) {
 
 const collectionDetails = await readJson(collectionDetailsPath, {});
 const collection = collectionDetails[collectionSlug];
+const printSelections = portraits ? [] : (await readJson(printSelectionsPath, { items: [] })).items ?? [];
+const sellablePhotoKeys = getSellablePhotoKeys(printSelections);
 
 if (!collection) {
   console.error(`No collection details found for ${collectionSlug} in ${collectionDetailsPath}`);
@@ -176,7 +180,7 @@ for (const [index, filename] of files.entries()) {
     assetKey,
     sortCaptureDate: metadata.captureDate,
     order: 0,
-    sellable: false,
+    sellable: !portraits && sellablePhotoKeys.has(printSelectionKey(collectionSlug, id)),
     releaseStatus: portraits ? "review-required" : previous?.releaseStatus ?? "not-applicable",
     width: metadata.width,
     height: metadata.height,
