@@ -164,8 +164,10 @@ export function getPrintOptionsForPhoto(collectionSlug: string, photo: Photo) {
   const selection = getPrintSelection(collectionSlug, photo.id);
   if (!selection?.available) return [];
   const allowedSizeIds = selection.sizeIds ? new Set(selection.sizeIds) : null;
-  return compatiblePrintOptions(photo)
-    .filter((option) => !allowedSizeIds || allowedSizeIds.has(option.id))
+  const availableOptions = allowedSizeIds
+    ? printOptions.filter((option) => allowedSizeIds.has(option.id))
+    : compatiblePrintOptions(photo);
+  return availableOptions
     .map((option) => {
       const override = selection.priceOverrides?.[option.id];
       return typeof override === "number" && Number.isInteger(override) && override >= 0

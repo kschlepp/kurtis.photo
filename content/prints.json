@@ -1,3 +1,207 @@
 {
-  "items": []
+  "items": [
+    {
+      "collectionSlug": "algarve",
+      "photoId": "dscf9286",
+      "available": true
+    },
+    {
+      "collectionSlug": "algarve",
+      "photoId": "dscf9288",
+      "available": true
+    },
+    {
+      "collectionSlug": "algarve",
+      "photoId": "dscf9427",
+      "available": true,
+      "sizeIds": ["8x12", "12x18", "16x24", "20x30"]
+    },
+    {
+      "collectionSlug": "aveiro-and-costa-nova",
+      "photoId": "dscf0595",
+      "available": true
+    },
+    {
+      "collectionSlug": "aveiro-and-costa-nova",
+      "photoId": "dscf0664",
+      "available": true
+    },
+    {
+      "collectionSlug": "belmont-park",
+      "photoId": "belmontparkapril2026-25",
+      "available": true
+    },
+    {
+      "collectionSlug": "belmont-park",
+      "photoId": "belmontparkapril2026-5",
+      "available": true
+    },
+    {
+      "collectionSlug": "carlsbad",
+      "photoId": "dscf7552",
+      "available": true
+    },
+    {
+      "collectionSlug": "carlsbad",
+      "photoId": "dscf7560",
+      "available": true
+    },
+    {
+      "collectionSlug": "coronado",
+      "photoId": "dscf1909",
+      "available": true
+    },
+    {
+      "collectionSlug": "costa-rica",
+      "photoId": "dscf8015-zagreus-lan-aug-09-214233-2024-conflict",
+      "available": true
+    },
+    {
+      "collectionSlug": "costa-rica",
+      "photoId": "dscf8146-zagreus-lan-aug-09-224048-2024-conflict",
+      "available": true
+    },
+    {
+      "collectionSlug": "joshua-tree",
+      "photoId": "dscf5509",
+      "available": true
+    },
+    {
+      "collectionSlug": "joshua-tree",
+      "photoId": "dscf5610",
+      "available": true
+    },
+    {
+      "collectionSlug": "joshua-tree",
+      "photoId": "dscf5612",
+      "available": true
+    },
+    {
+      "collectionSlug": "lake-tahoe",
+      "photoId": "dscf7369-2",
+      "available": true,
+      "sizeIds": ["8x12", "12x18", "16x24", "20x30"]
+    },
+    {
+      "collectionSlug": "lake-tahoe",
+      "photoId": "dscf7373",
+      "available": true
+    },
+    {
+      "collectionSlug": "lake-tahoe",
+      "photoId": "dscf7377",
+      "available": true
+    },
+    {
+      "collectionSlug": "lake-tahoe",
+      "photoId": "dscf7428",
+      "available": true
+    },
+    {
+      "collectionSlug": "mexico-city",
+      "photoId": "dscf7386",
+      "available": true
+    },
+    {
+      "collectionSlug": "porto",
+      "photoId": "dscf0958",
+      "available": true
+    },
+    {
+      "collectionSlug": "porto",
+      "photoId": "dscf0975",
+      "available": true
+    },
+    {
+      "collectionSlug": "porto",
+      "photoId": "dscf0995",
+      "available": true
+    },
+    {
+      "collectionSlug": "porto",
+      "photoId": "dscf1000",
+      "available": true
+    },
+    {
+      "collectionSlug": "san-diego",
+      "photoId": "dscf3739",
+      "available": true
+    },
+    {
+      "collectionSlug": "san-diego",
+      "photoId": "dscf4560",
+      "available": true
+    },
+    {
+      "collectionSlug": "san-diego",
+      "photoId": "dscf4912",
+      "available": true
+    },
+    {
+      "collectionSlug": "san-diego",
+      "photoId": "dscf6930-zagreus-lan-apr-06-223308-2025-conflict",
+      "available": true
+    },
+    {
+      "collectionSlug": "san-diego",
+      "photoId": "dscf7116-zagreus-lan-apr-23-222111-2025-conflict",
+      "available": true
+    },
+    {
+      "collectionSlug": "seattle",
+      "photoId": "dscf1727",
+      "available": true
+    },
+    {
+      "collectionSlug": "seattle",
+      "photoId": "dscf1728",
+      "available": true
+    },
+    {
+      "collectionSlug": "seattle",
+      "photoId": "dscf7325",
+      "available": true
+    },
+    {
+      "collectionSlug": "seattle",
+      "photoId": "dscf7406",
+      "available": true
+    },
+    {
+      "collectionSlug": "tokyo",
+      "photoId": "dscf8556",
+      "available": true
+    },
+    {
+      "collectionSlug": "yosemite",
+      "photoId": "dscf4875-2",
+      "available": true
+    },
+    {
+      "collectionSlug": "yosemite",
+      "photoId": "dscf4884",
+      "available": true
+    },
+    {
+      "collectionSlug": "yosemite",
+      "photoId": "dscf4919-2",
+      "available": true
+    },
+    {
+      "collectionSlug": "yosemite",
+      "photoId": "dscf4941",
+      "available": true
+    },
+    {
+      "collectionSlug": "yosemite",
+      "photoId": "dscf5067",
+      "available": true,
+      "sizeIds": ["8x10", "11x14", "16x20"]
+    },
+    {
+      "collectionSlug": "yosemite",
+      "photoId": "dscf5105",
+      "available": true
+    }
+  ]
 }

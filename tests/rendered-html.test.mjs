@@ -77,13 +77,14 @@ test("keeps a photo-led archive behind the globe home", async () => {
   assert.doesNotMatch(html, /Follow the pins/);
 });
 
-test("keeps the archive separate from the curated Prints page", async () => {
+test("renders the curated Prints catalog", async () => {
   const response = await render("/prints");
   assert.equal(response.status, 200);
 
   const html = await response.text();
-  assert.match(html, /Nothing is for sale right now\./);
-  assert.doesNotMatch(html, /Add print/i);
+  assert.match(html, /Algarve No\. 30/);
+  assert.equal((html.match(/Add print/g) ?? []).length, 40);
+  assert.doesNotMatch(html, /Nothing is for sale right now\./);
 });
 
 test("leads the portraits page with photography", async () => {
