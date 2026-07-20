@@ -18,6 +18,8 @@ import sintraData from "@/content/generated/sintra.json";
 import tokyoData from "@/content/generated/tokyo.json";
 import yosemiteData from "@/content/generated/yosemite.json";
 import printsData from "@/content/prints.json";
+import { commerceConfig, siteConfig } from "@/content/site-config";
+import { siteCopy } from "@/content/site-copy";
 import { getSellablePhotoKeys, printSelectionKey } from "@/lib/print-availability.mjs";
 
 export type ImageMetadata = {
@@ -113,17 +115,7 @@ export const collections = sourceCollections
   }))
   .sort((left, right) => left.title.localeCompare(right.title));
 
-export const printOptions: PrintOption[] = [
-  { id: "4x6", label: '4 × 6 in', ratio: 1.5, price: 1000, shippingClass: "flat" },
-  { id: "5x7", label: '5 × 7 in', ratio: 1.4, price: 1200, shippingClass: "flat" },
-  { id: "8x10", label: '8 × 10 in', ratio: 1.25, price: 2000, shippingClass: "flat" },
-  { id: "8x12", label: '8 × 12 in', ratio: 1.5, price: 2200, shippingClass: "flat" },
-  { id: "11x14", label: '11 × 14 in', ratio: 1.273, price: 3200, shippingClass: "flat" },
-  { id: "12x18", label: '12 × 18 in', ratio: 1.5, price: 4800, shippingClass: "tube" },
-  { id: "16x20", label: '16 × 20 in', ratio: 1.25, price: 7000, shippingClass: "tube" },
-  { id: "16x24", label: '16 × 24 in', ratio: 1.5, price: 8000, shippingClass: "tube" },
-  { id: "20x30", label: '20 × 30 in', ratio: 1.5, price: 12000, shippingClass: "tube" },
-];
+export const printOptions = commerceConfig.printOptions as readonly PrintOption[];
 
 export function getCollection(slug: string) {
   return collections.find((collection) => collection.slug === slug);
@@ -153,7 +145,7 @@ export function getCover(collection: Collection) {
 }
 
 export function formatPhotoName(collection: Pick<Collection, "title">, photo: Photo) {
-  return photo.title ?? `${collection.title.replace(/\s*['’]\d+$/, "")} No. ${String(photo.order).padStart(2, "0")}`;
+  return photo.title ?? siteCopy.common.photoNumber(collection.title.replace(/\s*['’]\d+$/, ""), photo.order);
 }
 
 export function formatPrintName(collection: Collection, photo: Photo) {
@@ -161,16 +153,16 @@ export function formatPrintName(collection: Collection, photo: Photo) {
 }
 
 export function formatPrice(cents: number) {
-  return new Intl.NumberFormat("en-US", {
+  return new Intl.NumberFormat(siteConfig.locale, {
     style: "currency",
-    currency: "USD",
+    currency: commerceConfig.displayCurrency,
     maximumFractionDigits: 0,
   }).format(cents / 100);
 }
 
 export function compatiblePrintOptions(photo: Photo) {
   const ratio = Math.max(photo.width, photo.height) / Math.min(photo.width, photo.height);
-  return printOptions.filter((option) => Math.abs(option.ratio - ratio) < 0.07);
+  return printOptions.filter((option) => Math.abs(option.ratio - ratio) < commerceConfig.aspectRatioTolerance);
 }
 
 export function getPrintOptionsForPhoto(collectionSlug: string, photo: Photo) {
@@ -198,5 +190,5 @@ export function displayDate(value: string | null) {
   const parsed = new Date(value.replace(/^([0-9]{4}):([0-9]{2}):([0-9]{2})/, "$1-$2-$3"));
   return Number.isNaN(parsed.getTime())
     ? value
-    : new Intl.DateTimeFormat("en-US", { month: "long", year: "numeric" }).format(parsed);
+    : new Intl.DateTimeFormat(siteConfig.locale, { month: "long", year: "numeric" }).format(parsed);
 }

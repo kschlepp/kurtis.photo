@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { routes, siteConfig } from "@/content/site-config";
+import { siteCopy } from "@/content/site-copy";
 import { formatPhotoName } from "@/lib/catalog";
 import { getPortraitCollection, getPortraitPhoto } from "@/lib/portraits";
 
@@ -17,7 +19,7 @@ export default async function PortraitPhotoPage({ params }: { params: Promise<{ 
   const next = collection.images[(index + 1) % collection.images.length];
 
   return <main><div className="page-shell"><SiteHeader />
-    <section className="photo-page portrait-photo-page"><Link className="inline-link" href={`/portraits/${collection.slug}`}>← Back to {collection.title}</Link><img className="photo-page-image" src={photo.variants["2400"]} alt={photo.alt} /><div className="photo-page-details"><div><p className="eyebrow">Portrait session</p><h1>{formatPhotoName(collection, photo)}</h1></div></div><nav className="photo-pagination" aria-label="Photo navigation"><Link href={`/portraits/${collection.slug}/${previous.id}`}>← Previous</Link><Link href={`/portraits/${collection.slug}`}>All photographs</Link><Link href={`/portraits/${collection.slug}/${next.id}`}>Next →</Link></nav></section>
+    <section className="photo-page portrait-photo-page"><Link className="inline-link" href={routes.portrait(collection.slug)}>{siteCopy.portraits.backTo(collection.title)}</Link><img className="photo-page-image" src={photo.variants[siteConfig.imageVariants.full]} alt={photo.alt} /><div className="photo-page-details"><div><p className="eyebrow">{siteCopy.portraits.sessionEyebrow}</p><h1>{formatPhotoName(collection, photo)}</h1></div></div><nav className="photo-pagination" aria-label={siteCopy.accessibility.photoNavigation}><Link href={routes.portraitPhoto(collection.slug, previous.id)}>{siteCopy.common.previous}</Link><Link href={routes.portrait(collection.slug)}>{siteCopy.common.allPhotographs}</Link><Link href={routes.portraitPhoto(collection.slug, next.id)}>{siteCopy.common.next}</Link></nav></section>
     <SiteFooter />
   </div></main>;
 }

@@ -2,33 +2,31 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import Script from "next/script";
 import { CartProvider } from "@/components/cart";
+import { siteConfig } from "@/content/site-config";
+import { siteCopy } from "@/content/site-copy";
 import "maplibre-gl/dist/maplibre-gl.css";
+import "./theme.css";
 import "./globals.css";
 
 export const dynamic = "force-dynamic";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
-  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "kurtis.photo";
+  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? siteConfig.brandName;
   const protocol = requestHeaders.get("x-forwarded-proto") ?? "https";
   const origin = `${protocol}://${host}`;
   return {
     metadataBase: new URL(origin),
-    title: { default: "kurtis.photo", template: "%s — kurtis.photo" },
-    description: "Travel, landscape, street, and portrait photography by Kurtis Schlepp.",
-    icons: {
-      icon: [
-        { url: "/favicon.svg?v=2", type: "image/svg+xml" },
-        { url: "/favicon.ico", sizes: "any" },
-      ],
-    },
+    title: { default: siteConfig.brandName, template: `%s — ${siteConfig.brandName}` },
+    description: siteCopy.metadata.description,
+    icons: { icon: [...siteConfig.icons] },
     openGraph: {
-      title: "kurtis.photo",
-      description: "Things Kurtis saw along the way—travel, landscape, street, and portrait photography.",
+      title: siteConfig.brandName,
+      description: siteCopy.metadata.socialDescription,
       type: "website",
-      images: [{ url: "/og.png", width: 1200, height: 630, alt: "kurtis.photo — photography by Kurtis Schlepp" }],
+      images: [{ ...siteConfig.socialImage, alt: siteCopy.metadata.socialImageAlt }],
     },
-    twitter: { card: "summary_large_image", images: ["/og.png"] },
+    twitter: { card: "summary_large_image", images: [siteConfig.socialImage.url] },
   };
 }
 
@@ -38,13 +36,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang={siteConfig.language}>
       <body>
         <CartProvider>{children}</CartProvider>
         {process.env.CF_ANALYTICS_TOKEN ? (
           <Script
             data-cf-beacon={JSON.stringify({ token: process.env.CF_ANALYTICS_TOKEN })}
-            src="https://static.cloudflareinsights.com/beacon.min.js"
+            src={siteConfig.analytics.scriptUrl}
             strategy="afterInteractive"
           />
         ) : null}

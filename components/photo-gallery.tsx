@@ -2,13 +2,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { routes, siteConfig } from "@/content/site-config";
+import { siteCopy } from "@/content/site-copy";
 import { displayDate, formatPhotoName, type Collection } from "@/lib/catalog";
 
 type GalleryCollection = Pick<Collection, "slug" | "title" | "images"> & { location?: string };
 
 export function PhotoGallery({
   collection,
-  basePath = "/places",
+  basePath = routes.places,
   showMetadata = true,
 }: {
   collection: GalleryCollection;
@@ -57,7 +59,7 @@ export function PhotoGallery({
       <div className="photo-grid">
         {collection.images.map((photo, index) => (
           <button className="photo-tile" key={photo.id} type="button" onClick={() => open(index)}>
-            <img src={photo.variants["1600"]} alt={photo.alt} loading={index > 1 ? "lazy" : "eager"} />
+            <img src={photo.variants[siteConfig.imageVariants.display]} alt={photo.alt} loading={index > 1 ? "lazy" : "eager"} />
             <span>{formatPhotoName(collection, photo)}</span>
           </button>
         ))}
@@ -65,15 +67,15 @@ export function PhotoGallery({
       {activePhoto && activeIndex !== null && (
         <div className="photo-viewer" role="dialog" aria-modal="true" aria-label={formatPhotoName(collection, activePhoto)}>
           <div className="viewer-topbar">
-            <span>{String(activeIndex + 1).padStart(2, "0")} / {String(collection.images.length).padStart(2, "0")}</span>
-            <button className="text-button" type="button" onClick={close}>Close</button>
+            <span>{String(activeIndex + 1).padStart(siteConfig.countPadLength, "0")} / {String(collection.images.length).padStart(siteConfig.countPadLength, "0")}</span>
+            <button className="text-button" type="button" onClick={close}>{siteCopy.gallery.close}</button>
           </div>
           <div className="viewer-main">
-            <img src={activePhoto.variants["2400"]} alt={activePhoto.alt} />
+            <img src={activePhoto.variants[siteConfig.imageVariants.full]} alt={activePhoto.alt} />
           </div>
-          <nav aria-label="Photo navigation" className="viewer-controls">
-            <button className="viewer-step" type="button" onClick={() => move(-1)} aria-label="Previous photograph">← Previous</button>
-            <button className="viewer-step" type="button" onClick={() => move(1)} aria-label="Next photograph">Next →</button>
+          <nav aria-label={siteCopy.accessibility.photoNavigation} className="viewer-controls">
+            <button className="viewer-step" type="button" onClick={() => move(-1)} aria-label={siteCopy.gallery.previousLabel}>{siteCopy.common.previous}</button>
+            <button className="viewer-step" type="button" onClick={() => move(1)} aria-label={siteCopy.gallery.nextLabel}>{siteCopy.common.next}</button>
           </nav>
           <div className="viewer-details">
             <div>

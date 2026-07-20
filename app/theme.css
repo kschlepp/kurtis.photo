@@ -1,0 +1,22 @@
+:root {
+  --paper: #eeede7;
+  --paper-bright: #f8f7f2;
+  --ink: #252b2d;
+  --ocean: #356d8c;
+  --ocean-soft: #7c9caf;
+  --shell: #c98e7e;
+  --driftwood: #b5a58e;
+  --error: #9f3f32;
+  --globe-stage: #a5e0f0;
+  --globe-ocean: #83d8ef;
+  --globe-land: #f5d38c;
+  --globe-country-border: #536b70;
+  --globe-cluster-ring: rgba(248, 247, 242, 0.88);
+  --globe-selected-halo: rgba(248, 247, 242, 0.84);
+  --globe-horizon: #c9eff7;
+  --globe-sunlight: #fff3d6;
+  --line: color-mix(in srgb, var(--ink) 18%, transparent);
+  --muted: color-mix(in srgb, var(--ink) 65%, transparent);
+  --background: var(--paper);
+  --foreground: var(--ink);
+}

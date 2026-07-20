@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { routes, siteConfig } from "@/content/site-config";
+import { siteCopy } from "@/content/site-copy";
 import { displayDate, formatPhotoName, getCollection, getPhoto } from "@/lib/catalog";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string; photoId: string }> }): Promise<Metadata> {
@@ -14,9 +16,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const title = formatPhotoName(collection, photo);
   return {
     title,
-    description: `${collection.location} — a photograph by Kurtis Schlepp.`,
-    openGraph: { images: [{ url: photo.variants["1600"], alt: photo.alt }] },
-    twitter: { card: "summary_large_image", images: [photo.variants["1600"]] },
+    description: siteCopy.places.photoDescription(collection.location),
+    openGraph: { images: [{ url: photo.variants[siteConfig.imageVariants.display], alt: photo.alt }] },
+    twitter: { card: "summary_large_image", images: [photo.variants[siteConfig.imageVariants.display]] },
   };
 }
 
@@ -31,9 +33,9 @@ export default async function PhotoPage({ params }: { params: Promise<{ slug: st
   return <main><div className="page-shell">
     <SiteHeader />
     <article className="photo-page">
-      <img className="photo-page-image" src={photo.variants["2400"]} alt={photo.alt} />
+      <img className="photo-page-image" src={photo.variants[siteConfig.imageVariants.full]} alt={photo.alt} />
       <div className="photo-page-details"><div><p className="eyebrow">{collection.location}</p><h1>{formatPhotoName(collection, photo)}</h1><p className="metadata-line">{[photo.metadata.cameraMake, photo.metadata.cameraBody].filter(Boolean).join(" ")}{displayDate(photo.metadata.captureDate) ? ` · ${displayDate(photo.metadata.captureDate)}` : ""}</p></div></div>
-      <nav className="photo-pagination" aria-label="Photo navigation"><Link href={`/places/${collection.slug}/${previous.id}`}>← Previous</Link><Link href={`/places/${collection.slug}`}>All photographs</Link><Link href={`/places/${collection.slug}/${next.id}`}>Next →</Link></nav>
+      <nav className="photo-pagination" aria-label={siteCopy.accessibility.photoNavigation}><Link href={routes.photo(collection.slug, previous.id)}>{siteCopy.common.previous}</Link><Link href={routes.place(collection.slug)}>{siteCopy.common.allPhotographs}</Link><Link href={routes.photo(collection.slug, next.id)}>{siteCopy.common.next}</Link></nav>
     </article>
     <SiteFooter />
   </div></main>;

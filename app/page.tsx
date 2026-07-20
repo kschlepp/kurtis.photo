@@ -1,5 +1,6 @@
 import { GlobeExplorer, type GlobePlace } from "@/components/globe-explorer";
 import { SiteHeader } from "@/components/site-header";
+import { siteConfig } from "@/content/site-config";
 import { collections, getCover } from "@/lib/catalog";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
       photoCount: collection.images.length,
       coordinates: collection.coordinates,
       cover: {
-        src: cover.variants["768"],
+        src: cover.variants[siteConfig.imageVariants.thumbnail],
         alt: cover.alt,
         width: cover.width,
         height: cover.height,

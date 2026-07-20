@@ -2,6 +2,8 @@
 "use client";
 
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { commerceConfig, routes, siteConfig } from "@/content/site-config";
+import { siteCopy } from "@/content/site-copy";
 import {
   formatPrintName,
   formatPrice,
@@ -30,13 +32,10 @@ type CartContextValue = {
 };
 
 const CartContext = createContext<CartContextValue | null>(null);
-const storageKey = "kurtis-photo-cart";
-// Checkout (app/api/checkout/route.ts) rejects quantities above 10.
-const maxQuantity = 10;
 
 function useCart() {
   const context = useContext(CartContext);
-  if (!context) throw new Error("Cart components must be used inside CartProvider.");
+  if (!context) throw new Error(siteCopy.cart.providerError);
   return context;
 }
 
@@ -47,14 +46,14 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const timeout = window.setTimeout(() => {
-      const returnedFromCheckout = new URLSearchParams(window.location.search).get("order") === "received";
+      const returnedFromCheckout = new URLSearchParams(window.location.search).get(commerceConfig.orderQueryKey) === commerceConfig.receivedOrderValue;
 
       if (returnedFromCheckout) {
-        window.localStorage.removeItem(storageKey);
+        window.localStorage.removeItem(commerceConfig.storageKey);
         setLines([]);
         setOpen(false);
       } else {
-        const saved = window.localStorage.getItem(storageKey);
+        const saved = window.localStorage.getItem(commerceConfig.storageKey);
         if (saved) {
           try {
             const savedLines = JSON.parse(saved) as CartLine[];
@@ -63,7 +62,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
               return Boolean(photo && getPrintOptionForPhoto(line.collectionSlug, photo, line.sizeId));
             }));
           } catch {
-            window.localStorage.removeItem(storageKey);
+            window.localStorage.removeItem(commerceConfig.storageKey);
           }
         }
       }
@@ -74,7 +73,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (!hasLoaded) return;
-    window.localStorage.setItem(storageKey, JSON.stringify(lines));
+    window.localStorage.setItem(commerceConfig.storageKey, JSON.stringify(lines));
   }, [hasLoaded, lines]);
 
   const value = useMemo<CartContextValue>(() => ({
@@ -91,7 +90,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         );
         if (matching) {
           return current.map((item) =>
-            item.id === matching.id ? { ...item, quantity: Math.min(item.quantity + 1, maxQuantity) } : item,
+            item.id === matching.id ? { ...item, quantity: Math.min(item.quantity + 1, commerceConfig.maxQuantity) } : item,
           );
         }
         return [...current, { ...line, id: crypto.randomUUID(), quantity: 1 }];
@@ -103,7 +102,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       setLines((current) =>
         quantity < 1
           ? current.filter((line) => line.id !== id)
-          : current.map((line) => (line.id === id ? { ...line, quantity: Math.min(quantity, maxQuantity) } : line)),
+          : current.map((line) => (line.id === id ? { ...line, quantity: Math.min(quantity, commerceConfig.maxQuantity) } : line)),
       ),
   }), [lines, open]);
 
@@ -121,7 +120,7 @@ export function CartToggle() {
   if (totalItems === 0) return null;
   return (
     <button className="cart-toggle" type="button" onClick={() => setOpen(true)}>
-      Cart <span aria-label={`${totalItems} items`}>· {totalItems}</span>
+      {siteCopy.cart.toggle} <span aria-label={siteCopy.cart.itemCount(totalItems)}>· {totalItems}</span>
     </button>
   );
 }
@@ -135,7 +134,7 @@ export function PrintConfigurator({ collectionSlug, photo }: { collectionSlug: s
 
   return (
     <div className="print-configurator">
-      <label htmlFor={`size-${photo.id}`}>Print size</label>
+      <label htmlFor={`size-${photo.id}`}>{siteCopy.cart.printSize}</label>
       <div className="print-configurator-row">
         <select id={`size-${photo.id}`} value={sizeId} onChange={(event) => setSizeId(event.target.value)}>
           {options.map((option) => (
@@ -149,10 +148,10 @@ export function PrintConfigurator({ collectionSlug, photo }: { collectionSlug: s
           type="button"
           onClick={() => add({ collectionSlug, photoId: photo.id, sizeId })}
         >
-          Add print
+          {siteCopy.cart.add}
         </button>
       </div>
-      <p className="config-note">Signed, unframed lustre print. Full composition preserved; borders may be added for panoramic ratios.</p>
+      <p className="config-note">{siteCopy.cart.printNote}</p>
     </div>
   );
 }
@@ -173,56 +172,56 @@ function CartPanel() {
     setError(null);
     setCheckingOut(true);
     try {
-      const response = await fetch("/api/checkout", {
+      const response = await fetch(routes.checkoutApi, {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ lines }),
       });
       const payload = await response.json() as { error?: string; url?: string };
-      if (!response.ok || !payload.url) throw new Error(payload.error ?? "Checkout could not start.");
+      if (!response.ok || !payload.url) throw new Error(payload.error ?? siteCopy.cart.checkoutError);
       window.location.assign(payload.url);
     } catch (checkoutError) {
-      setError(checkoutError instanceof Error ? checkoutError.message : "Checkout could not start.");
+      setError(checkoutError instanceof Error ? checkoutError.message : siteCopy.cart.checkoutError);
     } finally {
       setCheckingOut(false);
     }
   }
 
   return (
-    <aside className={`cart-panel ${open ? "is-open" : ""}`} inert={!open} aria-label="Shopping cart">
+    <aside className={`cart-panel ${open ? "is-open" : ""}`} inert={!open} aria-label={siteCopy.cart.label}>
       <div className="cart-panel-header">
         <div>
-          <p className="eyebrow">Your selections</p>
-          <h2>Cart</h2>
+          <p className="eyebrow">{siteCopy.cart.eyebrow}</p>
+          <h2>{siteCopy.cart.title}</h2>
         </div>
-        <button className="text-button" type="button" onClick={() => setOpen(false)}>Close</button>
+        <button className="text-button" type="button" onClick={() => setOpen(false)}>{siteCopy.cart.close}</button>
       </div>
       {resolvedLines.length === 0 ? (
-        <p className="empty-cart">Nothing in your cart yet. Prints are available from each photograph.</p>
+        <p className="empty-cart">{siteCopy.cart.empty}</p>
       ) : (
         <>
           <ul className="cart-lines">
             {resolvedLines.map(({ line, collection, photo, option }) => (
               <li key={line.id}>
-                <img src={photo.variants["768"]} alt="" />
+                <img src={photo.variants[siteConfig.imageVariants.thumbnail]} alt="" />
                 <div>
                   <strong>{formatPrintName(collection, photo)}</strong>
                   <span>{option.label} · {formatPrice(option.price)}</span>
                   <div className="quantity-control">
-                    <button type="button" onClick={() => updateQuantity(line.id, line.quantity - 1)} aria-label="Decrease quantity">−</button>
+                    <button type="button" onClick={() => updateQuantity(line.id, line.quantity - 1)} aria-label={siteCopy.cart.decrease}>−</button>
                     <span>{line.quantity}</span>
-                    <button type="button" onClick={() => updateQuantity(line.id, line.quantity + 1)} aria-label="Increase quantity">+</button>
-                    <button className="remove-line" type="button" onClick={() => remove(line.id)}>Remove</button>
+                    <button type="button" onClick={() => updateQuantity(line.id, line.quantity + 1)} aria-label={siteCopy.cart.increase}>+</button>
+                    <button className="remove-line" type="button" onClick={() => remove(line.id)}>{siteCopy.cart.remove}</button>
                   </div>
                 </div>
               </li>
             ))}
           </ul>
-          <div className="cart-summary"><span>Print subtotal</span><strong>{formatPrice(subtotal)}</strong></div>
-          <p className="cart-footnote">U.S. shipping and applicable tax are calculated at checkout. Fulfillment typically takes 7–14 business days.</p>
+          <div className="cart-summary"><span>{siteCopy.cart.subtotal}</span><strong>{formatPrice(subtotal)}</strong></div>
+          <p className="cart-footnote">{siteCopy.cart.footnote}</p>
           {error && <p className="form-error">{error}</p>}
           <button className="button button-ink cart-checkout" type="button" onClick={checkout} disabled={checkingOut}>
-            {checkingOut ? "Opening checkout…" : "Checkout"}
+            {checkingOut ? siteCopy.cart.openingCheckout : siteCopy.cart.checkout}
           </button>
         </>
       )}

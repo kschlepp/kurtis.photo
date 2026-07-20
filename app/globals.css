@@ -1,19 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  --paper: #eeede7;
-  --paper-bright: #f8f7f2;
-  --ink: #252b2d;
-  --ocean: #356d8c;
-  --ocean-soft: #7c9caf;
-  --shell: #c98e7e;
-  --driftwood: #b5a58e;
-  --line: color-mix(in srgb, var(--ink) 18%, transparent);
-  --muted: color-mix(in srgb, var(--ink) 65%, transparent);
-  --background: var(--paper);
-  --foreground: var(--ink);
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -79,7 +65,7 @@ h2 { font-size: clamp(2.1rem, 4vw, 4.4rem); }
 
 .portrait-intro { display: grid; align-content: start; padding: clamp(4rem, 8vw, 8rem) 0; }.portrait-intro h1 { max-width: 9ch; margin-bottom: 1.35rem; }.portrait-intro > p:not(.eyebrow) { max-width: 39rem; margin: 0; color: var(--muted); }.portrait-intro .button { margin-top: 1.6rem; width: fit-content; }.portrait-details { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-bottom: 4rem; background: var(--line); border: 1px solid var(--line); }.portrait-details > div { padding: clamp(2rem, 5vw, 5rem); background: var(--paper); }.portrait-details h2 { font-size: clamp(2rem, 3vw, 3.5rem); }.portrait-details p:not(.eyebrow) { color: var(--muted); max-width: 27rem; }.portrait-details .inline-link { margin-top: .6rem; }
 .about-copy { display: grid; grid-template-columns: minmax(18rem, .85fr) minmax(20rem, 1fr); align-items: start; gap: clamp(3rem, 8vw, 9rem); padding: clamp(4rem, 8vw, 8rem) 0 7rem; }.about-copy h1 { max-width: 7ch; }.about-story { max-width: 38rem; color: var(--muted); font-family: Iowan Old Style, Palatino, Georgia, serif; font-size: clamp(1.4rem, 2.2vw, 2.1rem); line-height: 1.22; letter-spacing: -.03em; }.about-story > :first-child { margin-top: 0; }.about-photo { width: min(760px, 70vw); margin: 0 auto clamp(4rem, 8vw, 7rem); }.about-photo img { display: block; width: 100%; height: auto; background: var(--driftwood); }.about-photo figcaption { margin-top: .65rem; color: var(--muted); font-size: .76rem; }.about-contact { padding: 4rem 0 7rem; border-top: 1px solid var(--line); }.about-contact a { display: block; width: fit-content; color: var(--ocean); font: clamp(2rem, 5vw, 5.5rem) / 1 Iowan Old Style, Palatino, Georgia, serif; letter-spacing: -.05em; }.about-contact p { color: var(--muted); }.about-contact span { color: var(--ink); }.about-contact small { font-size: .72rem; }
-.inquiry-intro { padding: clamp(5rem, 11vw, 10rem) 0 3rem; }.inquiry-intro h1 { max-width: 8ch; }.inquiry-intro p { color: var(--muted); font-size: 1.1rem; }.inquiry-intro a { color: var(--ocean); font-size: .85rem; font-weight: 700; }.inquiry-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.4rem; width: min(820px, 100%); padding-bottom: 7rem; }.inquiry-form label { display: grid; gap: .45rem; color: var(--muted); font-size: .74rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }.inquiry-form input, .inquiry-form select, .inquiry-form textarea { width: 100%; border: 1px solid var(--line); border-radius: 0; background: var(--paper-bright); color: var(--ink); padding: .75rem; font-size: 1rem; font-weight: 400; letter-spacing: normal; text-transform: none; }.inquiry-form textarea { resize: vertical; }.field-wide { grid-column: 1 / -1; }.checkbox { display: flex !important; align-items: start; gap: .65rem !important; line-height: 1.35; text-transform: none !important; letter-spacing: normal !important; }.checkbox input { width: 17px; height: 17px; margin-top: .1rem; }.honeypot { display: none !important; }.form-error { margin: 0; color: #9f3f32; font-size: .82rem; }.form-success { width: min(720px, 100%); padding: 4rem 0 8rem; }.form-success h2 { font-size: clamp(2.4rem, 5vw, 5rem); }.form-success p:last-child { color: var(--muted); }
+.inquiry-intro { padding: clamp(5rem, 11vw, 10rem) 0 3rem; }.inquiry-intro h1 { max-width: 8ch; }.inquiry-intro p { color: var(--muted); font-size: 1.1rem; }.inquiry-intro a { color: var(--ocean); font-size: .85rem; font-weight: 700; }.inquiry-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.4rem; width: min(820px, 100%); padding-bottom: 7rem; }.inquiry-form label { display: grid; gap: .45rem; color: var(--muted); font-size: .74rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }.inquiry-form input, .inquiry-form select, .inquiry-form textarea { width: 100%; border: 1px solid var(--line); border-radius: 0; background: var(--paper-bright); color: var(--ink); padding: .75rem; font-size: 1rem; font-weight: 400; letter-spacing: normal; text-transform: none; }.inquiry-form textarea { resize: vertical; }.field-wide { grid-column: 1 / -1; }.checkbox { display: flex !important; align-items: start; gap: .65rem !important; line-height: 1.35; text-transform: none !important; letter-spacing: normal !important; }.checkbox input { width: 17px; height: 17px; margin-top: .1rem; }.honeypot { display: none !important; }.form-error { margin: 0; color: var(--error); font-size: .82rem; }.form-success { width: min(720px, 100%); padding: 4rem 0 8rem; }.form-success h2 { font-size: clamp(2.4rem, 5vw, 5rem); }.form-success p:last-child { color: var(--muted); }
 .print-information { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem, 9vw, 10rem); padding-bottom: 7rem; }.print-information > div > p:not(.eyebrow) { color: var(--muted); max-width: 28rem; }.price-list, .detail-list { list-style: none; padding: 0; margin: 2rem 0 0; }.price-list { border-top: 1px solid var(--line); }.price-list li { display: flex; justify-content: space-between; padding: .7rem 0; border-bottom: 1px solid var(--line); }.price-list strong { color: var(--ocean); }.detail-list { display: grid; gap: 1rem; color: var(--muted); }.detail-list li { padding-left: 1.2rem; position: relative; }.detail-list li::before { content: "·"; position: absolute; left: 0; color: var(--shell); font-size: 1.5rem; line-height: .8; }.legal-copy { max-width: 750px; padding: clamp(4rem, 9vw, 9rem) 0; }.legal-copy h1 { margin-bottom: 2rem; }.legal-copy p:not(.eyebrow) { color: var(--muted); font-size: 1.05rem; }
 .order-confirmation { max-width: 54rem; padding: clamp(4rem, 9vw, 8rem) 0 clamp(3rem, 6vw, 5rem); }.order-confirmation h1 { max-width: 9ch; }.order-confirmation .lede { max-width: 39rem; }.order-confirmation .button { margin-top: .4rem; }
 .viewer-details { grid-template-columns: 1fr; }.photo-page-details { grid-template-columns: 1fr; max-width: 56rem; }
@@ -255,7 +241,7 @@ h2 { font-size: clamp(2.1rem, 3.7vw, 4rem); }
 .globe-sidebar-links a { color: var(--ocean); font-size: .73rem; font-weight: 700; letter-spacing: .04em; }
 .globe-sidebar-links a span { display: inline-block; transition: transform .2s ease; }
 .globe-sidebar-links a:hover span { transform: translate(2px, -2px); }
-.globe-stage { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #a5e0f0; isolation: isolate; }
+.globe-stage { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: var(--globe-stage); isolation: isolate; }
 .globe-map { position: absolute; inset: 0; }
 .globe-map .maplibregl-canvas { cursor: grab; outline: none; }
 .globe-map .maplibregl-canvas:active { cursor: grabbing; }
@@ -263,7 +249,7 @@ h2 { font-size: clamp(2.1rem, 3.7vw, 4rem); }
 .globe-map .maplibregl-cooperative-gesture-screen { background: color-mix(in srgb, var(--ink) 48%, transparent); color: var(--paper-bright); font-size: .86rem; }
 .globe-map .maplibregl-ctrl-logo { opacity: .45; filter: grayscale(1); }
 .globe-cluster-count { display: grid; place-items: center; width: 22px; height: 22px; pointer-events: none; color: var(--paper-bright); font: 700 .68rem / 1 var(--font-mono); text-align: center; text-shadow: 0 1px 1px color-mix(in srgb, var(--ink) 35%, transparent); }
-.globe-loading, .globe-fallback { position: absolute; z-index: 2; inset: 0; display: grid; place-content: center; justify-items: center; padding: 2rem; background: #83d8ef; text-align: center; }
+.globe-loading, .globe-fallback { position: absolute; z-index: 2; inset: 0; display: grid; place-content: center; justify-items: center; padding: 2rem; background: var(--globe-ocean); text-align: center; }
 .globe-loading { pointer-events: none; color: var(--muted); }
 .globe-loading span { width: 54px; height: 54px; border: 1px solid color-mix(in srgb, var(--ink) 28%, transparent); border-top-color: var(--ocean); border-radius: 50%; animation: globe-loading-spin 1.4s linear infinite; }
 .globe-loading p { margin: .8rem 0 0; font-size: .76rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }

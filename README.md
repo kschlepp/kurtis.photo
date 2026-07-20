@@ -14,6 +14,25 @@ npm run dev
 
 The private preview runs at `http://localhost:3000`.
 
+## Editing site content and settings
+
+The application keeps editable content and tunable settings out of page and
+component implementations:
+
+- `content/site-copy.ts` contains public page, navigation, accessibility, cart,
+  and legal copy.
+- `content/email-copy.ts` contains inquiry-email and API response copy.
+- `content/site-config.ts` contains identity, contact details, routes, image
+  variants, navigation, commerce, inquiry, and integration settings.
+- `content/globe-config.ts` contains globe camera, zoom, animation, clustering,
+  lighting, and MapLibre presentation values.
+- `app/theme.css` contains the complete color palette and semantic color tokens.
+- `app/globals.css` remains the designated home for layout and responsive style
+  rules; it consumes the tokens from `app/theme.css`.
+
+Photo and collection content remains in `content/generated/`, while the curated
+print catalog remains in `content/prints.json`.
+
 ## Photo workflow
 
 Keep high-resolution JPEG exports in `photo-intake/places/<collection>/`.

@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { PhotoGallery } from "@/components/photo-gallery";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { routes, siteConfig } from "@/content/site-config";
+import { siteCopy } from "@/content/site-copy";
 import { getPortraitCollection, getPortraitCover } from "@/lib/portraits";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -12,9 +14,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const cover = getPortraitCover(collection);
   return {
     title: collection.title,
-    description: collection.note ?? `Portrait photographs by Kurtis Schlepp.`,
-    openGraph: { images: [{ url: cover.variants["1600"], alt: cover.alt }] },
-    twitter: { card: "summary_large_image", images: [cover.variants["1600"]] },
+    description: collection.note ?? siteCopy.portraits.metadataDescription,
+    openGraph: { images: [{ url: cover.variants[siteConfig.imageVariants.display], alt: cover.alt }] },
+    twitter: { card: "summary_large_image", images: [cover.variants[siteConfig.imageVariants.display]] },
   };
 }
 
@@ -24,8 +26,8 @@ export default async function PortraitCollectionPage({ params }: { params: Promi
   if (!collection) notFound();
 
   return <main><div className="page-shell"><SiteHeader />
-    <section className="collection-intro portrait-collection-intro"><div><p className="eyebrow">Portrait session</p><h1>{collection.title}</h1></div><p>{collection.note ?? "A portrait session by Kurtis Schlepp."}</p></section>
-    <PhotoGallery collection={collection} basePath="/portraits" showMetadata={false} />
+    <section className="collection-intro portrait-collection-intro"><div><p className="eyebrow">{siteCopy.portraits.sessionEyebrow}</p><h1>{collection.title}</h1></div><p>{collection.note ?? siteCopy.portraits.sessionFallback}</p></section>
+    <PhotoGallery collection={collection} basePath={routes.portraits} showMetadata={false} />
     <SiteFooter />
   </div></main>;
 }
