@@ -34,6 +34,7 @@ export const globeConfig = {
     selectedPinStrokeWidth: 2.5,
     horizonBlend: 0.35,
     atmosphereBlend: [0, 0.32, 5, 0.08],
+    lightRadius: 1.5,
     lightIntensity: 0.38,
   },
   colorTokens: {

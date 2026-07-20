@@ -12,7 +12,7 @@
     "photos:prepare": "node scripts/photos-prepare.mjs",
     "portraits:prepare": "node scripts/photos-prepare.mjs --portraits",
     "photos:upload": "node scripts/photos-upload.mjs",
-    "test": "npm run build && node --test tests/rendered-html.test.mjs",
+    "test": "npm run build && node --test tests/*.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
   },
   "dependencies": {

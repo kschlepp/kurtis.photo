@@ -14,6 +14,7 @@ import { globeConfig } from "@/content/globe-config";
 import { routes, siteConfig } from "@/content/site-config";
 import { siteCopy } from "@/content/site-copy";
 import { densifyLandPolygons, rewindLandPolygons, splitAntimeridianPolygons } from "@/lib/rewind-geojson.mjs";
+import { solarLightPosition } from "@/lib/solar-light.mjs";
 
 export type GlobePlace = {
   slug: string;
@@ -70,33 +71,6 @@ function globePalette() {
   };
 }
 
-function solarLight(date = new Date()) {
-  const utcHour = date.getUTCHours() + date.getUTCMinutes() / 60 + date.getUTCSeconds() / 3600;
-  const startOfYear = Date.UTC(date.getUTCFullYear(), 0, 0);
-  const currentDay = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
-  const dayOfYear = (currentDay - startOfYear) / 86_400_000;
-  const fractionalYear = (2 * Math.PI / 365) * (dayOfYear - 1 + (utcHour - 12) / 24);
-  const equationOfTime = 229.18 * (
-    0.000075
-    + 0.001868 * Math.cos(fractionalYear)
-    - 0.032077 * Math.sin(fractionalYear)
-    - 0.014615 * Math.cos(2 * fractionalYear)
-    - 0.040849 * Math.sin(2 * fractionalYear)
-  );
-  const declination = 0.006918
-    - 0.399912 * Math.cos(fractionalYear)
-    + 0.070257 * Math.sin(fractionalYear)
-    - 0.006758 * Math.cos(2 * fractionalYear)
-    + 0.000907 * Math.sin(2 * fractionalYear)
-    - 0.002697 * Math.cos(3 * fractionalYear)
-    + 0.00148 * Math.sin(3 * fractionalYear);
-  const subsolarLongitude = ((180 - (utcHour * 60 + equationOfTime) / 4 + 540) % 360) - 180;
-  const subsolarLatitude = declination * 180 / Math.PI;
-  return {
-    position: [1.5, (subsolarLongitude + 360) % 360, 90 - subsolarLatitude] as [number, number, number],
-  };
-}
-
 function placeFeature(place: GlobePlace): Feature<Point, PlaceProperties> {
   return {
     type: "Feature",
@@ -119,7 +93,7 @@ function isOnVisibleHemisphere(center: { lat: number; lng: number }, coordinates
 }
 
 function makeGlobeStyle(places: GlobePlace[], palette: ReturnType<typeof globePalette>, date = new Date()): StyleSpecification {
-  const light = solarLight(date);
+  const lightPosition = solarLightPosition(date, globeConfig.style.lightRadius) as [number, number, number];
   const placePoints: FeatureCollection<Point, PlaceProperties> = {
     type: "FeatureCollection",
     features: places.map(placeFeature),
@@ -230,7 +204,7 @@ function makeGlobeStyle(places: GlobePlace[], palette: ReturnType<typeof globePa
       "horizon-fog-blend": globeConfig.style.horizonBlend,
       "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], ...globeConfig.style.atmosphereBlend],
     },
-    light: { anchor: "map", position: light.position, color: palette.sunlight, intensity: globeConfig.style.lightIntensity },
+    light: { anchor: "map", position: lightPosition, color: palette.sunlight, intensity: globeConfig.style.lightIntensity },
   } as StyleSpecification;
 }
 
@@ -393,7 +367,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
 
           const updateLighting = () => {
             if (!instance) return;
-            const light = solarLight();
+            const lightPosition = solarLightPosition(new Date(), globeConfig.style.lightRadius) as [number, number, number];
             instance.setSky({
               "sky-color": palette.ocean,
               "horizon-color": palette.horizon,
@@ -404,7 +378,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
             });
             instance.setLight({
               anchor: "map",
-              position: light.position,
+              position: lightPosition,
               color: palette.sunlight,
               intensity: globeConfig.style.lightIntensity,
             });
