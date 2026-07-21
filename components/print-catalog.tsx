@@ -20,11 +20,27 @@ export type PrintCatalogGroup = {
 };
 
 export function PrintCatalog({ groups }: { groups: PrintCatalogGroup[] }) {
-  const [activeKey, setActiveKey] = useState<string | null>(null);
-  const close = useCallback(() => setActiveKey(null), []);
-  const activeItem = groups
-    .flatMap((group) => group.items.map((item) => ({ ...item, collection: group.collection })))
-    .find(({ collection, photo }) => `${collection.slug}-${photo.id}` === activeKey);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [transitionDirection, setTransitionDirection] = useState<"next" | "previous" | null>(null);
+  const catalogItems = groups.flatMap((group) => group.items.map((item) => ({
+    ...item,
+    collection: group.collection,
+    key: `${group.collection.slug}-${item.photo.id}`,
+  })));
+  const itemIndexByKey = new Map(catalogItems.map((item, index) => [item.key, index]));
+  const activeItem = activeIndex === null ? null : catalogItems[activeIndex];
+  const close = useCallback(() => setActiveIndex(null), []);
+
+  function open(index: number) {
+    setTransitionDirection(null);
+    setActiveIndex(index);
+  }
+
+  function move(direction: -1 | 1) {
+    if (activeIndex === null) return;
+    setTransitionDirection(direction === 1 ? "next" : "previous");
+    setActiveIndex((activeIndex + direction + catalogItems.length) % catalogItems.length);
+  }
 
   return (
     <>
@@ -39,6 +55,7 @@ export function PrintCatalog({ groups }: { groups: PrintCatalogGroup[] }) {
               {items.map(({ selection, photo }, index) => {
                 const title = selection.title ?? formatPhotoName(collection, photo);
                 const itemKey = `${collection.slug}-${photo.id}`;
+                const catalogIndex = itemIndexByKey.get(itemKey);
                 const aspectRatio = photo.width / photo.height;
                 const tileStyle = {
                   "--print-ratio": aspectRatio,
@@ -51,7 +68,9 @@ export function PrintCatalog({ groups }: { groups: PrintCatalogGroup[] }) {
                     aria-label={siteCopy.prints.enlargeLabel(title)}
                     className="print-catalog-tile"
                     key={itemKey}
-                    onClick={() => setActiveKey(itemKey)}
+                    onClick={() => {
+                      if (catalogIndex !== undefined) open(catalogIndex);
+                    }}
                     style={tileStyle}
                     type="button"
                   >
@@ -68,16 +87,25 @@ export function PrintCatalog({ groups }: { groups: PrintCatalogGroup[] }) {
           </section>
         ))}
       </section>
-      {activeItem ? (
+      {activeItem && activeIndex !== null ? (
         <PhotoLightbox
           alt={activeItem.photo.alt}
+          counter={`${String(activeIndex + 1).padStart(siteConfig.countPadLength, "0")} / ${String(catalogItems.length).padStart(siteConfig.countPadLength, "0")}`}
           description={activeItem.selection.note}
-          detailsAside={<PrintConfigurator collectionSlug={activeItem.collection.slug} photo={activeItem.photo} />}
+          detailsAside={<PrintConfigurator collectionSlug={activeItem.collection.slug} key={activeItem.key} photo={activeItem.photo} />}
           eyebrow={activeItem.collection.title}
           onClose={close}
+          onNext={() => move(1)}
+          onPrevious={() => move(-1)}
           src={activeItem.photo.variants[siteConfig.imageVariants.full]}
           title={activeItem.selection.title ?? formatPhotoName(activeItem.collection, activeItem.photo)}
-        />
+          transitionDirection={transitionDirection}
+        >
+          <nav aria-label={siteCopy.accessibility.photoNavigation} className="viewer-controls">
+            <button className="viewer-step" type="button" onClick={() => move(-1)} aria-label={siteCopy.gallery.previousLabel}>{siteCopy.common.previous}</button>
+            <button className="viewer-step" type="button" onClick={() => move(1)} aria-label={siteCopy.gallery.nextLabel}>{siteCopy.common.next}</button>
+          </nav>
+        </PhotoLightbox>
       ) : null}
     </>
   );
