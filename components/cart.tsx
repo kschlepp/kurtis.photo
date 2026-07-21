@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { commerceConfig, routes, siteConfig } from "@/content/site-config";
 import { siteCopy } from "@/content/site-copy";
 import {
@@ -29,6 +29,7 @@ type CartContextValue = {
   add: (line: Omit<CartLine, "id" | "quantity">) => void;
   remove: (id: string) => void;
   updateQuantity: (id: string, quantity: number) => void;
+  clear: () => void;
 };
 
 const CartContext = createContext<CartContextValue | null>(null);
@@ -46,24 +47,16 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const timeout = window.setTimeout(() => {
-      const returnedFromCheckout = new URLSearchParams(window.location.search).get(commerceConfig.orderQueryKey) === commerceConfig.receivedOrderValue;
-
-      if (returnedFromCheckout) {
-        window.localStorage.removeItem(commerceConfig.storageKey);
-        setLines([]);
-        setOpen(false);
-      } else {
-        const saved = window.localStorage.getItem(commerceConfig.storageKey);
-        if (saved) {
-          try {
-            const savedLines = JSON.parse(saved) as CartLine[];
-            setLines(savedLines.filter((line) => {
-              const photo = getPhoto(line.collectionSlug, line.photoId);
-              return Boolean(photo && getPrintOptionForPhoto(line.collectionSlug, photo, line.sizeId));
-            }));
-          } catch {
-            window.localStorage.removeItem(commerceConfig.storageKey);
-          }
+      const saved = window.localStorage.getItem(commerceConfig.storageKey);
+      if (saved) {
+        try {
+          const savedLines = JSON.parse(saved) as CartLine[];
+          setLines(savedLines.filter((line) => {
+            const photo = getPhoto(line.collectionSlug, line.photoId);
+            return Boolean(photo && getPrintOptionForPhoto(line.collectionSlug, photo, line.sizeId));
+          }));
+        } catch {
+          window.localStorage.removeItem(commerceConfig.storageKey);
         }
       }
       setHasLoaded(true);
@@ -75,6 +68,12 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     if (!hasLoaded) return;
     window.localStorage.setItem(commerceConfig.storageKey, JSON.stringify(lines));
   }, [hasLoaded, lines]);
+
+  const clear = useCallback(() => {
+    window.localStorage.removeItem(commerceConfig.storageKey);
+    setLines([]);
+    setOpen(false);
+  }, []);
 
   const value = useMemo<CartContextValue>(() => ({
     lines,
@@ -104,7 +103,8 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
           ? current.filter((line) => line.id !== id)
           : current.map((line) => (line.id === id ? { ...line, quantity: Math.min(quantity, commerceConfig.maxQuantity) } : line)),
       ),
-  }), [lines, open]);
+    clear,
+  }), [clear, lines, open]);
 
   return (
     <CartContext.Provider value={value}>
@@ -112,6 +112,14 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       <CartPanel />
     </CartContext.Provider>
   );
+}
+
+export function CheckoutReturnHandler({ confirmed }: { confirmed: boolean }) {
+  const { clear } = useCart();
+  useEffect(() => {
+    if (confirmed) clear();
+  }, [clear, confirmed]);
+  return null;
 }
 
 export function CartToggle() {

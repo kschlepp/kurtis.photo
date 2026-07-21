@@ -137,6 +137,9 @@ export const siteCopy = {
     confirmationTitle: "Thanks for bringing a moment home.",
     confirmationBody: "Your payment went through, and I’ll get your print ready. It’s made to order and usually ships within 7–14 business days. I’ll follow up by email if anything needs your attention.",
     confirmationAction: "Keep exploring",
+    verificationEyebrow: "Checkout status",
+    verificationTitle: "Your payment is still being confirmed.",
+    verificationBody: `Your cart has been kept intact. If Stripe charged you and this message remains, email ${siteConfig.email} with the receipt and I’ll take care of it.`,
     eyebrow: "Prints",
     title: "A few photographs for the wall.",
     introduction: "Available occasionally, selected from the places and moments that have stayed with me.",
@@ -145,6 +148,8 @@ export const siteCopy = {
     emptyBody: "I’m keeping this collection small on purpose. A few photographs will appear here when the moment feels right.",
     emptyAction: "Explore the archive",
     availableLabel: "Available prints",
+    enlargeLabel: (title: string) => `Enlarge ${title}`,
+    photoCount: (count: number) => `${count} ${count === 1 ? "photograph" : "photographs"}`,
     originalCollection: "View original collection",
   },
   printInfo: {

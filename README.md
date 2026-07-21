@@ -83,12 +83,30 @@ Copy `.env.example` to `.env.local` and add values only when you are ready to
 test each service:
 
 - Stripe test key for hosted Checkout
+- Stripe webhook signing secret for verified order fulfillment
 - Resend key for inquiry delivery and confirmation email
 - R2 bucket name for image uploads
 - Cloudflare Web Analytics token for privacy-friendly page-view reporting
 
 Use Stripe test mode until business setup, sales-tax registration, product tax
 settings, and shipping rates are ready for live orders.
+
+### Stripe order fulfillment
+
+Create a Stripe webhook event destination at:
+
+```text
+https://kurtis.photo/api/stripe/webhook
+```
+
+Subscribe it to `checkout.session.completed` and
+`checkout.session.async_payment_succeeded`, then save its `whsec_...` signing
+secret as `STRIPE_WEBHOOK_SECRET` alongside `STRIPE_SECRET_KEY` in the deployed
+Worker. `RESEND_API_KEY`, `RESEND_FROM`, and `ORDER_TO` power the owner and
+customer order emails.
+
+For local webhook testing, forward Stripe CLI events to the local route and use
+the signing secret printed by the CLI in `.env.local`.
 
 ## Verification
 

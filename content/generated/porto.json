@@ -212,16 +212,16 @@
       "alt": "Porto photograph 8",
       "sourceFile": "DSCF0846-2.jpg",
       "printSource": "DSCF0846-2.jpg",
-      "assetKey": "dscf0846-2-1e812260af6f",
+      "assetKey": "dscf0846-2-bc321ca6046e",
       "order": 8,
       "sellable": false,
       "releaseStatus": "not-applicable",
       "width": 5152,
       "height": 7728,
       "variants": {
-        "768": "/media/porto/dscf0846-2-1e812260af6f-768.jpg",
-        "1600": "/media/porto/dscf0846-2-1e812260af6f-1600.jpg",
-        "2400": "/media/porto/dscf0846-2-1e812260af6f-2400.jpg"
+        "768": "/media/porto/dscf0846-2-bc321ca6046e-768.jpg",
+        "1600": "/media/porto/dscf0846-2-bc321ca6046e-1600.jpg",
+        "2400": "/media/porto/dscf0846-2-bc321ca6046e-2400.jpg"
       },
       "metadata": {
         "cameraMake": "FUJIFILM",
@@ -231,7 +231,7 @@
         "aperture": null,
         "shutterSpeed": null,
         "iso": null,
-        "captureDate": "2024:09:24 20:52:15"
+        "captureDate": "2024:09:24 20:51:04"
       }
     },
     {

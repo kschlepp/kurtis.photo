@@ -1,6 +1,7 @@
 import { checkoutApiCopy } from "@/content/email-copy";
-import { commerceConfig, routes } from "@/content/site-config";
+import { commerceConfig, routes, siteConfig } from "@/content/site-config";
 import { formatPrintName, getCollection, getPhoto, getPrintOptionForPhoto } from "@/lib/catalog";
+import { serializeCheckoutItem } from "@/lib/stripe";
 
 type RequestedLine = { collectionSlug?: unknown; photoId?: unknown; sizeId?: unknown; quantity?: unknown };
 
@@ -14,14 +15,19 @@ export async function POST(request: Request) {
   if (!Array.isArray(payload.lines) || payload.lines.length === 0) {
     return Response.json({ error: checkoutApiCopy.emptyCart }, { status: 400 });
   }
+  if (payload.lines.length > commerceConfig.maxDistinctItems) {
+    return Response.json({ error: checkoutApiCopy.tooManyItems }, { status: 400 });
+  }
 
   const form = new URLSearchParams({
     mode: "payment",
     "automatic_tax[enabled]": "true",
     "allow_promotion_codes": "true",
     "shipping_address_collection[allowed_countries][0]": commerceConfig.allowedShippingCountry,
-    success_url: `${new URL(request.url).origin}${routes.prints}?${commerceConfig.orderQueryKey}=${commerceConfig.receivedOrderValue}`,
-    cancel_url: `${new URL(request.url).origin}${routes.places}`,
+    success_url: `${new URL(request.url).origin}${routes.prints}?${commerceConfig.checkoutSessionQueryKey}={CHECKOUT_SESSION_ID}`,
+    cancel_url: `${new URL(request.url).origin}${routes.prints}`,
+    [`metadata[${commerceConfig.checkoutSiteMetadataKey}]`]: siteConfig.brandName,
+    [`metadata[${commerceConfig.checkoutItemCountMetadataKey}]`]: String(payload.lines.length),
   });
 
   let largestShippingClass: "flat" | "tube" = "flat";
@@ -39,9 +45,13 @@ export async function POST(request: Request) {
     if (option.shippingClass === "tube") largestShippingClass = "tube";
     form.set(`line_items[${index}][price_data][currency]`, commerceConfig.stripeCurrency);
     form.set(`line_items[${index}][price_data][unit_amount]`, String(option.price));
-    form.set(`line_items[${index}][price_data][product_data][name]`, `${collection.title} — ${formatPrintName(collection, photo)}`);
+    form.set(`line_items[${index}][price_data][product_data][name]`, `${formatPrintName(collection, photo)} — ${option.label}`);
     form.set(`line_items[${index}][price_data][product_data][tax_code]`, commerceConfig.stripeTaxCode);
     form.set(`line_items[${index}][quantity]`, String(quantity));
+    form.set(
+      `metadata[${commerceConfig.checkoutItemMetadataPrefix}${index}]`,
+      serializeCheckoutItem({ collectionSlug: collection.slug, photoId: photo.id, sizeId: option.id, quantity }),
+    );
   }
 
   const shipping = commerceConfig.shipping[largestShippingClass];
@@ -50,7 +60,7 @@ export async function POST(request: Request) {
   form.set("shipping_options[0][shipping_rate_data][fixed_amount][amount]", String(shipping.amount));
   form.set("shipping_options[0][shipping_rate_data][fixed_amount][currency]", commerceConfig.stripeCurrency);
 
-  const stripeResponse = await fetch(commerceConfig.stripeApiUrl, {
+  const stripeResponse = await fetch(`${commerceConfig.stripeApiBaseUrl}/checkout/sessions`, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${secret}`,

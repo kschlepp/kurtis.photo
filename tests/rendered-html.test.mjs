@@ -90,9 +90,26 @@ test("renders the curated Prints catalog", async () => {
   assert.equal(response.status, 200);
 
   const html = await response.text();
+  const printData = JSON.parse(await readFile(path.join(root, "content", "prints.json"), "utf8"));
+  const availablePrints = printData.items.filter((item) => item.available);
+  const availableCollections = new Set(availablePrints.map((item) => item.collectionSlug));
+  const algarvePrintCount = availablePrints.filter((item) => item.collectionSlug === "algarve").length;
   assert.match(html, /Algarve No\. 30/);
-  assert.equal((html.match(/Add print/g) ?? []).length, 40);
+  assert.equal((html.match(/Add print/g) ?? []).length, 0);
+  assert.equal((html.match(/View original collection/g) ?? []).length, availableCollections.size);
+  assert.match(html, new RegExp(`${algarvePrintCount} photographs?`));
+  assert.match(html, /aria-label="Enlarge Algarve No\. 30"/);
+  assert.doesNotMatch(html, /<a[^>]+class="print-catalog-tile"/);
   assert.doesNotMatch(html, /Nothing is for sale right now\./);
+});
+
+test("does not trust an unverified Checkout return", async () => {
+  const response = await render("/prints?session_id=cs_test_unverified");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /Your payment is still being confirmed\./);
+  assert.doesNotMatch(html, /Thanks for bringing a moment home\./);
 });
 
 test("derives album sellability from the Prints catalog", async () => {

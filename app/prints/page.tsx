@@ -1,32 +1,56 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { PrintConfigurator } from "@/components/cart";
+import { CheckoutReturnHandler } from "@/components/cart";
+import { PrintCatalog, type PrintCatalogGroup } from "@/components/print-catalog";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { commerceConfig, routes, siteConfig } from "@/content/site-config";
+import { commerceConfig, routes } from "@/content/site-config";
 import { siteCopy } from "@/content/site-copy";
-import { formatPhotoName, getAvailablePrints } from "@/lib/catalog";
+import { getAvailablePrints } from "@/lib/catalog";
+import { isVerifiedPaidCheckout } from "@/lib/stripe";
 
 export const metadata = { title: siteCopy.prints.metadataTitle };
 
 export default async function PrintsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ order?: string | string[] }>;
+  searchParams: Promise<{ session_id?: string | string[] }>;
 }) {
-  const { order } = await searchParams;
-  const orderReceived = order === commerceConfig.receivedOrderValue;
+  const query = await searchParams;
+  const sessionId = typeof query[commerceConfig.checkoutSessionQueryKey] === "string"
+    ? query[commerceConfig.checkoutSessionQueryKey]
+    : null;
+  const orderReceived = sessionId ? await isVerifiedPaidCheckout(sessionId) : false;
   const prints = getAvailablePrints();
+  const catalogGroups = prints.reduce<PrintCatalogGroup[]>((groups, { selection, collection, photo }) => {
+    let group = groups.find((candidate) => candidate.collection.slug === collection.slug);
+    if (!group) {
+      group = {
+        collection: { slug: collection.slug, title: collection.title },
+        items: [],
+      };
+      groups.push(group);
+    }
+    group.items.push({ photo, selection });
+    return groups;
+  }, []);
 
   return (
     <main><div className="page-shell">
       <SiteHeader />
+      <CheckoutReturnHandler confirmed={orderReceived} />
       {orderReceived ? (
         <section className="order-confirmation" aria-live="polite">
           <p className="eyebrow">{siteCopy.prints.confirmationEyebrow}</p>
           <h1>{siteCopy.prints.confirmationTitle}</h1>
           <p className="lede">{siteCopy.prints.confirmationBody}</p>
           <Link className="button button-ink" href={routes.places}>{siteCopy.prints.confirmationAction}</Link>
+        </section>
+      ) : sessionId ? (
+        <section className="order-confirmation" aria-live="polite">
+          <p className="eyebrow">{siteCopy.prints.verificationEyebrow}</p>
+          <h1>{siteCopy.prints.verificationTitle}</h1>
+          <p className="lede">{siteCopy.prints.verificationBody}</p>
+          <Link className="button button-ink" href={routes.prints}>{siteCopy.cart.close}</Link>
         </section>
       ) : (
         <section className="page-intro print-intro">
@@ -43,20 +67,7 @@ export default async function PrintsPage({
           <Link className="inline-link" href={routes.places}>{siteCopy.prints.emptyAction} <span>↗</span></Link>
         </section>
       ) : (
-        <section className="print-grid" aria-label={siteCopy.prints.availableLabel}>
-          {prints.map(({ selection, collection, photo }) => (
-            <article className="print-card" key={`${collection.slug}-${photo.id}`}>
-              <Link className="print-card-image" href={routes.photo(collection.slug, photo.id)}>
-                <img src={photo.variants[siteConfig.imageVariants.display]} alt={photo.alt} />
-              </Link>
-              <p className="eyebrow">{collection.title}</p>
-              <h2>{selection.title ?? formatPhotoName(collection, photo)}</h2>
-              {selection.note ? <p className="print-card-note">{selection.note}</p> : null}
-              <PrintConfigurator collectionSlug={collection.slug} photo={photo} />
-              <Link className="inline-link" href={routes.place(collection.slug)}>{siteCopy.prints.originalCollection} <span>↗</span></Link>
-            </article>
-          ))}
-        </section>
+        <PrintCatalog groups={catalogGroups} />
       )}
       <SiteFooter />
     </div></main>
