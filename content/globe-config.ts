@@ -18,6 +18,14 @@ export const globeConfig = {
   lightingRefreshMs: 60_000,
   visibleHemisphereThreshold: 0.025,
   cluster: { maxZoom: 8, radius: 24 },
+  detail: {
+    loadZoom: 3,
+    highResolutionFadeStart: 3.5,
+    highResolutionFull: 4.2,
+    lowResolutionFadeStart: 4.2,
+    lowResolutionHidden: 5,
+    transitionMs: 650,
+  },
   style: {
     landOpacity: 0.98,
     countryBorderOpacity: [0, 0.78, 5, 0.9],

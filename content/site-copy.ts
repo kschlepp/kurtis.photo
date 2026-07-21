@@ -52,6 +52,7 @@ export const siteCopy = {
     instructions: "Drag to rotate. Select a pin or choose a place from the list.",
     instructionsDetail: "Larger pins group nearby places—select one to zoom in. Scroll or pinch to zoom.",
     mapError: "Globe map error",
+    detailError: "Detailed globe data could not load",
     startError: "Globe map could not start",
   },
   places: {
