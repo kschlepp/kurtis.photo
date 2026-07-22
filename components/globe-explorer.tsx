@@ -8,8 +8,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { feature, mesh } from "topojson-client";
 import type { GeometryCollection, Topology } from "topojson-specification";
 import type { GeoJSONSource, Map as MapLibreMap, Marker as MapLibreMarker, StyleSpecification } from "maplibre-gl";
-import worldCountries from "world-atlas/countries-50m.json";
-import worldAtlas from "world-atlas/land-50m.json";
+import worldCountries from "world-atlas/countries-10m.json";
+import worldAtlas from "world-atlas/land-10m.json";
 import { globeConfig } from "@/content/globe-config";
 import { routes, siteConfig } from "@/content/site-config";
 import { siteCopy } from "@/content/site-copy";
@@ -35,7 +35,6 @@ type LandTopology = Topology<{ land: GeometryCollection }>;
 type CountriesTopology = Topology<{ countries: GeometryCollection; land: GeometryCollection }>;
 type PlaceProperties = { slug: string; title: string };
 type ClusterMarker = { marker: MapLibreMarker; element: HTMLSpanElement };
-type GlobeGeography = { land: FeatureCollection<Geometry>; countryBorders: MultiLineString };
 
 const topology = worldAtlas as unknown as LandTopology;
 const countriesTopology = worldCountries as unknown as CountriesTopology;
@@ -49,70 +48,9 @@ const countryBorders: MultiLineString = mesh(
   countriesTopology.objects.countries,
   (left, right) => left !== right,
 ) as MultiLineString;
-const emptyLand: FeatureCollection<Geometry> = { type: "FeatureCollection", features: [] };
-const emptyCountryBorders: MultiLineString = { type: "MultiLineString", coordinates: [] };
 const emptyPoints: FeatureCollection<Point, PlaceProperties> = { type: "FeatureCollection", features: [] };
-let detailedTopologyPromise: Promise<{ land: LandTopology; countries: CountriesTopology }> | null = null;
-let detailedGeography: GlobeGeography | null = null;
-
-function loadDetailedTopologies() {
-  detailedTopologyPromise ??= Promise.all([
-    import("world-atlas/land-10m.json"),
-    import("world-atlas/countries-10m.json"),
-  ]).then(([landModule, countriesModule]) => ({
-    land: landModule.default as unknown as LandTopology,
-    countries: countriesModule.default as unknown as CountriesTopology,
-  }));
-  return detailedTopologyPromise;
-}
-
-function prepareDetailedGeography(topologies: { land: LandTopology; countries: CountriesTopology }) {
-  detailedGeography ??= {
-    land: rewindLandPolygons(
-      densifyLandPolygons(
-        splitAntimeridianPolygons(feature(topologies.land, topologies.land.objects.land) as FeatureCollection<Geometry>),
-      ),
-    ) as FeatureCollection<Geometry>,
-    countryBorders: mesh(
-      topologies.countries,
-      topologies.countries.objects.countries,
-      (left, right) => left !== right,
-    ) as MultiLineString,
-  };
-  return detailedGeography;
-}
 
 const borderOpacity = ["interpolate", ["linear"], ["zoom"], ...globeConfig.style.countryBorderOpacity];
-const detailedLandOpacity = [
-  "interpolate", ["linear"], ["zoom"],
-  globeConfig.detail.highResolutionFadeStart, 0,
-  globeConfig.detail.highResolutionFull, globeConfig.style.landOpacity,
-];
-const overviewLandOpacity = [
-  "interpolate", ["linear"], ["zoom"],
-  globeConfig.detail.lowResolutionFadeStart, globeConfig.style.landOpacity,
-  globeConfig.detail.lowResolutionHidden, 0,
-];
-
-function borderOpacityAtZoom(zoom: number) {
-  const [startZoom, startOpacity, endZoom, endOpacity] = globeConfig.style.countryBorderOpacity;
-  if (zoom <= startZoom) return startOpacity;
-  if (zoom >= endZoom) return endOpacity;
-  return startOpacity + ((zoom - startZoom) / (endZoom - startZoom)) * (endOpacity - startOpacity);
-}
-
-const detailedBorderOpacity = [
-  "interpolate", ["linear"], ["zoom"],
-  globeConfig.detail.highResolutionFadeStart, 0,
-  globeConfig.detail.highResolutionFull, borderOpacityAtZoom(globeConfig.detail.highResolutionFull),
-  globeConfig.style.countryBorderOpacity[2], globeConfig.style.countryBorderOpacity[3],
-];
-const overviewBorderOpacity = [
-  "interpolate", ["linear"], ["zoom"],
-  globeConfig.style.countryBorderOpacity[0], globeConfig.style.countryBorderOpacity[1],
-  globeConfig.detail.lowResolutionFadeStart, borderOpacityAtZoom(globeConfig.detail.lowResolutionFadeStart),
-  globeConfig.detail.lowResolutionHidden, 0,
-];
 
 function worldPadding() {
   return { top: 0, right: 0, bottom: window.matchMedia(globeConfig.mediaQueries.mobile).matches ? globeConfig.padding.mobileBottom : globeConfig.padding.desktopBottom, left: 0 };
@@ -169,8 +107,6 @@ function makeGlobeStyle(places: GlobePlace[], palette: ReturnType<typeof globePa
     sources: {
       land: { type: "geojson", data: land },
       "country-borders": { type: "geojson", data: countryBorders },
-      "land-detailed": { type: "geojson", data: emptyLand },
-      "country-borders-detailed": { type: "geojson", data: emptyCountryBorders },
       places: {
         type: "geojson",
         data: placePoints,
@@ -196,31 +132,12 @@ function makeGlobeStyle(places: GlobePlace[], palette: ReturnType<typeof globePa
         },
       },
       {
-        id: "land-fill-detailed",
-        type: "fill",
-        source: "land-detailed",
-        paint: {
-          "fill-color": palette.land,
-          "fill-opacity": 0,
-        },
-      },
-      {
         id: "country-borders",
         type: "line",
         source: "country-borders",
         paint: {
           "line-color": palette.countryBorder,
           "line-opacity": borderOpacity,
-          "line-width": ["interpolate", ["linear"], ["zoom"], ...globeConfig.style.countryBorderWidth],
-        },
-      },
-      {
-        id: "country-borders-detailed",
-        type: "line",
-        source: "country-borders-detailed",
-        paint: {
-          "line-color": palette.countryBorder,
-          "line-opacity": 0,
           "line-width": ["interpolate", ["linear"], ["zoom"], ...globeConfig.style.countryBorderWidth],
         },
       },
@@ -248,6 +165,16 @@ function makeGlobeStyle(places: GlobePlace[], palette: ReturnType<typeof globePa
         },
       },
       {
+        id: "place-pin-hit-area",
+        type: "circle",
+        source: "places",
+        filter: ["!", ["has", "point_count"]],
+        paint: {
+          "circle-radius": globeConfig.style.pinTouchRadius,
+          "circle-opacity": 0,
+        },
+      },
+      {
         id: "place-pins",
         type: "circle",
         source: "places",
@@ -267,6 +194,15 @@ function makeGlobeStyle(places: GlobePlace[], palette: ReturnType<typeof globePa
           "circle-color": palette.selectedHalo,
           "circle-radius": globeConfig.style.selectedHaloRadius,
           "circle-blur": globeConfig.style.selectedHaloBlur,
+        },
+      },
+      {
+        id: "selected-place-hit-area",
+        type: "circle",
+        source: "selected-place",
+        paint: {
+          "circle-radius": globeConfig.style.selectedPinTouchRadius,
+          "circle-opacity": 0,
         },
       },
       {
@@ -384,8 +320,9 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
     let cancelled = false;
     let instance: MapLibreMap | null = null;
     let lightingTimer: ReturnType<typeof setInterval> | null = null;
-    let detailLoadStarted = false;
     const clusterMarkers = clusterMarkersRef.current;
+    setMapReady(false);
+    setMapFailed(false);
 
     async function initializeMap() {
       const container = mapContainerRef.current;
@@ -414,40 +351,6 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
         });
         mapRef.current = instance;
         instance.setPadding(worldPadding());
-
-        const activateDetailedGeography = () => {
-          if (!instance || cancelled) return;
-          const transition = { duration: globeConfig.detail.transitionMs, delay: 0 };
-          instance.setPaintProperty("land-fill", "fill-opacity-transition", transition);
-          instance.setPaintProperty("land-fill-detailed", "fill-opacity-transition", transition);
-          instance.setPaintProperty("country-borders", "line-opacity-transition", transition);
-          instance.setPaintProperty("country-borders-detailed", "line-opacity-transition", transition);
-          instance.setPaintProperty("land-fill", "fill-opacity", overviewLandOpacity);
-          instance.setPaintProperty("land-fill-detailed", "fill-opacity", detailedLandOpacity);
-          instance.setPaintProperty("country-borders", "line-opacity", overviewBorderOpacity);
-          instance.setPaintProperty("country-borders-detailed", "line-opacity", detailedBorderOpacity);
-        };
-
-        const installDetailedGeography = (topologies: { land: LandTopology; countries: CountriesTopology }) => {
-          if (!instance || cancelled) return;
-          const geography = prepareDetailedGeography(topologies);
-          (instance.getSource("land-detailed") as GeoJSONSource).setData(geography.land);
-          (instance.getSource("country-borders-detailed") as GeoJSONSource).setData(geography.countryBorders);
-          instance.once("idle", activateDetailedGeography);
-        };
-
-        const loadDetailedGeography = () => {
-          if (!instance || detailLoadStarted || instance.getZoom() < globeConfig.detail.loadZoom) return;
-          detailLoadStarted = true;
-          void loadDetailedTopologies()
-            .then((topologies) => {
-              if (!instance || cancelled) return;
-              if (instance.isMoving()) instance.once("moveend", () => installDetailedGeography(topologies));
-              else installDetailedGeography(topologies);
-            })
-            .catch((error) => console.error(siteCopy.globe.detailError, error));
-        };
-        instance.on("zoom", loadDetailedGeography);
 
         const updateClusterMarkers = () => {
           if (!instance?.isStyleLoaded()) return;
@@ -484,7 +387,6 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
         instance.on("load", () => {
           if (cancelled || !instance) return;
           setMapReady(true);
-          loadDetailedGeography();
 
           const updateLighting = () => {
             if (!instance) return;
@@ -521,11 +423,11 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
             });
           }
 
-          instance.on("click", "place-pins", (event) => {
+          instance.on("click", "place-pin-hit-area", (event) => {
             const slug = event.features?.[0]?.properties?.slug;
             if (typeof slug === "string") choosePlace(slug);
           });
-          instance.on("click", "selected-place-pin", (event) => {
+          instance.on("click", "selected-place-hit-area", (event) => {
             const slug = event.features?.[0]?.properties?.slug;
             if (typeof slug === "string") choosePlace(slug);
           });
@@ -542,7 +444,7 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
             else instance.easeTo({ center, zoom, duration: globeConfig.animation.clusterDuration, essential: false });
           });
 
-          for (const layer of ["place-pins", "place-clusters", "selected-place-pin"]) {
+          for (const layer of ["place-pin-hit-area", "place-clusters", "selected-place-hit-area"]) {
             instance.on("mouseenter", layer, () => { if (instance) instance.getCanvas().style.cursor = "pointer"; });
             instance.on("mouseleave", layer, () => { if (instance) instance.getCanvas().style.cursor = "grab"; });
           }
@@ -563,14 +465,15 @@ export function GlobeExplorer({ places }: { places: GlobePlace[] }) {
       for (const { marker } of clusterMarkers.values()) marker.remove();
       clusterMarkers.clear();
       instance?.remove();
-      mapRef.current = null;
+      if (mapRef.current === instance) mapRef.current = null;
     };
   }, [choosePlace, places]);
 
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !mapReady) return;
-    const source = map.getSource("selected-place") as GeoJSONSource;
+    if (!map || !mapReady || !map.isStyleLoaded()) return;
+    const source = map.getSource("selected-place") as GeoJSONSource | undefined;
+    if (!source) return;
     source.setData(selectedPlace ? placeFeature(selectedPlace) : emptyPoints);
     moveCamera(map, selectedPlace);
   }, [mapReady, moveCamera, selectedPlace]);

@@ -137,9 +137,13 @@ test("leads the portraits page with photography", async () => {
   assert.equal(response.status, 200);
 
   const html = await response.text();
-  const image = html.indexOf("portrait-hero-image");
+  const image = html.indexOf("portrait-hero-collage");
   const heading = html.indexOf("People, as they are.");
   assert.ok(image >= 0 && heading >= 0 && image < heading);
+  assert.match(html, /portrait-ashley\/portrait-5a22ad78ff68/);
+  assert.match(html, /portrait-newborn\/portrait-ca89981e1c9b/);
+  assert.match(html, /portrait-maternity\/portrait-7dd7002f6ffc/);
+  assert.match(html, /A session shaped around you/);
   assert.match(html, /Portrait from/);
   assert.match(html, /Family/);
   assert.match(html, /Newborn/);
